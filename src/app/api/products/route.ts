@@ -1,8 +1,8 @@
-const { connectToDatabase } = require('@/libs/mongoConnect');
-const ProductService = require('@/services/ProductService');
+import { connectToDatabase } from '@/libs/mongoConnect';
+import ProductService from '@/services/ProductService';
 
 // GET - Obtener productos
-export async function GET(request) {
+export async function GET(request: Request) {
   try {
     // Conectar a MongoDB
     const client = await connectToDatabase();
@@ -13,18 +13,18 @@ export async function GET(request) {
     
     // Obtener parámetros de la URL
     const { searchParams } = new URL(request.url);
-    const category = searchParams.get('category');
-    const subcategory = searchParams.get('subcategory');
-    const brand = searchParams.get('brand');
-    const search = searchParams.get('search');
-    const page = parseInt(searchParams.get('page')) || 1;
-    const limit = parseInt(searchParams.get('limit')) || 20;
+    const category = searchParams.get('category') || undefined;
+    const subcategory = searchParams.get('subcategory') || undefined;
+    const brand = searchParams.get('brand') || undefined;
+    const search = searchParams.get('search') || undefined;
+    const page = parseInt(searchParams.get('page') || '1');
+    const limit = parseInt(searchParams.get('limit') || '20');
     const skip = (page - 1) * limit;
     const showAll = searchParams.get('showAll') === 'true'; // Parámetro temporal para debug
     const active = searchParams.get('active') !== 'false'; // Por defecto true
     
     // Construir filtros
-    const filters = {};
+    const filters: any = {};
     if (category) filters.category = category;
     if (subcategory) filters.subcategory = subcategory;
     if (brand) filters.brand = brand;
@@ -68,7 +68,7 @@ export async function GET(request) {
 }
 
 // POST - Crear nuevo producto
-export async function POST(request) {
+export async function POST(request: Request) {
   try {
     // Conectar a MongoDB
     const client = await connectToDatabase();
