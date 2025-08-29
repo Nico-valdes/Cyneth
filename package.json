@@ -6,22 +6,39 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:subcategories": "node scripts/migrate-subcategories.js",
+    "init:subcategory-indexes": "node scripts/init-subcategory-indexes.js",
+    "seed:plumbing": "node scripts/seed-plumbing-categories.js",
+    "fix:slug-index": "node scripts/fix-slug-index.js",
+    "clean:categories": "node scripts/clean-categories.js",
+    "seed:clean": "node scripts/seed-clean-categories.js",
+    "migrate:products": "node scripts/migrate-products.js",
+    "migrate:attributes": "node scripts/migrate-attributes.js",
+    "clean:products": "node scripts/clean-products.js",
+    "seed:products": "node scripts/seed-products.js",
+    "clean-seed:products": "node scripts/clean-and-seed-products.js"
   },
   "dependencies": {
+    "dotenv": "^17.2.1",
+    "formidable": "^3.5.4",
+    "lucide-react": "^0.539.0",
+    "mongodb": "^6.18.0",
+    "multer": "^2.0.2",
+    "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
