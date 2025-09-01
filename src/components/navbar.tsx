@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -7,25 +8,27 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-red-500">
-              CYNETH <span className="text-white">SANITARIOS</span>
-            </h1>
+            <Link href="/">
+              <h1 className="text-2xl font-bold text-red-500 cursor-pointer hover:text-red-400 transition-colors">
+                CYNETH <span className="text-white">SANITARIOS</span>
+              </h1>
+            </Link>
           </div>
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <a
-                href="#inicio"
+              <Link
+                href="/"
                 className="text-white hover:text-red-400 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Inicio
-              </a>
-              <a
-                href="#productos"
+              </Link>
+              <Link
+                href="/catalogo"
                 className="text-gray-300 hover:text-red-400 px-3 py-2 text-sm font-medium transition-colors"
               >
-                Productos
-              </a>
+                Catálogo
+              </Link>
               <a
                 href="#servicios"
                 className="text-gray-300 hover:text-red-400 px-3 py-2 text-sm font-medium transition-colors"

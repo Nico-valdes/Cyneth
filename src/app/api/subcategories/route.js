@@ -1,7 +1,7 @@
 import { connectToDatabase } from '@/libs/mongoConnect';
-import SubcategoryService from '@/services/SubcategoryService';
+import CategoryService from '@/services/CategoryService';
 
-// GET - Obtener todas las subcategorías
+// GET - Obtener todas las subcategorías (ahora categorías de nivel > 0)
 export async function GET(request) {
   try {
     // Conectar a MongoDB
@@ -9,7 +9,7 @@ export async function GET(request) {
     const db = client.db('cyneth');
     
     // Crear instancia del servicio
-    const subcategoryService = new SubcategoryService(db);
+    const categoryService = new CategoryService(db);
     
     // Obtener parámetros de la URL
     const { searchParams } = new URL(request.url);
@@ -21,21 +21,27 @@ export async function GET(request) {
     
     // Si se solicita sincronización, ejecutarla primero
     if (sync === 'true') {
-      await subcategoryService.syncFromProducts();
+      await categoryService.updateProductCounts();
     }
     
     if (categorySlug) {
       // Obtener subcategorías de una categoría específica
       if (hierarchical === 'true') {
-        const subcategories = await subcategoryService.getByCategoryHierarchical(categorySlug);
+        const subcategories = await categoryService.getHierarchicalTree(categorySlug);
         data = { subcategories, hierarchical: true };
       } else {
-        const subcategories = await subcategoryService.getByCategory(categorySlug);
-        data = { subcategories };
+        const parent = await categoryService.getBySlug(categorySlug);
+        if (parent) {
+          const subcategories = await categoryService.getDirectChildren(parent._id);
+          data = { subcategories };
+        } else {
+          data = { subcategories: [] };
+        }
       }
     } else {
-      // Obtener todas las subcategorías
-      const subcategories = await subcategoryService.getAll();
+      // Obtener todas las subcategorías (categorías con level > 0)
+      const allCategories = await categoryService.getAll();
+      const subcategories = allCategories.filter(cat => cat.level > 0);
       data = { subcategories };
     }
     
@@ -61,7 +67,7 @@ export async function POST(request) {
     const db = client.db('cyneth');
     
     // Crear instancia del servicio
-    const subcategoryService = new SubcategoryService(db);
+    const categoryService = new CategoryService(db);
     
     // Obtener datos del body
     const subcategoryData = await request.json();
@@ -75,26 +81,26 @@ export async function POST(request) {
     });
     
     // Validar datos requeridos
-    if (!subcategoryData.name || !subcategoryData.category) {
+    if (!subcategoryData.name) {
       return Response.json(
-        { success: false, error: 'Nombre y categoría son requeridos' },
+        { success: false, error: 'Nombre es requerido' },
         { status: 400 }
       );
     }
     
     // Validar que el padre existe si se especifica
     if (subcategoryData.parent) {
-      const parentExists = await subcategoryService.getById(subcategoryData.parent);
+      const parentExists = await categoryService.getById(subcategoryData.parent);
       if (!parentExists) {
         return Response.json(
-          { success: false, error: 'La subcategoría padre especificada no existe' },
+          { success: false, error: 'La categoría padre especificada no existe' },
           { status: 400 }
         );
       }
     }
     
-    // Crear subcategoría
-    const newSubcategory = await subcategoryService.create(subcategoryData);
+    // Crear subcategoría (ahora es una categoría con level > 0)
+    const newSubcategory = await categoryService.create(subcategoryData);
     
     return Response.json({
       success: true,
@@ -135,7 +141,7 @@ export async function PUT(request) {
     const db = client.db('cyneth');
     
     // Crear instancia del servicio
-    const subcategoryService = new SubcategoryService(db);
+    const categoryService = new CategoryService(db);
     
     // Obtener datos del body
     const { id, ...updateData } = await request.json();
@@ -143,24 +149,24 @@ export async function PUT(request) {
     // Validar ID
     if (!id) {
       return Response.json(
-        { success: false, error: 'ID de subcategoría es requerido' },
+        { success: false, error: 'ID de categoría es requerido' },
         { status: 400 }
       );
     }
     
     // Validar que el nuevo padre existe si se especifica
     if (updateData.parent) {
-      const parentExists = await subcategoryService.getById(updateData.parent);
+      const parentExists = await categoryService.getById(updateData.parent);
       if (!parentExists) {
         return Response.json(
-          { success: false, error: 'La subcategoría padre especificada no existe' },
+          { success: false, error: 'La categoría padre especificada no existe' },
           { status: 400 }
         );
       }
     }
     
     // Actualizar subcategoría
-    const success = await subcategoryService.update(id, updateData);
+    const success = await categoryService.update(id, updateData);
     
     if (!success) {
       return Response.json(
@@ -207,7 +213,7 @@ export async function DELETE(request) {
     const db = client.db('cyneth');
     
     // Crear instancia del servicio
-    const subcategoryService = new SubcategoryService(db);
+    const categoryService = new CategoryService(db);
     
     // Obtener datos del body
     const { id } = await request.json();
@@ -215,13 +221,13 @@ export async function DELETE(request) {
     // Validar ID
     if (!id) {
       return Response.json(
-        { success: false, error: 'ID de subcategoría es requerido' },
+        { success: false, error: 'ID de categoría es requerido' },
         { status: 400 }
       );
     }
     
     // Eliminar subcategoría
-    const success = await subcategoryService.delete(id);
+    const success = await categoryService.delete(id);
     
     if (!success) {
       return Response.json(
@@ -239,7 +245,7 @@ export async function DELETE(request) {
     console.error('Error eliminando subcategoría:', error);
     
     // Manejar errores específicos de validación
-    if (error.message.includes('No se puede eliminar una subcategoría que tiene subcategorías hijas')) {
+    if (error.message.includes('No se puede eliminar una categoría que tiene subcategorías')) {
       return Response.json(
         { success: false, error: error.message },
         { status: 400 }

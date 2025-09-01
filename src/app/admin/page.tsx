@@ -12,7 +12,9 @@ import {
   Package, 
   BarChart3,
   Tags,
-  Award
+  Award,
+  LogOut,
+  User
 } from 'lucide-react'
 import CategoryManager from '@/components/CategoryManager'
 import BrandManager from '@/components/BrandManager'
@@ -95,6 +97,8 @@ export default function AdminPage() {
     reloadProducts();
   }, []);
 
+
+
   // Función para eliminar producto (mantenida para compatibilidad)
   const handleDeleteProduct = async (productId: string) => {
     if (confirm('¿Estás seguro de que quieres eliminar este producto?')) {
@@ -165,27 +169,25 @@ export default function AdminPage() {
 
               </nav>
               
-              {/* Información del usuario y logout en la parte inferior */}
-              <div className="px-4 pt-4 border-t border-neutral-700">
-                {/* Información del usuario */}
-                <div className="flex items-center p-4 bg-neutral-800 rounded-xl hover:bg-neutral-700 transition-all duration-200">
-                  <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-700 rounded-lg flex items-center justify-center shadow-lg">
-                    <span className="text-white text-lg font-bold">A</span>
+              {/* Sección minimalista del usuario */}
+              <div className="px-3 pt-3 border-t border-neutral-700">
+                {/* Info compacta del admin */}
+                <div className="flex items-center p-2 mb-2 bg-neutral-800/50 rounded">
+                  <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
+                    <User className="w-4 h-4 text-white" />
                   </div>
-                  <div className="ml-4">
-                    <p className="text-base font-semibold text-white">Administrador</p>
-                    <p className="text-sm text-gray-400">admin@cyneth.com</p>
+                  <div className="ml-2 min-w-0 flex-1">
+                    <p className="text-xs font-medium text-white truncate">Admin</p>
                   </div>
                 </div>
                 
+                {/* Botón logout compacto */}
                 <button
                   onClick={handleLogout}
-                  className="w-full mt-4 flex items-center justify-center px-4 py-3.5 text-base font-medium text-white bg-red-600 hover:bg-red-700 rounded-xl transition-all duration-200 group"
+                  className="w-full flex items-center justify-center px-3 py-2 text-xs font-medium text-white bg-red-600 hover:bg-red-700 rounded transition-colors"
                 >
-                  <svg className="w-5 h-5 mr-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                  </svg>
-                  Cerrar Sesión
+                  <LogOut className="w-3 h-3 mr-1" />
+                  Salir
                 </button>
               </div>
             </div>

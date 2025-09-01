@@ -6,12 +6,48 @@ class ProductService {
     this.db = db;
     this.collection = db.collection('products');
     this.productModel = new Product(db);
+    this.categoriesCollection = db.collection('categories');
     
     // Caché en memoria para categorías (OPTIMIZACIÓN)
     this.categoryCache = new Map();
-    this.subcategoryCache = new Map();
     this.cacheExpiry = 5 * 60 * 1000; // 5 minutos
     this.lastCacheUpdate = 0;
+  }
+
+  // Obtener todas las categorías descendientes (hijas, nietas, etc.) de una categoría
+  async getAllDescendantCategories(parentId) {
+    try {
+      const descendants = await this.categoriesCollection.aggregate([
+        {
+          $match: { _id: parentId }
+        },
+        {
+          $graphLookup: {
+            from: 'categories',
+            startWith: '$_id',
+            connectFromField: '_id',
+            connectToField: 'parent',
+            as: 'descendants'
+          }
+        },
+        {
+          $project: {
+            descendants: {
+              $map: {
+                input: '$descendants',
+                as: 'desc',
+                in: '$$desc._id'
+              }
+            }
+          }
+        }
+      ]).toArray();
+
+      return descendants[0]?.descendants || [];
+    } catch (error) {
+      console.error('Error obteniendo categorías descendientes:', error);
+      return [];
+    }
   }
 
   // Crear un nuevo producto con jerarquía de categorías
@@ -64,14 +100,16 @@ class ProductService {
           sku: 1,
           price: 1,
           image: 1,
-          defaultImage: 1, // ✅ AGREGADO: Campo faltante
-          category: 1,
-          subcategory: 1,
-          categoryBreadcrumb: 1,
+          defaultImage: 1,
+          category: 1, // Ahora es ObjectId que referencia categories
           brand: 1,
+          brandSlug: 1,
           active: 1,
+          featured: 1,
           colorVariants: 1,
           description: 1,
+          attributes: 1,
+          measurements: 1,
           specifications: 1,
           createdAt: 1,
           updatedAt: 1
@@ -223,8 +261,26 @@ class ProductService {
         query.active = true;
       }
       
-      if (filters.category) query.category = filters.category;
-      if (filters.subcategory) query.subcategory = filters.subcategory;
+      if (filters.category) {
+        try {
+          const categoryId = new ObjectId(filters.category);
+          
+          // Obtener todas las categorías descendientes
+          const allDescendants = await this.getAllDescendantCategories(categoryId);
+          
+          // Buscar en la categoría seleccionada Y todas sus descendientes
+          query.category = { $in: [categoryId, ...allDescendants] };
+        } catch (error) {
+          query.category = filters.category;
+        }
+      }
+      if (filters.subcategory) {
+        try {
+          query.subcategory = new ObjectId(filters.subcategory);
+        } catch (error) {
+          query.subcategory = filters.subcategory;
+        }
+      }
       
       return await this.collection.countDocuments(query);
     } catch (error) {
@@ -556,8 +612,29 @@ class ProductService {
       }
       
       // Aplicar filtros
-      if (filters.category) query.category = filters.category;
-      if (filters.subcategory) query.subcategory = filters.subcategory;
+      if (filters.category) {
+        // En el modelo unificado, buscar en categoría y todas sus descendientes
+        try {
+          const categoryId = new ObjectId(filters.category);
+          
+          // Obtener todas las categorías descendientes
+          const allDescendants = await this.getAllDescendantCategories(categoryId);
+          
+          // Buscar en la categoría seleccionada Y todas sus descendientes
+          query.category = { $in: [categoryId, ...allDescendants] };
+        } catch (error) {
+          // Si no es un ObjectId válido, usarlo como string para compatibilidad
+          query.category = filters.category;
+        }
+      }
+      if (filters.subcategory) {
+        // Subcategory ya no se usa en el modelo unificado, pero mantener para compatibilidad
+        try {
+          query.subcategory = new ObjectId(filters.subcategory);
+        } catch (error) {
+          query.subcategory = filters.subcategory;
+        }
+      }
       if (filters.brand) query.brand = filters.brand;
       if (filters.tags) query.tags = { $in: filters.tags };
       
@@ -650,6 +727,88 @@ class ProductService {
       console.error('Error en consulta agregada:', error);
       // Fallback al método anterior si falla la agregación
       return await this.find(filters, options);
+    }
+  }
+
+  // ========================================
+  // MÉTODOS PARA MODELO UNIFICADO
+  // ========================================
+
+  // Obtener breadcrumb automático para un producto
+  async getProductBreadcrumb(productId) {
+    try {
+      const product = await this.collection.findOne({ _id: ObjectId(productId) });
+      if (!product) return null;
+
+      const breadcrumb = [];
+      let currentCategory = await this.categoriesCollection.findOne({ _id: product.category });
+      
+      // Recorrer hacia arriba hasta llegar a la raíz
+      while (currentCategory) {
+        breadcrumb.unshift({
+          _id: currentCategory._id,
+          name: currentCategory.name,
+          slug: currentCategory.slug,
+          level: currentCategory.level
+        });
+        
+        if (currentCategory.parent) {
+          currentCategory = await this.categoriesCollection.findOne({ _id: currentCategory.parent });
+        } else {
+          break;
+        }
+      }
+      
+      return {
+        product: product.name,
+        breadcrumb,
+        breadcrumbString: breadcrumb.map(cat => cat.name).join(' > ')
+      };
+    } catch (error) {
+      console.error('Error obteniendo breadcrumb:', error);
+      return null;
+    }
+  }
+
+  // Obtener productos por categoría (incluyendo subcategorías)
+  async getProductsByCategory(categoryId, includeChildren = true) {
+    try {
+      let categoryIds = [ObjectId(categoryId)];
+      
+      if (includeChildren) {
+        // Obtener todos los hijos de la categoría
+        const children = await this.getCategoryChildren(categoryId);
+        categoryIds = categoryIds.concat(children.map(child => child._id));
+      }
+      
+      return await this.collection.find({
+        category: { $in: categoryIds },
+        active: true
+      }).toArray();
+    } catch (error) {
+      console.error('Error obteniendo productos por categoría:', error);
+      return [];
+    }
+  }
+
+  // Obtener todas las subcategorías de una categoría
+  async getCategoryChildren(categoryId) {
+    try {
+      const allChildren = [];
+      const directChildren = await this.categoriesCollection.find({ 
+        parent: ObjectId(categoryId) 
+      }).toArray();
+      
+      for (const child of directChildren) {
+        allChildren.push(child);
+        const grandChildren = await this.getCategoryChildren(child._id);
+        allChildren.push(...grandChildren);
+      }
+      
+      return allChildren;
+    } catch (error) {
+      console.error('Error obteniendo hijos de categoría:', error);
+      return [];
     }
   }
 }

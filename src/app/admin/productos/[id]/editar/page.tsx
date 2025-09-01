@@ -120,29 +120,42 @@ export default function EditarProducto() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+      <div className="bg-white border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center justify-between py-4">
             <div className="flex items-center space-x-4">
               <button
                 onClick={handleCancel}
-                className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+                className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all"
               >
-                <ArrowLeft size={20} className="mr-2" />
-                Volver al listado
+                <ArrowLeft size={18} />
               </button>
-              <div className="h-6 w-px bg-gray-300" />
-              <h1 className="text-xl font-semibold text-gray-900">
-                Editar Producto: {product?.name}
-              </h1>
+              <div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-sm text-gray-500">Editando</span>
+                  <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+                  <span className="text-sm font-medium text-gray-900">{product?.sku}</span>
+                </div>
+                <h1 className="text-lg font-semibold text-gray-900 truncate max-w-md">
+                  {product?.name}
+                </h1>
+              </div>
             </div>
             <div className="flex items-center space-x-3">
               <button
                 onClick={handleCancel}
-                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-50 rounded-lg transition-all"
               >
-                <X size={16} className="mr-2 inline" />
                 Cancelar
+              </button>
+              <button
+                type="submit"
+                form="product-form"
+                disabled={isLoading}
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg transition-all shadow-sm"
+              >
+                <Save size={16} className="mr-1.5 inline" />
+                {isLoading ? 'Guardando...' : 'Guardar'}
               </button>
             </div>
           </div>

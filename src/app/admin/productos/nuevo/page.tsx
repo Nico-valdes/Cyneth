@@ -70,38 +70,40 @@ export default function NuevoProducto() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Modern Header with Gradient */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-gray-100">
+      {/* Modern Header */}
+      <div className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between py-6">
+          <div className="flex items-center justify-between py-4">
             <div className="flex items-center space-x-4">
               <button
                 onClick={handleCancel}
-                className="p-2.5 text-gray-500 hover:text-gray-700 hover:bg-white/60 rounded-xl transition-all duration-200 backdrop-blur-sm"
+                className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-50 rounded-lg transition-all"
               >
-                <ArrowLeft size={22} />
+                <ArrowLeft size={18} />
               </button>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900 tracking-tight">Nuevo Producto</h1>
-                <p className="text-gray-600 mt-1">Agregar un nuevo producto al catálogo</p>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-sm text-gray-500">Nuevo producto</span>
+                </div>
+                <h1 className="text-lg font-semibold text-gray-900">Crear Producto</h1>
               </div>
             </div>
             <div className="flex items-center space-x-3">
               <button
                 onClick={handleCancel}
-                className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 shadow-sm"
+                className="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 hover:bg-gray-50 rounded-lg transition-all"
               >
-                <X size={16} className="mr-2 inline" />
                 Cancelar
               </button>
               <button
                 type="submit"
                 form="product-form"
                 disabled={isLoading}
-                className="inline-flex items-center px-6 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-50 rounded-lg transition-all shadow-sm"
               >
-                <Save size={16} className="mr-2" />
-                {isLoading ? 'Guardando...' : 'Guardar Producto'}
+                <Save size={16} className="mr-1.5 inline" />
+                {isLoading ? 'Guardando...' : 'Crear'}
               </button>
             </div>
           </div>

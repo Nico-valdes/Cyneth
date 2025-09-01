@@ -7,14 +7,8 @@ const productSchema = {
   description: { type: String, default: '' },
   sku: { type: String, required: true, unique: true }, // SKU base - manual por el usuario
   
-  // Jerarquía de categorías (referencia a la subcategoría más específica)
-  category: { type: String, required: true }, // ID de categoría principal
-  categorySlug: { type: String, required: true },
-  subcategory: { type: String, default: null }, // ID de subcategoría (puede ser anidada)
-  subcategorySlug: { type: String, default: null },
-  categoryPath: { type: Array, default: [] }, // Array de IDs: [categoria, subcategoria, sub-subcategoria]
-  categoryPathNames: { type: Array, default: [] }, // Array de nombres para mostrar breadcrumb
-  categoryBreadcrumb: { type: String, default: '' }, // String para mostrar: "Grifería > Cocina > Monocomando"
+  // Categorización SIMPLIFICADA
+  category: { type: ObjectId, required: true, ref: 'categories' }, // Referencia a la categoría más específica
   
   // Marca
   brand: { type: String, default: '' },

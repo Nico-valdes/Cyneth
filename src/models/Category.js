@@ -1,66 +1,91 @@
 const { ObjectId } = require('mongodb');
 
-// Esquema de Categoría con soporte para anidación múltiple
+/**
+ * MODELO UNIFICADO DE CATEGORÍAS
+ * 
+ * Reemplaza tanto Category.js como Subcategory.js
+ * Estructura simple y eficiente para jerarquías de cualquier profundidad
+ */
+
 const categorySchema = {
+  // Información básica
   name: { type: String, required: true },
   slug: { type: String, required: true, unique: true },
-  description: { type: String },
+  description: { type: String, default: '' },
   
-  // Jerarquía de categorías
-  parentId: { type: ObjectId, default: null }, // null para categorías raíz
-  level: { type: Number, default: 0 }, // 0=raíz, 1=subcategoría, 2=sub-subcategoría, etc.
-  path: { type: String }, // Ej: "sanitarios/banos/griferia" para navegación
+  // Jerarquía simple
+  parent: { type: ObjectId, default: null }, // null = categoría principal
+  level: { type: Number, default: 0 }, // 0=principal, 1=sub, 2=sub-sub, etc.
   
-  // Información de jerarquía
-  ancestors: [{ // Array de IDs de categorías padre
-    categoryId: { type: ObjectId },
-    name: { type: String },
-    slug: { type: String },
-    level: { type: Number }
-  }],
-  
-  // Subcategorías directas (para consultas rápidas)
-  children: [{
-    categoryId: { type: ObjectId },
-    name: { type: String },
-    slug: { type: String },
-    productCount: { type: Number, default: 0 },
-    active: { type: Boolean, default: true }
-  }],
+  // Tipo para distinguir (opcional - se puede calcular por level)
+  type: { 
+    type: String, 
+    enum: ['main', 'sub'], 
+    default: function() { return this.level === 0 ? 'main' : 'sub'; }
+  },
   
   // Contadores
-  productCount: { type: Number, default: 0 }, // Productos directos en esta categoría
-  totalProductCount: { type: Number, default: 0 }, // Incluye productos de subcategorías
-  
-  // Metadatos para SEO y organización
-  icon: { type: String }, // Icono para la interfaz
-  color: { type: String }, // Color temático
-  order: { type: Number, default: 0 }, // Para ordenar categorías del mismo nivel
-  
-  // Estado
-  active: { type: Boolean, default: true },
-  featured: { type: Boolean, default: false }, // Para destacar en la página principal
+  productCount: { type: Number, default: 0 }, // Productos directos
+  totalProductCount: { type: Number, default: 0 }, // Incluye subcategorías
   
   // Metadatos
+  order: { type: Number, default: 0 }, // Para ordenar al mismo nivel
+  active: { type: Boolean, default: true },
+  
+  // Timestamps
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 };
 
-// Ejemplos de estructura jerárquica:
-// Nivel 0: Sanitarios, Gas, Cocina, Plomería
-// Nivel 1: Baños, Duchas, Lavabos (bajo Sanitarios)
-// Nivel 2: Grifería, Accesorios, Desagües (bajo Baños)
-// Nivel 3: Monocomandos, Bimandos (bajo Grifería)
+/**
+ * ÍNDICES REQUERIDOS PARA PERFORMANCE:
+ * 
+ * db.categories.createIndex({ parent: 1, level: 1, order: 1, name: 1 })
+ * db.categories.createIndex({ type: 1, active: 1 })
+ * db.categories.createIndex({ slug: 1 }, { unique: true })
+ * db.categories.createIndex({ level: 1, active: 1 })
+ */
 
-// Clase básica del modelo (solo estructura)
 class Category {
   constructor(db) {
     this.collection = db.collection('categories');
   }
 
-  // Método para obtener la colección (para servicios)
   getCollection() {
     return this.collection;
+  }
+
+  // Crear índices necesarios
+  async createIndexes() {
+    try {
+      await this.collection.createIndex({ parent: 1, level: 1, order: 1, name: 1 });
+      await this.collection.createIndex({ type: 1, active: 1 });
+      await this.collection.createIndex({ slug: 1 }, { unique: true });
+      await this.collection.createIndex({ level: 1, active: 1 });
+      console.log('✅ Índices de categorías unificadas creados');
+    } catch (error) {
+      console.error('❌ Error creando índices:', error);
+    }
+  }
+
+  // Validar jerarquía
+  validateHierarchy(categoryData) {
+    const errors = [];
+
+    // Validar nivel vs parent
+    if (categoryData.level === 0 && categoryData.parent) {
+      errors.push('Categorías de nivel 0 no pueden tener parent');
+    }
+    if (categoryData.level > 0 && !categoryData.parent) {
+      errors.push('Categorías de nivel > 0 deben tener parent');
+    }
+
+    // Validar profundidad máxima
+    if (categoryData.level > 4) {
+      errors.push('Máximo 5 niveles de profundidad permitidos');
+    }
+
+    return errors;
   }
 }
 

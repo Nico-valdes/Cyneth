@@ -9,11 +9,7 @@ interface Product {
   _id: string
   name: string
   sku: string
-  category: string
-  categorySlug: string
-  subcategory?: string
-  subcategorySlug?: string
-  categoryBreadcrumb?: string
+  category: string // ID de la categoría en el modelo unificado
   brand: string
   brandSlug?: string
   description?: string
@@ -54,7 +50,6 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   const [searchTerm, setSearchTerm] = useState('')
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
-  const [selectedSubcategory, setSelectedSubcategory] = useState('')
   const [selectedBrand, setSelectedBrand] = useState('')
   const [showActiveOnly, setShowActiveOnly] = useState(true)
   
@@ -64,8 +59,8 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   const [totalProducts, setTotalProducts] = useState(0)
   
   // Categorías y marcas para filtros
-  const [categories, setCategories] = useState<any[]>([])
-  const [subcategories, setSubcategories] = useState<any[]>([])
+  const [mainCategories, setMainCategories] = useState<any[]>([])
+  const [allCategories, setAllCategories] = useState<any[]>([])
   const [brands, setBrands] = useState<string[]>([])
   
   // Modal de confirmación de eliminación
@@ -106,18 +101,8 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
       // Solo agregar parámetros que tienen valor
       if (debouncedSearchTerm.trim()) params.append('search', debouncedSearchTerm.trim())
       if (selectedCategory) {
-        // El campo category en productos almacena el ID de la categoría, no el nombre
-        const category = categories.find(cat => cat.name === selectedCategory)
-        if (category && category._id) {
-          params.append('category', category._id)
-        }
-      }
-      if (selectedSubcategory) {
-        // El campo subcategory en productos almacena el ID de la subcategoría, no el nombre
-        const subcategory = subcategories.find(sub => sub.name === selectedSubcategory)
-        if (subcategory && subcategory._id) {
-          params.append('subcategory', subcategory._id)
-        }
+        // selectedCategory ya contiene el ID de la categoría
+        params.append('category', selectedCategory)
       }
       if (selectedBrand) params.append('brand', selectedBrand)
       if (!showActiveOnly) params.append('active', 'false')
@@ -151,45 +136,34 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     }
   }
 
-  // Cargar categorías, subcategorías y marcas para filtros
+  // Cargar categorías y marcas para filtros
   const fetchFilters = async () => {
     try {
-      const [categoriesRes, subcategoriesRes, brandsRes] = await Promise.all([
-        fetch('/api/categories'),
-        fetch('/api/subcategories'),
+      const [mainCategoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
+        fetch('/api/categories?type=main'), // Solo categorías principales
+        fetch('/api/categories'), // Todas las categorías para búsqueda interna
         fetch('/api/brands')
       ])
       
-      if (categoriesRes.ok) {
-        const categoriesData = await categoriesRes.json()
-        console.log('Categories response:', categoriesData) // Debug
-        
-        // Verificar si es un array o tiene una estructura específica
-        if (Array.isArray(categoriesData)) {
-          setCategories(categoriesData)
-        } else if (categoriesData.data && categoriesData.data.categories && Array.isArray(categoriesData.data.categories)) {
-          setCategories(categoriesData.data.categories)
-        } else if (categoriesData.data && Array.isArray(categoriesData.data)) {
-          setCategories(categoriesData.data)
-        } else {
-          console.warn('Formato de categorías no reconocido:', categoriesData)
-          setCategories([])
+      if (mainCategoriesRes.ok) {
+        const mainCategoriesData = await mainCategoriesRes.json()
+        if (mainCategoriesData.data && Array.isArray(mainCategoriesData.data.categories)) {
+          setMainCategories(mainCategoriesData.data.categories)
         }
       }
 
-      if (subcategoriesRes.ok) {
-        const subcategoriesData = await subcategoriesRes.json()
-        console.log('Subcategories response:', subcategoriesData) // Debug
-        
-        if (Array.isArray(subcategoriesData)) {
-          setSubcategories(subcategoriesData)
-        } else if (subcategoriesData.data && subcategoriesData.data.subcategories && Array.isArray(subcategoriesData.data.subcategories)) {
-          setSubcategories(subcategoriesData.data.subcategories)
-        } else if (subcategoriesData.data && Array.isArray(subcategoriesData.data)) {
-          setSubcategories(subcategoriesData.data)
+      if (allCategoriesRes.ok) {
+        const categoriesData = await allCategoriesRes.json()
+        // Verificar si es un array o tiene una estructura específica
+        if (Array.isArray(categoriesData)) {
+          setAllCategories(categoriesData)
+        } else if (categoriesData.data && categoriesData.data.categories && Array.isArray(categoriesData.data.categories)) {
+          setAllCategories(categoriesData.data.categories)
+        } else if (categoriesData.data && Array.isArray(categoriesData.data)) {
+          setAllCategories(categoriesData.data)
         } else {
-          console.warn('Formato de subcategorías no reconocido:', subcategoriesData)
-          setSubcategories([])
+          console.warn('Formato de categorías no reconocido:', categoriesData)
+          setAllCategories([])
         }
       }
       
@@ -221,12 +195,12 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
 
   useEffect(() => {
     fetchProducts()
-  }, [currentPage, debouncedSearchTerm, selectedCategory, selectedSubcategory, selectedBrand, showActiveOnly])
+  }, [currentPage, debouncedSearchTerm, selectedCategory, selectedBrand, showActiveOnly])
 
   // Reset página al cambiar filtros
   useEffect(() => {
     setCurrentPage(1)
-  }, [debouncedSearchTerm, selectedCategory, selectedSubcategory, selectedBrand, showActiveOnly])
+  }, [debouncedSearchTerm, selectedCategory, selectedBrand, showActiveOnly])
 
   // Calcular paginación
   const totalPages = Math.ceil(totalProducts / productsPerPage)
@@ -285,7 +259,6 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   const clearFilters = () => {
     setSearchTerm('')
     setSelectedCategory('')
-    setSelectedSubcategory('')
     setSelectedBrand('')
     setShowActiveOnly(true)
     setCurrentPage(1)
@@ -403,30 +376,13 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
           {/* Filtro por categoría */}
           <select
             value={selectedCategory}
-            onChange={(e) => {
-              setSelectedCategory(e.target.value)
-              setSelectedSubcategory('') // Reset subcategoría cuando cambia categoría
-            }}
+            onChange={(e) => setSelectedCategory(e.target.value)}
             className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-white transition-colors min-w-[140px]"
           >
             <option value="">Todas las categorías</option>
-            {categories.map((category) => (
-              <option key={category._id || category} value={category.name || category}>
-                {category.name || category}
-              </option>
-            ))}
-          </select>
-
-          {/* Filtro por subcategoría */}
-          <select
-            value={selectedSubcategory}
-            onChange={(e) => setSelectedSubcategory(e.target.value)}
-            className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-white transition-colors min-w-[140px]"
-          >
-            <option value="">Todas las subcategorías</option>
-            {subcategories.map((subcategory) => (
-              <option key={subcategory._id || subcategory} value={subcategory.name || subcategory}>
-                {subcategory.name || subcategory}
+            {mainCategories.map((category) => (
+              <option key={category._id} value={category._id}>
+                {category.name}
               </option>
             ))}
           </select>
@@ -444,7 +400,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
           </select>
 
           {/* Botón limpiar */}
-          {(searchTerm || selectedCategory || selectedSubcategory || selectedBrand) && (
+          {(searchTerm || selectedCategory || selectedBrand) && (
             <button
               onClick={clearFilters}
               className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-1"
@@ -577,22 +533,32 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
                 <td className="px-4 py-3">
                   <div className="text-sm text-gray-900 max-w-32">
                     {(() => {
-                      // Debug: Mostrar información de categoría
-                      console.log('Producto:', product.name, 'CategoryBreadcrumb:', product.categoryBreadcrumb, 'Category:', product.category, 'Subcategory:', product.subcategory);
+                      // Con el modelo unificado, buscar la categoría por ID
+                      const category = allCategories.find(cat => cat._id === product.category);
                       
-                      if (product.categoryBreadcrumb) {
+                      if (category) {
+                        // Construir el breadcrumb desde la categoría encontrada
+                        const buildBreadcrumb = (cat: any): string => {
+                          if (!cat.parent) return cat.name;
+                          const parentCat = allCategories.find(c => c._id === cat.parent);
+                          if (parentCat) {
+                            return buildBreadcrumb(parentCat) + ' › ' + cat.name;
+                          }
+                          return cat.name;
+                        };
+                        
+                        const breadcrumb = buildBreadcrumb(category);
+                        
                         return (
-                          <div className="text-xs leading-tight line-clamp-2">
-                            {product.categoryBreadcrumb.replace(/ > /g, ' › ')}
+                          <div className="text-xs leading-tight line-clamp-2" title={breadcrumb}>
+                            {breadcrumb}
                           </div>
                         );
                       } else {
+                        // Fallback si no se encuentra la categoría
                         return (
-                          <div>
-                            <div className="font-medium text-xs">{product.category}</div>
-                            {product.subcategory && (
-                              <div className="text-xs text-gray-500">{product.subcategory}</div>
-                            )}
+                          <div className="text-xs text-gray-400">
+                            Sin categoría
                           </div>
                         );
                       }

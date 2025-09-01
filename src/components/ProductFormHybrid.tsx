@@ -27,10 +27,7 @@ interface ProductAttribute {
 interface FormData {
   name: string;
   sku: string;
-  category: string;
-  categorySlug: string;
-  subcategory: string;
-  subcategorySlug: string;
+  category: string; // Ahora es ObjectId de la categoría más específica
   brand: string;
   brandSlug: string;
   description: string;
@@ -64,10 +61,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   const [formData, setFormData] = useState<FormData>({
     name: '',
     sku: '',
-    category: '',
-    categorySlug: '',
-    subcategory: '',
-    subcategorySlug: '',
+    category: '', // Ahora solo una categoría
     brand: '',
     brandSlug: '',
     description: '',
@@ -92,10 +86,12 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   });
   const [newAttribute, setNewAttribute] = useState({ name: '', value: '' });
   const [newSize, setNewSize] = useState('');
-  const [subcategories, setSubcategories] = useState<any[]>([]);
   const [availableBrands, setAvailableBrands] = useState<any[]>([]);
-  const [categoryHierarchy, setCategoryHierarchy] = useState<any[]>([]);
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  // Lista de todas las categorías del modelo unificado
+  const [allCategories, setAllCategories] = useState<any[]>([]);
+  // Estados simples para jerarquía
+  const [categoryLevels, setCategoryLevels] = useState<any[][]>([[]]); 
+  const [selectedPath, setSelectedPath] = useState<string[]>([]);
   const [editingAttribute, setEditingAttribute] = useState<{index: number, attribute: ProductAttribute} | null>(null);
   const [editingVariant, setEditingVariant] = useState<{index: number, variant: ColorVariant} | null>(null);
   
@@ -141,29 +137,46 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
     fetchBrands();
   }, []);
 
-  // Cargar categorías raíz
+  // Cargar todas las categorías
   useEffect(() => {
-    if (Array.isArray(categories) && categories.length > 0) {
-      setCategoryHierarchy([categories]);
-    }
-  }, [categories]);
+    const fetchAllCategories = async () => {
+      try {
+        const response = await fetch('/api/categories');
+        if (response.ok) {
+          const data = await response.json();
+          const categories = data.data?.categories || [];
+          setAllCategories(categories);
+          // Inicializar con categorías nivel 0
+          setCategoryLevels([categories.filter((cat: any) => cat.level === 0)]);
+        }
+      } catch (error) {
+        console.error('Error cargando categorías:', error);
+      }
+    };
+    
+    fetchAllCategories();
+  }, []);
 
   // Inicializar formulario con datos del producto
   useEffect(() => {
     if (product) {
-      console.log('Cargando producto para edición:', product); // Debug
-      console.log('defaultImage del producto:', product.defaultImage); // Debug específico para imagen
+      console.log('🔍 Cargando producto para edición:', product); // Debug
+      console.log('📷 defaultImage del producto:', product.defaultImage); // Debug específico para imagen
+      console.log('📋 Atributos del producto:', product.attributes); // Debug para atributos
+      console.log('📋 ¿Es array de atributos?:', Array.isArray(product.attributes)); // Debug
+      console.log('📋 Tipo de atributos:', typeof product.attributes); // Debug
+      
+      const finalAttributes = Array.isArray(product.attributes) ? product.attributes : [];
+      console.log('📋 Atributos finales para el formulario:', finalAttributes); // Debug
+      
       setFormData({
         name: product.name || '',
         sku: product.sku || '',
-        category: product.category || '',
-        categorySlug: product.categorySlug || '',
-        subcategory: product.subcategory || '',
-        subcategorySlug: product.subcategorySlug || '',
+        category: product.category || '', // Simplificado - solo una categoría
         brand: product.brand || '',
         brandSlug: product.brandSlug || '',
         description: product.description || '',
-        attributes: Array.isArray(product.attributes) ? product.attributes : [],
+        attributes: finalAttributes,
         defaultImage: product.defaultImage || '',
         measurements: product.measurements || { enabled: false, unit: 'mm', description: '', availableSizes: [] },
         colorVariants: product.colorVariants || [],
@@ -171,12 +184,12 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
         featured: product.featured !== undefined ? product.featured : false
       });
       
-      // Cargar la jerarquía de categorías para productos existentes
-      if (product.categorySlug) {
-        loadCategoryHierarchyForEditing(product.categorySlug, product.subcategorySlug);
+      // Cargar ruta para edición
+      if (product.category && allCategories.length > 0) {
+        loadPathForEdit(product.category);
       }
     }
-  }, [product, categories]);
+  }, [product, categories, allCategories]);
 
   const handleInputChange = (field: string, value: any) => {
     setFormData(prev => ({
@@ -195,154 +208,46 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
     }));
   };
 
-  // Cargar jerarquía para edición
-  const loadCategoryHierarchyForEditing = async (categorySlug: string, subcategorySlug?: string) => {
-    try {
-      const newHierarchy = [categories];
-      const newSelected = [categorySlug];
-      
-      // Si hay subcategoría, cargar la jerarquía nivel por nivel
-      if (subcategorySlug) {
-        // Cargar subcategorías de la categoría principal
-        const subResponse = await fetch(`/api/subcategories?category=${encodeURIComponent(categorySlug)}&hierarchical=true`);
-        if (subResponse.ok) {
-          const subData = await subResponse.json();
-          const subcategories = subData.data?.subcategories || [];
-          
-          if (subcategories.length > 0) {
-            newHierarchy[1] = subcategories;
-            
-            // Buscar la ruta hacia la subcategoría objetivo
-            const path = findSubcategoryPath(subcategories, subcategorySlug);
-            
-            if (path.length > 0) {
-              // Construir la jerarquía siguiendo el path
-              let currentLevel = subcategories;
-              
-              for (let i = 0; i < path.length; i++) {
-                const currentSlug = path[i];
-                newSelected[i + 1] = currentSlug;
-                
-                // Encontrar la subcategoría en el nivel actual
-                const foundSub = currentLevel.find((sub: any) => sub.slug === currentSlug);
-                if (foundSub && i < path.length - 1) {
-                  // No es el último nivel, cargar children para el siguiente nivel
-                  if (foundSub.children && foundSub.children.length > 0) {
-                    newHierarchy[i + 2] = foundSub.children;
-                    currentLevel = foundSub.children;
-                  } else {
-                    break; // No hay más niveles
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      
-      setCategoryHierarchy(newHierarchy);
-      setSelectedCategories(newSelected);
-    } catch (error) {
-      console.error('Error cargando jerarquía para edición:', error);
-    }
-  };
-
-  // Encontrar la ruta hacia una subcategoría específica
-  const findSubcategoryPath = (subcategories: any[], targetSlug: string): string[] => {
-    for (const sub of subcategories) {
-      if (sub.slug === targetSlug) {
-        return [sub.slug];
-      }
-      if (sub.children && sub.children.length > 0) {
-        const childPath = findSubcategoryPath(sub.children, targetSlug);
-        if (childPath.length > 0) {
-          return [sub.slug, ...childPath];
-        }
-      }
-    }
-    return [];
-  };
-
-
-
-  // Manejar selección de categoría jerárquica
-  const handleCategorySelection = async (categorySlug: string, level: number) => {
-    // Buscar la categoría seleccionada en el nivel correcto
-    let category;
-    if (level === 0) {
-      category = categories.find((c: any) => c.slug === categorySlug);
-    } else {
-      // Buscar en el nivel jerárquico actual (solo nivel directo, no aplanado)
-      category = categoryHierarchy[level]?.find((c: any) => c.slug === categorySlug);
+  // Cargar ruta completa para edición
+  const loadPathForEdit = (categoryId: string) => {
+    const category = allCategories.find((cat: any) => cat._id === categoryId);
+    if (!category) return;
+    
+    const path: string[] = [];
+    let current = category;
+    while (current) {
+      path.unshift(current._id);
+      current = current.parent ? allCategories.find((cat: any) => cat._id === current.parent) : null;
     }
     
-    if (!category) return;
-
-    // Actualizar selecciones
-    const newSelected = [...selectedCategories];
-    newSelected[level] = categorySlug;
-    newSelected.splice(level + 1); // Remover selecciones posteriores
-    setSelectedCategories(newSelected);
-
-    // Actualizar formData
-    if (level === 0) {
-      setFormData(prev => ({
-        ...prev,
-        category: category._id,
-        categorySlug: categorySlug,
-        subcategory: '',
-        subcategorySlug: ''
-      }));
-    } else {
-      setFormData(prev => ({
-        ...prev,
-        subcategory: category._id,
-        subcategorySlug: categorySlug
-      }));
+    setSelectedPath(path);
+    
+    // Construir niveles
+    const levels = [allCategories.filter((cat: any) => cat.level === 0)];
+    for (let i = 0; i < path.length - 1; i++) {
+      const children = allCategories.filter((cat: any) => cat.parent === path[i]);
+      if (children.length > 0) levels.push(children);
     }
-
-    // Cargar subcategorías del siguiente nivel
-    if (level === 0) {
-      // Para categoría principal, cargar subcategorías desde API
-      try {
-        const response = await fetch(`/api/subcategories?category=${encodeURIComponent(categorySlug)}&hierarchical=true`);
-        if (response.ok) {
-          const data = await response.json();
-          const subcategories = data.data?.subcategories || [];
-          
-          if (subcategories.length > 0) {
-            // subcategories ya son solo las roots (nivel 1)
-            const newHierarchy = [...categoryHierarchy];
-            newHierarchy[level + 1] = subcategories;
-            // Remover niveles posteriores
-            newHierarchy.splice(level + 2);
-            setCategoryHierarchy(newHierarchy);
-          } else {
-            // No hay más subcategorías, remover niveles posteriores
-            const newHierarchy = [...categoryHierarchy];
-            newHierarchy.splice(level + 1);
-            setCategoryHierarchy(newHierarchy);
-          }
-        }
-      } catch (error) {
-        console.error('Error cargando subcategorías:', error);
-      }
-    } else {
-      // Para subcategorías, usar sus children directamente
-      const selectedSubcategory = categoryHierarchy[level]?.find((c: any) => c.slug === categorySlug);
-      if (selectedSubcategory && selectedSubcategory.children && selectedSubcategory.children.length > 0) {
-        const newHierarchy = [...categoryHierarchy];
-        newHierarchy[level + 1] = selectedSubcategory.children;
-        // Remover niveles posteriores
-        newHierarchy.splice(level + 2);
-        setCategoryHierarchy(newHierarchy);
-      } else {
-        // No hay más subcategorías, remover niveles posteriores
-        const newHierarchy = [...categoryHierarchy];
-        newHierarchy.splice(level + 1);
-        setCategoryHierarchy(newHierarchy);
-      }
+    setCategoryLevels(levels);
+  };
+  
+  // Manejar selección por nivel
+  const handleLevelSelection = (categoryId: string, level: number) => {
+    const newPath = [...selectedPath];
+    newPath[level] = categoryId;
+    newPath.splice(level + 1);
+    setSelectedPath(newPath);
+    
+    setFormData(prev => ({ ...prev, category: categoryId }));
+    
+    // Cargar siguiente nivel
+    const children = allCategories.filter((cat: any) => cat.parent === categoryId);
+    const newLevels = [...categoryLevels];
+    if (children.length > 0) {
+      newLevels[level + 1] = children;
     }
+    newLevels.splice(level + (children.length > 0 ? 2 : 1));
+    setCategoryLevels(newLevels);
   };
 
 
@@ -572,42 +477,13 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
       }
     }
     
-    // Construir breadcrumb completo de categorías
-    const categoryNames = selectedCategories.map((categorySlug, level) => {
-      if (level === 0) {
-        // Categoría principal
-        const category = categories.find((c: any) => c.slug === categorySlug);
-        return category ? category.name : categorySlug;
-      } else {
-        // Subcategorías
-        const levelCategories = categoryHierarchy[level];
-        if (levelCategories) {
-          const category = levelCategories.find((c: any) => c.slug === categorySlug);
-          return category ? category.name : categorySlug;
-        }
-      }
-      return categorySlug;
-    }).filter(Boolean);
-    
-    // Crear objeto final con breadcrumb
-    const finalFormData = {
-      ...formData,
-      categoryBreadcrumb: categoryNames.join(' > ')
-    };
+    // Con el modelo unificado, ya no necesitamos construir breadcrumb manualmente
+    const finalFormData = formData;
     
     onSave(finalFormData);
   };
 
-  const renderSubcategoryOptions = (subcats: any[], level = 0) => {
-    return subcats.map(subcat => (
-      <React.Fragment key={subcat._id}>
-        <option value={subcat.slug}>
-          {'  '.repeat(level)} {subcat.name}
-        </option>
-        {subcat.children && renderSubcategoryOptions(subcat.children, level + 1)}
-      </React.Fragment>
-    ));
-  };
+  // Función helper para renderizar opciones de categorías (obsoleta - removida)
 
   return (
     <div className="w-full">
@@ -627,88 +503,89 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
         </div>
 
         {/* Información básica */}
-        <div className="bg-gray-50/50 rounded-2xl p-6 border border-gray-100">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
-            <div className="w-2 h-6 bg-gradient-to-b from-blue-500 to-blue-600 rounded-full mr-3"></div>
-            Información Básica
-          </h3>
+        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <div className="flex items-center mb-6">
+            <div className="w-1 h-6 bg-blue-500 rounded-full mr-3"></div>
+            <h3 className="text-lg font-semibold text-gray-900">
+              Información Básica
+            </h3>
+          </div>
+          <div className="space-y-4">
           
-          {/* SKU Section - Destacado */}
-          <div className="bg-gray-50 p-4 rounded-lg border-2 border-gray-200 mb-6">
-            <label className="block text-sm font-semibold text-gray-800 mb-2">
-              <span className="text-red-600">*</span> SKU (Código de Producto)
+
+
+          {/* Nombre - PRIMERO */}
+          <div className="space-y-2">
+            <label className="block text-sm font-medium text-gray-700">
+              <span className="text-red-600">*</span> Nombre del Producto
+            </label>
+            <input
+              type="text"
+              value={formData.name}
+              onChange={(e) => handleInputChange('name', e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+              placeholder="Ej: Tubería PVC 110mm"
+              required
+            />
+          </div>
+          
+          {/* SKU - SEGUNDO */}
+          <div className="mt-4 space-y-2">
+            <label className="block text-sm font-medium text-gray-700">
+              <span className="text-red-600">*</span> SKU
             </label>
             <input
               type="text"
               value={formData.sku}
               onChange={(e) => handleInputChange('sku', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 font-mono text-lg"
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
               placeholder="Ej: PROD-001"
               required
             />
           </div>
-
-          {/* Información Básica */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="block text-sm font-semibold text-gray-800">
-                <span className="text-red-600">*</span> Nombre del Producto
-              </label>
-              <input
-                type="text"
-                value={formData.name}
-                onChange={(e) => handleInputChange('name', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white"
-                placeholder="Ej: Tubería PVC 110mm"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="block text-sm font-semibold text-gray-800">
-                Marca
-              </label>
-              <select
-                value={formData.brandSlug}
-                onChange={(e) => handleBrandChange(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white"
-              >
-                <option value="">Seleccionar marca</option>
-                {Array.isArray(availableBrands) && availableBrands.map((brand) => (
-                  <option key={brand._id} value={brand.slug}>
-                    {brand.name}
-                  </option>
-                ))}
-              </select>
-            </div>
+          
+          {/* Marca - TERCERO */}
+          <div className="mt-4 space-y-2">
+            <label className="block text-sm font-medium text-gray-700">
+              Marca
+            </label>
+            <select
+              value={formData.brandSlug}
+              onChange={(e) => handleBrandChange(e.target.value)}
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">Seleccionar marca</option>
+              {Array.isArray(availableBrands) && availableBrands.map((brand) => (
+                <option key={brand._id} value={brand.slug}>
+                  {brand.name}
+                </option>
+              ))}
+            </select>
           </div>
 
-          {/* Categorización Jerárquica */}
+          {/* Categoría - Jerárquica Horizontal */}
           <div className="mt-6">
-            <h4 className="text-md font-semibold text-gray-800 mb-4">
-              <span className="text-red-600">*</span> Categorías
-            </h4>
-            
-            {/* Renderizar niveles de categoría */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {categoryHierarchy.map((levelCategories, level) => {
-                const currentValue = selectedCategories[level] || '';
-                
+            <label className="block text-sm font-medium text-gray-700 mb-3">
+              <span className="text-red-600">*</span> Categoría
+            </label>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              {categoryLevels.map((levelCategories, level) => {
+                if (!levelCategories?.length) return null;
+                const labels = ['Categoría Principal', 'Subcategoría 1', 'Subcategoría 2', 'Subcategoría 3', 'Subcategoría 4'];
                 return (
-                  <div key={level} className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">
-                      {level === 0 ? 'Categoría Principal' : `Subcategoría Nivel ${level}`}
+                  <div key={level} className="space-y-1">
+                    <label className="block text-xs text-gray-500">
+                      {labels[level] || `Subcategoría ${level}`}
                     </label>
                     <select
-                      value={currentValue}
-                      onChange={(e) => handleCategorySelection(e.target.value, level)}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      value={selectedPath[level] || ''}
+                      onChange={(e) => handleLevelSelection(e.target.value, level)}
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 text-sm"
                       required={level === 0}
                     >
-                      <option value="">
-                        {level === 0 ? 'Seleccionar categoría' : 'Seleccionar subcategoría'}
-                      </option>
+                      <option value="">Seleccionar</option>
                       {levelCategories.map((category: any) => (
-                        <option key={category._id} value={category.slug}>
+                        <option key={category._id} value={category._id}>
                           {category.name}
                         </option>
                       ))}
@@ -718,24 +595,27 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
               })}
             </div>
           </div>
+          </div>
         </div>
 
         {/* Descripción */}
-        <div className="bg-gray-50/50 rounded-2xl p-6 border border-gray-100">
-          <h3 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
-            <div className="w-2 h-6 bg-gradient-to-b from-green-500 to-green-600 rounded-full mr-3"></div>
-            Descripción
-          </h3>
+        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+          <div className="flex items-center mb-4">
+            <div className="w-1 h-6 bg-green-500 rounded-full mr-3"></div>
+            <h3 className="text-lg font-semibold text-gray-900">
+              Descripción
+            </h3>
+          </div>
           <div className="space-y-2">
-            <label className="block text-sm font-semibold text-gray-800">
+            <label className="block text-sm font-medium text-gray-700">
               Descripción del Producto
             </label>
             <textarea
               value={formData.description}
               onChange={(e) => handleInputChange('description', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white resize-none"
-              rows={4}
-              placeholder="Describe las características y beneficios del producto..."
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500"
+              rows={3}
+              placeholder="Descripción del producto..."
             />
           </div>
         </div>

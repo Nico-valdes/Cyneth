@@ -14,6 +14,8 @@ export async function GET(request) {
     // Obtener parámetros de la URL
     const { searchParams } = new URL(request.url);
     const categorySlug = searchParams.get('category');
+    const type = searchParams.get('type');
+    const hierarchical = searchParams.get('hierarchical');
     const sync = searchParams.get('sync');
     
     let data = {};
@@ -24,14 +26,32 @@ export async function GET(request) {
     }
     
     if (categorySlug) {
-      // Obtener subcategorías de una categoría específica
-      const subcategories = await categoryService.getSubcategories(categorySlug);
+      // Obtener subcategorías jerárquicas de una categoría específica
+      const hierarchicalTree = await categoryService.getHierarchicalTree(categorySlug);
       const category = await categoryService.getBySlug(categorySlug);
       data = { 
         category: category ? category.name : categorySlug, 
-        subcategories,
+        subcategories: hierarchicalTree,
         categoryInfo: category
       };
+    } else if (type === 'main' && hierarchical === 'true') {
+      // Obtener categorías principales con jerarquía completa
+      const mainCategories = await categoryService.getMainCategories();
+      const categoriesWithHierarchy = [];
+      
+      for (const category of mainCategories) {
+        const hierarchicalTree = await categoryService.getHierarchicalTree(category.slug);
+        categoriesWithHierarchy.push({
+          ...category,
+          children: hierarchicalTree
+        });
+      }
+      
+      data = { categories: categoriesWithHierarchy };
+    } else if (type === 'main') {
+      // Solo categorías principales
+      const categories = await categoryService.getMainCategories();
+      data = { categories };
     } else {
       // Obtener todas las categorías
       const categories = await categoryService.getAll();
