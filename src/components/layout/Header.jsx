@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import Image from 'next/image'
 import logo from "../../../public/Cyneth-logo.png"
+import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
 
 const navLinks = [
   { href: '/catalogo', label: 'Catálogo' },
@@ -233,17 +234,22 @@ export default function Header() {
                               className="flex items-center p-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0 transition-colors duration-200"
                             >
                               <div className="relative w-12 h-12 mr-3 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
-                                {product.defaultImage || (product.colorVariants && product.colorVariants[0]?.image) ? (
-                                  <img
-                                    src={product.defaultImage || product.colorVariants[0]?.image}
-                                    alt={product.name}
-                                    className="object-contain w-full h-full p-1"
-                                  />
-                                ) : (
-                                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                                    <Search size={16} className="text-gray-400" />
-                                  </div>
-                                )}
+                                {(() => {
+                                  const mainImage = getMainImage(product);
+                                  const optimizedImage = mainImage ? getOptimizedImageUrl(mainImage) : null;
+                                  
+                                  return optimizedImage ? (
+                                    <img
+                                      src={optimizedImage}
+                                      alt={product.name}
+                                      className="object-contain w-full h-full p-1"
+                                    />
+                                  ) : (
+                                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                                      <Search size={16} className="text-gray-400" />
+                                    </div>
+                                  );
+                                })()}
                               </div>
                               <div className="flex-1 min-w-0">
                                 <h4 className="text-sm font-medium text-gray-900 truncate mb-1">

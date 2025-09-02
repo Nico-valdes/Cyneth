@@ -357,7 +357,10 @@ export default function CatalogFilters({
                 type="radio"
                 name="brand"
                 checked={selectedBrand === ''}
-                onChange={() => onBrandChange('')}
+                onChange={() => {
+                  console.log('🏷️ Limpiando filtro de marca')
+                  onBrandChange('')
+                }}
                 className="w-4 h-4 text-red-600 border-gray-300 focus:ring-red-500 mr-3"
               />
               <span className={`text-sm transition-colors ${
@@ -372,12 +375,15 @@ export default function CatalogFilters({
                 <input
                   type="radio"
                   name="brand"
-                  checked={selectedBrand === brand.slug}
-                  onChange={() => onBrandChange(brand.slug)}
+                  checked={selectedBrand === brand.name}
+                  onChange={() => {
+                    console.log('🏷️ Cambiando marca a:', brand.name)
+                    onBrandChange(brand.name)
+                  }}
                   className="w-4 h-4 text-red-600 border-gray-300 focus:ring-red-500 mr-3"
                 />
                 <span className={`text-sm transition-colors ${
-                  selectedBrand === brand.slug ? 'text-red-600 font-medium' : 'text-gray-600'
+                  selectedBrand === brand.name ? 'text-red-600 font-medium' : 'text-gray-600'
                 }`}>
                   {brand.name}
                 </span>

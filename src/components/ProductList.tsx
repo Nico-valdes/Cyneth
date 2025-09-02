@@ -216,35 +216,6 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     })
   }
 
-  // Obtener imagen principal del producto
-  const getMainImage = (product: Product) => {
-    console.log('getMainImage llamado para:', product.name);
-    console.log('  defaultImage:', product.defaultImage);
-    console.log('  colorVariants:', product.colorVariants);
-    console.log('  defaultImage length:', product.defaultImage?.length);
-    console.log('  defaultImage truthy:', !!product.defaultImage);
-    
-    // Si tiene variantes de color, mostrar la imagen de la primera variante activa
-    if (product.colorVariants && product.colorVariants.length > 0) {
-      const activeVariant = product.colorVariants.find(variant => variant.active)
-      if (activeVariant && activeVariant.image) {
-        const optimizedUrl = getOptimizedImageUrl(activeVariant.image, 300, 200);
-        console.log('  Retornando imagen de variante (optimizada):', optimizedUrl);
-        return optimizedUrl;
-      }
-    }
-    
-    // Si no hay variantes de color, usar la imagen por defecto
-    if (product.defaultImage && product.defaultImage.trim() !== '') {
-      const optimizedUrl = getOptimizedImageUrl(product.defaultImage, 300, 200);
-      console.log('  Retornando defaultImage (optimizada):', optimizedUrl);
-      return optimizedUrl;
-    }
-    
-    console.log('  No hay imagen disponible');
-    return null
-  }
-
   // Obtener todas las variantes de color activas
   const getActiveColorVariants = (product: Product) => {
     return product.colorVariants?.filter(variant => variant.active) || []
@@ -450,7 +421,8 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
                 <td className="px-4 py-3 whitespace-nowrap">
                   <div className="flex-shrink-0 h-12 w-12 relative">
                     {(() => {
-                      const mainImage = getMainImage(product);
+                      const rawMainImage = getMainImage(product);
+                      const mainImage = rawMainImage ? getOptimizedImageUrl(rawMainImage, 300, 200) : null;
                       console.log(`Renderizando imagen para ${product.name}:`, mainImage);
                       
                       if (mainImage) {

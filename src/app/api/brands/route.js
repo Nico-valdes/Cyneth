@@ -104,9 +104,8 @@ export async function DELETE(request) {
     // Crear instancia del servicio
     const brandService = new BrandService(db);
     
-    // Obtener ID del query parameter
-    const { searchParams } = new URL(request.url);
-    const id = searchParams.get('id');
+    // Obtener ID del body
+    const { id } = await request.json();
     
     // Validar ID
     if (!id) {

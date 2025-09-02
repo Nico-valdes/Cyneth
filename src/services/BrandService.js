@@ -115,7 +115,7 @@ class BrandService {
   }
 
   // Actualizar marca
-  async update(slug, updateData) {
+  async update(id, updateData) {
     try {
       const update = {
         ...updateData,
@@ -127,7 +127,7 @@ class BrandService {
       }
 
       const result = await this.collection.updateOne(
-        { slug },
+        { _id: new ObjectId(id) },
         { $set: update }
       );
 
@@ -139,10 +139,10 @@ class BrandService {
   }
 
   // Eliminar marca (soft delete)
-  async delete(slug) {
+  async delete(id) {
     try {
       const result = await this.collection.updateOne(
-        { slug },
+        { _id: new ObjectId(id) },
         { $set: { active: false, updatedAt: new Date() } }
       );
 

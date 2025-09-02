@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useSearchParams, useRouter } from 'next/navigation'
 import { Search, Filter, Grid, List, ChevronDown, X } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
 import CatalogFilters from '@/components/CatalogFilters'
@@ -50,6 +51,8 @@ interface Brand {
 }
 
 export default function CatalogoPage() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
   const [products, setProducts] = useState<Product[]>([])
   const [categories, setCategories] = useState<Category[]>([])
   const [allCategories, setAllCategories] = useState<Category[]>([])
@@ -62,6 +65,31 @@ export default function CatalogoPage() {
   const [showFilters, setShowFilters] = useState(false)
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [sortBy, setSortBy] = useState('name')
+
+  // Leer parámetros de URL y aplicar filtros automáticamente
+  useEffect(() => {
+    const category = searchParams.get('category')
+    const level = searchParams.get('level')
+    const brand = searchParams.get('brand')
+    const color = searchParams.get('color')
+    const search = searchParams.get('search')
+    
+    console.log('🔗 Parámetros de URL:', { category, level, brand, color, search })
+    
+    if (category) {
+      console.log('✅ Aplicando filtro de categoría:', category)
+      setSelectedCategory(category)
+    }
+    if (brand) {
+      setSelectedBrand(brand)
+    }
+    if (color) {
+      setSelectedColor(color)
+    }
+    if (search) {
+      setSearchTerm(search)
+    }
+  }, [searchParams])
 
   // Cargar datos iniciales
   useEffect(() => {
@@ -106,20 +134,27 @@ export default function CatalogoPage() {
     fetchData()
   }, [])
 
-  // Función para verificar si un producto coincide con la categoría seleccionada (jerarquía)
+    // Función para verificar si un producto coincide con la categoría seleccionada (jerarquía)
   const checkCategoryMatch = (productCategoryId: string, selectedCategoryId: string): boolean => {
-    if (productCategoryId === selectedCategoryId) {
-      return true;
-    }
+    // Si no hay categoría seleccionada, mostrar todos
+    if (!selectedCategoryId) return true;
     
-    // Buscar si la categoría del producto es descendiente de la seleccionada
-    let currentCategory = allCategories.find(cat => cat._id === productCategoryId);
+    // Si la categoría del producto coincide exactamente con la seleccionada
+    if (productCategoryId === selectedCategoryId) return true;
     
+    // Buscar la categoría del producto
+    const productCategory = allCategories.find(cat => cat._id === productCategoryId);
+    if (!productCategory) return false;
+    
+    // Verificar si es descendiente de la categoría seleccionada
+    let currentCategory = productCategory;
     while (currentCategory && currentCategory.parent) {
       if (currentCategory.parent === selectedCategoryId) {
         return true;
       }
-      currentCategory = allCategories.find(cat => cat._id === currentCategory!.parent);
+      const parentCategory = allCategories.find(cat => cat._id === currentCategory.parent);
+      if (!parentCategory) break;
+      currentCategory = parentCategory;
     }
     
     return false;
@@ -134,7 +169,9 @@ export default function CatalogoPage() {
 
     // Filtrado jerárquico: buscar en categoría y sus descendientes
     const matchesCategory = !selectedCategory || checkCategoryMatch(product.category, selectedCategory)
-    const matchesBrand = !selectedBrand || product.brandSlug === selectedBrand
+    console.log(`🔍 Producto ${product.name}: categoría=${product.category}, seleccionada=${selectedCategory}, coincide=${matchesCategory}`)
+    const matchesBrand = !selectedBrand || product.brand === selectedBrand
+    console.log(`🏷️ Producto ${product.name}: brand=${product.brand}, seleccionada=${selectedBrand}, coincide=${matchesBrand}`)
     
     const matchesColor = !selectedColor || 
       (product.colorVariants && product.colorVariants.some(variant => 
@@ -342,7 +379,7 @@ export default function CatalogoPage() {
               )}
               {selectedBrand && (
                 <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-lg border border-gray-200">
-                  {brands.find(b => b.slug === selectedBrand)?.name}
+                  {selectedBrand}
                   <button onClick={() => setSelectedBrand('')} className="ml-2 hover:text-red-600 transition-colors">
                     <X className="w-3 h-3" />
                   </button>
