@@ -130,7 +130,7 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
                             e.stopPropagation();
                             setSelectedVariant(index);
                           }}
-                          className={`w-3 h-3 border transition-colors ${
+                          className={`w-3 h-3 border transition-colors cursor-pointer ${
                             selectedVariant === index 
                               ? 'border-red-600' 
                               : 'border-gray-300 hover:border-gray-400'
@@ -156,7 +156,7 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
   // Vista de grid (cuadrada) - Toda la tarjeta clickeable
   return (
     <Link href={`/productos/${product._id}`} className="block h-full">
-      <div className="bg-white border border-gray-200 overflow-hidden hover:border-gray-300 transition-colors group flex flex-col h-full cursor-pointer">
+      <div className="bg-white overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col h-full cursor-pointer">
         {/* Imagen cuadrada */}
         <div className="relative aspect-square bg-white overflow-hidden">
           {currentImage && !imageError ? (
@@ -164,45 +164,44 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
               src={currentImage}
               alt={product.name}
               fill
-              className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
               onError={() => setImageError(true)}
               priority={false}
               quality={85}
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-50">
+            <div className="w-full h-full flex items-center justify-center text-gray-300 bg-gray-50">
               <Tag className="w-12 h-12" />
             </div>
           )}
           
           {/* Badge destacado */}
           {product.featured && (
-            <div className="absolute top-2 left-2">
-              <span className="bg-red-600 text-white text-xs px-1.5 py-0.5">
-                Destacado
+            <div className="absolute top-3 left-3">
+              <span className="bg-black text-white text-xs px-2 py-1 font-light tracking-wide">
+                DESTACADO
               </span>
             </div>
           )}
         </div>
 
         {/* Información del producto */}
-        <div className="p-3 border-t border-gray-100 flex flex-col flex-1">
+        <div className="p-4 flex flex-col flex-1">
           {/* Título y datos básicos */}
-          <div className="mb-2">
-            <h3 className="font-medium text-gray-900 group-hover:text-red-600 transition-colors line-clamp-2 mb-1.5 leading-tight h-9 text-sm">
+          <div className="mb-3">
+            <h3 className="font-light text-gray-900 group-hover:text-black transition-colors line-clamp-2 mb-2 leading-tight text-sm tracking-wide">
               {product.name}
             </h3>
-            <div className="flex items-center justify-between text-xs text-gray-600">
-              <span>{product.brand}</span>
-              <span className="font-mono">{product.sku}</span>
+            <div className="flex items-center justify-between text-xs text-gray-500">
+              <span className="font-light uppercase tracking-wider">{product.brand}</span>
             </div>
           </div>
 
           {/* Variantes de color - altura fija */}
-          <div className="mb-3 h-4 flex items-center">
+          <div className="mb-4 h-4 flex items-center">
             {product.colorVariants && product.colorVariants.length > 0 ? (
-              <div className="flex gap-0.5">
-                {product.colorVariants.slice(0, 5).map((variant, index) => (
+              <div className="flex gap-1">
+                {product.colorVariants.slice(0, 4).map((variant, index) => (
                   <button
                     key={index}
                     onClick={(e) => {
@@ -210,17 +209,17 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
                       e.stopPropagation();
                       setSelectedVariant(index);
                     }}
-                    className={`w-3 h-3 border transition-colors ${
+                    className={`w-4 h-4 transition-all duration-200 cursor-pointer ${
                       selectedVariant === index 
-                        ? 'border-red-600' 
-                        : 'border-gray-300 hover:border-gray-400'
+                        ? 'ring-2 ring-black ring-offset-1' 
+                        : 'hover:ring-1 hover:ring-gray-300 hover:ring-offset-1'
                     }`}
                     style={{ backgroundColor: variant.colorCode }}
                     title={variant.colorName}
                   />
                 ))}
-                {product.colorVariants.length > 5 && (
-                  <span className="text-xs text-gray-500 ml-1">+{product.colorVariants.length - 5}</span>
+                {product.colorVariants.length > 4 && (
+                  <span className="text-xs text-gray-400 ml-2 font-light">+{product.colorVariants.length - 4}</span>
                 )}
               </div>
             ) : (
@@ -228,11 +227,10 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
             )}
           </div>
 
-          {/* Indicador visual de acción */}
-          <div className="mt-auto">
-            <div className="w-full text-center px-3 py-1.5 bg-red-600 text-white text-xs group-hover:bg-red-700 transition-colors">
-              Ver Detalles
-            </div>
+          {/* Línea animada */}
+          <div className="mt-auto relative overflow-hidden">
+            <div className="w-full h-px bg-gray-200"></div>
+            <div className="absolute top-0 left-0 h-px bg-black w-0 group-hover:w-full transition-all duration-500 ease-out"></div>
           </div>
         </div>
       </div>

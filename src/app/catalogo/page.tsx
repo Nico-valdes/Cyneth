@@ -225,16 +225,15 @@ function CatalogoContent() {
   }
 
   return (
-    <>
+    <div className="min-h-screen bg-white">
       <Header />
-      <div className="min-h-screen bg-white">
       {/* Header del catálogo */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="mb-8">
-            <h1 className="text-3xl font-light text-gray-900 mb-2">Catálogo</h1>
-            <p className="text-gray-600">
-              Productos de calidad profesional
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="py-16">
+            <h1 className="text-4xl font-light text-gray-900 tracking-wide uppercase text-center">Catálogo</h1>
+            <p className="mt-6 text-gray-500 text-center font-light tracking-wide max-w-2xl mx-auto">
+              Descubre nuestra colección cuidadosamente seleccionada
             </p>
           </div>
           
@@ -257,7 +256,7 @@ function CatalogoContent() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="flex-1 px-3 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors text-base"
+                className="flex-1 px-3 py-3 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors text-base cursor-pointer"
               >
                 <option value="name">Alfabético</option>
                 <option value="brand">Por Marca</option>
@@ -268,7 +267,7 @@ function CatalogoContent() {
               <div className="flex border border-gray-300 rounded-lg overflow-hidden">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-3 transition-colors ${
+                  className={`p-3 transition-colors cursor-pointer ${
                     viewMode === 'grid' 
                       ? 'bg-red-600 text-white' 
                       : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
@@ -278,7 +277,7 @@ function CatalogoContent() {
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-3 transition-colors ${
+                  className={`p-3 transition-colors cursor-pointer ${
                     viewMode === 'list' 
                       ? 'bg-red-600 text-white' 
                       : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
@@ -290,7 +289,7 @@ function CatalogoContent() {
               
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className="relative flex items-center px-4 py-3 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors"
+                className="relative flex items-center px-4 py-3 bg-gray-900 text-white rounded-lg hover:bg-red-600 transition-colors cursor-pointer"
               >
                 <Filter className="w-4 h-4 mr-2" />
                 Filtros
@@ -308,55 +307,58 @@ function CatalogoContent() {
             </div>
           </div>
           
-          {/* Desktop - Diseño original mejorado */}
-          <div className="hidden lg:flex lg:items-center lg:justify-between gap-6">
-            <div className="text-sm text-gray-500">
-              <span className="font-medium text-gray-900">{sortedProducts.length}</span> producto{sortedProducts.length !== 1 ? 's' : ''}
+          {/* Desktop - Diseño contemporáneo */}
+          <div className="hidden lg:flex lg:items-center lg:justify-between gap-8 py-6">
+            <div className="text-sm text-gray-400 font-light tracking-wide">
+              <span className="font-medium text-black">{sortedProducts.length}</span> productos
             </div>
             
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-6">
               {/* Búsqueda desktop */}
               <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300 w-4 h-4" />
                 <input
                   type="text"
-                  placeholder="Buscar productos..."
+                  placeholder="Buscar..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors w-80"
+                  className="pl-12 pr-4 py-3 border-0 border-b border-gray-200 bg-transparent focus:border-black focus:outline-none transition-all duration-300 w-72 text-sm font-light tracking-wide placeholder-gray-400"
                 />
               </div>
 
               {/* Ordenar */}
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="px-3 py-2 border border-gray-300 rounded-lg bg-white focus:ring-1 focus:ring-red-500 focus:border-red-500 transition-colors appearance-none cursor-pointer"
-              >
-                <option value="name">Alfabético</option>
-                <option value="brand">Por Marca</option>
-                <option value="newest">Más Recientes</option>
-                <option value="oldest">Más Antiguos</option>
-              </select>
+              <div className="relative">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="px-4 py-3 border-0 border-b border-gray-200 bg-transparent focus:border-black focus:outline-none transition-all duration-300 appearance-none cursor-pointer text-sm font-light tracking-wide text-gray-700 pr-8"
+                >
+                  <option value="name">Alfabético</option>
+                  <option value="brand">Por Marca</option>
+                  <option value="newest">Más Recientes</option>
+                  <option value="oldest">Más Antiguos</option>
+                </select>
+                <ChevronDown className="absolute right-0 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+              </div>
 
               {/* Vista */}
-              <div className="flex border border-gray-300 rounded-lg overflow-hidden">
+              <div className="flex border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 transition-colors ${
+                  className={`p-3 transition-all duration-200 cursor-pointer ${
                     viewMode === 'grid' 
-                      ? 'bg-red-600 text-white' 
-                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-400 hover:text-black hover:bg-gray-50'
                   }`}
                 >
                   <Grid className="w-4 h-4" />
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`p-2 transition-colors ${
+                  className={`p-3 transition-all duration-200 border-l border-gray-200 cursor-pointer ${
                     viewMode === 'list' 
-                      ? 'bg-red-600 text-white' 
-                      : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                      ? 'bg-black text-white' 
+                      : 'text-gray-400 hover:text-black hover:bg-gray-50'
                   }`}
                 >
                   <List className="w-4 h-4" />
@@ -367,35 +369,35 @@ function CatalogoContent() {
 
           {/* Filtros activos - Solo desktop */}
           {hasActiveFilters && (
-            <div className="hidden lg:flex mt-6 flex-wrap items-center gap-2">
-              <span className="text-sm text-gray-500">Filtros:</span>
+            <div className="hidden lg:flex mt-8 flex-wrap items-center gap-3 pb-6 border-b border-gray-100">
+              <span className="text-xs text-gray-400 font-light tracking-wider uppercase">Filtros aplicados:</span>
               {selectedCategory && (
-                <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-lg border border-gray-200">
+                <span className="inline-flex items-center px-4 py-2 bg-gray-50 text-gray-900 text-sm font-light tracking-wide border border-gray-200">
                   {allCategories.find(c => c._id === selectedCategory)?.name}
-                  <button onClick={() => setSelectedCategory('')} className="ml-2 hover:text-red-600 transition-colors">
+                  <button onClick={() => setSelectedCategory('')} className="ml-3 hover:text-black transition-colors cursor-pointer">
                     <X className="w-3 h-3" />
                   </button>
                 </span>
               )}
               {selectedBrand && (
-                <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-lg border border-gray-200">
+                <span className="inline-flex items-center px-4 py-2 bg-gray-50 text-gray-900 text-sm font-light tracking-wide border border-gray-200">
                   {selectedBrand}
-                  <button onClick={() => setSelectedBrand('')} className="ml-2 hover:text-red-600 transition-colors">
+                  <button onClick={() => setSelectedBrand('')} className="ml-3 hover:text-black transition-colors cursor-pointer">
                     <X className="w-3 h-3" />
                   </button>
                 </span>
               )}
               {selectedColor && (
-                <span className="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-lg border border-gray-200">
+                <span className="inline-flex items-center px-4 py-2 bg-gray-50 text-gray-900 text-sm font-light tracking-wide border border-gray-200">
                   {selectedColor}
-                  <button onClick={() => setSelectedColor('')} className="ml-2 hover:text-red-600 transition-colors">
+                  <button onClick={() => setSelectedColor('')} className="ml-3 hover:text-black transition-colors cursor-pointer">
                     <X className="w-3 h-3" />
                   </button>
                 </span>
               )}
               <button
                 onClick={clearFilters}
-                className="text-sm text-red-600 hover:text-red-800 underline"
+                className="text-xs text-gray-500 hover:text-black font-light tracking-wider uppercase transition-colors duration-200 ml-2 cursor-pointer"
               >
                 Limpiar todos
               </button>
@@ -405,21 +407,32 @@ function CatalogoContent() {
       </div>
 
       {/* Contenido principal */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="flex gap-16">
           {/* Sidebar de filtros */}
-          <div className="hidden lg:block w-64 flex-shrink-0">
-            <CatalogFilters
-              categories={allCategories}
-              brands={brands}
-              colors={availableColors}
-              selectedCategory={selectedCategory}
-              selectedBrand={selectedBrand}
-              selectedColor={selectedColor}
-              onCategoryChange={setSelectedCategory}
-              onBrandChange={setSelectedBrand}
-              onColorChange={setSelectedColor}
-            />
+          <div className="hidden lg:block w-80 flex-shrink-0">
+            <div className="bg-white p-8 sticky top-8">
+              <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
+                <h3 className="text-lg font-light text-gray-900 tracking-wide uppercase">Filtros</h3>
+                <button
+                  onClick={clearFilters}
+                  className="text-xs text-gray-500 hover:text-black font-light tracking-wide transition-colors duration-200 uppercase cursor-pointer"
+                >
+                  Limpiar
+                </button>
+              </div>
+              <CatalogFilters
+                categories={allCategories}
+                brands={brands}
+                colors={availableColors}
+                selectedCategory={selectedCategory}
+                selectedBrand={selectedBrand}
+                selectedColor={selectedColor}
+                onCategoryChange={setSelectedCategory}
+                onBrandChange={setSelectedBrand}
+                onColorChange={setSelectedColor}
+              />
+            </div>
           </div>
 
           {/* Sidebar de filtros - Móvil rediseñado */}
@@ -427,7 +440,7 @@ function CatalogoContent() {
             <div className="lg:hidden fixed inset-0 z-50">
               {/* Overlay */}
               <div 
-                className="absolute inset-0 bg-black bg-opacity-50"
+                className="absolute inset-0 bg-black bg-opacity-50 cursor-pointer"
                 onClick={() => setShowFilters(false)}
               ></div>
               
@@ -446,7 +459,7 @@ function CatalogoContent() {
                   </div>
                   <button 
                     onClick={() => setShowFilters(false)}
-                    className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                    className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
                   >
                     <X className="w-5 h-5 text-gray-500" />
                   </button>
@@ -473,14 +486,14 @@ function CatalogoContent() {
                     {hasActiveFilters && (
                       <button
                         onClick={clearFilters}
-                        className="flex-1 px-4 py-3 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                        className="flex-1 px-4 py-3 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
                       >
                         Limpiar todo
                       </button>
                     )}
                     <button
                       onClick={() => setShowFilters(false)}
-                      className="flex-1 px-4 py-3 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors"
+                      className="flex-1 px-4 py-3 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors cursor-pointer"
                     >
                       Ver {sortedProducts.length} producto{sortedProducts.length !== 1 ? 's' : ''}
                     </button>
@@ -493,26 +506,29 @@ function CatalogoContent() {
           {/* Grid de productos elegante */}
           <div className="flex-1">
             {sortedProducts.length === 0 ? (
-              <div className="text-center py-20 bg-white border border-gray-200">
-                <div className="max-w-md mx-auto">
-                  <h3 className="text-xl font-medium text-gray-900 mb-3">No se encontraron productos</h3>
-                  <p className="text-gray-600 mb-6">
-                    No hay productos que coincidan con los criterios de búsqueda actuales.
-                  </p>
-                  {hasActiveFilters && (
-                    <button 
-                      onClick={clearFilters}
-                      className="inline-block px-4 py-2 bg-red-600 text-white text-sm hover:bg-red-700 transition-colors"
-                    >
-                      Limpiar filtros
-                    </button>
-                  )}
+              <div className="text-center py-24">
+                <div className="text-gray-300 mb-8">
+                  <svg className="mx-auto h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2 2v-5m16 0h-2M4 13h2m13-8l-4 4m0 0l-4-4m4 4V3" />
+                  </svg>
                 </div>
+                <h3 className="text-xl font-light text-gray-900 mb-4 tracking-wide">No se encontraron productos</h3>
+                <p className="text-gray-500 mb-8 font-light tracking-wide">
+                  No hay productos que coincidan con los criterios de búsqueda actuales.
+                </p>
+                {hasActiveFilters && (
+                  <button 
+                    onClick={clearFilters}
+                    className="bg-black text-white px-8 py-3 font-light tracking-wide uppercase hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
+                  >
+                    Limpiar filtros
+                  </button>
+                )}
               </div>
             ) : (
               <div className={viewMode === 'grid' 
-                ? 'grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr'
-                : 'space-y-4'
+                ? 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 auto-rows-fr mt-12'
+                : 'space-y-12 mt-12'
               }>
                 {sortedProducts.map((product) => (
                   <ProductCard
@@ -528,9 +544,8 @@ function CatalogoContent() {
             )}
           </div>
         </div>
-        </div>
       </div>
-    </>
+    </div>
   )
 }
 
