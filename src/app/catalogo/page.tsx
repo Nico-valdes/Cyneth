@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Search, Filter, Grid, List, ChevronDown, X } from 'lucide-react'
 import ProductCard from '@/components/ProductCard'
@@ -50,7 +50,7 @@ interface Brand {
   slug: string
 }
 
-export default function CatalogoPage() {
+function CatalogoContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const [products, setProducts] = useState<Product[]>([])
@@ -528,8 +528,23 @@ export default function CatalogoPage() {
             )}
           </div>
         </div>
+        </div>
       </div>
-    </div>
     </>
+  )
+}
+
+export default function CatalogoPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Cargando catálogo...</p>
+        </div>
+      </div>
+    }>
+      <CatalogoContent />
+    </Suspense>
   )
 }
