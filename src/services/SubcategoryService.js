@@ -39,4 +39,3 @@ class SubcategoryService extends CategoryService {
 }
 
 module.exports = SubcategoryService;
-

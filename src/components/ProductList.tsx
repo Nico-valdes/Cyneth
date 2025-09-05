@@ -48,10 +48,12 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   
   // Filtros
   const [searchTerm, setSearchTerm] = useState('')
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedBrand, setSelectedBrand] = useState('')
-  const [showActiveOnly, setShowActiveOnly] = useState(true)
+  const [selectedStatus, setSelectedStatus] = useState('all')
+  const [showFeaturedOnly, setShowFeaturedOnly] = useState(false)
+  const [sortBy, setSortBy] = useState('name')
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc')
   
   // Paginación
   const [currentPage, setCurrentPage] = useState(1)
@@ -71,21 +73,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   // Ref para el input de búsqueda
   const searchInputRef = useRef<HTMLInputElement>(null)
 
-  // Debounce para búsqueda usando useCallback para mantener la referencia estable
-  const debouncedSearchUpdate = useCallback(
-    (term: string) => {
-      const timer = setTimeout(() => {
-        setDebouncedSearchTerm(term)
-      }, 300)
-      return () => clearTimeout(timer)
-    },
-    []
-  )
 
-  useEffect(() => {
-    const cleanup = debouncedSearchUpdate(searchTerm)
-    return cleanup
-  }, [searchTerm, debouncedSearchUpdate])
 
   // Cargar productos
   const fetchProducts = async () => {
@@ -99,32 +87,98 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
       })
       
       // Solo agregar parámetros que tienen valor
-      if (debouncedSearchTerm.trim()) params.append('search', debouncedSearchTerm.trim())
+      if (searchTerm.trim()) params.append('search', searchTerm.trim())
       if (selectedCategory) {
         // selectedCategory ya contiene el ID de la categoría
         params.append('category', selectedCategory)
       }
-      if (selectedBrand) params.append('brand', selectedBrand)
-      if (!showActiveOnly) params.append('active', 'false')
+      if (selectedBrand) {
+        console.log('🏷️ Filtrando por marca:', selectedBrand)
+        params.append('brand', selectedBrand)
+      }
+      if (selectedStatus !== 'all') params.append('active', selectedStatus === 'active' ? 'true' : 'false')
       
-      const response = await fetch(`/api/products?${params}`)
+      const url = `/api/products?${params}`
+      console.log('🌐 URL de la API:', url)
+      const response = await fetch(url)
       if (!response.ok) throw new Error('Error cargando productos')
       
       const data = await response.json()
       if (data.success) {
         console.log('📦 Productos recibidos de la API:', data.data.products);
+        
+        // Aplicar filtros en frontend para mayor robustez
+        let filteredProducts = data.data.products || []
+        
+        // Filtro por marca (robusto)
+        if (selectedBrand) {
+          filteredProducts = filteredProducts.filter((product: any) => 
+            product.brand && product.brand.toLowerCase() === selectedBrand.toLowerCase()
+          )
+          console.log(`🏷️ Filtrado por marca "${selectedBrand}":`, filteredProducts.length, 'productos')
+        }
+        
+        // Filtro por estado
+        if (selectedStatus !== 'all') {
+          const isActive = selectedStatus === 'active'
+          filteredProducts = filteredProducts.filter((product: any) => product.active === isActive)
+        }
+        
+        // Filtro por destacado
+        if (showFeaturedOnly) {
+          filteredProducts = filteredProducts.filter((product: any) => product.featured)
+        }
+        
         // Debug: verificar estructura de cada producto
-        data.data.products.forEach((product: any, index: number) => {
+        filteredProducts.forEach((product: any, index: number) => {
           console.log(`🔍 Producto ${index + 1}:`, {
             name: product.name,
+            brand: product.brand,
+            brandSlug: product.brandSlug,
             defaultImage: product.defaultImage,
             colorVariants: product.colorVariants,
             hasDefaultImage: !!product.defaultImage,
             hasColorVariants: !!(product.colorVariants && product.colorVariants.length > 0)
           });
         });
-        setProducts(data.data.products || [])
-        setTotalProducts(data.data.pagination.total || 0)
+        
+        // Aplicar ordenamiento
+        const sortedProducts = [...filteredProducts].sort((a, b) => {
+          let aValue: any, bValue: any
+          
+          switch (sortBy) {
+            case 'name':
+              aValue = a.name.toLowerCase()
+              bValue = b.name.toLowerCase()
+              break
+            case 'brand':
+              aValue = (a.brand || '').toLowerCase()
+              bValue = (b.brand || '').toLowerCase()
+              break
+            case 'createdAt':
+              aValue = new Date(a.createdAt).getTime()
+              bValue = new Date(b.createdAt).getTime()
+              break
+            case 'sku':
+              aValue = a.sku.toLowerCase()
+              bValue = b.sku.toLowerCase()
+              break
+            default:
+              aValue = a.name.toLowerCase()
+              bValue = b.name.toLowerCase()
+          }
+          
+          if (sortOrder === 'asc') {
+            return aValue < bValue ? -1 : aValue > bValue ? 1 : 0
+          } else {
+            return aValue > bValue ? -1 : aValue < bValue ? 1 : 0
+          }
+        })
+        
+        console.log(`🔄 Ordenamiento: ${sortBy} ${sortOrder}, ${sortedProducts.length} productos`)
+        
+        setProducts(sortedProducts)
+        setTotalProducts(sortedProducts.length)
       } else {
         throw new Error(data.error || 'Error en la respuesta')
       }
@@ -173,11 +227,17 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         
         // Verificar si es un array o tiene una estructura específica
         if (Array.isArray(brandsData)) {
-          setBrands(brandsData.map((brand: any) => brand.name))
+          const brandNames = brandsData.map((brand: any) => brand.name)
+          console.log('🏷️ Marcas cargadas (array):', brandNames)
+          setBrands(brandNames)
         } else if (brandsData.data && brandsData.data.brands && Array.isArray(brandsData.data.brands)) {
-          setBrands(brandsData.data.brands.map((brand: any) => brand.name))
+          const brandNames = brandsData.data.brands.map((brand: any) => brand.name)
+          console.log('🏷️ Marcas cargadas (data.brands):', brandNames)
+          setBrands(brandNames)
         } else if (brandsData.data && Array.isArray(brandsData.data)) {
-          setBrands(brandsData.data.map((brand: any) => brand.name))
+          const brandNames = brandsData.data.map((brand: any) => brand.name)
+          console.log('🏷️ Marcas cargadas (data):', brandNames)
+          setBrands(brandNames)
         } else {
           console.warn('Formato de marcas no reconocido:', brandsData)
           setBrands([])
@@ -195,12 +255,12 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
 
   useEffect(() => {
     fetchProducts()
-  }, [currentPage, debouncedSearchTerm, selectedCategory, selectedBrand, showActiveOnly])
+  }, [currentPage, searchTerm, selectedCategory, selectedBrand, selectedStatus, showFeaturedOnly])
 
   // Reset página al cambiar filtros
   useEffect(() => {
     setCurrentPage(1)
-  }, [debouncedSearchTerm, selectedCategory, selectedBrand, showActiveOnly])
+  }, [searchTerm, selectedCategory, selectedBrand, selectedStatus, showFeaturedOnly])
 
   // Calcular paginación
   const totalPages = Math.ceil(totalProducts / productsPerPage)
@@ -231,7 +291,10 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     setSearchTerm('')
     setSelectedCategory('')
     setSelectedBrand('')
-    setShowActiveOnly(true)
+    setSelectedStatus('all')
+    setShowFeaturedOnly(false)
+    setSortBy('name')
+    setSortOrder('asc')
     setCurrentPage(1)
   }
 
@@ -329,18 +392,18 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
           </button>
         </div>
 
-        {/* Filtros minimalistas */}
-        <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+        {/* Filtros Avanzados */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {/* Búsqueda */}
-          <div className="relative flex-1 max-w-md">
+          <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
             <input
               ref={searchInputRef}
               type="text"
-              placeholder="Buscar productos..."
+              placeholder="Buscar por nombre, SKU o descripción..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-white transition-colors"
+              className="w-full pl-9 pr-3 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white transition-all"
             />
           </div>
 
@@ -348,7 +411,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-white transition-colors min-w-[140px]"
+            className="px-3 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white transition-all"
           >
             <option value="">Todas las categorías</option>
             {mainCategories.map((category) => (
@@ -362,7 +425,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
           <select
             value={selectedBrand}
             onChange={(e) => setSelectedBrand(e.target.value)}
-            className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-1 focus:ring-red-500 focus:border-red-500 bg-white transition-colors min-w-[120px]"
+            className="px-3 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white transition-all"
           >
             <option value="">Todas las marcas</option>
             {brands.map((brand) => (
@@ -370,18 +433,100 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
             ))}
           </select>
 
+          {/* Filtro por estado */}
+          <select
+            value={selectedStatus}
+            onChange={(e) => setSelectedStatus(e.target.value)}
+            className="px-3 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white transition-all"
+          >
+            <option value="all">Todos los estados</option>
+            <option value="active">Solo activos</option>
+            <option value="inactive">Solo inactivos</option>
+          </select>
+
+          {/* Filtro por destacado */}
+          <div className="flex items-center gap-3">
+            <label className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showFeaturedOnly}
+                onChange={(e) => setShowFeaturedOnly(e.target.checked)}
+                className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500"
+              />
+              Solo destacados
+            </label>
+          </div>
+
+          {/* Controles de ordenamiento */}
+          <div className="flex items-center gap-2">
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              className="px-3 py-2.5 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-white transition-all"
+            >
+              <option value="name">Ordenar por nombre</option>
+              <option value="brand">Ordenar por marca</option>
+              <option value="createdAt">Ordenar por fecha</option>
+              <option value="sku">Ordenar por SKU</option>
+            </select>
+            
+            <button
+              onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
+              className="p-2.5 border border-gray-300 rounded-lg hover:bg-gray-50 transition-all"
+              title={sortOrder === 'asc' ? 'Ascendente' : 'Descendente'}
+            >
+              {sortOrder === 'asc' ? '↑' : '↓'}
+            </button>
+          </div>
+
           {/* Botón limpiar */}
-          {(searchTerm || selectedCategory || selectedBrand) && (
+          {(searchTerm || selectedCategory || selectedBrand || selectedStatus !== 'all' || showFeaturedOnly || sortBy !== 'name' || sortOrder !== 'asc') && (
             <button
               onClick={clearFilters}
-              className="px-3 py-2 text-sm text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-1"
+              className="px-4 py-2.5 text-sm text-red-600 hover:text-red-700 border border-red-300 rounded-lg hover:bg-red-50 transition-all flex items-center gap-2 font-medium"
             >
               <Filter size={14} />
-              Limpiar
+              Limpiar filtros
             </button>
           )}
         </div>
       </div>
+
+      {/* Indicador de filtros activos */}
+      {(searchTerm || selectedCategory || selectedBrand || selectedStatus !== 'all' || showFeaturedOnly || sortBy !== 'name' || sortOrder !== 'asc') && (
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2 text-sm text-blue-700">
+              <Filter size={16} />
+              <span className="font-medium">Filtros activos:</span>
+              {searchTerm && <span className="bg-blue-100 px-2 py-1 rounded">Búsqueda: "{searchTerm}"</span>}
+              {selectedCategory && (
+                <span className="bg-blue-100 px-2 py-1 rounded">
+                  Categoría: {mainCategories.find(c => c._id === selectedCategory)?.name}
+                </span>
+              )}
+              {selectedBrand && <span className="bg-blue-100 px-2 py-1 rounded">Marca: {selectedBrand}</span>}
+              {selectedStatus !== 'all' && (
+                <span className="bg-blue-100 px-2 py-1 rounded">
+                  Estado: {selectedStatus === 'active' ? 'Activos' : 'Inactivos'}
+                </span>
+              )}
+              {showFeaturedOnly && <span className="bg-blue-100 px-2 py-1 rounded">Solo destacados</span>}
+              {sortBy !== 'name' && (
+                <span className="bg-blue-100 px-2 py-1 rounded">
+                  Orden: {sortBy === 'brand' ? 'Marca' : sortBy === 'createdAt' ? 'Fecha' : 'SKU'} {sortOrder === 'asc' ? '↑' : '↓'}
+                </span>
+              )}
+            </div>
+            <button
+              onClick={clearFilters}
+              className="text-blue-600 hover:text-blue-800 text-sm font-medium underline"
+            >
+              Limpiar todos
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Tabla de productos - diseño compacto */}
       <div className="overflow-x-auto">
