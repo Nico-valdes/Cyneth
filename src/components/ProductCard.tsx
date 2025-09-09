@@ -156,7 +156,7 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
   // Vista de grid (cuadrada) - Toda la tarjeta clickeable
   return (
     <Link href={`/productos/${product._id}`} className="block h-full">
-      <div className="bg-white overflow-hidden hover:shadow-lg transition-all duration-300 group flex flex-col h-full cursor-pointer">
+      <div className="bg-white overflow-hidden transition-all duration-300 group flex flex-col h-full cursor-pointer">
         {/* Imagen cuadrada */}
         <div className="relative aspect-square bg-white overflow-hidden">
           {currentImage && !imageError ? (
@@ -164,7 +164,7 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
               src={currentImage}
               alt={product.name}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              className="object-cover  transition-transform duration-500"
               onError={() => setImageError(true)}
               priority={false}
               quality={85}
