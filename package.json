@@ -20,6 +20,7 @@
     "clean-seed:products": "node scripts/clean-and-seed-products.js"
   },
   "dependencies": {
+    "@types/node-fetch": "^2.6.13",
     "dotenv": "^17.2.1",
     "formidable": "^3.5.4",
     "framer-motion": "^12.23.12",
@@ -27,6 +28,7 @@
     "mongodb": "^6.18.0",
     "multer": "^2.0.2",
     "next": "15.4.6",
+    "node-fetch": "^3.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "xlsx": "^0.18.5"

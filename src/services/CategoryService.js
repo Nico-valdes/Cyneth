@@ -20,7 +20,7 @@ class CategoryService {
 
       // Auto-calcular level si no está definido
       if (categoryData.parent && !categoryData.level) {
-        const parent = await this.collection.findOne({ _id: ObjectId(categoryData.parent) });
+        const parent = await this.collection.findOne({ _id: new ObjectId(categoryData.parent) });
         if (parent) {
           categoryData.level = parent.level + 1;
         }
@@ -44,7 +44,7 @@ class CategoryService {
       updateData.updatedAt = new Date();
       
       const result = await this.collection.updateOne(
-        { _id: ObjectId(id) },
+        { _id: new ObjectId(id) },
         { $set: updateData }
       );
       
@@ -58,18 +58,18 @@ class CategoryService {
   async delete(id) {
     try {
       // Verificar que no tenga productos
-      const productCount = await this.productCollection.countDocuments({ category: ObjectId(id) });
+      const productCount = await this.productCollection.countDocuments({ category: new ObjectId(id) });
       if (productCount > 0) {
         throw new Error('No se puede eliminar una categoría que tiene productos asignados');
       }
 
       // Verificar que no tenga hijos
-      const childrenCount = await this.collection.countDocuments({ parent: ObjectId(id) });
+      const childrenCount = await this.collection.countDocuments({ parent: new ObjectId(id) });
       if (childrenCount > 0) {
         throw new Error('No se puede eliminar una categoría que tiene subcategorías');
       }
 
-      const result = await this.collection.deleteOne({ _id: ObjectId(id) });
+      const result = await this.collection.deleteOne({ _id: new ObjectId(id) });
       return result.deletedCount > 0;
     } catch (error) {
       console.error('Error eliminando categoría:', error);
@@ -90,7 +90,7 @@ class CategoryService {
 
   async getById(id) {
     try {
-      return await this.collection.findOne({ _id: ObjectId(id), active: true });
+      return await this.collection.findOne({ _id: new ObjectId(id), active: true });
     } catch (error) {
       console.error('Error obteniendo categoría por ID:', error);
       return null;
@@ -127,7 +127,7 @@ class CategoryService {
   async getDirectChildren(parentId) {
     try {
       return await this.collection.find({ 
-        parent: ObjectId(parentId), 
+        parent: new ObjectId(parentId), 
         active: true 
       }).sort({ order: 1, name: 1 }).toArray();
     } catch (error) {

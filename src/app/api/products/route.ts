@@ -20,8 +20,11 @@ export async function GET(request: Request) {
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '20');
     const skip = (page - 1) * limit;
-    const showAll = searchParams.get('showAll') === 'true'; // Parámetro temporal para debug
-    const active = searchParams.get('active') !== 'false'; // Por defecto true
+    const showAll = searchParams.get('showAll') === 'true';
+    const active = searchParams.get('active');
+    const featured = searchParams.get('featured') === 'true';
+    const sortBy = searchParams.get('sortBy') || 'createdAt';
+    const sortOrder = searchParams.get('sortOrder') || 'desc';
     
     // Construir filtros
     const filters: any = {};
@@ -29,14 +32,37 @@ export async function GET(request: Request) {
     if (subcategory) filters.subcategory = subcategory;
     if (brand) filters.brand = brand;
     if (search) filters.search = search;
-    if (showAll) filters.showAll = true; // Pasar el parámetro al servicio
-    if (!active) filters.showAll = true; // Si active es false, mostrar todos
+    if (featured) filters.featured = true;
+    if (showAll) filters.showAll = true;
     
-    // Opciones de consulta
+    // Manejar filtro de estado activo
+    if (active !== null) {
+      filters.active = active === 'true';
+    }
+    
+    // Construir objeto de ordenamiento
+    const sortObj: any = {};
+    switch (sortBy) {
+      case 'name':
+        sortObj.name = sortOrder === 'asc' ? 1 : -1;
+        break;
+      case 'brand':
+        sortObj.brand = sortOrder === 'asc' ? 1 : -1;
+        break;
+      case 'sku':
+        sortObj.sku = sortOrder === 'asc' ? 1 : -1;
+        break;
+      case 'createdAt':
+      default:
+        sortObj.createdAt = sortOrder === 'asc' ? 1 : -1;
+        break;
+    }
+    
+    // Opciones de consulta optimizadas
     const options = {
       limit,
       skip,
-      sort: { createdAt: -1 }
+      sort: sortObj
     };
     
     // Obtener productos (OPTIMIZADO)

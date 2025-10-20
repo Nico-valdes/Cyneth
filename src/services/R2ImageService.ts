@@ -51,9 +51,34 @@ export class R2ImageService {
   }
 
   /**
-   * Sube un buffer de imagen a R2
+   * Sube un buffer de imagen a R2 (método público)
    */
-  private async uploadToR2(fileName: string, buffer: ArrayBuffer, contentType: string): Promise<{ url: string }> {
+  async uploadBuffer(buffer: Buffer | ArrayBuffer, fileName: string, contentType: string): Promise<ImageUploadResult> {
+    try {
+      const uploadResult = await this.uploadToR2(fileName, buffer, contentType);
+      
+      return {
+        success: true,
+        url: uploadResult.url,
+        cloudflareUrl: uploadResult.url,
+        r2Url: uploadResult.url,
+        fileName: fileName,
+        size: buffer.byteLength || (buffer as Buffer).length,
+        contentType: contentType
+      };
+    } catch (error) {
+      console.error('❌ Error subiendo buffer a R2:', error);
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'Error desconocido'
+      };
+    }
+  }
+
+  /**
+   * Sube un buffer de imagen a R2 (método privado)
+   */
+  private async uploadToR2(fileName: string, buffer: ArrayBuffer | Buffer, contentType: string): Promise<{ url: string }> {
     // Usar la API de R2 de Cloudflare
     const r2ApiUrl = `https://api.cloudflare.com/client/v4/accounts/${this.accountId}/storage/buckets/${this.bucketName}/objects/${fileName}`;
     

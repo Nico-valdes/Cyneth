@@ -2,6 +2,7 @@ import { connectToDatabase } from '@/libs/mongoConnect';
 import Product from '@/models/Product';
 import Category from '@/models/Category';
 import Brand from '@/models/Brand';
+import { ImageDownloadService, ImageDownloadResult } from './ImageDownloadService';
 
 export interface ProductRow {
   name: string;
@@ -22,18 +23,9 @@ export interface ValidationResult {
 }
 
 export interface ProcessedProduct {
-  name: string;
-  category: string;
-  subcategory?: string;
-  brand?: string;
-  description?: string;
-  specifications?: any;
-  tags?: string[];
-  variations?: any[];
-  images?: any[];
-  active: boolean;
-  createdAt: Date;
-  updatedAt: Date;
+  product: any;
+  errors: string[];
+  warnings: string[];
 }
 
 export class ProductBulkService {
@@ -41,10 +33,12 @@ export class ProductBulkService {
   private productModel: Product;
   private categoryModel: Category;
   private brandModel: Brand;
+  private imageDownloadService: ImageDownloadService;
   private isInitialized: boolean = false;
 
   constructor() {
     // No inicializar aquí, se hará cuando se necesite
+    this.imageDownloadService = new ImageDownloadService();
   }
 
   private async ensureInitialized() {
@@ -145,6 +139,8 @@ export class ProductBulkService {
   public async transformRow(row: any[], headers: string[]): Promise<ProcessedProduct> {
     await this.ensureInitialized(); // Asegúrate de que los modelos estén inicializados
     const product: any = {};
+    const errors: string[] = [];
+    const warnings: string[] = [];
 
     // Mapear campos básicos usando los headers
     headers.forEach((header, index) => {
@@ -152,6 +148,70 @@ export class ProductBulkService {
         product[header] = row[index];
       }
     });
+
+    // Validaciones básicas
+    if (!product.name) {
+      errors.push('El nombre del producto es obligatorio');
+    }
+
+    if (!product.sku) {
+      product.sku = this.generateSKU(product.name, product.brand);
+      warnings.push(`SKU generado automáticamente: ${product.sku}`);
+    }
+
+    // Procesar atributos si existen
+    if (product.attributes && typeof product.attributes === 'string' && product.attributes.trim() !== '') {
+      try {
+        const attributesArray = product.attributes.split(';').map((attr: string) => {
+          const [name, value] = attr.split(':').map(s => s.trim());
+          return { name, value };
+        }).filter(attr => attr.name && attr.value);
+        
+        product.attributes = attributesArray;
+      } catch (error) {
+        warnings.push('Error procesando atributos');
+        product.attributes = [];
+      }
+    }
+
+    // Procesar variantes de color si existen
+    if (product.color_variants && typeof product.color_variants === 'string' && product.color_variants.trim() !== '') {
+      try {
+        const variantsArray = product.color_variants.split('|').map((variant: string) => {
+          const [colorName, colorCode, sku, image] = variant.split(':').map(s => s.trim());
+          return {
+            colorName,
+            colorCode: colorCode || '#000000',
+            sku: sku || this.generateColorSKU(colorName),
+            image: image || '',
+            active: true
+          };
+        }).filter(variant => variant.colorName);
+        
+        product.colorVariants = variantsArray;
+        
+        // Procesar imágenes de variantes si existen
+        for (const variant of variantsArray) {
+          if (variant.image && variant.image.trim() !== '') {
+            try {
+              const imageResult = await this.imageDownloadService.downloadAndUploadImage(variant.image, `${product.name}-${variant.colorName}`);
+              if (imageResult.success) {
+                variant.image = imageResult.url;
+              } else {
+                warnings.push(`No se pudo descargar imagen para variante ${variant.colorName}`);
+                variant.image = '';
+              }
+            } catch (error) {
+              warnings.push(`Error procesando imagen de variante ${variant.colorName}`);
+              variant.image = '';
+            }
+          }
+        }
+      } catch (error) {
+        warnings.push('Error procesando variantes de color');
+        product.colorVariants = [];
+      }
+    }
 
     // Procesar especificaciones de manera robusta
     if (product.specifications && typeof product.specifications === 'string' && product.specifications.trim() !== '') {
@@ -203,22 +263,63 @@ export class ProductBulkService {
       }
     }
 
-    // Procesar imágenes de manera robusta
+    // Procesar imágenes: descargar desde URLs externas y subir a Cloudflare
     if (product.images && typeof product.images === 'string' && product.images.trim() !== '') {
       try {
         const urls = product.images.split(',').map((url: string) => url.trim()).filter(url => url.length > 0);
+        console.log(`🖼️ Procesando ${urls.length} imágenes para producto: ${product.name}`);
+        
+        // Descargar y subir imágenes a Cloudflare
+        const imageResults = await this.imageDownloadService.downloadMultipleImages(urls, product.name);
+        
+        // Procesar resultados
+        const processedImages = [];
+        const imageErrors = [];
+        
+        for (let i = 0; i < imageResults.length; i++) {
+          const result = imageResults[i];
+          
+          if (result.success && result.cloudflareUrl) {
+            processedImages.push({
+              url: result.cloudflareUrl,
+              originalUrl: result.originalUrl,
+              alt: product.name || 'Producto',
+              priority: i,
+              size: result.size,
+              format: result.format
+            });
+          } else {
+            imageErrors.push({
+              originalUrl: result.originalUrl,
+              error: result.error
+            });
+            console.warn(`⚠️ Error procesando imagen ${result.originalUrl}: ${result.error}`);
+          }
+        }
+        
+        // Usar imágenes exitosas
+        product.images = processedImages;
+        
+        // Agregar errores de imágenes como metadatos
+        if (imageErrors.length > 0) {
+          product.imageErrors = imageErrors;
+        }
+        
+        console.log(`✅ Procesadas ${processedImages.length}/${urls.length} imágenes para: ${product.name}`);
+        
+      } catch (e) {
+        console.error(`❌ Error general procesando imágenes para ${product.name}:`, e);
+        // Si falla todo el procesamiento, guardar URLs originales como fallback
+        const urls = product.images.split(',').map((url: string) => url.trim()).filter(url => url.length > 0);
         product.images = urls.map((url: string, index: number) => ({
           url: url,
+          originalUrl: url,
           alt: product.name || 'Producto',
-          priority: index
+          priority: index,
+          isOriginalUrl: true // Marcar que es URL original, no de Cloudflare
         }));
-      } catch (e) {
-        // Si falla el procesamiento, guardar como imagen simple
-        product.images = [{
-          url: product.images,
-          alt: product.name || 'Producto',
-          priority: 0
-        }];
+        
+        product.imageProcessingError = e instanceof Error ? e.message : 'Error desconocido';
       }
     }
 
@@ -226,8 +327,13 @@ export class ProductBulkService {
     product.active = true;
     product.createdAt = new Date();
     product.updatedAt = new Date();
+    product.slug = this.generateSlug(product.name);
 
-    return product;
+    return {
+      product,
+      errors,
+      warnings
+    };
   }
 
   /**
@@ -401,10 +507,34 @@ export class ProductBulkService {
   /**
    * Genera un SKU único para el producto
    */
-  private generateSKU(name: string): string {
-    const timestamp = Date.now().toString(36);
-    const namePart = name.toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 8);
-    return `${namePart}-${timestamp}`;
+  private generateSKU(name: string, brand?: string): string {
+    const brandPrefix = brand ? brand.substring(0, 3).toUpperCase() : 'PRD';
+    const namePrefix = name.substring(0, 5).toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const timestamp = Date.now().toString(36).toUpperCase().substring(0, 4);
+    return `${brandPrefix}-${namePrefix}-${timestamp}`;
+  }
+
+  /**
+   * Genera SKU para variante de color
+   */
+  private generateColorSKU(colorName: string): string {
+    const colorPrefix = colorName.substring(0, 3).toUpperCase().replace(/[^A-Z0-9]/g, '');
+    const timestamp = Date.now().toString(36).toUpperCase().substring(0, 3);
+    return `${colorPrefix}-${timestamp}`;
+  }
+
+  /**
+   * Genera slug del producto
+   */
+  private generateSlug(name: string): string {
+    return name
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '');
   }
 
   /**

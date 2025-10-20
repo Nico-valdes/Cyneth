@@ -3,6 +3,18 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit, Trash2, Save, X, Package, FolderOpen, Check, ChevronDown, ChevronRight, Edit2, Folder, FileText, MoreHorizontal, ArrowRight, Home } from 'lucide-react';
 
+// Función para generar slug
+const generateSlug = (name: string) => {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '');
+};
+
 interface Category {
   _id: string;
   name: string;
@@ -27,11 +39,11 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
   const [hierarchicalCategories, setHierarchicalCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [editingId, setEditingId] = useState<string | null>(null);
-  const [newCategory, setNewCategory] = useState({ name: '', description: '', parent: '' });
-  const [editingCategory, setEditingCategory] = useState({ name: '', description: '', parent: '' });
+  const [newCategory, setNewCategory] = useState({ name: '', parent: '' });
+  const [editingCategory, setEditingCategory] = useState({ name: '', parent: '' });
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [addingSubcategoryTo, setAddingSubcategoryTo] = useState<string | null>(null);
-  const [newInlineCategory, setNewInlineCategory] = useState({ name: '', description: '' });
+  const [newInlineCategory, setNewInlineCategory] = useState({ name: '' });
 
   useEffect(() => {
     fetchCategories();
@@ -63,26 +75,33 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     if (!newCategory.name.trim()) return;
 
     try {
+      const categoryData = {
+        name: newCategory.name.trim(),
+        slug: generateSlug(newCategory.name.trim()),
+        parent: newCategory.parent || null,
+        level: newCategory.parent ? 1 : 0, // Se calculará automáticamente en el servidor
+        active: true
+      };
+
       const response = await fetch('/api/categories', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ 
-          name: newCategory.name.trim(),
-          description: newCategory.description.trim() || undefined,
-          parent: newCategory.parent || undefined
-        }),
+        body: JSON.stringify(categoryData),
       });
 
       if (response.ok) {
-        setNewCategory({ name: '', description: '', parent: '' });
+        setNewCategory({ name: '', parent: '' });
         fetchCategories();
       } else {
-        console.error('Error creando categoría');
+        const errorData = await response.json();
+        console.error('Error creando categoría:', errorData.error);
+        alert(`Error: ${errorData.error}`);
       }
     } catch (error) {
       console.error('Error creando categoría:', error);
+      alert('Error al crear la categoría');
     }
   };
 
@@ -90,28 +109,33 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     if (!editingCategory.name.trim()) return;
 
     try {
+      const updateData = {
+        id,
+        name: editingCategory.name.trim(),
+        slug: generateSlug(editingCategory.name.trim()),
+        parent: editingCategory.parent || null
+      };
+
       const response = await fetch('/api/categories', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ 
-          id, 
-          name: editingCategory.name.trim(),
-          description: editingCategory.description.trim() || undefined,
-          parent: editingCategory.parent || undefined
-        }),
+        body: JSON.stringify(updateData),
       });
 
       if (response.ok) {
         setEditingId(null);
-        setEditingCategory({ name: '', description: '', parent: '' });
+        setEditingCategory({ name: '', parent: '' });
         fetchCategories();
       } else {
-        console.error('Error actualizando categoría');
+        const errorData = await response.json();
+        console.error('Error actualizando categoría:', errorData.error);
+        alert(`Error: ${errorData.error}`);
       }
     } catch (error) {
       console.error('Error actualizando categoría:', error);
+      alert('Error al actualizar la categoría');
     }
   };
 
@@ -119,21 +143,20 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     if (!confirm('¿Estás seguro de que quieres eliminar esta categoría?')) return;
 
     try {
-      const response = await fetch('/api/categories', {
+      const response = await fetch(`/api/categories?id=${id}`, {
         method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id }),
       });
 
       if (response.ok) {
         fetchCategories();
       } else {
-        console.error('Error eliminando categoría');
+        const errorData = await response.json();
+        console.error('Error eliminando categoría:', errorData.error);
+        alert(`Error: ${errorData.error}`);
       }
     } catch (error) {
       console.error('Error eliminando categoría:', error);
+      alert('Error al eliminar la categoría');
     }
   };
 
@@ -151,30 +174,38 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     }
 
     try {
+      const categoryData = {
+        name: newInlineCategory.name.trim(),
+        slug: generateSlug(newInlineCategory.name.trim()),
+        parent: parentId || null,
+        active: true
+      };
+
       const response = await fetch('/api/categories', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: newInlineCategory.name.trim(),
-          description: newInlineCategory.description.trim() || undefined,
-          parent: parentId || undefined
-        })
+        body: JSON.stringify(categoryData)
       });
 
       if (response.ok) {
-        setNewInlineCategory({ name: '', description: '' });
+        setNewInlineCategory({ name: '' });
         setAddingSubcategoryTo(null);
         fetchCategories();
+      } else {
+        const errorData = await response.json();
+        console.error('Error creando categoría:', errorData.error);
+        alert(`Error: ${errorData.error}`);
       }
     } catch (error) {
       console.error('Error creando categoría:', error);
+      alert('Error al crear la categoría');
     }
   };
 
   // Función para cancelar la creación inline
   const cancelInlineCategory = () => {
     setAddingSubcategoryTo(null);
-    setNewInlineCategory({ name: '', description: '' });
+    setNewInlineCategory({ name: '' });
   };
 
 
@@ -182,7 +213,7 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
   // Función para iniciar la creación de subcategoría
   const startAddingSubcategory = (categoryId: string) => {
     setAddingSubcategoryTo(categoryId);
-    setNewInlineCategory({ name: '', description: '' });
+    setNewInlineCategory({ name: '' });
     
     // Expandir la categoría si no está expandida
     if (!expandedCategories.has(categoryId)) {
@@ -210,14 +241,13 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     setEditingId(category._id);
     setEditingCategory({ 
       name: category.name, 
-      description: category.description || '',
       parent: category.parent || ''
     });
   };
 
   const cancelEditing = () => {
     setEditingId(null);
-    setEditingCategory({ name: '', description: '', parent: '' });
+    setEditingCategory({ name: '', parent: '' });
   };
 
   // Funciones auxiliares para manejo de jerarquías
@@ -317,20 +347,12 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
     const isExpanded = expandedCategories.has(category._id);
     const hasChildren = childCategories.length > 0;
     
-    const paddingLeft = level * 16;
+    const paddingLeft = level * 20;
 
     return (
-      <div className="relative">
-        {/* Línea de conexión jerárquica */}
-        {level > 0 && (
-          <div 
-            className="absolute top-5 border-l border-slate-200" 
-            style={{ left: `${(level - 1) * 16 + 8}px`, height: '100%' }}
-          />
-        )}
-        
+      <div className="bg-white rounded-lg border border-gray-100 shadow-sm overflow-hidden">
         <div 
-          className="group hover:bg-slate-50 transition-colors rounded"
+          className="group hover:bg-gray-50/50 transition-colors"
           style={{ marginLeft: `${paddingLeft}px` }}
         >
           {editingId === category._id ? (
@@ -344,29 +366,37 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                     if (e.key === 'Enter') updateCategory(category._id);
                     if (e.key === 'Escape') cancelEditing();
                   }}
-                  className="w-full px-2 py-1 border border-slate-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm"
                   placeholder="Nombre de la categoría..."
                   autoFocus
                 />
-                <input
-                  type="text"
-                  value={editingCategory.description}
-                  onChange={(e) => setEditingCategory({ ...editingCategory, description: e.target.value })}
-                  className="w-full px-2 py-1 border border-slate-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                  placeholder="Descripción (opcional)..."
-                />
+                {/* Selector de categoría padre */}
+                <select
+                  value={editingCategory.parent}
+                  onChange={(e) => setEditingCategory({ ...editingCategory, parent: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm cursor-pointer"
+                >
+                  <option value="">Sin categoría padre (principal)</option>
+                  {hierarchyHelpers.getAvailableParentCategories(editingId || undefined).map((cat) => (
+                    <option key={cat._id} value={cat._id}>
+                      {hierarchyHelpers.getCategoryPath(cat._id)}
+                    </option>
+                  ))}
+                </select>
                 <div className="flex gap-2">
                   <button
                     onClick={() => updateCategory(category._id)}
-                    className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-xs font-medium"
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
                   >
-                    <Check size={12} /> Guardar
+                    <Check size={14} />
+                    Guardar
                   </button>
                   <button
                     onClick={cancelEditing}
-                    className="px-3 py-1 bg-slate-500 text-white rounded hover:bg-slate-600 transition-colors text-xs font-medium"
+                    className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
                   >
-                    <X size={12} /> Cancelar
+                    <X size={14} />
+                    Cancelar
                   </button>
                 </div>
               </div>
@@ -397,7 +427,7 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                   {/* Información de la categoría */}
                   <div className="flex items-center gap-3">
                     <h5 
-                      className={`font-medium text-slate-900 cursor-pointer hover:text-blue-600 transition-colors ${
+                      className={`font-medium text-gray-900 cursor-pointer hover:text-red-600 transition-colors ${
                         level === 0 ? 'text-base' : 'text-sm'
                       }`}
                       onClick={() => startEditing(category)}
@@ -405,12 +435,6 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                     >
                       {category.name}
                     </h5>
-                    
-                    {category.description && (
-                      <span className="text-xs text-slate-500 italic">
-                        {category.description}
-                      </span>
-                    )}
                     
                     {/* Métricas */}
                     <div className="flex items-center gap-2 text-xs text-slate-500">
@@ -465,40 +489,35 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
           <div className="mt-1" style={{ marginLeft: `${paddingLeft + 16}px` }}>
             {/* Formulario inline para nueva subcategoría */}
             {addingSubcategoryTo === category._id && (
-              <div className="px-3 py-2 bg-white border border-slate-200 rounded mb-2">
+              <div className="px-3 py-2 bg-white border border-gray-200 rounded-lg mb-2">
                 <div className="space-y-2">
                   <input
                     type="text"
                     placeholder="Nombre de la subcategoría..."
                     value={newInlineCategory.name}
                     onChange={(e) => setNewInlineCategory({ ...newInlineCategory, name: e.target.value })}
-                    className="w-full px-2 py-1 border border-slate-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                    className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm"
                     onKeyPress={(e) => {
                       if (e.key === 'Enter') createInlineCategory(category._id);
                       if (e.key === 'Escape') cancelInlineCategory();
                     }}
                     autoFocus
                   />
-                  <input
-                    type="text"
-                    placeholder="Descripción (opcional)..."
-                    value={newInlineCategory.description}
-                    onChange={(e) => setNewInlineCategory({ ...newInlineCategory, description: e.target.value })}
-                    className="w-full px-2 py-1 border border-slate-300 rounded focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-sm"
-                  />
                   <div className="flex gap-2">
                     <button
                       onClick={() => createInlineCategory(category._id)}
                       disabled={!newInlineCategory.name.trim()}
-                      className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:bg-slate-300 transition-colors text-xs font-medium"
+                      className="px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:bg-gray-300 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
                     >
-                      <Check size={12} /> Crear
+                      <Check size={14} />
+                      Crear
                     </button>
                     <button
                       onClick={cancelInlineCategory}
-                      className="px-3 py-1 bg-slate-500 text-white rounded hover:bg-slate-600 transition-colors text-xs font-medium"
+                      className="px-3 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
                     >
-                      <X size={12} /> Cancelar
+                      <X size={14} />
+                      Cancelar
                     </button>
                   </div>
                 </div>
@@ -535,72 +554,107 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
-      {/* Header */}
-      <div className="bg-white border-b border-slate-200 px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Folder className="h-6 w-6 text-blue-600" />
+    <div className="min-h-screen bg-white">
+      {/* Header limpio y minimalista */}
+      <div className="border-b border-gray-100">
+        <div className="px-8 py-6">
+          <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-xl font-semibold text-slate-900">Categorías</h1>
-              <p className="text-sm text-slate-500">Gestiona la estructura jerárquica de categorías</p>
+              <h1 className="text-2xl font-semibold text-gray-900">Categorías</h1>
+              <p className="text-gray-500 mt-1">Gestiona la estructura jerárquica de categorías ({allCategories.length} categorías)</p>
             </div>
-          </div>
           
-          {/* Formulario para nueva categoría principal */}
-          <div className="flex items-center gap-3">
-            <input
-              type="text"
-              placeholder="Nueva categoría principal..."
-              value={newCategory.name}
-              onChange={(e) => setNewCategory({ ...newCategory, name: e.target.value })}
-              className="px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm w-48"
-              onKeyPress={(e) => e.key === 'Enter' && createCategory()}
-            />
-            <input
-              type="text"
-              placeholder="Descripción (opcional)..."
-              value={newCategory.description}
-              onChange={(e) => setNewCategory({ ...newCategory, description: e.target.value })}
-              className="px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm w-48"
-            />
-            <button
-              onClick={createCategory}
-              disabled={!newCategory.name.trim()}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-sm font-medium transition-colors flex items-center gap-2"
+            <button 
+              onClick={() => {
+                // Expandir formulario de creación
+                const formSection = document.getElementById('category-creation-form');
+                if (formSection) {
+                  formSection.style.display = formSection.style.display === 'none' ? 'block' : 'none';
+                }
+              }}
+              className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
             >
-              <Plus className="h-4 w-4" />
-              Crear
+              <Plus size={18} />
+              Nueva Categoría
             </button>
           </div>
         </div>
       </div>
 
-      <div className="p-6">
-        {/* Lista de categorías jerárquicas */}
-        <div className="space-y-3">
-          {hierarchicalCategories.length > 0 ? (
-            <div className="bg-white rounded-lg border border-slate-200 overflow-hidden">
-              <div className="p-4">
-                <div className="space-y-2">
-                  {hierarchicalCategories.map((category) => (
-                    <CategoryItem 
-                      key={category._id}
-                      category={category} 
-                      level={0}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <FolderOpen className="h-16 w-16 mx-auto mb-4 text-slate-300" />
-              <h3 className="text-lg font-medium text-slate-900 mb-2">No hay categorías</h3>
-              <p className="text-slate-500">Crea tu primera categoría usando el formulario de arriba</p>
-            </div>
-          )}
+      {/* Formulario de creación flotante */}
+      <div id="category-creation-form" className="px-8 py-4 bg-gray-50 border-b border-gray-100" style={{display: 'none'}}>
+        <div className="max-w-4xl space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="Nombre de la categoría..."
+              value={newCategory.name}
+              onChange={(e) => setNewCategory({ ...newCategory, name: e.target.value })}
+              className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm"
+              onKeyPress={(e) => e.key === 'Enter' && createCategory()}
+            />
+            <select
+              value={newCategory.parent}
+              onChange={(e) => setNewCategory({ ...newCategory, parent: e.target.value })}
+              className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 text-sm cursor-pointer"
+            >
+              <option value="">Categoría principal</option>
+              {hierarchyHelpers.getAvailableParentCategories().map((cat) => (
+                <option key={cat._id} value={cat._id}>
+                  {hierarchyHelpers.getCategoryPath(cat._id)}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={createCategory}
+              disabled={!newCategory.name.trim()}
+              className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-sm font-medium transition-colors flex items-center gap-2 cursor-pointer"
+            >
+              <Plus className="h-4 w-4" />
+              Crear Categoría
+            </button>
+            <button
+              onClick={() => {
+                setNewCategory({ name: '', parent: '' });
+                document.getElementById('category-creation-form')!.style.display = 'none';
+              }}
+              className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm font-medium cursor-pointer"
+            >
+              Cancelar
+            </button>
+          </div>
         </div>
+      </div>
+
+      <div className="px-8 py-6">
+        {/* Lista de categorías jerárquicas */}
+        {hierarchicalCategories.length > 0 ? (
+          <div className="space-y-3">
+            {hierarchicalCategories.map((category) => (
+              <CategoryItem 
+                key={category._id}
+                category={category} 
+                level={0}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <div className="text-gray-300 mb-4">
+              <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 1v6" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 1v6" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-medium text-gray-900 mb-2">No hay categorías</h3>
+            <p className="text-gray-500 mb-6 max-w-sm mx-auto">
+              Comienza creando tu primera categoría para organizar tus productos.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

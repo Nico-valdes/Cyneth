@@ -100,30 +100,39 @@ export default function CleanHomepage() {
       <Header />
 
       {/* Hero Section with Responsive Videos */}
-      <section className="relative h-[80vh] overflow-hidden">
-        <div className="absolute inset-0">
-          {/* Video para desktop */}
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="hidden md:block w-full h-full object-cover"
-          >
-            <source src="/videos/loop-ferrettistore-home-2024.mp4" type="video/mp4" />
-          </video>
-          
-          {/* Video para móvil */}
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="block md:hidden w-full h-full object-cover"
-          >
-            <source src="/videos/loop-ferrettistore-2024-movil-home.mp4" type="video/mp4" />
-          </video>
-        </div>
+      <section className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
+        {/* Video para móvil - 4:3 (más alto, perfecto para móviles) */}
+        <video 
+          autoPlay
+          loop 
+          muted 
+          playsInline
+          className="block sm:hidden w-full h-full object-cover"
+        >
+          <source src="/videos/loop-ferrettistore-2024-movil-home.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Video para tablet - 16:9 (estándar de video) */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="hidden sm:block lg:hidden w-full h-full object-cover"
+        >
+          <source src="/videos/loop-ferrettistore-home-2024.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Video para desktop - 21:9 (ultra-wide cinematográfico) */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="hidden lg:block w-full h-full object-cover"
+        >
+          <source src="/videos/loop-ferrettistore-home-2024.mp4" type="video/mp4" />
+        </video>
       </section>
 
       {/* Featured Categories - Contemporary Layout */}
