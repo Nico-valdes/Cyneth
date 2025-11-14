@@ -5,12 +5,10 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import ProtectedRoute from '@/components/ProtectedRoute'
 import ProductList from '@/components/ProductList'
-import Statistics from '@/components/Statistics'
 import Image from 'next/image'
 import logo from "../../../public/Cyneth-logo.png"
 import { 
   Package, 
-  BarChart3,
   Tags,
   Award,
   LogOut,
@@ -80,13 +78,7 @@ export default function AdminPage() {
       href: '#brands',
       description: 'Gestionar fabricantes'
     },
-    { 
-      id: 'statistics', 
-      label: 'Analytics', 
-      icon: BarChart3, 
-      href: '#statistics',
-      description: 'Métricas y reportes'
-    },
+    
   ]
 
   // Función para recargar productos
@@ -160,105 +152,79 @@ export default function AdminPage() {
     <ProtectedRoute>
       <div className="min-h-screen bg-gray-50 flex">
 
-        {/* Sidebar ultra-minimalista */}
+        {/* Sidebar minimalista */}
         <aside className={`${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } sticky top-0 z-50 w-80 bg-white border-r border-gray-100 transform transition-all duration-300 ease-out lg:translate-x-0 h-screen`}>
+        } sticky top-0 z-50 w-72 bg-white border-r border-gray-200 transform transition-transform duration-200 lg:translate-x-0 h-screen`}>
           <div className="h-full flex flex-col">
             
-            {/* Header espacioso y limpio */}
-            <div className="px-8 py-8">
+            {/* Header simple */}
+            <div className="px-6 py-6">
               <div className="flex items-center">
                 <button
                   onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                  className="p-2.5 rounded-xl text-gray-400 hover:text-gray-600 hover:bg-gray-50 focus:outline-none lg:hidden mr-4 transition-all"
+                  className="p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none lg:hidden mr-3"
                 >
                   {isSidebarOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                 </button>
                 <div className="flex-1">
-                  <div className="flex items-center mb-3">
-                    <Image src={logo} alt="Cyneth Logo" width={130} height={55} />
-                    <div className="ml-4 w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse" />
+                  <div className="flex items-center">
+                    <Image src={logo} alt="Cyneth Logo" width={120} height={50} />
                   </div>
-                  <p className="text-sm text-gray-400 font-light tracking-wide">Panel de Control</p>
                 </div>
               </div>
             </div>
             
-            {/* Navegación ultra-espaciosa */}
+            {/* Navegación simple */}
             <div className="flex-1 flex flex-col overflow-y-auto">
-              <nav className="flex-1 px-6 space-y-3">
+              <nav className="flex-1 px-4 space-y-1">
                 {menuItems.map((item, index) => (
                   <Link
                     key={item.id}
                     href={item.href}
                     className={`${
                       activeTab === item.id
-                        ? 'bg-gradient-to-r from-red-50 to-red-50/30 text-red-700 shadow-sm'
-                        : 'text-gray-600 hover:bg-gray-50/80 hover:text-gray-800'
-                    } group flex items-center px-5 py-4 rounded-2xl transition-all duration-300 ease-out relative overflow-hidden`}
+                        ? 'bg-red-50 text-red-700 border-l-2 border-red-500'
+                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800'
+                    } flex items-center px-4 py-3 rounded-lg transition-colors duration-150`}
                     onClick={() => setActiveTab(item.id)}
                   >
-                    {/* Línea indicadora */}
-                    {activeTab === item.id && (
-                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-red-500 rounded-r-full" />
-                    )}
-                    
-                    <div className={`p-3 rounded-xl mr-4 transition-all duration-300 ${
+                    <div className={`p-2 rounded-lg mr-3 ${
                       activeTab === item.id 
-                        ? 'bg-red-500/10 text-red-600 shadow-lg shadow-red-500/20' 
-                        : 'bg-gray-100/80 text-gray-500 group-hover:bg-gray-200/80 group-hover:text-gray-600 group-hover:scale-105'
+                        ? 'bg-red-100 text-red-600' 
+                        : 'bg-gray-100 text-gray-500'
                     }`}>
-                      <item.icon size={20} />
+                      <item.icon size={18} />
                     </div>
                     
-                    <div className="flex-1 min-w-0">
-                      <div className={`font-semibold text-base leading-tight ${
+                    <div className="flex-1">
+                      <div className={`font-medium text-sm ${
                         activeTab === item.id ? 'text-red-700' : 'text-gray-800'
                       }`}>
                         {item.label}
                       </div>
-                      <div className={`text-sm mt-1 leading-relaxed ${
-                        activeTab === item.id ? 'text-red-500/80' : 'text-gray-500'
-                      }`}>
-                        {item.description}
-                      </div>
-                    </div>
-                    
-                    {/* Indicador de flecha sutil */}
-                    <div className={`transition-all duration-300 ${
-                      activeTab === item.id 
-                        ? 'text-red-400 scale-110' 
-                        : 'text-gray-300 group-hover:text-gray-400 group-hover:translate-x-1'
-                    }`}>
-                      <ChevronRight size={18} />
                     </div>
                   </Link>
                 ))}
               </nav>
               
-              {/* Sección del usuario espaciosa */}
-              <div className="px-6 pt-8 mt-6 border-t border-gray-100">
-                {/* Info del admin con más espacio */}
-                <div className="flex items-center p-4 mb-6 bg-gray-50/50 rounded-2xl">
-                  <div className="relative">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-100 to-red-50 rounded-2xl flex items-center justify-center shadow-sm">
-                      <User className="w-6 h-6 text-red-600" />
-                    </div>
-                    <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full border-2 border-white shadow-sm animate-pulse" />
+              {/* Sección del usuario simple */}
+              <div className="px-4 pt-4 mt-4 border-t border-gray-200">
+                <div className="flex items-center p-3 mb-4 bg-gray-50 rounded-lg">
+                  <div className="w-8 h-8 bg-gray-200 rounded-lg flex items-center justify-center">
+                    <User className="w-4 h-4 text-gray-600" />
                   </div>
-                  <div className="ml-4 flex-1">
-                    <p className="font-semibold text-gray-900">Administrador</p>
-                    <p className="text-sm text-gray-500 mt-0.5">Sesión activa • Online</p>
+                  <div className="ml-3 flex-1">
+                    <p className="font-medium text-gray-900 text-sm">Administrador</p>
+                    <p className="text-xs text-gray-500">Sesión activa</p>
                   </div>
                 </div>
                 
-                {/* Botón logout elegante */}
                 <button
                   onClick={handleLogout}
-                  className="w-full flex items-center justify-center px-5 py-3.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-2xl hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="w-full flex items-center justify-center px-4 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-150"
                 >
-                  <LogOut className="w-4 h-4 mr-3" />
+                  <LogOut className="w-4 h-4 mr-2" />
                   Cerrar Sesión
                 </button>
               </div>
@@ -266,84 +232,46 @@ export default function AdminPage() {
           </div>
         </aside>
 
-        {/* Contenido principal minimalista */}
-        <main className="flex-1 overflow-y-auto focus:outline-none bg-white">
-          {/* Header limpio del contenido */}
-          <div className="sticky top-0 z-40 bg-white border-b border-gray-100">
-            <div className="flex items-center justify-between px-8 py-6">
-              <div className="flex items-center space-x-4">
-                <button
-                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                  className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 focus:outline-none transition-colors lg:hidden"
-                >
-                  <Menu className="h-5 w-5" />
-                </button>
-                <div>
-                  <h1 className="text-2xl font-semibold text-gray-900">{getTabTitle()}</h1>
-                  <p className="text-gray-500 mt-1">
-                    {activeTab === 'products' && 'Gestiona tu inventario y catálogo de productos'}
-                    {activeTab === 'bulk-upload' && 'Sube múltiples productos desde un archivo Excel'}
-                    {activeTab === 'categories' && 'Organiza y estructura las categorías'}
-                    {activeTab === 'brands' && 'Administra las marcas y fabricantes'}
-                    {activeTab === 'statistics' && 'Analiza métricas y rendimiento'}
-                  </p>
-                </div>
-              </div>
-              
-              {/* Indicador de estado minimalista */}
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full" />
-                <span className="text-sm text-gray-500">En línea</span>
-              </div>
-            </div>
-          </div>
+        {/* Contenido principal */}
+        <main className="flex-1 overflow-y-auto bg-white">
 
           {/* Contenido de las pestañas */}
           <div className="h-full">
-            <div className="max-w-full mx-auto h-full">
+            
               {/* Productos */}
               {activeTab === 'products' && (
-                <div className="animate-fadeIn h-full">
+                <div className="h-full">
                   <ProductList />
                 </div>
               )}
 
               {/* Carga Masiva */}
               {activeTab === 'bulk-upload' && (
-                <div className="animate-fadeIn h-full">
+                <div className="h-full">
                   <BulkUpload />
                 </div>
               )}
 
-
               {/* Gestión de Categorías */}
               {activeTab === 'categories' && (
-                <div className="animate-fadeIn">
+                <div>
                   <CategoryManager />
                 </div>
               )}
 
               {/* Gestión de Marcas */}
               {activeTab === 'brands' && (
-                <div className="animate-fadeIn">
+                <div>
                   <BrandManager />
                 </div>
               )}
-
-              {/* Estadísticas */}
-              {activeTab === 'statistics' && (
-                <div className="animate-fadeIn h-full">
-                  <Statistics products={products} />
-                </div>
-              )}
             </div>
-          </div>
         </main>
 
         {/* Overlay para móvil */}
         {isSidebarOpen && (
           <div 
-            className="fixed inset-0 z-40 bg-black/20 lg:hidden transition-all duration-300"
+            className="fixed inset-0 z-40 bg-black/20 lg:hidden transition-opacity duration-200"
             onClick={() => setIsSidebarOpen(false)}
           />
         )}

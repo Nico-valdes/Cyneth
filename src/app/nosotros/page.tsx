@@ -14,9 +14,17 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePageTitle } from '@/hooks/usePageTitle';
 import griferia from "../../../public/Cyneth-logo.png"
+import banner from "../../../public/fondo-nosotros.jpg"
 
 export default function NosotrosPage() {
+  usePageTitle({
+    title: 'Nosotros | Cyneth Sanitarios',
+    description: 'Conoce la historia de Cyneth. Desde 2021 ofrecemos soluciones integrales para obras y proyectos, con compromiso, calidad y confianza.',
+    showComeBackMessage: true,
+    comeBackMessage: '¡Volvé!'
+  });
   // Company values data
   const values = [
     {
@@ -59,10 +67,10 @@ export default function NosotrosPage() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={griferia}
+            src={banner}
             alt="Cyneth - Nosotros"
             fill
-            className="object-cover grayscale-20"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
@@ -305,7 +313,7 @@ export default function NosotrosPage() {
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center"
+                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center cursor-pointer"
                 >
                   Ver Catálogo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -316,7 +324,7 @@ export default function NosotrosPage() {
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center"
+                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center cursor-pointer"
                 >
                   Contactar
                   <div className="w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>

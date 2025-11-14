@@ -13,7 +13,7 @@ const ImageUploadField: React.FC<ImageUploadFieldProps> = ({
   className = "",
   showPreview = true
 }) => {
-  const [inputValue, setInputValue] = useState(value);
+  const [inputValue, setInputValue] = useState(value || '');
   const { isUploading, error, success, uploadImageFromUrl, resetState } = useImageUpload();
 
   // Debug: Log cuando cambia el valor
@@ -22,9 +22,10 @@ const ImageUploadField: React.FC<ImageUploadFieldProps> = ({
 
   // Sincronizar inputValue cuando cambie value (prop)
   React.useEffect(() => {
-    if (value !== inputValue) {
-      console.log('useEffect: actualizando inputValue de', inputValue, 'a', value);
-      setInputValue(value);
+    const newValue = value || '';
+    if (newValue !== inputValue) {
+      console.log('useEffect: actualizando inputValue de', inputValue, 'a', newValue);
+      setInputValue(newValue);
     }
   }, [value, inputValue]);
 
@@ -41,9 +42,9 @@ const ImageUploadField: React.FC<ImageUploadFieldProps> = ({
     const result = await uploadImageFromUrl(inputValue);
     
     if (result) {
-      // Actualizar el campo con la URL de Cloudflare
-      onChange(result.cloudflareUrl);
-      setInputValue(result.cloudflareUrl);
+      // Actualizar el campo con la URL de Cloudinary
+      onChange(result.cloudinaryUrl);
+      setInputValue(result.cloudinaryUrl);
       
       // Mostrar mensaje de éxito temporalmente
       setTimeout(() => {

@@ -19,6 +19,12 @@ import catduch from "../../public/cat-ducha.jpg"
 import catsan from "../../public/cat-sanitario.jpg"
 import catacc from "../../public/cat-accesorios.jpg"
 
+
+// Importar videos con resoluciones específicas - COMENTADO HASTA TENER LAS 3 RESOLUCIONES
+// import videoMobile from "../../public/videos/loop-ferrettistore-2024-movil-home.mp4"
+// import videoTablet from "../../public/videos/loop-ferrettistore-home-2024-tablet.mp4"
+// import videoDesktop from "../../public/videos/loop-ferrettistore-home-2024-desktop.mp4"
+
 export default function CleanHomepage() {
   // Featured categories data
   const featuredCategories = [
@@ -99,40 +105,20 @@ export default function CleanHomepage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Hero Section with Responsive Videos */}
+      {/* Hero Section with Banner Video */}
       <section className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
-        {/* Video para móvil - 4:3 (más alto, perfecto para móviles) */}
         <video 
           autoPlay
           loop 
           muted 
           playsInline
-          className="block sm:hidden w-full h-full object-cover"
+          className="w-full h-full object-cover"
         >
-          <source src="/videos/loop-ferrettistore-2024-movil-home.mp4" type="video/mp4" />
+          <source src="/videos/banner-video3.mp4" type="video/mp4" />
         </video>
         
-        {/* Video para tablet - 16:9 (estándar de video) */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="hidden sm:block lg:hidden w-full h-full object-cover"
-        >
-          <source src="/videos/loop-ferrettistore-home-2024.mp4" type="video/mp4" />
-        </video>
-        
-        {/* Video para desktop - 21:9 (ultra-wide cinematográfico) */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="hidden lg:block w-full h-full object-cover"
-        >
-          <source src="/videos/loop-ferrettistore-home-2024.mp4" type="video/mp4" />
-        </video>
+        {/* Overlay opcional para mejor legibilidad del contenido */}
+        <div className="absolute inset-0 bg-black/10"></div>
       </section>
 
       {/* Featured Categories - Contemporary Layout */}
@@ -465,20 +451,22 @@ export default function CleanHomepage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-20">
-              <motion.button 
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center"
-              >
-                Contactar Especialista
-                <div className="w-4 h-[1px] bg-gray-400 group-hover:bg-red-500 group-hover:w-8 ml-4 transition-all duration-500"></div>
-              </motion.button>
+              <Link href="/contacto">
+                <motion.button 
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center cursor-pointer"
+                >
+                  Contactar Especialista
+                  <div className="w-4 h-[1px] bg-gray-400 group-hover:bg-red-500 group-hover:w-8 ml-4 transition-all duration-500"></div>
+                </motion.button>
+              </Link>
               
               <Link href="/catalogo">
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center"
+                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center cursor-pointer"
                 >
                   Explorar Catálogo
                   <div className="w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>

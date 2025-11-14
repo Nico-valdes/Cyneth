@@ -31,12 +31,7 @@ const navLinks: NavLink[] = [
   { href: '/contacto', label: 'Contacto' },
 ]
 
-const sideNavVariants = {
-  hidden: { opacity: 0, x: '-100%' },
-  show: { opacity: 1, x: 0, transition: { duration: 0.3, ease: 'easeOut' } },
-}
-
-export default function Header(): JSX.Element {
+export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -73,6 +68,7 @@ export default function Header(): JSX.Element {
   // Efecto para buscar productos
   useEffect(() => {
     const searchProducts = async () => {
+      // Permitir búsqueda con solo 1 carácter
       if (searchQuery.trim().length < 1) {
         setSearchResults([])
         setShowSearchResults(false)
@@ -81,12 +77,20 @@ export default function Header(): JSX.Element {
 
       setIsSearching(true)
       try {
-        const response = await fetch(`/api/products?search=${encodeURIComponent(searchQuery)}`)
+        // Usar el término de búsqueda tal cual - la API debería manejar búsqueda parcial
+        const response = await fetch(`/api/products?search=${encodeURIComponent(searchQuery.trim())}&limit=10&active=true`)
         
         if (response.ok) {
           const data = await response.json()
-          const products = data.products || data // Adaptación para diferentes formatos de respuesta
-          setSearchResults(products.slice(0, 5)) // Limitar a 5 resultados
+          // La API devuelve { success: true, data: { products: [...], pagination: {...} } }
+          const products = data?.data?.products || data?.products || []
+          
+          // Asegurar que products es un array antes de usar slice
+          if (Array.isArray(products)) {
+            setSearchResults(products.slice(0, 5)) // Limitar a 5 resultados para mostrar
+          } else {
+            setSearchResults([])
+          }
           setShowSearchResults(true)
         } else {
           setSearchResults([])
@@ -101,7 +105,8 @@ export default function Header(): JSX.Element {
       }
     }
 
-    const debounceTimer = setTimeout(searchProducts, 300)
+    // Reducir debounce a 200ms para respuesta más rápida
+    const debounceTimer = setTimeout(searchProducts, 200)
     return () => clearTimeout(debounceTimer)
   }, [searchQuery])
 
@@ -123,7 +128,12 @@ export default function Header(): JSX.Element {
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (searchQuery.trim().length >= 1) {
-      setShowSearchResults(true)
+      // Navegar al catálogo con el término de búsqueda
+      router.push(`/catalogo?search=${encodeURIComponent(searchQuery.trim())}`)
+      // Limpiar estados
+      setShowSearchResults(false)
+      setIsSearchOpen(false)
+      setSearchQuery('')
     }
   }
 
@@ -366,17 +376,22 @@ export default function Header(): JSX.Element {
                               className="flex items-center p-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0 transition-colors duration-200"
                             >
                               <div className="relative w-12 h-12 mr-3 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
-                                {product.defaultImage || (product.colorVariants && product.colorVariants[0]?.image) ? (
-                                  <img
-                                    src={product.defaultImage || product.colorVariants[0]?.image}
-                                    alt={product.name}
-                                    className="object-contain w-full h-full p-1"
-                                  />
-                                ) : (
-                                  <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                                    <Search size={14} className="text-gray-400" />
-                                  </div>
-                                )}
+                                {(() => {
+                                  const mainImage = getMainImage(product);
+                                  const optimizedImage = mainImage ? getOptimizedImageUrl(mainImage) : null;
+                                  
+                                  return optimizedImage ? (
+                                    <img
+                                      src={optimizedImage}
+                                      alt={product.name}
+                                      className="object-contain w-full h-full p-1"
+                                    />
+                                  ) : (
+                                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
+                                      <Search size={14} className="text-gray-400" />
+                                    </div>
+                                  );
+                                })()}
                               </div>
                               <div className="flex-1 min-w-0">
                                 <h4 className="text-sm font-medium text-gray-900 truncate mb-1">
@@ -427,10 +442,10 @@ export default function Header(): JSX.Element {
           {isOpen && (
             <motion.div
               className="lg:hidden bg-white shadow-lg border-t border-gray-200"
-              variants={sideNavVariants}
-              initial="hidden"
-              animate="show"
-              exit="hidden"
+              initial={{ opacity: 0, x: '-100%' }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: '-100%' }}
+              transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
             >
               <div className="py-4">
                 {navLinks.map(({ href, label }) => (

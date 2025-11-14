@@ -1,27 +1,29 @@
-// Tipos para Cloudflare Images API
-export interface CloudflareImageResult {
-  id: string;
-  filename: string;
-  uploaded: string;
-  requireSignedURLs: boolean;
-  variants: string[];
+// Tipos para Cloudinary API
+export interface CloudinaryImageResult {
+  public_id: string;
+  secure_url: string;
+  format: string;
+  width: number;
+  height: number;
+  bytes: number;
+  created_at: string;
 }
 
-export interface CloudflareUploadResponse {
+export interface CloudinaryUploadResponse {
   success: boolean;
-  result: CloudflareImageResult;
-  errors: any[];
-  messages: any[];
+  result: CloudinaryImageResult;
+  error?: string;
 }
 
 // Tipos para el servicio de imágenes
 export interface ImageUploadResult {
   success: boolean;
-  cloudflareUrl?: string; // URL de Cloudflare Images (optimizada)
-  r2Url?: string; // URL de R2 (backup)
+  cloudinaryUrl?: string; // URL de Cloudinary (optimizada)
+  originalUrl?: string; // URL original
   fileName?: string;
   size?: number;
   contentType?: string;
+  publicId?: string;
   error?: string;
 }
 
@@ -33,7 +35,7 @@ export interface ImageUploadState {
 }
 
 export interface ImageUploadHookResult {
-  cloudflareUrl: string;
+  cloudinaryUrl: string;
   originalUrl: string;
 }
 
@@ -59,7 +61,7 @@ export interface ImageUrlValidation {
 // Tipos para el estado de la imagen
 export interface ImageState {
   originalUrl: string;
-  cloudflareUrl: string | null;
+  cloudinaryUrl: string | null;
   isUploading: boolean;
   error: string | null;
   success: boolean;

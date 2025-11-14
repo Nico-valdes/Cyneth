@@ -3,10 +3,13 @@
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Search, Filter, Grid, List, ChevronDown, X } from 'lucide-react'
+import Image from 'next/image'
 import ProductCard from '@/components/ProductCard'
 import CatalogFilters from '@/components/CatalogFilters'
 import { getMainImage } from '@/utils/imageUtils'
 import Header from '@/components/layout/Header'
+import { usePageTitle } from '@/hooks/usePageTitle'
+import banner from "../../../public/copia1.jpg"
 
 interface Product {
   _id: string
@@ -65,6 +68,31 @@ function CatalogoContent() {
   const [showFilters, setShowFilters] = useState(false)
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [sortBy, setSortBy] = useState('name')
+  const [productsToShow, setProductsToShow] = useState(25)
+
+  // Metadata dinámica basada en filtros
+  const categoryName = selectedCategory 
+    ? allCategories.find(c => c._id === selectedCategory)?.name 
+    : null
+  
+  const pageTitle = categoryName 
+    ? `Catálogo - ${categoryName} | Cyneth Sanitarios`
+    : searchTerm
+    ? `Búsqueda: ${searchTerm} | Catálogo Cyneth`
+    : 'Catálogo | Cyneth Sanitarios'
+  
+  const pageDescription = categoryName
+    ? `Explora nuestra colección de ${categoryName.toLowerCase()}. Productos premium con asesoramiento técnico especializado.`
+    : searchTerm
+    ? `Resultados de búsqueda para "${searchTerm}". Encuentra los mejores productos sanitarios en CYNETH.`
+    : 'Descubre nuestra completa colección de grifería, sanitarios, duchas y accesorios. Filtra por categoría, marca y color. Productos premium para obras y proyectos.'
+
+  usePageTitle({
+    title: pageTitle,
+    description: pageDescription,
+    showComeBackMessage: true,
+    comeBackMessage: '¡Volvé!'
+  })
 
   // Leer parámetros de URL y aplicar filtros automáticamente
   useEffect(() => {
@@ -98,7 +126,7 @@ function CatalogoContent() {
         setLoading(true)
         
         const [productsRes, categoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
-          fetch('/api/products?active=true&limit=100'),
+          fetch('/api/products?active=true&limit=1000'),
           fetch('/api/categories?type=main'), // Solo categorías principales
           fetch('/api/categories'), // Todas las categorías para filtrado
           fetch('/api/brands')
@@ -204,6 +232,15 @@ function CatalogoContent() {
     )
   )].sort()
 
+  // Resetear productos a mostrar cuando cambian los filtros
+  useEffect(() => {
+    setProductsToShow(25)
+  }, [selectedCategory, selectedBrand, selectedColor, searchTerm, sortBy])
+
+  // Limitar productos mostrados
+  const displayedProducts = sortedProducts.slice(0, productsToShow)
+  const hasMoreProducts = sortedProducts.length > productsToShow
+
   const clearFilters = () => {
     setSelectedCategory('')
     setSelectedBrand('')
@@ -212,6 +249,10 @@ function CatalogoContent() {
   }
 
   const hasActiveFilters = selectedCategory || selectedBrand || selectedColor || searchTerm
+
+  const handleShowMore = () => {
+    setProductsToShow(prev => prev + 25)
+  }
 
   if (loading) {
     return (
@@ -223,16 +264,24 @@ function CatalogoContent() {
       </div>
     )
   }
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
       {/* Header del catálogo */}
-      <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative">
+        <div className="absolute inset-0">
+          <Image
+            src={banner}
+            alt="Fondo catálogo"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/20" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="py-16">
-            <h1 className="text-4xl font-light text-gray-900 tracking-wide uppercase text-center">Catálogo</h1>
-            <p className="mt-6 text-gray-500 text-center font-light tracking-wide max-w-2xl mx-auto">
+            <h1 className="text-4xl font-light text-white tracking-wide uppercase text-center">Catálogo</h1>
+            <p className="mt-6 text-white/80 text-center font-light tracking-wide max-w-2xl mx-auto">
               Descubre nuestra colección cuidadosamente seleccionada
             </p>
           </div>
@@ -526,21 +575,33 @@ function CatalogoContent() {
                 )}
               </div>
             ) : (
-              <div className={viewMode === 'grid' 
-                ? 'grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-16 auto-rows-fr mt-12'
-                : 'space-y-12 mt-12'
-              }>
-                {sortedProducts.map((product) => (
-                  <ProductCard
-                    key={product._id}
-                    product={{
-                      ...product,
-                      categorySlug: allCategories.find(c => c._id === product.category)?.slug || ''
-                    }}
-                    viewMode={viewMode}
-                  />
-                ))}
-              </div>
+              <>
+                <div className={viewMode === 'grid' 
+                  ? 'grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-16 auto-rows-fr mt-12'
+                  : 'space-y-12 mt-12'
+                }>
+                  {displayedProducts.map((product) => (
+                    <ProductCard
+                      key={product._id}
+                      product={{
+                        ...product,
+                        categorySlug: allCategories.find(c => c._id === product.category)?.slug || ''
+                      }}
+                      viewMode={viewMode}
+                    />
+                  ))}
+                </div>
+                {hasMoreProducts && (
+                  <div className="flex justify-center mt-12">
+                    <button
+                      onClick={handleShowMore}
+                      className="px-8 py-3 bg-black text-white font-light tracking-wide uppercase hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
+                    >
+                      Mostrar más
+                    </button>
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

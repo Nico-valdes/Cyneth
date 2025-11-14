@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { OptimizedImageService } from '@/services/OptimizedImageService';
+import { CloudinaryImageService } from '@/services/CloudinaryImageService';
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,16 +20,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Subir imagen usando Cloudflare Images optimizado
-    const optimizedImageService = new OptimizedImageService();
-    const result = await optimizedImageService.uploadFromUrl(imageUrl);
+    // Subir imagen usando Cloudinary
+    const cloudinaryService = new CloudinaryImageService();
+    const result = await cloudinaryService.downloadAndUpload(imageUrl, 'uploaded-image');
 
-    if (result.success && result.cloudflareUrl) {
+    if (result.success && result.cloudinaryUrl) {
       return NextResponse.json({
         success: true,
-        cloudflareUrl: result.cloudflareUrl,
+        cloudinaryUrl: result.cloudinaryUrl,
         originalUrl: imageUrl,
-        message: 'Imagen subida exitosamente a Cloudflare'
+        message: 'Imagen subida exitosamente a Cloudinary'
       });
     } else {
       return NextResponse.json(

@@ -38,7 +38,7 @@ export function getMainImage(product: any): string | null {
 
 /**
  * Obtiene la URL de imagen optimizada para diferentes contextos
- * Usa las transformaciones nativas de Cloudflare Images
+ * Usa las transformaciones nativas de Cloudflare Images o proxy para URLs externas
  */
 export function getOptimizedImageUrl(url: string, width?: number, height?: number): string {
   if (!url) return '';
@@ -54,8 +54,37 @@ export function getOptimizedImageUrl(url: string, width?: number, height?: numbe
     });
   }
   
+  // Si es una URL externa, usar el proxy para evitar descargas forzadas
+  if (isExternalUrl(url)) {
+    return getProxiedImageUrl(url);
+  }
+  
   // Para otras URLs, devolver la original
   return url;
+}
+
+/**
+ * Verifica si una URL es externa (no del mismo dominio)
+ */
+function isExternalUrl(url: string): boolean {
+  try {
+    const urlObj = new URL(url);
+    // Considerar externas las URLs que no sean de Cloudinary, Cloudflare o del mismo dominio
+    return !urlObj.hostname.includes('res.cloudinary.com') && 
+           !urlObj.hostname.includes('imagedelivery.net') &&
+           !urlObj.hostname.includes('localhost') &&
+           !urlObj.hostname.includes('cloudinary.com');
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Genera la URL del proxy de imágenes
+ */
+function getProxiedImageUrl(originalUrl: string): string {
+  const encodedUrl = encodeURIComponent(originalUrl);
+  return `/api/proxy-image?url=${encodedUrl}`;
 }
 
 /**

@@ -1,0 +1,822 @@
+[
+  {
+    "_id": "68cda5f4ff392fb2b5d73da2",
+    "name": "Grifería",
+    "slug": "griferia",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da3",
+    "name": "Grifería para baño",
+    "slug": "griferia-griferia-para-bano",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da4",
+    "name": "Bi comando",
+    "slug": "griferia-griferia-para-bano-bi-comando",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da5",
+    "name": "Lavatorio",
+    "slug": "griferia-griferia-para-bano-bi-comando-lavatorio",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da4",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da6",
+    "name": "Bidet",
+    "slug": "griferia-griferia-para-bano-bi-comando-bidet",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da4",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da7",
+    "name": "Ducha",
+    "slug": "griferia-griferia-para-bano-bi-comando-ducha",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da4",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da8",
+    "name": "Monocomando",
+    "slug": "griferia-griferia-para-bano-monocomando",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73da9",
+    "name": "Lavatorio",
+    "slug": "griferia-griferia-para-bano-monocomando-lavatorio",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da8",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73daa",
+    "name": "Bidet",
+    "slug": "griferia-griferia-para-bano-monocomando-bidet",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da8",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f4ff392fb2b5d73dab",
+    "name": "Ducha",
+    "slug": "griferia-griferia-para-bano-monocomando-ducha",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da8",
+    "level": 3,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dac",
+    "name": "Grifería para cocina",
+    "slug": "griferia-griferia-para-cocina",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dad",
+    "name": "Bicomando",
+    "slug": "griferia-griferia-para-cocina-bicomando",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dac",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dae",
+    "name": "Monocomando",
+    "slug": "griferia-griferia-para-cocina-monocomando",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dac",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73daf",
+    "name": "Accesorios",
+    "slug": "griferia-accesorios",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db0",
+    "name": "Repuestos",
+    "slug": "griferia-repuestos",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db1",
+    "name": "Sopapas",
+    "slug": "griferia-sopapas",
+    "description": "",
+    "parent": "68cda5f4ff392fb2b5d73da2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db2",
+    "name": "Caños y conexión de agua",
+    "slug": "canos-y-conexion-de-agua",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db3",
+    "name": "Termofusión",
+    "slug": "canos-y-conexion-de-agua-termofusion",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db4",
+    "name": "Caños",
+    "slug": "canos-y-conexion-de-agua-termofusion-canos",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db5",
+    "name": "Conexiones",
+    "slug": "canos-y-conexion-de-agua-termofusion-conexiones",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db6",
+    "name": "Herramientas",
+    "slug": "canos-y-conexion-de-agua-termofusion-herramientas",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db7",
+    "name": "Polipropileno",
+    "slug": "canos-y-conexion-de-agua-polipropileno",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db8",
+    "name": "Caños",
+    "slug": "canos-y-conexion-de-agua-polipropileno-canos",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db7",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73db9",
+    "name": "Conexiones",
+    "slug": "canos-y-conexion-de-agua-polipropileno-conexiones",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db7",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dba",
+    "name": "Herramientas",
+    "slug": "canos-y-conexion-de-agua-polipropileno-herramientas",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73db7",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dbb",
+    "name": "Caños y conexiones desagüe",
+    "slug": "canos-y-conexiones-desague",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dbc",
+    "name": "Caños",
+    "slug": "canos-y-conexiones-desague-canos",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbb",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dbd",
+    "name": "Conexiones",
+    "slug": "canos-y-conexiones-desague-conexiones",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbb",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dbe",
+    "name": "Canaletas",
+    "slug": "canos-y-conexiones-desague-canaletas",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbb",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dbf",
+    "name": "Techo",
+    "slug": "canos-y-conexiones-desague-canaletas-techo",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbe",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dc0",
+    "name": "Piso",
+    "slug": "canos-y-conexiones-desague-canaletas-piso",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbe",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f5ff392fb2b5d73dc1",
+    "name": "Complementos y herramientas",
+    "slug": "canos-y-conexiones-desague-complementos-y-herramientas",
+    "description": "",
+    "parent": "68cda5f5ff392fb2b5d73dbb",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc2",
+    "name": "Caños y conexiones gas",
+    "slug": "canos-y-conexiones-gas",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc3",
+    "name": "Termofusión",
+    "slug": "canos-y-conexiones-gas-termofusion",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc4",
+    "name": "Caños",
+    "slug": "canos-y-conexiones-gas-termofusion-canos",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc5",
+    "name": "Accesorios",
+    "slug": "canos-y-conexiones-gas-termofusion-accesorios",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc6",
+    "name": "Herramientas",
+    "slug": "canos-y-conexiones-gas-termofusion-herramientas",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc3",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc7",
+    "name": "Epoxi",
+    "slug": "canos-y-conexiones-gas-epoxi",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc8",
+    "name": "Caños",
+    "slug": "canos-y-conexiones-gas-epoxi-canos",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc7",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dc9",
+    "name": "Accesorios",
+    "slug": "canos-y-conexiones-gas-epoxi-accesorios",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc7",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dca",
+    "name": "Reguladores",
+    "slug": "canos-y-conexiones-gas-reguladores",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dcb",
+    "name": "Accesorios (vainas, nichos, puertas, pilares, gripper - rejillas)",
+    "slug": "canos-y-conexiones-gas-accesorios-vainas-nichos-puertas-pilares-gripper-rejillas",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dcc",
+    "name": "Ventilación",
+    "slug": "canos-y-conexiones-gas-ventilacion",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dc2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dcd",
+    "name": "Sanitarios",
+    "slug": "sanitarios",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dce",
+    "name": "Bidets",
+    "slug": "sanitarios-bidets",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dcf",
+    "name": "Inodoros",
+    "slug": "sanitarios-inodoros",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd0",
+    "name": "Depósitos",
+    "slug": "sanitarios-depositos",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd1",
+    "name": "Asientos y tapas",
+    "slug": "sanitarios-asientos-y-tapas",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd2",
+    "name": "Bañera y receptáculos",
+    "slug": "sanitarios-banera-y-receptaculos",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd3",
+    "name": "Bachas",
+    "slug": "sanitarios-bachas",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd4",
+    "name": "Repuestos",
+    "slug": "sanitarios-repuestos",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd5",
+    "name": "Complementos de instalación (tornillo inodoro, etc)",
+    "slug": "sanitarios-complementos-de-instalacion-tornillo-inodoro-etc",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dcd",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd6",
+    "name": "Piletas de acero",
+    "slug": "piletas-de-acero",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd7",
+    "name": "Baño",
+    "slug": "piletas-de-acero-bano",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dd6",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f6ff392fb2b5d73dd8",
+    "name": "Lavadero",
+    "slug": "piletas-de-acero-lavadero",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dd6",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dd9",
+    "name": "Cocina",
+    "slug": "piletas-de-acero-cocina",
+    "description": "",
+    "parent": "68cda5f6ff392fb2b5d73dd6",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dda",
+    "name": "Tanques agua",
+    "slug": "tanques-agua",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73ddb",
+    "name": "Tanques",
+    "slug": "tanques-agua-tanques",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73dda",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73ddc",
+    "name": "Bicapa",
+    "slug": "tanques-agua-tanques-bicapa",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73ddb",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73ddd",
+    "name": "Tricapa",
+    "slug": "tanques-agua-tanques-tricapa",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73ddb",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dde",
+    "name": "Cuatricapa",
+    "slug": "tanques-agua-tanques-cuatricapa",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73ddb",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73ddf",
+    "name": "Cisterna",
+    "slug": "tanques-agua-cisterna",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73dda",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de0",
+    "name": "Biodigestores",
+    "slug": "tanques-agua-biodigestores",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73dda",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de1",
+    "name": "Accesorios (flotantes, bases)",
+    "slug": "tanques-agua-accesorios-flotantes-bases",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73dda",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de2",
+    "name": "Bombas",
+    "slug": "bombas",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de3",
+    "name": "Presurizadora",
+    "slug": "bombas-presurizadora",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de4",
+    "name": "Elevadora",
+    "slug": "bombas-elevadora",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de5",
+    "name": "Piscina",
+    "slug": "bombas-piscina",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de6",
+    "name": "Accesorios",
+    "slug": "bombas-accesorios",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de2",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de7",
+    "name": "Riego",
+    "slug": "riego",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de8",
+    "name": "PVC soldable",
+    "slug": "riego-pvc-soldable",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de7",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73de9",
+    "name": "Caños",
+    "slug": "riego-pvc-soldable-canos",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de8",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dea",
+    "name": "Conexiones",
+    "slug": "riego-pvc-soldable-conexiones",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de8",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73deb",
+    "name": "Polietileno",
+    "slug": "riego-polietileno",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de7",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dec",
+    "name": "Caños",
+    "slug": "riego-polietileno-canos",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73deb",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73ded",
+    "name": "Conexiones",
+    "slug": "riego-polietileno-conexiones",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73deb",
+    "level": 2,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73dee",
+    "name": "Accesorios",
+    "slug": "riego-accesorios",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de7",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f7ff392fb2b5d73def",
+    "name": "Sistema de riego",
+    "slug": "riego-sistema-de-riego",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de7",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f8ff392fb2b5d73df0",
+    "name": "Canillas",
+    "slug": "riego-canillas",
+    "description": "",
+    "parent": "68cda5f7ff392fb2b5d73de7",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f8ff392fb2b5d73df1",
+    "name": "Flexibles",
+    "slug": "flexibles",
+    "description": "",
+    "parent": null,
+    "level": 0,
+    "type": "main",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f8ff392fb2b5d73df2",
+    "name": "Agua",
+    "slug": "flexibles-agua",
+    "description": "",
+    "parent": "68cda5f8ff392fb2b5d73df1",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  },
+  {
+    "_id": "68cda5f8ff392fb2b5d73df3",
+    "name": "Gas",
+    "slug": "flexibles-gas",
+    "description": "",
+    "parent": "68cda5f8ff392fb2b5d73df1",
+    "level": 1,
+    "type": "sub",
+    "productCount": 0
+  }
+]

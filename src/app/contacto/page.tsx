@@ -14,8 +14,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
-import griferia from "../../../public/griferia.jpg";
+import { usePageTitle } from '@/hooks/usePageTitle';
 
 interface FormData {
   name: string
@@ -35,6 +34,13 @@ interface FormErrors {
 }
 
 export default function ContactoPage() {
+  usePageTitle({
+    title: 'Contacto | Cyneth Sanitarios',
+    description: 'Contacta con nuestros especialistas. Estamos aquí para asesorarte en tu próximo proyecto sanitario. Respuesta en 24 horas.',
+    showComeBackMessage: true,
+    comeBackMessage: '¡Volvé!'
+  });
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -150,14 +156,148 @@ export default function ContactoPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] overflow-hidden">
+      <section className="relative h-[80vh] overflow-hidden bg-gray-900">
         <div className="absolute inset-0">
-          <Image
-            src={griferia}
-            alt="Cyneth - Contacto"
-            fill
-            className="object-cover grayscale-20"
-          />
+          <svg
+            className="w-full h-full"
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Gradiente de fondo */}
+            <defs>
+              <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#1f2937" stopOpacity="1" />
+                <stop offset="100%" stopColor="#111827" stopOpacity="1" />
+              </linearGradient>
+              <linearGradient id="shapeGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.03" />
+              </linearGradient>
+              <linearGradient id="shapeGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.06" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.02" />
+              </linearGradient>
+            </defs>
+            
+            {/* Fondo con gradiente */}
+            <rect width="100%" height="100%" fill="url(#bgGradient)" />
+            
+            {/* Formas geométricas abstractas */}
+            {/* Círculo grande superior izquierdo */}
+            <circle
+              cx="200"
+              cy="150"
+              r="180"
+              fill="url(#shapeGradient1)"
+              opacity="0.6"
+            />
+            
+            {/* Rectángulo rotado centro-derecha */}
+            <rect
+              x="1400"
+              y="200"
+              width="320"
+              height="120"
+              fill="url(#shapeGradient2)"
+              opacity="0.5"
+              transform="rotate(25 1560 260)"
+            />
+            
+            {/* Círculo mediano inferior izquierdo */}
+            <circle
+              cx="300"
+              cy="850"
+              r="140"
+              fill="url(#shapeGradient1)"
+              opacity="0.4"
+            />
+            
+            {/* Líneas diagonales */}
+            <line
+              x1="0"
+              y1="400"
+              x2="800"
+              y2="0"
+              stroke="rgba(255, 255, 255, 0.05)"
+              strokeWidth="2"
+            />
+            <line
+              x1="1200"
+              y1="1080"
+              x2="1920"
+              y2="600"
+              stroke="rgba(255, 255, 255, 0.05)"
+              strokeWidth="2"
+            />
+            
+            {/* Rectángulo delgado horizontal */}
+            <rect
+              x="1000"
+              y="500"
+              width="600"
+              height="4"
+              fill="rgba(255, 255, 255, 0.08)"
+              opacity="0.7"
+              transform="rotate(-15 1300 502)"
+            />
+            
+            {/* Círculo pequeño superior derecha */}
+            <circle
+              cx="1700"
+              cy="300"
+              r="100"
+              fill="url(#shapeGradient2)"
+              opacity="0.5"
+            />
+            
+            {/* Rectángulo vertical centro */}
+            <rect
+              x="900"
+              y="350"
+              width="80"
+              height="400"
+              fill="url(#shapeGradient1)"
+              opacity="0.3"
+              transform="rotate(10 940 550)"
+            />
+            
+            {/* Formas adicionales para profundidad */}
+            <ellipse
+              cx="1600"
+              cy="800"
+              rx="200"
+              ry="120"
+              fill="url(#shapeGradient2)"
+              opacity="0.35"
+              transform="rotate(-20 1600 800)"
+            />
+            
+            {/* Líneas horizontales sutiles */}
+            <line
+              x1="0"
+              y1="250"
+              x2="1920"
+              y2="250"
+              stroke="rgba(255, 255, 255, 0.03)"
+              strokeWidth="1"
+            />
+            <line
+              x1="0"
+              y1="750"
+              x2="1920"
+              y2="750"
+              stroke="rgba(255, 255, 255, 0.03)"
+              strokeWidth="1"
+            />
+            
+            {/* Polígono abstracto */}
+            <polygon
+              points="500,600 700,500 800,650 600,750"
+              fill="url(#shapeGradient1)"
+              opacity="0.25"
+            />
+          </svg>
           <div className="absolute inset-0 bg-black/40" />
         </div>
         
@@ -179,7 +319,7 @@ export default function ContactoPage() {
             </h1>
             
             <p className="text-lg text-white/80 max-w-2xl mx-auto font-light leading-relaxed">
-              Estamos aquí para asesorarte en tu próximo proyecto sanitario
+              Estamos acá para asesorarte en lo que necesites.
             </p>
           </motion.div>
         </div>
@@ -467,7 +607,7 @@ export default function ContactoPage() {
               </h2>
               
               <p className="text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
-                Descubre nuestro catálogo completo de productos sanitarios y encuentra la solución perfecta para tu proyecto.
+                Descubrí nuestro catálogo completo de productos sanitarios y encontrá la solución perfecta para tu proyecto.
               </p>
             </div>
 
@@ -476,7 +616,7 @@ export default function ContactoPage() {
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center"
+                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center cursor-pointer"
                 >
                   Ver Catálogo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -487,7 +627,7 @@ export default function ContactoPage() {
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center"
+                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center cursor-pointer"
                 >
                   Conocer más
                   <div className="w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>

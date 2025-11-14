@@ -141,9 +141,16 @@ class ProductService {
       if (filters.brand) query.brand = filters.brand;
       if (filters.tags) query.tags = { $in: filters.tags };
       
-      // Búsqueda por texto
+      // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
-        query.$text = { $search: filters.search };
+        const searchTerm = filters.search.trim();
+        // Regex case-insensitive para buscar en nombre, SKU, marca y descripción
+        query.$or = [
+          { name: { $regex: searchTerm, $options: 'i' } },
+          { sku: { $regex: searchTerm, $options: 'i' } },
+          { brand: { $regex: searchTerm, $options: 'i' } },
+          { description: { $regex: searchTerm, $options: 'i' } }
+        ];
       }
       
       // Especificaciones específicas
@@ -638,9 +645,16 @@ class ProductService {
       if (filters.brand) query.brand = filters.brand;
       if (filters.tags) query.tags = { $in: filters.tags };
       
-      // Búsqueda por texto
+      // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
-        query.$text = { $search: filters.search };
+        const searchTerm = filters.search.trim();
+        // Regex case-insensitive para buscar en nombre, SKU, marca y descripción
+        query.$or = [
+          { name: { $regex: searchTerm, $options: 'i' } },
+          { sku: { $regex: searchTerm, $options: 'i' } },
+          { brand: { $regex: searchTerm, $options: 'i' } },
+          { description: { $regex: searchTerm, $options: 'i' } }
+        ];
       }
       
       // Especificaciones específicas

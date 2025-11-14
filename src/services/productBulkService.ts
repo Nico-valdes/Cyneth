@@ -2,7 +2,7 @@ import { connectToDatabase } from '@/libs/mongoConnect';
 import Product from '@/models/Product';
 import Category from '@/models/Category';
 import Brand from '@/models/Brand';
-import { ImageDownloadService, ImageDownloadResult } from './ImageDownloadService';
+import { CloudinaryImageService, CloudinaryUploadResult } from './CloudinaryImageService';
 
 export interface ProductRow {
   name: string;
@@ -33,12 +33,12 @@ export class ProductBulkService {
   private productModel: Product;
   private categoryModel: Category;
   private brandModel: Brand;
-  private imageDownloadService: ImageDownloadService;
+  private cloudinaryService: CloudinaryImageService;
   private isInitialized: boolean = false;
 
   constructor() {
     // No inicializar aquí, se hará cuando se necesite
-    this.imageDownloadService = new ImageDownloadService();
+    this.cloudinaryService = new CloudinaryImageService();
   }
 
   private async ensureInitialized() {
@@ -194,9 +194,9 @@ export class ProductBulkService {
         for (const variant of variantsArray) {
           if (variant.image && variant.image.trim() !== '') {
             try {
-              const imageResult = await this.imageDownloadService.downloadAndUploadImage(variant.image, `${product.name}-${variant.colorName}`);
+              const imageResult = await this.cloudinaryService.downloadAndUpload(variant.image, `${product.name}-${variant.colorName}`);
               if (imageResult.success) {
-                variant.image = imageResult.url;
+                variant.image = imageResult.cloudinaryUrl;
               } else {
                 warnings.push(`No se pudo descargar imagen para variante ${variant.colorName}`);
                 variant.image = '';
@@ -269,8 +269,8 @@ export class ProductBulkService {
         const urls = product.images.split(',').map((url: string) => url.trim()).filter(url => url.length > 0);
         console.log(`🖼️ Procesando ${urls.length} imágenes para producto: ${product.name}`);
         
-        // Descargar y subir imágenes a Cloudflare
-        const imageResults = await this.imageDownloadService.downloadMultipleImages(urls, product.name);
+        // Descargar y subir imágenes a Cloudinary
+        const imageResults = await this.cloudinaryService.downloadMultipleImages(urls, product.name);
         
         // Procesar resultados
         const processedImages = [];
@@ -279,14 +279,15 @@ export class ProductBulkService {
         for (let i = 0; i < imageResults.length; i++) {
           const result = imageResults[i];
           
-          if (result.success && result.cloudflareUrl) {
+          if (result.success && result.cloudinaryUrl) {
             processedImages.push({
-              url: result.cloudflareUrl,
+              url: result.cloudinaryUrl,
               originalUrl: result.originalUrl,
               alt: product.name || 'Producto',
               priority: i,
               size: result.size,
-              format: result.format
+              format: result.format,
+              publicId: result.publicId
             });
           } else {
             imageErrors.push({
@@ -305,7 +306,7 @@ export class ProductBulkService {
           product.imageErrors = imageErrors;
         }
         
-        console.log(`✅ Procesadas ${processedImages.length}/${urls.length} imágenes para: ${product.name}`);
+        console.log(`✅ Procesadas ${processedImages.length}/${urls.length} imágenes en Cloudinary para: ${product.name}`);
         
       } catch (e) {
         console.error(`❌ Error general procesando imágenes para ${product.name}:`, e);
@@ -316,10 +317,10 @@ export class ProductBulkService {
           originalUrl: url,
           alt: product.name || 'Producto',
           priority: index,
-          isOriginalUrl: true // Marcar que es URL original, no de Cloudflare
+          isOriginalUrl: true // Marcar que es URL original, no de Cloudinary
         }));
         
-        product.imageProcessingError = e instanceof Error ? e.message : 'Error desconocido';
+        product.imageProcessingError = e instanceof Error ? e.message : 'Error desconocido procesando imágenes con Cloudinary';
       }
     }
 

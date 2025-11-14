@@ -32,8 +32,8 @@ export const useImageUpload = () => {
         throw new Error(data.error || 'Error al subir la imagen');
       }
 
-      if (data.success && data.cloudflareUrl) {
-        console.log('Imagen subida exitosamente a Cloudflare:', data.cloudflareUrl);
+      if (data.success && data.cloudinaryUrl) {
+        console.log('Imagen subida exitosamente a Cloudinary:', data.cloudinaryUrl);
         setState({
           isUploading: false,
           error: null,
@@ -41,7 +41,7 @@ export const useImageUpload = () => {
         });
 
         return {
-          cloudflareUrl: data.cloudflareUrl,
+          cloudinaryUrl: data.cloudinaryUrl,
           originalUrl: data.originalUrl
         };
       } else {
