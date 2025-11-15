@@ -155,8 +155,8 @@ export default function ContactoPage() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative h-[80vh] overflow-hidden bg-gray-900">
+      {/* Hero Section - Responsive */}
+      <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-gray-900">
         <div className="absolute inset-0">
           <svg
             className="w-full h-full"
@@ -306,44 +306,44 @@ export default function ContactoPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-center text-white max-w-4xl mx-auto px-6"
+            className="text-center text-white max-w-4xl mx-auto px-4 sm:px-6"
           >
-            <div className="flex items-center justify-center mb-8">
-              <div className="w-12 h-[1px] bg-white/30 mr-6"></div>
-              <span className="text-xs text-white/60 uppercase tracking-widest font-light">Contacto</span>
-              <div className="w-12 h-[1px] bg-white/30 ml-6"></div>
+            <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
+              <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 mr-3 sm:mr-4 md:mr-6"></div>
+              <span className="text-[10px] sm:text-xs text-white/60 uppercase tracking-widest font-light">Contacto</span>
+              <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 ml-3 sm:ml-4 md:ml-6"></div>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-extralight text-white mb-8 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-4">
               Hablemos
             </h1>
             
-            <p className="text-lg text-white/80 max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl mx-auto font-light leading-relaxed px-4">
               Estamos acá para asesorarte en lo que necesites.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Contact Info Section */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      {/* Contact Info Section - Responsive */}
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-12 sm:mb-16 md:mb-20"
           >
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-[1px] bg-gray-300 mr-6"></div>
-              <span className="text-xs text-gray-400 uppercase tracking-widest font-light">Información</span>
+            <div className="flex items-center mb-4 sm:mb-6 md:mb-8">
+              <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-gray-300 mr-3 sm:mr-4 md:mr-6"></div>
+              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Información</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-extralight text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight">
               Contacto
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {contactInfo.map((item, index) => (
               <motion.div
                 key={item.title}
@@ -353,25 +353,25 @@ export default function ContactoPage() {
                 viewport={{ once: true }}
                 className="group text-center"
               >
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   <div className="text-gray-400 group-hover:text-gray-600 transition-colors duration-300 flex justify-center">
-                    <item.icon className="w-8 h-8" />
+                    <item.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-light text-gray-900 mb-2 group-hover:text-gray-600 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-light text-gray-900 mb-1.5 sm:mb-2 group-hover:text-gray-600 transition-colors duration-300">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-500 mb-3">{item.subtitle}</p>
+                    <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3">{item.subtitle}</p>
                     <a 
                       href={item.href}
-                      className="text-gray-600 hover:text-gray-900 transition-colors duration-300 font-light"
+                      className="text-sm sm:text-base text-gray-600 hover:text-gray-900 transition-colors duration-300 font-light break-words"
                     >
                       {item.content}
                     </a>
                   </div>
                   
-                  <div className="w-8 h-[1px] bg-gray-200 group-hover:bg-gray-400 transition-colors duration-300 mx-auto"></div>
+                  <div className="w-6 sm:w-8 h-[1px] bg-gray-200 group-hover:bg-gray-400 transition-colors duration-300 mx-auto"></div>
                 </div>
               </motion.div>
             ))}
@@ -379,20 +379,20 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="py-32 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+      {/* Contact Form Section - Responsive */}
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-20"
+            className="mb-12 sm:mb-16 md:mb-20"
           >
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-[1px] bg-gray-300 mr-6"></div>
-              <span className="text-xs text-gray-400 uppercase tracking-widest font-light">Formulario</span>
+            <div className="flex items-center mb-4 sm:mb-6 md:mb-8">
+              <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-gray-300 mr-3 sm:mr-4 md:mr-6"></div>
+              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Formulario</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-extralight text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight">
               Envíanos un mensaje
             </h2>
           </motion.div>
@@ -401,7 +401,7 @@ export default function ContactoPage() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-12 rounded-none shadow-lg"
+            className="bg-white p-6 sm:p-8 md:p-12 rounded-none shadow-lg"
           >
             {submitStatus === 'success' && (
               <motion.div
@@ -427,10 +427,10 @@ export default function ContactoPage() {
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-light text-gray-900 mb-3">
+                  <label htmlFor="name" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                     Nombre completo *
                   </label>
                   <input
@@ -439,18 +439,18 @@ export default function ContactoPage() {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light ${
+                    className={`w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light touch-manipulation ${
                       errors.name ? 'border-red-500 bg-red-50' : ''
                     }`}
                     placeholder="Tu nombre completo"
                   />
                   {errors.name && (
-                    <p className="mt-2 text-sm text-red-600 font-light">{errors.name}</p>
+                    <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-red-600 font-light">{errors.name}</p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-light text-gray-900 mb-3">
+                  <label htmlFor="email" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                     Email *
                   </label>
                   <input
@@ -459,20 +459,20 @@ export default function ContactoPage() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light ${
+                    className={`w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light touch-manipulation ${
                       errors.email ? 'border-red-500 bg-red-50' : ''
                     }`}
                     placeholder="tu@email.com"
                   />
                   {errors.email && (
-                    <p className="mt-2 text-sm text-red-600 font-light">{errors.email}</p>
+                    <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-red-600 font-light">{errors.email}</p>
                   )}
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-light text-gray-900 mb-3">
+                  <label htmlFor="phone" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                     Teléfono *
                   </label>
                   <input
@@ -481,18 +481,18 @@ export default function ContactoPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className={`w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light ${
+                    className={`w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light touch-manipulation ${
                       errors.phone ? 'border-red-500 bg-red-50' : ''
                     }`}
                     placeholder="+54 11 1234-5678"
                   />
                   {errors.phone && (
-                    <p className="mt-2 text-sm text-red-600 font-light">{errors.phone}</p>
+                    <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-red-600 font-light">{errors.phone}</p>
                   )}
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-light text-gray-900 mb-3">
+                  <label htmlFor="company" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                     Empresa
                   </label>
                   <input
@@ -501,14 +501,14 @@ export default function ContactoPage() {
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light"
+                    className="w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light touch-manipulation"
                     placeholder="Nombre de tu empresa"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-light text-gray-900 mb-3">
+                <label htmlFor="subject" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                   Asunto *
                 </label>
                 <select
@@ -516,7 +516,7 @@ export default function ContactoPage() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className={`w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light ${
+                  className={`w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light touch-manipulation ${
                     errors.subject ? 'border-red-500 bg-red-50' : ''
                   }`}
                 >
@@ -529,12 +529,12 @@ export default function ContactoPage() {
                   <option value="otro">Otra consulta</option>
                 </select>
                 {errors.subject && (
-                  <p className="mt-2 text-sm text-red-600 font-light">{errors.subject}</p>
+                  <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-red-600 font-light">{errors.subject}</p>
                 )}
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-light text-gray-900 mb-3">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-light text-gray-900 mb-2 sm:mb-3">
                   Mensaje *
                 </label>
                 <textarea
@@ -543,13 +543,13 @@ export default function ContactoPage() {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className={`w-full px-6 py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-lg font-light resize-none ${
+                  className={`w-full px-4 sm:px-6 py-3 sm:py-4 border border-gray-200 focus:border-gray-400 transition-all duration-300 text-sm sm:text-base md:text-lg font-light resize-none touch-manipulation ${
                     errors.message ? 'border-red-500 bg-red-50' : ''
                   }`}
                   placeholder="Describa detalladamente su proyecto o consulta técnica..."
                 />
                 {errors.message && (
-                  <p className="mt-2 text-sm text-red-600 font-light">{errors.message}</p>
+                  <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-red-600 font-light">{errors.message}</p>
                 )}
               </div>
 
@@ -558,10 +558,10 @@ export default function ContactoPage() {
                 disabled={isSubmitting}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className={`w-full py-6 px-8 font-light text-lg transition-all duration-300 flex items-center justify-center space-x-3 ${
+                className={`w-full py-4 sm:py-5 md:py-6 px-6 sm:px-8 font-light text-sm sm:text-base md:text-lg transition-all duration-300 flex items-center justify-center space-x-2 sm:space-x-3 touch-manipulation rounded ${
                   isSubmitting
                     ? 'bg-gray-400 text-white cursor-not-allowed'
-                    : 'bg-gray-900 text-white hover:bg-gray-800'
+                    : 'bg-gray-900 text-white hover:bg-gray-800 active:bg-gray-700'
                 }`}
               >
                 {isSubmitting ? (
@@ -569,13 +569,13 @@ export default function ContactoPage() {
                     <motion.div 
                       animate={{ rotate: 360 }}
                       transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                      className="w-6 h-6 border-2 border-white border-t-transparent rounded-full"
+                      className="w-5 h-5 sm:w-6 sm:h-6 border-2 border-white border-t-transparent rounded-full flex-shrink-0"
                     />
                     <span>Enviando...</span>
                   </>
                 ) : (
                   <>
-                    <Send size={24} />
+                    <Send size={20} className="sm:w-6 sm:h-6 flex-shrink-0" />
                     <span>Enviar Mensaje</span>
                   </>
                 )}
@@ -585,9 +585,9 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-32 bg-gray-900">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+      {/* CTA Section - Responsive */}
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -595,42 +595,42 @@ export default function ContactoPage() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <div className="mb-16">
-              <div className="flex items-center justify-center mb-8">
-                <div className="w-12 h-[1px] bg-white/30 mr-6"></div>
-                <span className="text-xs text-white/60 uppercase tracking-widest font-light">Explora</span>
-                <div className="w-12 h-[1px] bg-white/30 ml-6"></div>
+            <div className="mb-10 sm:mb-12 md:mb-16">
+              <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
+                <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 mr-3 sm:mr-4 md:mr-6"></div>
+                <span className="text-[10px] sm:text-xs text-white/60 uppercase tracking-widest font-light">Explora</span>
+                <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 ml-3 sm:ml-4 md:ml-6"></div>
               </div>
               
-              <h2 className="text-5xl md:text-7xl font-extralight text-white mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-4">
                 ¿Listo para comenzar?
               </h2>
               
-              <p className="text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed px-4">
                 Descubrí nuestro catálogo completo de productos sanitarios y encontrá la solución perfecta para tu proyecto.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-              <Link href="/catalogo">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center px-4">
+              <Link href="/catalogo" className="w-full sm:w-auto">
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group bg-white text-gray-900 px-12 py-4 font-light text-lg tracking-wide hover:bg-gray-100 transition-all duration-500 flex items-center cursor-pointer"
+                  className="group w-full sm:w-auto bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 font-light text-sm sm:text-base md:text-lg tracking-wide hover:bg-gray-100 active:bg-gray-200 transition-all duration-500 flex items-center justify-center cursor-pointer touch-manipulation rounded"
                 >
                   Ver Catálogo
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                 </motion.button>
               </Link>
               
-              <Link href="/nosotros">
+              <Link href="/nosotros" className="w-full sm:w-auto">
                 <motion.button 
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="group border border-white/30 text-white px-12 py-4 font-light text-lg tracking-wide hover:bg-white/5 transition-all duration-500 flex items-center cursor-pointer"
+                  className="group w-full sm:w-auto border border-white/30 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 font-light text-sm sm:text-base md:text-lg tracking-wide hover:bg-white/5 active:bg-white/10 transition-all duration-500 flex items-center justify-center cursor-pointer touch-manipulation rounded"
                 >
                   Conocer más
-                  <div className="w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>
+                  <div className="hidden sm:block w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>
                 </motion.button>
               </Link>
             </div>

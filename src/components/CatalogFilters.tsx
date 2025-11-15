@@ -251,18 +251,21 @@ export default function CatalogFilters({
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Categorías */}
       <div>
         <button
           onClick={() => toggleSection('categories')}
-          className="w-full flex items-center justify-between text-left mb-6 pb-3 border-b border-gray-100 cursor-pointer"
+          className="w-full flex items-center justify-between text-left mb-4 pb-3 border-b border-gray-100 cursor-pointer group"
         >
-          <h4 className="text-base font-light text-gray-900 tracking-wider uppercase">Categorías</h4>
+          <div className="flex items-center gap-3">
+            <div className="w-[1px] h-4 bg-gray-300"></div>
+            <h4 className="text-xs font-light text-gray-900 tracking-wider uppercase">Categorías</h4>
+          </div>
           {expandedSections.categories ? (
-            <ChevronUp className="w-4 h-4 text-gray-400" />
+            <ChevronUp className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
           ) : (
-            <ChevronDown className="w-4 h-4 text-gray-400" />
+            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
           )}
         </button>
 
@@ -337,19 +340,22 @@ export default function CatalogFilters({
       <div>
         <button
           onClick={() => toggleSection('brands')}
-          className="w-full flex items-center justify-between text-left mb-6 pb-3 border-b border-gray-100 cursor-pointer"
+          className="w-full flex items-center justify-between text-left mb-4 pb-3 border-b border-gray-100 cursor-pointer group"
         >
-          <h4 className="text-base font-light text-gray-900 tracking-wider uppercase">Marcas</h4>
+          <div className="flex items-center gap-3">
+            <div className="w-[1px] h-4 bg-gray-300"></div>
+            <h4 className="text-xs font-light text-gray-900 tracking-wider uppercase">Marcas</h4>
+          </div>
           {expandedSections.brands ? (
-            <ChevronUp className="w-4 h-4 text-gray-400" />
+            <ChevronUp className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
           ) : (
-            <ChevronDown className="w-4 h-4 text-gray-400" />
+            <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
           )}
         </button>
 
         {expandedSections.brands && (
           <div className="space-y-0">
-            <label className="flex items-center cursor-pointer py-2 group">
+            <label className="flex items-center cursor-pointer py-2.5 group">
               <div className="relative mr-3">
                 <input
                   type="radio"
@@ -359,18 +365,18 @@ export default function CatalogFilters({
                     console.log('🏷️ Limpiando filtro de marca')
                     onBrandChange('')
                   }}
-                  className="w-3 h-3 text-black border-gray-300 focus:ring-black focus:ring-1 transition-all accent-black"
+                  className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                 />
               </div>
-              <span className={`text-sm transition-all duration-200 tracking-wide ${
-                selectedBrand === '' ? 'text-black font-medium' : 'text-gray-600 group-hover:text-gray-900'
+              <span className={`text-sm transition-all duration-200 font-light tracking-wide ${
+                selectedBrand === '' ? 'text-gray-900 font-medium' : 'text-gray-600 group-hover:text-gray-900'
               }`}>
                 Todas las marcas
               </span>
             </label>
             
             {brands.map((brand) => (
-              <label key={brand._id} className="flex items-center cursor-pointer py-2 group">
+              <label key={brand._id} className="flex items-center cursor-pointer py-2.5 group">
                 <div className="relative mr-3">
                   <input
                     type="radio"
@@ -380,11 +386,11 @@ export default function CatalogFilters({
                       console.log('🏷️ Cambiando marca a:', brand.name)
                       onBrandChange(brand.name)
                     }}
-                    className="w-3 h-3 text-black border-gray-300 focus:ring-black focus:ring-1 transition-all accent-black"
+                    className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                   />
                 </div>
-                <span className={`text-sm transition-all duration-200 tracking-wide ${
-                  selectedBrand === brand.name ? 'text-black font-medium' : 'text-gray-600 group-hover:text-gray-900'
+                <span className={`text-sm transition-all duration-200 font-light tracking-wide ${
+                  selectedBrand === brand.name ? 'text-gray-900 font-medium' : 'text-gray-600 group-hover:text-gray-900'
                 }`}>
                   {brand.name}
                 </span>
@@ -399,55 +405,58 @@ export default function CatalogFilters({
         <div>
           <button
             onClick={() => toggleSection('colors')}
-            className="w-full flex items-center justify-between text-left mb-6 pb-3 border-b border-gray-100 cursor-pointer"
+            className="w-full flex items-center justify-between text-left mb-4 pb-3 border-b border-gray-100 cursor-pointer group"
           >
-            <h4 className="text-base font-light text-gray-900 tracking-wider uppercase">Colores</h4>
+            <div className="flex items-center gap-3">
+              <div className="w-[1px] h-4 bg-gray-300"></div>
+              <h4 className="text-xs font-light text-gray-900 tracking-wider uppercase">Colores</h4>
+            </div>
             {expandedSections.colors ? (
-              <ChevronUp className="w-4 h-4 text-gray-400" />
+              <ChevronUp className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
             ) : (
-              <ChevronDown className="w-4 h-4 text-gray-400" />
+              <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors" />
             )}
           </button>
 
           {expandedSections.colors && (
             <div className="space-y-0">
-              <label className="flex items-center cursor-pointer py-2 group">
+              <label className="flex items-center cursor-pointer py-2.5 group">
                 <div className="relative mr-3">
                   <input
                     type="radio"
                     name="color"
                     checked={selectedColor === ''}
                     onChange={() => onColorChange('')}
-                    className="w-3 h-3 text-black border-gray-300 focus:ring-black focus:ring-1 transition-all accent-black"
+                    className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                   />
                 </div>
-                <span className={`text-sm transition-all duration-200 tracking-wide ${
-                  selectedColor === '' ? 'text-black font-medium' : 'text-gray-600 group-hover:text-gray-900'
+                <span className={`text-sm transition-all duration-200 font-light tracking-wide ${
+                  selectedColor === '' ? 'text-gray-900 font-medium' : 'text-gray-600 group-hover:text-gray-900'
                 }`}>
                   Todos los colores
                 </span>
               </label>
               
               {colors.map((color) => (
-                <label key={color} className="flex items-center cursor-pointer py-2 group">
+                <label key={color} className="flex items-center cursor-pointer py-2.5 group">
                   <div className="relative mr-3">
                     <input
                       type="radio"
                       name="color"
                       checked={selectedColor === color}
                       onChange={() => onColorChange(color)}
-                      className="w-3 h-3 text-black border-gray-300 focus:ring-black focus:ring-1 transition-all accent-black"
+                      className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                     />
                   </div>
                   <div className="flex items-center space-x-3">
                     <div 
-                      className="w-4 h-4 rounded-full flex-shrink-0 transition-all duration-200 group-hover:scale-110 border border-gray-200"
+                      className="w-4 h-4 rounded-full flex-shrink-0 transition-all duration-200 border border-gray-200"
                       style={{ 
                         backgroundColor: colorMap[color] || '#CCCCCC'
                       }}
                     ></div>
-                    <span className={`text-sm transition-all duration-200 tracking-wide ${
-                      selectedColor === color ? 'text-black font-medium' : 'text-gray-600 group-hover:text-gray-900'
+                    <span className={`text-sm transition-all duration-200 font-light tracking-wide ${
+                      selectedColor === color ? 'text-gray-900 font-medium' : 'text-gray-600 group-hover:text-gray-900'
                     }`}>
                       {color}
                     </span>

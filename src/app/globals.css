@@ -40,3 +40,9 @@ body {
   color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Mejoras para dispositivos táctiles */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}

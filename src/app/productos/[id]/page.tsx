@@ -13,9 +13,11 @@ import {
   Package, 
   Ruler,
   ChevronRight,
-  Star
+  Star,
+  Plus
 } from 'lucide-react'
 import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
+import { useCart } from '@/contexts/CartContext'
 
 interface Product {
   _id: string
@@ -61,6 +63,7 @@ export default function ProductDetailPage() {
   const [categoryBreadcrumb, setCategoryBreadcrumb] = useState<Array<{id: string, _id: string, name: string, slug: string, level: number}>>([])
   const [recommendedProducts, setRecommendedProducts] = useState<Product[]>([])
   const [recommendedImageErrors, setRecommendedImageErrors] = useState<Set<string>>(new Set())
+  const { addItem } = useCart()
 
   // Metadata dinámica basada en el producto - se actualiza cuando el producto cambia
   usePageTitle({
@@ -280,50 +283,69 @@ export default function ProductDetailPage() {
 
   const currentImage = getDisplayImage()
 
+  const handleAddToCart = () => {
+    if (!product) return
+
+    const selectedVariantData = product.colorVariants?.[selectedVariant]
+    
+    addItem({
+      _id: product._id,
+      name: product.name,
+      sku: product.sku, // Siempre usar el SKU principal del producto
+      brand: product.brand,
+      image: currentImage || undefined,
+      colorVariant: selectedVariantData ? {
+        colorName: selectedVariantData.colorName,
+        colorCode: selectedVariantData.colorCode,
+        sku: selectedVariantData.sku // El SKU de la variante solo se guarda en colorVariant para referencia
+      } : undefined
+    })
+  }
+
   return (
     <>
       <Header />
       <div className="min-h-screen bg-white">
-      {/* Breadcrumb Minimalista */}
+      {/* Breadcrumb Minimalista - Responsive */}
       <div className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
-          <nav className="flex items-center space-x-2 text-sm text-gray-500 font-light tracking-wide">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <nav className="flex items-center flex-wrap gap-1 sm:gap-2 text-xs sm:text-sm text-gray-500 font-light tracking-wide">
             <Link href="/catalogo" className="hover:text-red-600 transition-colors duration-200">
               Catálogo
             </Link>
             {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
-            {categoryBreadcrumb.map((category, index) => (
-              <div key={category.id} className="flex items-center space-x-2">
+            {categoryBreadcrumb.slice(-2).map((category, index) => (
+              <div key={category.id} className="flex items-center gap-1 sm:gap-2">
                 <Link 
                   href={`/catalogo?category=${category._id}&level=${category.level}`}
-                  className="hover:text-red-600 transition-colors duration-200"
+                  className="hover:text-red-600 transition-colors duration-200 truncate max-w-[120px] sm:max-w-none"
                   title={`Ver productos de ${category.name}`}
                 >
                   {category.name}
                 </Link>
-                {index < categoryBreadcrumb.length - 1 && (
+                {index < categoryBreadcrumb.slice(-2).length - 1 && (
                   <span className="text-gray-300">/</span>
                 )}
               </div>
             ))}
             {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
-            <span className="text-gray-900 font-light">{product.name}</span>
+            <span className="text-gray-900 font-light truncate max-w-[150px] sm:max-w-none">{product.name}</span>
           </nav>
         </div>
       </div>
 
-      {/* Contenido Principal */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Galería de imágenes */}
+      {/* Contenido Principal - Responsive */}
+      <section className="py-6 sm:py-8 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-start">
+            {/* Galería de imágenes - Responsive */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6"
             >
-              <div className="relative aspect-square bg-gray-50 overflow-hidden group">
+              <div className="relative aspect-square bg-gray-50 overflow-hidden group rounded-lg">
                 {currentImage && !imageError ? (
                   <Image
                     src={currentImage}
@@ -331,10 +353,12 @@ export default function ProductDetailPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                     onError={() => setImageError(true)}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-gray-300">
-                    <Package className="w-16 h-16" />
+                    <Package className="w-12 h-12 sm:w-16 sm:h-16" />
                   </div>
                 )}
 
@@ -343,24 +367,24 @@ export default function ProductDetailPage() {
 
                 {/* Badge Minimalista */}
                 {product.featured && (
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-2 left-2 sm:top-4 sm:left-4">
                     <div className="w-2 h-2 bg-red-600 rounded-full shadow-lg"></div>
                   </div>
                 )}
               </div>
 
-              {/* Variantes de color - Debajo de la imagen */}
+              {/* Variantes de color - Responsive y táctil */}
               {product.colorVariants && product.colorVariants.length > 0 && (
                 <div>
-                  <h4 className="text-sm text-gray-900 font-medium mb-4 uppercase tracking-wide">Colores Disponibles</h4>
-                  <div className="space-y-2">
+                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide">Colores Disponibles</h4>
+                  <div className="space-y-2 sm:space-y-2">
                     {product.colorVariants.map((variant, index) => (
                       <div
                         key={index}
-                        className={`flex items-center p-3 border cursor-pointer transition-all duration-300 ${
+                        className={`flex items-center p-2.5 sm:p-3 border-2 cursor-pointer transition-all duration-300 touch-manipulation rounded-lg ${
                           selectedVariant === index 
                             ? 'border-red-600 bg-red-50' 
-                            : 'border-gray-200 hover:border-red-200'
+                            : 'border-gray-200 hover:border-red-200 active:bg-gray-50'
                         }`}
                         onClick={() => {
                           setSelectedVariant(index)
@@ -368,15 +392,15 @@ export default function ProductDetailPage() {
                         }}
                       >
                         <div
-                          className="w-5 h-5 rounded-full border-2 border-gray-300 mr-3 flex-shrink-0"
+                          className="w-6 h-6 sm:w-5 sm:h-5 rounded-full border-2 border-gray-300 mr-3 flex-shrink-0"
                           style={{ backgroundColor: variant.colorCode }}
                         />
                         <div className="flex-1 min-w-0">
-                          <p className="font-light text-gray-900 text-sm tracking-wide">{variant.colorName}</p>
-                          <p className="text-xs text-gray-500 font-mono mt-1">SKU: {variant.sku}</p>
+                          <p className="font-light text-gray-900 text-xs sm:text-sm tracking-wide">{variant.colorName}</p>
+                          <p className="text-[10px] sm:text-xs text-gray-500 font-mono mt-0.5 sm:mt-1">SKU: {variant.sku}</p>
                         </div>
                         {selectedVariant === index && (
-                          <div className="w-2 h-2 bg-red-600 rounded-full"></div>
+                          <div className="w-2 h-2 bg-red-600 rounded-full flex-shrink-0"></div>
                         )}
                       </div>
                     ))}
@@ -385,50 +409,50 @@ export default function ProductDetailPage() {
               )}
             </motion.div>
 
-            {/* Información del producto */}
+            {/* Información del producto - Responsive */}
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="space-y-8"
+              className="space-y-6 sm:space-y-8"
             >
               {/* Header */}
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center">
-                  <div className="w-8 h-[1px] bg-red-600 mr-4"></div>
-                  <span className="text-xs text-gray-400 uppercase tracking-widest font-light">Producto</span>
+                  <div className="w-6 sm:w-8 h-[1px] bg-red-600 mr-3 sm:mr-4"></div>
+                  <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Producto</span>
                 </div>
                 
-                <h1 className="text-3xl md:text-4xl font-light text-gray-900 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 leading-tight">
                   {product.name}
                 </h1>
                 
-                <div className="flex items-center gap-6 text-sm text-gray-500 font-light">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs sm:text-sm text-gray-500 font-light">
                   <span className="tracking-wide">{product.brand}</span>
                   <span className="font-mono text-gray-400">SKU: {product.sku}</span>
                 </div>
               </div>
 
-              {/* Descripción */}
+              {/* Descripción - Responsive */}
               {product.description && (
-                <div className="border-l-2 border-red-600 pl-6">
-                  <h4 className="text-sm text-gray-900 font-medium mb-3 uppercase tracking-wide">Descripción</h4>
-                  <p className="text-gray-600 font-light leading-relaxed max-w-md">{product.description}</p>
+                <div className="border-l-2 border-red-600 pl-4 sm:pl-6">
+                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-2 sm:mb-3 uppercase tracking-wide">Descripción</h4>
+                  <p className="text-sm sm:text-base text-gray-600 font-light leading-relaxed max-w-md">{product.description}</p>
                 </div>
               )}
 
-              {/* Atributos */}
+              {/* Atributos - Responsive */}
               {product.attributes && product.attributes.length > 0 && (
                 <div>
-                  <h4 className="text-sm text-gray-900 font-medium mb-4 uppercase tracking-wide">Especificaciones</h4>
-                  <div className="space-y-3">
+                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide">Especificaciones</h4>
+                  <div className="space-y-2 sm:space-y-3">
                     {product.attributes.map((attr, index) => (
-                      <div key={index} className="py-3 border-b border-gray-100 last:border-b-0">
-                        <div className="flex flex-col sm:flex-row sm:items-start gap-2">
-                          <span className="font-light text-gray-700 tracking-wide flex-shrink-0 min-w-[120px] sm:min-w-[140px]">
+                      <div key={index} className="py-2 sm:py-3 border-b border-gray-100 last:border-b-0">
+                        <div className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-2">
+                          <span className="font-light text-gray-700 tracking-wide flex-shrink-0 text-xs sm:text-sm min-w-[100px] sm:min-w-[140px]">
                             {attr.name}
                           </span>
-                          <span className="text-gray-600 font-light flex-1 break-words leading-relaxed">
+                          <span className="text-xs sm:text-sm text-gray-600 font-light flex-1 break-words leading-relaxed">
                             {attr.value}
                           </span>
                         </div>
@@ -438,20 +462,20 @@ export default function ProductDetailPage() {
                 </div>
               )}
 
-              {/* Medidas */}
+              {/* Medidas - Responsive */}
               {product.measurements?.enabled && (
                 <div>
-                  <h4 className="text-sm text-gray-900 font-medium mb-4 uppercase tracking-wide flex items-center">
-                    <Ruler className="w-4 h-4 mr-2" />
+                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide flex items-center">
+                    <Ruler className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-2" />
                     Medidas Disponibles
                   </h4>
                   {product.measurements.description && (
-                    <p className="text-gray-600 font-light leading-relaxed mb-3">{product.measurements.description}</p>
+                    <p className="text-xs sm:text-sm text-gray-600 font-light leading-relaxed mb-2 sm:mb-3">{product.measurements.description}</p>
                   )}
                   {product.measurements.availableSizes.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {product.measurements.availableSizes.map((size, index) => (
-                        <span key={index} className="px-3 py-1.5 bg-gray-100 text-gray-700 text-sm font-light tracking-wide border border-gray-200">
+                        <span key={index} className="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-100 text-gray-700 text-xs sm:text-sm font-light tracking-wide border border-gray-200 rounded">
                           {size}
                         </span>
                       ))}
@@ -460,17 +484,16 @@ export default function ProductDetailPage() {
                 </div>
               )}
 
-              {/* Botón de WhatsApp */}
-              <div className="pt-6 border-t border-gray-200">
-                <a
-                  href={`https://wa.me/5491234567890?text=Hola!%20Me%20interesa%20el%20producto:%20${encodeURIComponent(product.name)}%20-%20SKU:%20${product.sku}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center w-full px-6 py-3 bg-red-600 text-white font-light tracking-wide hover:bg-red-700 transition-all duration-300"
+              {/* Botones de acción - Responsive y táctil */}
+              <div className="pt-4 sm:pt-6 border-t border-gray-200 space-y-2.5 sm:space-y-3">
+                <button
+                  onClick={handleAddToCart}
+                  className="group inline-flex items-center justify-center w-full px-4 sm:px-6 py-3 sm:py-3.5 bg-gray-900 text-white text-sm sm:text-base font-light tracking-wide hover:bg-gray-800 active:bg-gray-700 transition-all duration-300 cursor-pointer touch-manipulation rounded"
                 >
-                  Consultar por WhatsApp
-                  <div className="w-4 h-[1px] bg-red-400 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-300"></div>
-                </a>
+                  <Plus className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
+                  <span>Agregar al carrito</span>
+                  <div className="hidden sm:block w-4 h-[1px] bg-gray-400 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-300"></div>
+                </button>
               </div>
             </motion.div>
           </div>
@@ -478,45 +501,45 @@ export default function ProductDetailPage() {
       </section>
       
 
-      {/* Productos Recomendados */}
+      {/* Productos Recomendados - Responsive */}
       {recommendedProducts.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <section className="py-8 sm:py-12 md:py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-12"
+              className="mb-8 sm:mb-12"
             >
-              <div className="flex items-center mb-6">
-                <div className="w-8 h-[1px] bg-red-600 mr-4"></div>
-                <span className="text-xs text-gray-400 uppercase tracking-widest font-light">Relacionados</span>
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="w-6 sm:w-8 h-[1px] bg-red-600 mr-3 sm:mr-4"></div>
+                <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Relacionados</span>
               </div>
-              <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+              <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-light text-gray-900 leading-tight mb-4">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 leading-tight mb-2 sm:mb-4">
                     Productos Relacionados
                   </h2>
-                  <p className="text-base text-gray-600 font-light leading-relaxed max-w-2xl">
+                  <p className="text-sm sm:text-base text-gray-600 font-light leading-relaxed max-w-2xl">
                     Otros productos que podrían interesarte
                   </p>
                 </div>
-                <Link href="/catalogo">
+                <Link href="/catalogo" className="self-start lg:self-auto">
                   <motion.button 
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="group bg-red-600 text-white px-8 py-3 font-light text-sm tracking-wide hover:bg-red-700 transition-all duration-300 flex items-center"
+                    className="group bg-red-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 font-light text-xs sm:text-sm tracking-wide hover:bg-red-700 active:bg-red-800 transition-all duration-300 flex items-center touch-manipulation rounded"
                   >
                     Ver catálogo
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </motion.button>
                 </Link>
               </div>
             </motion.div>
 
-            {/* Products Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Products Grid - Responsive */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {recommendedProducts.map((recommendedProduct, index) => {
                 // Obtener imagen específica para cada producto recomendado
                 const recommendedMainImage = getMainImage(recommendedProduct)
@@ -532,8 +555,8 @@ export default function ProductDetailPage() {
                     className="group"
                   >
                     <Link href={`/productos/${recommendedProduct._id}`}>
-                      <div className="bg-white border border-gray-200 overflow-hidden hover:border-red-300 hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
-                        {/* Large Image Focus */}
+                      <div className="bg-white overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer h-full rounded-lg">
+                        {/* Large Image Focus - Responsive */}
                         <div className="aspect-square bg-gray-50 relative overflow-hidden">
                           {recommendedOptimizedImage && !recommendedImageErrors.has(recommendedProduct._id) ? (
                             <Image
@@ -544,10 +567,11 @@ export default function ProductDetailPage() {
                               onError={() => {
                                 setRecommendedImageErrors(prev => new Set(prev).add(recommendedProduct._id))
                               }}
+                              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                             />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-gray-300">
-                              <Package className="w-12 h-12" />
+                              <Package className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
                             </div>
                           )}
                           
@@ -556,22 +580,22 @@ export default function ProductDetailPage() {
                           
                           {/* Floating Category - Minimal */}
                           {recommendedProduct.featured && (
-                            <div className="absolute top-3 left-3">
+                            <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
                               <div className="w-2 h-2 bg-red-600 rounded-full shadow-lg"></div>
                             </div>
                           )}
                         </div>
                         
-                        {/* Minimal Content */}
-                        <div className="p-5 space-y-2">
-                          <div className="flex items-center justify-between">
-                            <h3 className="font-light text-gray-900 text-sm tracking-wide group-hover:text-red-600 transition-colors duration-300 line-clamp-2">
+                        {/* Minimal Content - Responsive */}
+                        <div className="p-3 sm:p-4 md:p-5 space-y-1.5 sm:space-y-2">
+                          <div className="flex items-center justify-between gap-2">
+                            <h3 className="font-light text-gray-900 text-xs sm:text-sm tracking-wide group-hover:text-red-600 transition-colors duration-300 line-clamp-2 flex-1 min-w-0">
                               {recommendedProduct.name}
                             </h3>
-                            <div className="w-3 h-[1px] bg-gray-300 group-hover:bg-red-600 group-hover:w-6 transition-all duration-300"></div>
+                            <div className="hidden sm:block w-3 h-[1px] bg-gray-300 group-hover:bg-red-600 group-hover:w-6 transition-all duration-300 flex-shrink-0"></div>
                           </div>
                           
-                          <div className="flex items-center justify-between text-xs text-gray-500 font-light">
+                          <div className="flex items-center justify-between text-[10px] sm:text-xs text-gray-500 font-light gap-2">
                             <span className="tracking-wide truncate max-w-[40%]">{recommendedProduct.brand}</span>
                             <span className="font-mono text-gray-400 flex-shrink-0">{recommendedProduct.sku}</span>
                           </div>
