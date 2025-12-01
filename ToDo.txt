@@ -1,3 +1,2 @@
-//hay que agregar en admin un metodo para poder subir de manera masiva produtos,
-subiendo un excel y que vayan cargando los productos, 
-algo que hay que tener en cuenta es que las imagenes se suben a cloudflare, pero desde el excel se sube un link de una foto ya existente en otra pagina y tiene que descargar de ese link la imagen y crear un link propio de cloudflare para ese usarlo y guardar el prod en la bse de datos
+- conseguir imagen de baño pro y ponerla con algun dato especial
+- poner nombres de categorias que correspondan en el inicio y fotos mejores

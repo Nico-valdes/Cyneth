@@ -127,7 +127,7 @@ function CatalogoContent() {
         setLoading(true)
         
         const [productsRes, categoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
-          fetch('/api/products?active=true&limit=1000'),
+          fetch('/api/products?active=true&limit=1500'),
           fetch('/api/categories?type=main'), // Solo categorías principales
           fetch('/api/categories'), // Todas las categorías para filtrado
           fetch('/api/brands')
@@ -212,7 +212,34 @@ function CatalogoContent() {
 
   // Ordenar productos
   const sortedProducts = [...filteredProducts].sort((a, b) => {
-    if (!sortBy) return 0 // Sin ordenar si no hay selección
+    if (!sortBy) {
+      // Ordenamiento por defecto: productos con más variantes de color primero, luego inodoros
+      const aHasColorVariants = a.colorVariants && a.colorVariants.length > 0
+      const bHasColorVariants = b.colorVariants && b.colorVariants.length > 0
+      const aColorVariantsCount = a.colorVariants?.length || 0
+      const bColorVariantsCount = b.colorVariants?.length || 0
+      const aIsInodoro = a.name.toLowerCase().includes('inodoro')
+      const bIsInodoro = b.name.toLowerCase().includes('inodoro')
+      
+      // Prioridad 1: Productos con variantes de color (más variantes primero)
+      if (aHasColorVariants && !bHasColorVariants) return -1
+      if (!aHasColorVariants && bHasColorVariants) return 1
+      if (aHasColorVariants && bHasColorVariants) {
+        // Si ambos tienen variantes, ordenar por cantidad (más variantes primero)
+        if (bColorVariantsCount !== aColorVariantsCount) {
+          return bColorVariantsCount - aColorVariantsCount
+        }
+      }
+      
+      // Prioridad 2: Productos con "inodoro" en el nombre (solo si no tienen variantes de color)
+      if (!aHasColorVariants && !bHasColorVariants) {
+        if (aIsInodoro && !bIsInodoro) return -1
+        if (!aIsInodoro && bIsInodoro) return 1
+      }
+      
+      return 0
+    }
+    
     switch (sortBy) {
       case 'name':
         return a.name.localeCompare(b.name)
