@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Eye, Heart, ShoppingCart, Star, Tag, Plus } from 'lucide-react'
-import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
+import { getMainImage, getOptimizedImageUrl, isCloudinaryUrl, shouldUseNextImage } from '@/utils/imageUtils'
 import { useCart } from '@/contexts/CartContext'
 
 interface Product {
@@ -44,12 +44,18 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
   const { addItem } = useCart()
 
   const mainImage = getMainImage(product)
-  const optimizedImage = mainImage ? getOptimizedImageUrl(mainImage) : null
-
+  
   // Obtener imagen actual (variante seleccionada o imagen principal)
-  const currentImage = product.colorVariants && product.colorVariants.length > 0 && product.colorVariants[selectedVariant]?.image
+  const variantImage = product.colorVariants && product.colorVariants.length > 0 && product.colorVariants[selectedVariant]?.image
     ? product.colorVariants[selectedVariant].image
-    : optimizedImage || ''
+    : null
+  const rawImage = variantImage || mainImage || ''
+  
+  // Ajustar tamaño según el modo de vista
+  // Vista lista: imagen pequeña (96x96)
+  // Vista grid: imagen mediana (400x400)
+  const imageSize = viewMode === 'list' ? 96 : 400
+  const currentImage = rawImage ? getOptimizedImageUrl(rawImage, imageSize, imageSize) : ''
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
@@ -81,15 +87,27 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
               <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex-shrink-0">
                 <div className="relative w-full h-full bg-white overflow-hidden rounded">
                   {currentImage && !imageError ? (
-                    <Image
-                      src={currentImage}
-                      alt={product.name}
-                      fill
-                      className="object-contain p-1 sm:p-2"
-                      onError={() => setImageError(true)}
-                      quality={85}
-                      sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 96px"
-                    />
+                    shouldUseNextImage(currentImage) ? (
+                      <Image
+                        src={currentImage}
+                        alt={product.name}
+                        fill
+                        className="object-contain p-1 sm:p-2"
+                        onError={() => setImageError(true)}
+                        quality={85}
+                        sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, 96px"
+                      />
+                    ) : (
+                      <img
+                        src={currentImage}
+                        alt={product.name}
+                        className="w-full h-full object-contain p-1 sm:p-2"
+                        onError={() => setImageError(true)}
+                        loading="lazy"
+                        width={96}
+                        height={96}
+                      />
+                    )
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-gray-400 bg-gray-50">
                       <Tag className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -182,16 +200,28 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
         {/* Imagen cuadrada - Responsive */}
         <div className="relative aspect-square bg-white overflow-hidden">
           {currentImage && !imageError ? (
-            <Image
-              src={currentImage}
-              alt={product.name}
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              onError={() => setImageError(true)}
-              priority={false}
-              quality={85}
-              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            />
+            shouldUseNextImage(currentImage) ? (
+              <Image
+                src={currentImage}
+                alt={product.name}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={() => setImageError(true)}
+                priority={false}
+                quality={85}
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              />
+            ) : (
+              <img
+                src={currentImage}
+                alt={product.name}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={() => setImageError(true)}
+                loading="lazy"
+                width={400}
+                height={400}
+              />
+            )
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-300 bg-gray-50">
               <Tag className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />

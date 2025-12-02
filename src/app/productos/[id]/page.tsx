@@ -16,7 +16,7 @@ import {
   Star,
   Plus
 } from 'lucide-react'
-import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
+import { getMainImage, getOptimizedImageUrl, shouldUseNextImage } from '@/utils/imageUtils'
 import { useCart } from '@/contexts/CartContext'
 
 interface Product {
@@ -237,18 +237,9 @@ export default function ProductDetailPage() {
 
 
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"></div>
-          <p className="text-gray-600 font-light tracking-wide">Cargando producto...</p>
-        </div>
-      </div>
-    )
-  }
 
-  if (error || !product) {
+  // Solo mostrar error si realmente hay un error y no está cargando
+  if (!loading && error && !product) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
@@ -268,17 +259,21 @@ export default function ProductDetailPage() {
   }
 
   // Obtener imagen basada en la variante seleccionada
+  // Vista detalle: imagen grande (800x800)
   const getDisplayImage = () => {
+    if (!product) return null
+    
+    const imageSize = 800
     if (product.colorVariants && product.colorVariants.length > 0) {
       // Si hay variantes de color, mostrar la imagen de la variante seleccionada
       const selectedVariantData = product.colorVariants[selectedVariant]
       if (selectedVariantData?.image) {
-        return getOptimizedImageUrl(selectedVariantData.image)
+        return getOptimizedImageUrl(selectedVariantData.image, imageSize, imageSize)
       }
     }
     // Si no hay variantes o la variante no tiene imagen, mostrar imagen por defecto
     const mainImage = getMainImage(product)
-    return mainImage ? getOptimizedImageUrl(mainImage) : null
+    return mainImage ? getOptimizedImageUrl(mainImage, imageSize, imageSize) : null
   }
 
   const currentImage = getDisplayImage()
@@ -309,28 +304,38 @@ export default function ProductDetailPage() {
       {/* Breadcrumb Minimalista - Responsive */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
-          <nav className="flex items-center flex-wrap gap-1 sm:gap-2 text-xs sm:text-sm text-gray-500 font-light tracking-wide">
-            <Link href="/catalogo" className="hover:text-red-600 transition-colors duration-200">
-              Catálogo
-            </Link>
-            {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
-            {categoryBreadcrumb.slice(-2).map((category, index) => (
-              <div key={category.id} className="flex items-center gap-1 sm:gap-2">
-                <Link 
-                  href={`/catalogo?category=${category._id}&level=${category.level}`}
-                  className="hover:text-red-600 transition-colors duration-200 truncate max-w-[120px] sm:max-w-none"
-                  title={`Ver productos de ${category.name}`}
-                >
-                  {category.name}
-                </Link>
-                {index < categoryBreadcrumb.slice(-2).length - 1 && (
-                  <span className="text-gray-300">/</span>
-                )}
-              </div>
-            ))}
-            {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
-            <span className="text-gray-900 font-light truncate max-w-[150px] sm:max-w-none">{product.name}</span>
-          </nav>
+          {loading ? (
+            <div className="flex items-center flex-wrap gap-1 sm:gap-2">
+              <div className="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+              <span className="text-gray-300">/</span>
+              <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+              <span className="text-gray-300">/</span>
+              <div className="h-4 w-32 bg-gray-200 rounded animate-pulse"></div>
+            </div>
+          ) : (
+            <nav className="flex items-center flex-wrap gap-1 sm:gap-2 text-xs sm:text-sm text-gray-500 font-light tracking-wide">
+              <Link href="/catalogo" className="hover:text-red-600 transition-colors duration-200">
+                Catálogo
+              </Link>
+              {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
+              {categoryBreadcrumb.slice(-2).map((category, index) => (
+                <div key={category.id} className="flex items-center gap-1 sm:gap-2">
+                  <Link 
+                    href={`/catalogo?category=${category._id}&level=${category.level}`}
+                    className="hover:text-red-600 transition-colors duration-200 truncate max-w-[120px] sm:max-w-none"
+                    title={`Ver productos de ${category.name}`}
+                  >
+                    {category.name}
+                  </Link>
+                  {index < categoryBreadcrumb.slice(-2).length - 1 && (
+                    <span className="text-gray-300">/</span>
+                  )}
+                </div>
+              ))}
+              {categoryBreadcrumb.length > 0 && <span className="text-gray-300">/</span>}
+              <span className="text-gray-900 font-light truncate max-w-[150px] sm:max-w-none">{product?.name}</span>
+            </nav>
+          )}
         </div>
       </div>
 
@@ -339,99 +344,164 @@ export default function ProductDetailPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-start">
             {/* Galería de imágenes - Responsive */}
-            <motion.div
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-4 sm:space-y-6"
-            >
-              <div className="relative aspect-square bg-gray-50 overflow-hidden group rounded-lg">
-                {currentImage && !imageError ? (
-                  <Image
-                    src={currentImage}
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    onError={() => setImageError(true)}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    priority
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-gray-300">
-                    <Package className="w-12 h-12 sm:w-16 sm:h-16" />
-                  </div>
-                )}
-
-                {/* Minimal Overlay */}
-                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                {/* Badge Minimalista */}
-                {product.featured && (
-                  <div className="absolute top-2 left-2 sm:top-4 sm:left-4">
-                    <div className="w-2 h-2 bg-red-600 rounded-full shadow-lg"></div>
-                  </div>
-                )}
-              </div>
-
-              {/* Variantes de color - Responsive y táctil */}
-              {product.colorVariants && product.colorVariants.length > 0 && (
-                <div>
-                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide">Colores Disponibles</h4>
-                  <div className="space-y-2 sm:space-y-2">
-                    {product.colorVariants.map((variant, index) => (
-                      <div
-                        key={index}
-                        className={`flex items-center p-2.5 sm:p-3 border-2 cursor-pointer transition-all duration-300 touch-manipulation rounded-lg ${
-                          selectedVariant === index 
-                            ? 'border-red-600 bg-red-50' 
-                            : 'border-gray-200 hover:border-red-200 active:bg-gray-50'
-                        }`}
-                        onClick={() => {
-                          setSelectedVariant(index)
-                          setImageError(false)
-                        }}
-                      >
-                        <div
-                          className="w-6 h-6 sm:w-5 sm:h-5 rounded-full border-2 border-gray-300 mr-3 flex-shrink-0"
-                          style={{ backgroundColor: variant.colorCode }}
-                        />
-                        <div className="flex-1 min-w-0">
-                          <p className="font-light text-gray-900 text-xs sm:text-sm tracking-wide">{variant.colorName}</p>
-                          <p className="text-[10px] sm:text-xs text-gray-500 font-mono mt-0.5 sm:mt-1">SKU: {variant.sku}</p>
-                        </div>
-                        {selectedVariant === index && (
-                          <div className="w-2 h-2 bg-red-600 rounded-full flex-shrink-0"></div>
-                        )}
-                      </div>
+            {loading ? (
+              <div className="space-y-4 sm:space-y-6">
+                {/* Skeleton de imagen principal */}
+                <div className="relative aspect-square bg-gray-200 rounded-lg animate-pulse"></div>
+                {/* Skeleton de variantes de color */}
+                <div className="space-y-2">
+                  <div className="h-4 w-32 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="space-y-2">
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="h-16 bg-gray-200 rounded-lg animate-pulse" style={{ animationDelay: `${i * 100}ms` }}></div>
                     ))}
                   </div>
                 </div>
-              )}
-            </motion.div>
+              </div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, x: -40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="space-y-4 sm:space-y-6"
+              >
+                <div className="relative aspect-square bg-gray-50 overflow-hidden group rounded-lg">
+                  {currentImage && !imageError && product ? (
+                    shouldUseNextImage(currentImage) ? (
+                      <Image
+                        src={currentImage}
+                        alt={product.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        onError={() => setImageError(true)}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority
+                      />
+                    ) : (
+                      <img
+                        src={currentImage}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        onError={() => setImageError(true)}
+                        loading="eager"
+                        width={800}
+                        height={800}
+                      />
+                    )
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-gray-300">
+                      <Package className="w-12 h-12 sm:w-16 sm:h-16" />
+                    </div>
+                  )}
+
+                  {/* Minimal Overlay */}
+                  <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  {/* Badge Minimalista */}
+                  {product?.featured && (
+                    <div className="absolute top-2 left-2 sm:top-4 sm:left-4">
+                      <div className="w-2 h-2 bg-red-600 rounded-full shadow-lg"></div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Variantes de color - Responsive y táctil */}
+                {product.colorVariants && product.colorVariants.length > 0 && (
+                  <div>
+                    <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide">Colores Disponibles</h4>
+                    <div className="space-y-2 sm:space-y-2">
+                      {product.colorVariants.map((variant, index) => (
+                        <div
+                          key={index}
+                          className={`flex items-center p-2.5 sm:p-3 border-2 cursor-pointer transition-all duration-300 touch-manipulation rounded-lg ${
+                            selectedVariant === index 
+                              ? 'border-red-600 bg-red-50' 
+                              : 'border-gray-200 hover:border-red-200 active:bg-gray-50'
+                          }`}
+                          onClick={() => {
+                            setSelectedVariant(index)
+                            setImageError(false)
+                          }}
+                        >
+                          <div
+                            className="w-6 h-6 sm:w-5 sm:h-5 rounded-full border-2 border-gray-300 mr-3 flex-shrink-0"
+                            style={{ backgroundColor: variant.colorCode }}
+                          />
+                          <div className="flex-1 min-w-0">
+                            <p className="font-light text-gray-900 text-xs sm:text-sm tracking-wide">{variant.colorName}</p>
+                            <p className="text-[10px] sm:text-xs text-gray-500 font-mono mt-0.5 sm:mt-1">SKU: {variant.sku}</p>
+                          </div>
+                          {selectedVariant === index && (
+                            <div className="w-2 h-2 bg-red-600 rounded-full flex-shrink-0"></div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </motion.div>
+            )}
 
             {/* Información del producto - Responsive */}
-            <motion.div
-              initial={{ opacity: 0, x: 40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="space-y-6 sm:space-y-8"
-            >
-              {/* Header */}
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center">
-                  <div className="w-6 sm:w-8 h-[1px] bg-red-600 mr-3 sm:mr-4"></div>
-                  <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Producto</span>
+            {loading ? (
+              <div className="space-y-6 sm:space-y-8">
+                {/* Skeleton de header */}
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-center">
+                    <div className="w-6 sm:w-8 h-[1px] bg-gray-200 mr-3 sm:mr-4"></div>
+                    <div className="h-3 w-20 bg-gray-200 rounded animate-pulse"></div>
+                  </div>
+                  <div className="h-8 w-3/4 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
+                    <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+                    <div className="h-4 w-32 bg-gray-200 rounded animate-pulse"></div>
+                  </div>
                 </div>
-                
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 leading-tight">
-                  {product.name}
-                </h1>
-                
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs sm:text-sm text-gray-500 font-light">
-                  <span className="tracking-wide">{product.brand}</span>
-                  <span className="font-mono text-gray-400">SKU: {product.sku}</span>
+                {/* Skeleton de descripción */}
+                <div className="border-l-2 border-gray-200 pl-4 sm:pl-6 space-y-2">
+                  <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="space-y-2">
+                    <div className="h-4 w-full bg-gray-200 rounded animate-pulse"></div>
+                    <div className="h-4 w-5/6 bg-gray-200 rounded animate-pulse"></div>
+                  </div>
+                </div>
+                {/* Skeleton de atributos */}
+                <div className="space-y-3">
+                  <div className="h-4 w-32 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="space-y-2">
+                    {[1, 2, 3, 4].map((i) => (
+                      <div key={i} className="h-12 bg-gray-200 rounded animate-pulse" style={{ animationDelay: `${i * 100}ms` }}></div>
+                    ))}
+                  </div>
+                </div>
+                {/* Skeleton de botón */}
+                <div className="pt-4 sm:pt-6 border-t border-gray-200">
+                  <div className="h-12 w-full bg-gray-200 rounded animate-pulse"></div>
                 </div>
               </div>
+            ) : product ? (
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                className="space-y-6 sm:space-y-8"
+              >
+                {/* Header */}
+                <div className="space-y-3 sm:space-y-4">
+                  <div className="flex items-center">
+                    <div className="w-6 sm:w-8 h-[1px] bg-red-600 mr-3 sm:mr-4"></div>
+                    <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Producto</span>
+                  </div>
+                  
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 leading-tight">
+                    {product.name}
+                  </h1>
+                  
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-xs sm:text-sm text-gray-500 font-light">
+                    <span className="tracking-wide">{product.brand}</span>
+                    <span className="font-mono text-gray-400">SKU: {product.sku}</span>
+                  </div>
+                </div>
 
               {/* Descripción - Responsive */}
               {product.description && (
@@ -496,6 +566,7 @@ export default function ProductDetailPage() {
                 </button>
               </div>
             </motion.div>
+            ) : null}
           </div>
         </div>
       </section>

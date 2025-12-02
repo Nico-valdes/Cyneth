@@ -20,10 +20,11 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getOptimizedImageUrl } from '@/utils/imageUtils';
 import sanitario from "../../public/inodoro_milano.png"
 import sanitario2 from "../../public/inodoro_milano2.png"
 import sanitario3 from "../../public/inodoro_milano3.png"
-import catgrif from "../../public/cat-griferia.jpg"
+import catgrif from "../../public/griferia_cocina.png"
 import catduch from "../../public/cat-ducha.jpg"
 import catsan from "../../public/cat-sanitario.jpg"
 import catacc from "../../public/cat-accesorios.jpg"
@@ -182,7 +183,7 @@ export default function CleanHomepage() {
   const featuredCategories = [
     {
       id: 1,
-      name: "Griferías",
+      name: "Griferia para cocina",
       icon: <Droplet className="w-8 h-8" />,
       description: "Diseño europeo y calidad premium",
       image: catgrif,
@@ -198,7 +199,7 @@ export default function CleanHomepage() {
     },
     {
       id: 3,
-      name: "Duchas",
+      name: "Griferia para baño",
       icon: <ShowerHead className="w-8 h-8" />,
       description: "Experiencia de baño única",
       image: catduch,
@@ -206,7 +207,7 @@ export default function CleanHomepage() {
     },
     {
       id: 4,
-      name: "Accesorios",
+      name: "Caños y conexiones",
       icon: <Wrench className="w-8 h-8" />,
       description: "Complementos esenciales",
       image: catacc,
@@ -700,7 +701,7 @@ export default function CleanHomepage() {
                      {/* Large Image Focus */}
                      <div className="aspect-square bg-gray-50 relative overflow-hidden">
                        <img
-                         src={product.image}
+                         src={getOptimizedImageUrl(product.image)}
                          alt={product.name}
                          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                          loading="lazy"

@@ -285,16 +285,6 @@ function CatalogoContent() {
     setProductsToShow(prev => prev + 25)
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Cargando catálogo...</p>
-        </div>
-      </div>
-    )
-  }
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -322,43 +312,55 @@ function CatalogoContent() {
             {/* Barra de controles - Móvil y Desktop */}
             <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
               {/* Contador de productos */}
-              <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0">
-                <span className="font-medium">{sortedProducts.length}</span> producto{sortedProducts.length !== 1 ? 's' : ''}
-              </div>
+              {loading ? (
+                <div className="h-4 w-24 bg-white/20 rounded animate-pulse"></div>
+              ) : (
+                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0">
+                  <span className="font-medium">{sortedProducts.length}</span> producto{sortedProducts.length !== 1 ? 's' : ''}
+                </div>
+              )}
               
               {/* Ordenar */}
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="relative">
-                  <select
-                    value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value)}
-                    className="px-2 sm:px-3 lg:px-4 py-1.5 sm:py-2 bg-transparent border-0 border-b border-white/30 text-white text-xs sm:text-sm lg:text-base font-light appearance-none cursor-pointer focus:outline-none focus:border-white/50 transition-all pr-5 sm:pr-6 lg:pr-8 w-auto min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] max-w-[180px] lg:max-w-[200px]"
-                  >
-                    <option value="" className="bg-gray-900 text-white">Ordenar por</option>
-                    <option value="name" className="bg-gray-900 text-white">Alfabético</option>
-                    <option value="brand" className="bg-gray-900 text-white">Por Marca</option>
-                    <option value="sku" className="bg-gray-900 text-white">Por SKU</option>
-                    <option value="newest" className="bg-gray-900 text-white">Más Recientes</option>
-                    <option value="oldest" className="bg-gray-900 text-white">Más Antiguos</option>
-                  </select>
-                  <ChevronDown className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 sm:w-4 sm:h-4 text-white/60 pointer-events-none" />
+              {loading ? (
+                <div className="h-8 w-32 bg-white/20 rounded animate-pulse"></div>
+              ) : (
+                <div className="flex items-center gap-1.5 sm:gap-2">
+                  <div className="relative">
+                    <select
+                      value={sortBy}
+                      onChange={(e) => setSortBy(e.target.value)}
+                      className="px-2 sm:px-3 lg:px-4 py-1.5 sm:py-2 bg-transparent border-0 border-b border-white/30 text-white text-xs sm:text-sm lg:text-base font-light appearance-none cursor-pointer focus:outline-none focus:border-white/50 transition-all pr-5 sm:pr-6 lg:pr-8 w-auto min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] max-w-[180px] lg:max-w-[200px]"
+                    >
+                      <option value="" className="bg-gray-900 text-white">Ordenar por</option>
+                      <option value="name" className="bg-gray-900 text-white">Alfabético</option>
+                      <option value="brand" className="bg-gray-900 text-white">Por Marca</option>
+                      <option value="sku" className="bg-gray-900 text-white">Por SKU</option>
+                      <option value="newest" className="bg-gray-900 text-white">Más Recientes</option>
+                      <option value="oldest" className="bg-gray-900 text-white">Más Antiguos</option>
+                    </select>
+                    <ChevronDown className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 sm:w-4 sm:h-4 text-white/60 pointer-events-none" />
+                  </div>
                 </div>
-              </div>
+              )}
               
               {/* Botón Filtrar - Solo móvil */}
-              <button
-                onClick={() => setShowFilters(!showFilters)}
-                className="lg:hidden flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white/30 hover:border-white/50 hover:bg-white/5 transition-all flex-shrink-0"
-                aria-label="Filtrar"
-              >
-                <Settings className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
-                <span className="text-xs sm:text-sm text-white font-light tracking-wide hidden min-[340px]:inline">Filtrar</span>
-                {hasActiveFilters && (
-                  <span className="w-4 h-4 sm:w-5 sm:h-5 bg-white text-gray-900 text-[9px] sm:text-[10px] rounded-full flex items-center justify-center font-medium">
-                    {[selectedCategory, selectedBrand, selectedColor].filter(Boolean).length}
-                  </span>
-                )}
-              </button>
+              {loading ? (
+                <div className="lg:hidden h-8 w-20 bg-white/20 rounded animate-pulse"></div>
+              ) : (
+                <button
+                  onClick={() => setShowFilters(!showFilters)}
+                  className="lg:hidden flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white/30 hover:border-white/50 hover:bg-white/5 transition-all flex-shrink-0"
+                  aria-label="Filtrar"
+                >
+                  <Settings className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+                  <span className="text-xs sm:text-sm text-white font-light tracking-wide hidden min-[340px]:inline">Filtrar</span>
+                  {hasActiveFilters && (
+                    <span className="w-4 h-4 sm:w-5 sm:h-5 bg-white text-gray-900 text-[9px] sm:text-[10px] rounded-full flex items-center justify-center font-medium">
+                      {[selectedCategory, selectedBrand, selectedColor].filter(Boolean).length}
+                    </span>
+                  )}
+                </button>
+              )}
             </div>
             
             {/* Filtros activos - Móvil y Desktop */}
@@ -406,28 +408,55 @@ function CatalogoContent() {
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-16">
           {/* Sidebar de filtros */}
           <div className="hidden lg:block w-80 flex-shrink-0">
-            <div className="bg-white p-8 sticky top-8">
-              <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
-                <h3 className="text-lg font-light text-gray-900 tracking-wide uppercase">Filtros</h3>
-                <button
-                  onClick={clearFilters}
-                  className="text-xs text-gray-500 hover:text-black font-light tracking-wide transition-colors duration-200 uppercase cursor-pointer"
-                >
-                  Limpiar
-                </button>
+            {loading ? (
+              <div className="bg-white p-8 sticky top-8">
+                <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
+                  <div className="h-6 w-20 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+                </div>
+                <div className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+                    <div className="space-y-2">
+                      {[1, 2, 3, 4].map((i) => (
+                        <div key={i} className="h-4 w-full bg-gray-200 rounded animate-pulse" style={{ animationDelay: `${i * 100}ms` }}></div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+                    <div className="space-y-2">
+                      {[1, 2, 3].map((i) => (
+                        <div key={i} className="h-4 w-full bg-gray-200 rounded animate-pulse" style={{ animationDelay: `${i * 100}ms` }}></div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
-              <CatalogFilters
-                categories={allCategories}
-                brands={brands}
-                colors={availableColors}
-                selectedCategory={selectedCategory}
-                selectedBrand={selectedBrand}
-                selectedColor={selectedColor}
-                onCategoryChange={setSelectedCategory}
-                onBrandChange={setSelectedBrand}
-                onColorChange={setSelectedColor}
-              />
-            </div>
+            ) : (
+              <div className="bg-white p-8 sticky top-8">
+                <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
+                  <h3 className="text-lg font-light text-gray-900 tracking-wide uppercase">Filtros</h3>
+                  <button
+                    onClick={clearFilters}
+                    className="text-xs text-gray-500 hover:text-black font-light tracking-wide transition-colors duration-200 uppercase cursor-pointer"
+                  >
+                    Limpiar
+                  </button>
+                </div>
+                <CatalogFilters
+                  categories={allCategories}
+                  brands={brands}
+                  colors={availableColors}
+                  selectedCategory={selectedCategory}
+                  selectedBrand={selectedBrand}
+                  selectedColor={selectedColor}
+                  onCategoryChange={setSelectedCategory}
+                  onBrandChange={setSelectedBrand}
+                  onColorChange={setSelectedColor}
+                />
+              </div>
+            )}
           </div>
 
           {/* Sidebar de filtros - Móvil Minimalista */}
@@ -521,7 +550,42 @@ function CatalogoContent() {
 
           {/* Grid de productos elegante - Responsive */}
           <div className="flex-1 w-full">
-            {sortedProducts.length === 0 ? (
+            {loading ? (
+              <div className={viewMode === 'grid' 
+                ? 'grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-16 auto-rows-fr mt-6 sm:mt-8 md:mt-12'
+                : 'space-y-4 sm:space-y-6 md:space-y-12 mt-6 sm:mt-8 md:mt-12'
+              }>
+                {Array.from({ length: 12 }).map((_, index) => (
+                  viewMode === 'grid' ? (
+                    <div key={index} className="bg-white overflow-hidden">
+                      {/* Skeleton de imagen cuadrada */}
+                      <div className="relative aspect-square bg-gray-200 animate-pulse"></div>
+                      {/* Skeleton de contenido */}
+                      <div className="p-2 sm:p-3 md:p-4 space-y-2 sm:space-y-3">
+                        <div className="h-4 w-3/4 bg-gray-200 rounded animate-pulse"></div>
+                        <div className="h-3 w-1/2 bg-gray-200 rounded animate-pulse"></div>
+                        <div className="h-3 w-1/3 bg-gray-200 rounded animate-pulse"></div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div key={index} className="bg-white overflow-hidden hover:bg-gray-50 transition-colors">
+                      <div className="p-2 sm:p-3 md:p-4">
+                        <div className="flex gap-2 sm:gap-3 md:gap-4">
+                          {/* Skeleton de imagen pequeña */}
+                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex-shrink-0 bg-gray-200 rounded animate-pulse"></div>
+                          {/* Skeleton de contenido */}
+                          <div className="flex-1 min-w-0 space-y-2">
+                            <div className="h-4 w-3/4 bg-gray-200 rounded animate-pulse"></div>
+                            <div className="h-3 w-1/2 bg-gray-200 rounded animate-pulse"></div>
+                            <div className="h-3 w-2/3 bg-gray-200 rounded animate-pulse"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                ))}
+              </div>
+            ) : sortedProducts.length === 0 ? (
               <div className="text-center py-12 sm:py-16 md:py-24">
                 <div className="text-gray-300 mb-6 sm:mb-8">
                   <svg className="mx-auto h-12 w-12 sm:h-16 sm:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -580,10 +644,76 @@ function CatalogoContent() {
 export default function CatalogoPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Cargando catálogo...</p>
+      <div className="min-h-screen bg-white">
+        <Header />
+        {/* Header del catálogo - Siempre visible */}
+        <div className="relative">
+          <div className="absolute inset-0">
+            <Image
+              src={banner}
+              alt="Fondo catálogo"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="py-8 sm:py-12 md:py-16">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-light text-white tracking-wide uppercase text-center">Catálogo</h1>
+              <p className="mt-3 sm:mt-4 md:mt-6 text-sm sm:text-base text-white/80 text-center font-light tracking-wide max-w-2xl mx-auto px-4">
+                Descubre nuestra colección cuidadosamente seleccionada
+              </p>
+            </div>
+            {/* Skeleton de controles */}
+            <div className="border-t border-white/10 pt-4 sm:pt-6 pb-4 sm:pb-6">
+              <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
+                <div className="h-4 w-24 bg-white/20 rounded animate-pulse"></div>
+                <div className="h-8 w-32 bg-white/20 rounded animate-pulse"></div>
+                <div className="lg:hidden h-8 w-20 bg-white/20 rounded animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Skeleton de contenido */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
+          <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 md:gap-16">
+            {/* Skeleton sidebar */}
+            <div className="hidden lg:block w-80 flex-shrink-0">
+              <div className="bg-white p-8 sticky top-8">
+                <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-100">
+                  <div className="h-6 w-20 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+                </div>
+                <div className="space-y-6">
+                  {[1, 2, 3].map((i) => (
+                    <div key={i} className="space-y-3">
+                      <div className="h-4 w-24 bg-gray-200 rounded animate-pulse"></div>
+                      <div className="space-y-2">
+                        {[1, 2, 3, 4].map((j) => (
+                          <div key={j} className="h-4 w-full bg-gray-200 rounded animate-pulse" style={{ animationDelay: `${j * 100}ms` }}></div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Skeleton productos */}
+            <div className="flex-1 w-full">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-16 auto-rows-fr mt-6 sm:mt-8 md:mt-12">
+                {Array.from({ length: 12 }).map((_, index) => (
+                  <div key={index} className="bg-white overflow-hidden">
+                    <div className="relative aspect-square bg-gray-200 animate-pulse"></div>
+                    <div className="p-2 sm:p-3 md:p-4 space-y-2 sm:space-y-3">
+                      <div className="h-4 w-3/4 bg-gray-200 rounded animate-pulse"></div>
+                      <div className="h-3 w-1/2 bg-gray-200 rounded animate-pulse"></div>
+                      <div className="h-3 w-1/3 bg-gray-200 rounded animate-pulse"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     }>
