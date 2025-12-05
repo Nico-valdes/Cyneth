@@ -62,15 +62,19 @@ function CatalogoContent() {
   const [allCategories, setAllCategories] = useState<Category[]>([])
   const [brands, setBrands] = useState<Brand[]>([])
   const [loading, setLoading] = useState(true)
-  const [loadingAllProducts, setLoadingAllProducts] = useState(false)
+  const [loadingMore, setLoadingMore] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedBrand, setSelectedBrand] = useState('')
   const [selectedColor, setSelectedColor] = useState('')
   const [showFilters, setShowFilters] = useState(false)
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
-  const [sortBy, setSortBy] = useState('')
-  const [productsToShow, setProductsToShow] = useState(25)
+  const [sortBy, setSortBy] = useState('name')
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc')
+  const [currentPage, setCurrentPage] = useState(1)
+  const [totalProducts, setTotalProducts] = useState(1081) // Hardcoded total
+  const [totalPages, setTotalPages] = useState(1)
+  const productsPerPage = 50
 
   // Metadata dinámica basada en filtros
   const categoryName = selectedCategory 
@@ -121,65 +125,122 @@ function CatalogoContent() {
     }
   }, [searchParams])
 
-  // Cargar datos iniciales - Primero destacados, luego todos
+  // Función para construir URL de API con filtros y paginación
+  const buildProductsUrl = (page: number = 1) => {
+    const params = new URLSearchParams()
+    params.set('active', 'true')
+    params.set('page', page.toString())
+    params.set('limit', productsPerPage.toString())
+    
+    // Aplicar filtros
+    if (selectedCategory) params.set('category', selectedCategory)
+    if (selectedBrand) params.set('brand', selectedBrand)
+    if (selectedColor) params.set('color', selectedColor)
+    if (searchTerm) params.set('search', searchTerm)
+    
+    // Ordenamiento - destacados primero, luego el orden seleccionado
+    if (sortBy) {
+      params.set('sortBy', sortBy)
+      params.set('sortOrder', sortOrder)
+    }
+    
+    return `/api/products?${params.toString()}`
+  }
+
+  // Función para cargar productos desde el backend
+  const fetchProducts = async (page: number = 1, append: boolean = false) => {
+    try {
+      if (!append) {
+        setLoading(true)
+      } else {
+        setLoadingMore(true)
+      }
+
+      const url = buildProductsUrl(page)
+      const response = await fetch(url)
+      
+      if (response.ok) {
+        const data = await response.json()
+        const newProducts = data.data?.products || []
+        const pagination = data.data?.pagination || {}
+        
+        if (append) {
+          // Agregar productos a los existentes
+          setProducts(prev => [...prev, ...newProducts])
+        } else {
+          // Reemplazar productos
+          setProducts(newProducts)
+        }
+        
+        // Actualizar información de paginación
+        if (pagination.total) {
+          setTotalProducts(pagination.total)
+          setTotalPages(pagination.pages || 1)
+        }
+        
+        console.log(`📦 Productos cargados (página ${page}):`, newProducts.length)
+      }
+    } catch (error) {
+      console.error('Error cargando productos:', error)
+    } finally {
+      setLoading(false)
+      setLoadingMore(false)
+    }
+  }
+
+  // Cargar datos iniciales - Optimizado con caché
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true)
-        
-        // Primero cargar categorías y marcas (necesarios para filtros)
-        const [categoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
-          fetch('/api/categories?type=main'), // Solo categorías principales
-          fetch('/api/categories'), // Todas las categorías para filtrado
-          fetch('/api/brands')
-        ])
+        // OPTIMIZACIÓN: Usar caché del navegador (sessionStorage) para categorías y marcas
+        const cacheKey = 'catalog_metadata'
+        const cacheExpiry = 5 * 60 * 1000 // 5 minutos
+        const cached = sessionStorage.getItem(cacheKey)
+        const cacheTime = cached ? JSON.parse(cached).timestamp : 0
+        const isCacheValid = Date.now() - cacheTime < cacheExpiry
 
-        if (categoriesRes.ok) {
-          const categoriesData = await categoriesRes.json()
-          setCategories(categoriesData.data?.categories || [])
-          console.log('📋 Categorías principales cargadas:', categoriesData.data?.categories?.length || 0);
-        }
+        let categoriesData, brandsData
 
-        if (allCategoriesRes.ok) {
-          const allCategoriesData = await allCategoriesRes.json()
-          setAllCategories(allCategoriesData.data?.categories || [])
-        }
+        if (isCacheValid && cached) {
+          const cachedData = JSON.parse(cached)
+          categoriesData = cachedData.categories
+          brandsData = cachedData.brands
+          console.log('📦 Usando datos del caché')
+        } else {
+          const [allCategoriesRes, brandsRes] = await Promise.all([
+            fetch('/api/categories'),
+            fetch('/api/brands')
+          ])
 
-        if (brandsRes.ok) {
-          const brandsData = await brandsRes.json()
-          setBrands(brandsData.data?.brands || [])
-        }
-
-        // PRIMERO: Cargar solo productos destacados para mostrar rápido
-        try {
-          const featuredRes = await fetch('/api/products?active=true&featured=true&limit=50')
-          if (featuredRes.ok) {
-            const featuredData = await featuredRes.json()
-            const featuredProducts = featuredData.data?.products || []
-            setProducts(featuredProducts)
-            console.log('⭐ Productos destacados cargados:', featuredProducts.length)
+          if (allCategoriesRes.ok) {
+            const response = await allCategoriesRes.json()
+            categoriesData = response.data?.categories || []
           }
-        } catch (error) {
-          console.error('Error cargando productos destacados:', error)
-        } finally {
-          setLoading(false)
+
+          if (brandsRes.ok) {
+            const response = await brandsRes.json()
+            brandsData = response.data?.brands || []
+          }
+
+          sessionStorage.setItem(cacheKey, JSON.stringify({
+            categories: categoriesData,
+            brands: brandsData,
+            timestamp: Date.now()
+          }))
         }
 
-        // DESPUÉS: Cargar todos los productos en segundo plano
-        setLoadingAllProducts(true)
-        try {
-          const allProductsRes = await fetch('/api/products?active=true&limit=1500')
-          if (allProductsRes.ok) {
-            const allProductsData = await allProductsRes.json()
-            const allProducts = allProductsData.data?.products || []
-            setProducts(allProducts)
-            console.log('📦 Todos los productos cargados:', allProducts.length)
-          }
-        } catch (error) {
-          console.error('Error cargando todos los productos:', error)
-        } finally {
-          setLoadingAllProducts(false)
+        if (categoriesData) {
+          setAllCategories(categoriesData)
+          const mainCats = categoriesData.filter((cat: Category) => cat.level === 0 || cat.type === 'main')
+          setCategories(mainCats)
         }
+
+        if (brandsData) {
+          setBrands(brandsData)
+        }
+
+        // Cargar productos destacados primero
+        await fetchProducts(1, false)
       } catch (error) {
         console.error('Error cargando datos del catálogo:', error)
         setLoading(false)
@@ -189,109 +250,40 @@ function CatalogoContent() {
     fetchData()
   }, [])
 
-    // Función para verificar si un producto coincide con la categoría seleccionada (jerarquía)
-  const checkCategoryMatch = (productCategoryId: string, selectedCategoryId: string): boolean => {
-    // Si no hay categoría seleccionada, mostrar todos
-    if (!selectedCategoryId) return true;
-    
-    // Si la categoría del producto coincide exactamente con la seleccionada
-    if (productCategoryId === selectedCategoryId) return true;
-    
-    // Buscar la categoría del producto
-    const productCategory = allCategories.find(cat => cat._id === productCategoryId);
-    if (!productCategory) return false;
-    
-    // Verificar si es descendiente de la categoría seleccionada
-    let currentCategory = productCategory;
-    while (currentCategory && currentCategory.parent) {
-      if (currentCategory.parent === selectedCategoryId) {
-        return true;
-      }
-      const parentCategory = allCategories.find(cat => cat._id === currentCategory.parent);
-      if (!parentCategory) break;
-      currentCategory = parentCategory;
+  // Recargar productos cuando cambian los filtros
+  useEffect(() => {
+    if (!loading) {
+      setCurrentPage(1)
+      fetchProducts(1, false)
     }
-    
-    return false;
-  }
+  }, [selectedCategory, selectedBrand, selectedColor, searchTerm, sortBy, sortOrder])
 
-  // Filtrar productos con lógica jerárquica
-  const filteredProducts = products.filter(product => {
-    const matchesSearch = !searchTerm || 
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.brand.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.sku.toLowerCase().includes(searchTerm.toLowerCase())
-
-    // Filtrado jerárquico: buscar en categoría y sus descendientes
-    const matchesCategory = !selectedCategory || checkCategoryMatch(product.category, selectedCategory)
-    console.log(`🔍 Producto ${product.name}: categoría=${product.category}, seleccionada=${selectedCategory}, coincide=${matchesCategory}`)
-    const matchesBrand = !selectedBrand || product.brand === selectedBrand
-    console.log(`🏷️ Producto ${product.name}: brand=${product.brand}, seleccionada=${selectedBrand}, coincide=${matchesBrand}`)
-    
-    const matchesColor = !selectedColor || 
-      (product.colorVariants && product.colorVariants.some(variant => 
-        variant.colorName.toLowerCase().includes(selectedColor.toLowerCase())
-      ))
-
-    return matchesSearch && matchesCategory && matchesBrand && matchesColor
-  })
-
-  // Ordenar productos - Destacados primero
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
-    // Prioridad 1: Productos destacados siempre primero
-    if (a.featured && !b.featured) return -1
-    if (!a.featured && b.featured) return 1
-    
-    // Si ambos son destacados o ninguno, aplicar ordenamiento normal
-    if (!sortBy) {
-      // Ordenamiento por defecto: alfabético por nombre
-      return a.name.localeCompare(b.name)
-    }
-    
-    switch (sortBy) {
-      case 'name':
-        return a.name.localeCompare(b.name)
-      case 'brand':
-        return a.brand.localeCompare(b.brand)
-      case 'sku':
-        return a.sku.localeCompare(b.sku)
-      case 'newest':
-        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-      case 'oldest':
-        return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
-      default:
-        return 0
-    }
-  })
-
-  // Obtener colores únicos de todos los productos
+  // Obtener colores únicos de los productos cargados (para el filtro)
   const availableColors = [...new Set(
     products.flatMap(product => 
       product.colorVariants?.map(variant => variant.colorName) || []
     )
   )].sort()
 
-  // Resetear productos a mostrar cuando cambian los filtros
-  useEffect(() => {
-    setProductsToShow(25)
-  }, [selectedCategory, selectedBrand, selectedColor, searchTerm, sortBy])
-
-  // Limitar productos mostrados
-  const displayedProducts = sortedProducts.slice(0, productsToShow)
-  const hasMoreProducts = sortedProducts.length > productsToShow
-
   const clearFilters = () => {
     setSelectedCategory('')
     setSelectedBrand('')
     setSelectedColor('')
     setSearchTerm('')
+    setCurrentPage(1)
   }
 
   const hasActiveFilters = selectedCategory || selectedBrand || selectedColor || searchTerm
 
+  // Función para cargar más productos (siguiente página)
   const handleShowMore = () => {
-    setProductsToShow(prev => prev + 25)
+    const nextPage = currentPage + 1
+    setCurrentPage(nextPage)
+    fetchProducts(nextPage, true) // append = true para agregar productos
   }
+
+  // Verificar si hay más productos
+  const hasMoreProducts = currentPage < totalPages
 
   return (
     <div className="min-h-screen bg-white">
@@ -320,7 +312,9 @@ function CatalogoContent() {
             {/* Barra de controles - Móvil y Desktop */}
             <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
               {/* Contador de productos */}
-                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0"> 1081 productos</div>
+                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0">
+                  {loading ? '...' : `${totalProducts} producto${totalProducts !== 1 ? 's' : ''}`}
+                </div>
               {/* Ordenar */}
               {loading ? (
                 <div className="h-8 w-32 bg-white/20 rounded animate-pulse"></div>
@@ -332,7 +326,6 @@ function CatalogoContent() {
                       onChange={(e) => setSortBy(e.target.value)}
                       className="px-2 sm:px-3 lg:px-4 py-1.5 sm:py-2 bg-transparent border-0 border-b border-white/30 text-white text-xs sm:text-sm lg:text-base font-light appearance-none cursor-pointer focus:outline-none focus:border-white/50 transition-all pr-5 sm:pr-6 lg:pr-8 w-auto min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] max-w-[180px] lg:max-w-[200px]"
                     >
-                      <option value="" className="bg-gray-900 text-white">Ordenar por</option>
                       <option value="name" className="bg-gray-900 text-white">Alfabético</option>
                       <option value="brand" className="bg-gray-900 text-white">Por Marca</option>
                       <option value="sku" className="bg-gray-900 text-white">Por SKU</option>
@@ -540,7 +533,7 @@ function CatalogoContent() {
                       onClick={() => setShowFilters(false)}
                       className="flex-1 px-4 py-3 text-sm font-light text-white bg-gray-900 hover:bg-gray-800 transition-colors"
                     >
-                      Ver {sortedProducts.length}
+                      Ver {totalProducts}
                     </button>
                   </div>
                 </div>
@@ -586,7 +579,7 @@ function CatalogoContent() {
                   )
                 ))}
               </div>
-            ) : sortedProducts.length === 0 ? (
+            ) : products.length === 0 ? (
               <div className="text-center py-12 sm:py-16 md:py-24">
                 <div className="text-gray-300 mb-6 sm:mb-8">
                   <svg className="mx-auto h-12 w-12 sm:h-16 sm:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -612,7 +605,7 @@ function CatalogoContent() {
                   ? 'grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-16 auto-rows-fr mt-6 sm:mt-8 md:mt-12'
                   : 'space-y-4 sm:space-y-6 md:space-y-12 mt-6 sm:mt-8 md:mt-12'
                 }>
-                  {displayedProducts.map((product) => (
+                  {products.map((product) => (
                     <ProductCard
                       key={product._id}
                       product={{
@@ -627,9 +620,10 @@ function CatalogoContent() {
                   <div className="flex justify-center mt-8 sm:mt-12">
                     <button
                       onClick={handleShowMore}
-                      className="px-6 sm:px-8 py-2.5 sm:py-3 bg-black text-white text-sm sm:text-base font-light tracking-wide uppercase hover:bg-gray-800 active:bg-gray-700 transition-colors duration-200 cursor-pointer touch-manipulation rounded"
+                      disabled={loadingMore}
+                      className="px-6 sm:px-8 py-2.5 sm:py-3 bg-black text-white text-sm sm:text-base font-light tracking-wide uppercase hover:bg-gray-800 active:bg-gray-700 transition-colors duration-200 cursor-pointer touch-manipulation rounded disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Mostrar más
+                      {loadingMore ? 'Cargando...' : 'Mostrar más'}
                     </button>
                   </div>
                 )}

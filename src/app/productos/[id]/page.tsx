@@ -77,11 +77,11 @@ export default function ProductDetailPage() {
     comeBackMessage: '¡Volvé!'
   })
 
-    // Función para construir breadcrumb de categorías
+    // Función para construir breadcrumb de categorías (OPTIMIZADA con caché)
   const buildCategoryBreadcrumb = async (productData: any) => {
     try {
       if (productData.categoryBreadcrumb) {
-        // Si ya existe un breadcrumb, usarlo
+        // Si ya existe un breadcrumb, usarlo directamente (MÁS RÁPIDO)
         const parts = productData.categoryBreadcrumb.split(' > ')
         const breadcrumb = parts.map((name: string, index: number) => ({
           id: `category-${index}`,
@@ -90,89 +90,111 @@ export default function ProductDetailPage() {
           level: index
         }))
         setCategoryBreadcrumb(breadcrumb)
+        return // Salir temprano, no hacer consulta adicional
       } else if (productData.category) {
-        // Si no hay breadcrumb pero sí hay categoría, construir la jerarquía completa
+        // Si no hay breadcrumb, intentar usar caché de sessionStorage
+        const cacheKey = 'categories_cache'
+        const cacheExpiry = 5 * 60 * 1000 // 5 minutos
+        let categories: any[] = []
+        
         try {
-          // Obtener todas las categorías para construir la jerarquía
-          const categoryResponse = await fetch('/api/categories?type=all&hierarchical=true')
-          if (categoryResponse.ok) {
-            const categoryData = await categoryResponse.json()
-            const categories = categoryData.data?.categories || []
-            console.log('📋 Categorías obtenidas:', categories.length, 'categorías')
-            
-                         // Buscar la categoría principal del producto por ID
-             console.log('🔍 Buscando categoría por ID:', productData.category)
-             let currentCategory = categories.find((cat: any) => 
-               cat._id === productData.category
-             )
-             console.log('✅ Categoría encontrada:', currentCategory?.name, 'ID:', currentCategory?._id)
-            
-            if (currentCategory) {
-              const breadcrumb = []
-              
-                             // Construir jerarquía completa recursivamente
-               const buildHierarchy = (categoryId: string): any[] => {
-                 const category = categories.find((cat: any) => cat._id === categoryId)
-                 if (!category) return []
-                 
-                 const hierarchy = []
-                 
-                 // Si tiene padre, construir jerarquía del padre primero
-                 if (category.parent) {
-                   hierarchy.push(...buildHierarchy(category.parent))
-                 }
-                 
-                 // Agregar la categoría actual
-                 hierarchy.push({
-                   id: `category-${hierarchy.length}`,
-                   _id: category._id,
-                   name: category.name,
-                   slug: category.slug,
-                   level: hierarchy.length
-                 })
-                 
-                 return hierarchy
-               }
-               
-               // Construir breadcrumb completo desde la raíz
-               const fullHierarchy = buildHierarchy(currentCategory._id)
-               console.log('🌳 Jerarquía completa construida:', fullHierarchy)
-               
-                              // Agregar todas las categorías de la jerarquía
-               breadcrumb.push(...fullHierarchy)
-              
-              // Si tiene subcategoría, agregarla
-              if (productData.subcategory) {
-                const subcategory = categories.find((cat: any) => 
-                  cat._id === productData.subcategory || cat.name === productData.subcategory
-                )
-                if (subcategory) {
-                  breadcrumb.push({
-                    id: `category-${breadcrumb.length}`,
-                    name: subcategory.name,
-                    slug: subcategory.slug,
-                    level: breadcrumb.length
-                  })
-                }
-              }
-              
-              console.log('🔗 Breadcrumb final:', JSON.stringify(breadcrumb, null, 2))
-              setCategoryBreadcrumb(breadcrumb)
-            } else {
-              // Si no se encuentra la categoría, crear un breadcrumb básico
-              console.log('⚠️ Categoría no encontrada, creando breadcrumb básico')
-              setCategoryBreadcrumb([{
-                id: 'category-0',
-                _id: productData.category,
-                name: productData.category,
-                slug: productData.category.toLowerCase().replace(/\s+/g, '-'),
-                level: 0
-              }])
+          const cached = sessionStorage.getItem(cacheKey)
+          if (cached) {
+            const { data, timestamp } = JSON.parse(cached)
+            if (Date.now() - timestamp < cacheExpiry) {
+              categories = data.categories || []
             }
           }
-        } catch (error) {
-          console.error('Error obteniendo jerarquía de categorías:', error)
-          // Fallback: crear breadcrumb básico
+        } catch (e) {
+          // Si falla el caché, continuar sin él
+        }
+        
+        // Si no hay caché válido, hacer la consulta
+        if (categories.length === 0) {
+          try {
+            const categoryResponse = await fetch('/api/categories?type=all&hierarchical=true')
+            if (categoryResponse.ok) {
+              const categoryData = await categoryResponse.json()
+              categories = categoryData.data?.categories || []
+              
+              // Guardar en caché
+              try {
+                sessionStorage.setItem(cacheKey, JSON.stringify({
+                  data: categoryData.data,
+                  timestamp: Date.now()
+                }))
+              } catch (e) {
+                // Si falla el sessionStorage, continuar sin caché
+              }
+            }
+          } catch (error) {
+            console.error('Error obteniendo jerarquía de categorías:', error)
+            // Fallback: crear breadcrumb básico
+            setCategoryBreadcrumb([{
+              id: 'category-0',
+              _id: productData.category,
+              name: productData.category,
+              slug: productData.category.toLowerCase().replace(/\s+/g, '-'),
+              level: 0
+            }])
+            return
+          }
+        }
+        
+        // Buscar la categoría principal del producto por ID
+        let currentCategory = categories.find((cat: any) => 
+          cat._id === productData.category
+        )
+        
+        if (currentCategory) {
+          const breadcrumb = []
+          
+          // Construir jerarquía completa recursivamente
+          const buildHierarchy = (categoryId: string): any[] => {
+            const category = categories.find((cat: any) => cat._id === categoryId)
+            if (!category) return []
+            
+            const hierarchy = []
+            
+            // Si tiene padre, construir jerarquía del padre primero
+            if (category.parent) {
+              hierarchy.push(...buildHierarchy(category.parent))
+            }
+            
+            // Agregar la categoría actual
+            hierarchy.push({
+              id: `category-${hierarchy.length}`,
+              _id: category._id,
+              name: category.name,
+              slug: category.slug,
+              level: hierarchy.length
+            })
+            
+            return hierarchy
+          }
+          
+          // Construir breadcrumb completo desde la raíz
+          const fullHierarchy = buildHierarchy(currentCategory._id)
+          breadcrumb.push(...fullHierarchy)
+          
+          // Si tiene subcategoría, agregarla
+          if (productData.subcategory) {
+            const subcategory = categories.find((cat: any) => 
+              cat._id === productData.subcategory || cat.name === productData.subcategory
+            )
+            if (subcategory) {
+              breadcrumb.push({
+                id: `category-${breadcrumb.length}`,
+                name: subcategory.name,
+                slug: subcategory.slug,
+                level: breadcrumb.length
+              })
+            }
+          }
+          
+          setCategoryBreadcrumb(breadcrumb)
+        } else {
+          // Si no se encuentra la categoría, crear un breadcrumb básico
           setCategoryBreadcrumb([{
             id: 'category-0',
             _id: productData.category,
@@ -205,27 +227,35 @@ export default function ProductDetailPage() {
         const data = await response.json()
         setProduct(data.data)
         
-        // Construir breadcrumb de categorías
-        await buildCategoryBreadcrumb(data.data)
+        // Construir breadcrumb de categorías (optimizado con caché)
+        // No esperar a que termine para mostrar el producto
+        buildCategoryBreadcrumb(data.data).catch(err => 
+          console.error('Error construyendo breadcrumb:', err)
+        )
         
-        // Obtener productos recomendados (simulado por ahora)
-        try {
-          const productsResponse = await fetch('/api/products?active=true&limit=8')
-          if (productsResponse.ok) {
-            const productsData = await productsResponse.json()
-            const allProducts = productsData.data?.products || []
-            const related = allProducts
-              .filter((p: Product) => p._id !== data.data._id)
-              .slice(0, 4)
-            setRecommendedProducts(related)
+        // Marcar como cargado para mostrar el producto inmediatamente
+        setLoading(false)
+        
+        // Cargar productos recomendados de forma lazy (después de mostrar el producto)
+        // Esto mejora la percepción de velocidad
+        setTimeout(async () => {
+          try {
+            const productsResponse = await fetch('/api/products?active=true&limit=8')
+            if (productsResponse.ok) {
+              const productsData = await productsResponse.json()
+              const allProducts = productsData.data?.products || []
+              const related = allProducts
+                .filter((p: Product) => p._id !== data.data._id)
+                .slice(0, 4)
+              setRecommendedProducts(related)
+            }
+          } catch (error) {
+            console.error('Error fetching recommended products:', error)
           }
-        } catch (error) {
-          console.error('Error fetching recommended products:', error)
-        }
+        }, 100) // Pequeño delay para no bloquear el render inicial
       } catch (error) {
         console.error('Error fetching product:', error)
         setError('Error cargando el producto')
-      } finally {
         setLoading(false)
       }
     }

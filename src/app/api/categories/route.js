@@ -1,16 +1,10 @@
 import { connectToDatabase } from '@/libs/mongoConnect';
 import CategoryService from '@/services/CategoryService';
+const serverCache = require('@/libs/serverCache');
 
 // GET - Obtener categorías y subcategorías
 export async function GET(request) {
   try {
-    // Conectar a MongoDB
-    const client = await connectToDatabase();
-    const db = client.db('cyneth');
-    
-    // Crear instancia del servicio
-    const categoryService = new CategoryService(db);
-    
     // Obtener parámetros de la URL
     const { searchParams } = new URL(request.url);
     const categorySlug = searchParams.get('category');
@@ -18,12 +12,40 @@ export async function GET(request) {
     const hierarchical = searchParams.get('hierarchical');
     const sync = searchParams.get('sync');
     
-    let data = {};
-    
-    // Si se solicita sincronización, ejecutarla primero
+    // Si se solicita sincronización, invalidar caché y ejecutarla
     if (sync === 'true') {
-      await categoryService.syncFromProducts();
+      serverCache.invalidate('categories_all');
+      serverCache.invalidate('categories_main');
     }
+    
+    // Construir clave de caché basada en los parámetros
+    const cacheKey = categorySlug 
+      ? `category_${categorySlug}`
+      : type === 'main' && hierarchical === 'true'
+      ? 'categories_main_hierarchical'
+      : type === 'main'
+      ? 'categories_main'
+      : 'categories_all';
+    
+    // Intentar obtener del caché (excepto para consultas específicas de categoría)
+    if (!categorySlug && !sync) {
+      const cached = serverCache.get(cacheKey);
+      if (cached) {
+        return Response.json({
+          success: true,
+          data: cached
+        });
+      }
+    }
+    
+    // Conectar a MongoDB
+    const client = await connectToDatabase();
+    const db = client.db('cyneth');
+    
+    // Crear instancia del servicio
+    const categoryService = new CategoryService(db);
+    
+    let data = {};
     
     if (categorySlug) {
       // Obtener subcategorías jerárquicas de una categoría específica
@@ -56,6 +78,11 @@ export async function GET(request) {
       // Obtener todas las categorías
       const categories = await categoryService.getAll();
       data = { categories };
+    }
+    
+    // Guardar en caché (excepto para consultas específicas)
+    if (!categorySlug) {
+      serverCache.set(cacheKey, data, 5 * 60 * 1000); // 5 minutos
     }
     
     return Response.json({

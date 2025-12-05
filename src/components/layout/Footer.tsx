@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = () => {
                 ventas@cyneth.com.ar
               </a>
               <a
-                href="tel:+541145678900"
+                href="tel:+541123168857"
                 className="flex items-center gap-2 text-sm hover:text-red-500 transition-colors"
               >
                 <Phone size={16} />

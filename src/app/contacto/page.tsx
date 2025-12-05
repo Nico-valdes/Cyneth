@@ -124,9 +124,9 @@ export default function ContactoPage() {
     {
       icon: Phone,
       title: 'Teléfono',
-      content: '+54 11 4567-8900',
+      content: '+54 11 2316-8857',
       subtitle: 'Línea directa',
-      href: 'tel:+541145678900'
+      href: 'tel:+541123168857'
     },
     {
       icon: Mail,

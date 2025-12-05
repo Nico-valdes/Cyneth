@@ -1,40 +1,101 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { X, ShoppingCart, Trash2, Plus, Minus, MessageCircle, ArrowRight } from 'lucide-react'
+import { X, ShoppingCart, Trash2, Plus, Minus, MessageCircle, ArrowRight, Check } from 'lucide-react'
 import { useCart } from '@/contexts/CartContext'
 import { getOptimizedImageUrl } from '@/utils/imageUtils'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Cart() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, clearCart, getTotalItems } = useCart()
+  const [showCopyToast, setShowCopyToast] = useState(false)
 
-  const handleWhatsApp = () => {
-    const message = items.map(item => {
+  // Detectar si es móvil
+  const isMobile = () => {
+    if (typeof window === 'undefined') return false
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768
+  }
+
+  const handleWhatsApp = async () => {
+    // Construir mensaje sin codificar para copiar
+    const messageText = items.map(item => {
+      const variantInfo = item.colorVariant 
+        ? ` - Color: ${item.colorVariant.colorName} (SKU: ${item.colorVariant.sku})`
+        : ''
+      return `${item.name} (SKU: ${item.sku})${variantInfo} - Cantidad: ${item.quantity}`
+    }).join('\n')
+
+    const fullMessage = `Hola! Me interesa consultar sobre los siguientes productos:\n\n${messageText}\n\n¿Podrían brindarme más información y precios?`
+
+    // Construir URL codificada para WhatsApp
+    const encodedMessage = items.map(item => {
       const variantInfo = item.colorVariant 
         ? ` - Color: ${item.colorVariant.colorName} (SKU: ${item.colorVariant.sku})`
         : ''
       return `${item.name} (SKU: ${item.sku})${variantInfo} - Cantidad: ${item.quantity}`
     }).join('%0A')
 
-    const whatsappUrl = `https://wa.me/5491234567890?text=Hola!%20Me%20interesa%20consultar%20sobre%20los%20siguientes%20productos:%0A%0A${message}%0A%0A¿Podrían%20brindarme%20más%20información%20y%20precios?`
+    const whatsappUrl = `https://wa.me/541123168857?text=Hola!%20Me%20interesa%20consultar%20sobre%20los%20siguientes%20productos:%0A%0A${encodedMessage}%0A%0A¿Podrían%20brindarme%20más%20información%20y%20precios?`
+
+    // Si es desktop, copiar al portapapeles y mostrar aviso
+    if (!isMobile()) {
+      try {
+        await navigator.clipboard.writeText(fullMessage)
+        setShowCopyToast(true)
+        // Ocultar el toast después de 4 segundos
+        setTimeout(() => setShowCopyToast(false), 4000)
+      } catch (err) {
+        console.error('Error copiando al portapapeles:', err)
+      }
+    }
+
+    // Abrir WhatsApp (en móvil abre la app, en desktop abre WhatsApp Web)
     window.open(whatsappUrl, '_blank')
   }
 
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <>
-          {/* Overlay */}
+    <>
+      {/* Toast de mensaje copiado (solo desktop) */}
+      <AnimatePresence>
+        {showCopyToast && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/50 z-50"
-            onClick={closeCart}
-          />
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-[60] bg-white border border-gray-200 rounded-lg shadow-lg px-6 py-4 flex items-center gap-3 max-w-md"
+          >
+            <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <Check className="w-5 h-5 text-green-600" />
+            </div>
+            <div className="flex-1">
+              <p className="text-sm font-medium text-gray-900">Mensaje copiado al portapapeles</p>
+              <p className="text-xs text-gray-500 font-light mt-0.5">Por favor, péguelo en WhatsApp Web</p>
+            </div>
+            <button
+              onClick={() => setShowCopyToast(false)}
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black/50 z-50"
+              onClick={closeCart}
+            />
 
           {/* Panel del carrito */}
           <motion.div
@@ -227,6 +288,7 @@ export default function Cart() {
         </>
       )}
     </AnimatePresence>
+    </>
   )
 }
 

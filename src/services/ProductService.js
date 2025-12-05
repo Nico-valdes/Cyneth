@@ -142,6 +142,11 @@ class ProductService {
       if (filters.tags) query.tags = { $in: filters.tags };
       if (filters.featured !== undefined) query.featured = filters.featured;
       
+      // Filtro por color - buscar en colorVariants
+      if (filters.color) {
+        query['colorVariants.colorName'] = { $regex: filters.color, $options: 'i' };
+      }
+      
       // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
         const searchTerm = filters.search.trim();
@@ -292,6 +297,22 @@ class ProductService {
       }
       if (filters.brand) query.brand = filters.brand;
       if (filters.featured !== undefined) query.featured = filters.featured;
+      
+      // Filtro por color - buscar en colorVariants
+      if (filters.color) {
+        query['colorVariants.colorName'] = { $regex: filters.color, $options: 'i' };
+      }
+      
+      // Búsqueda por texto - usar regex para búsqueda parcial flexible
+      if (filters.search) {
+        const searchTerm = filters.search.trim();
+        query.$or = [
+          { name: { $regex: searchTerm, $options: 'i' } },
+          { sku: { $regex: searchTerm, $options: 'i' } },
+          { brand: { $regex: searchTerm, $options: 'i' } },
+          { description: { $regex: searchTerm, $options: 'i' } }
+        ];
+      }
       
       return await this.collection.countDocuments(query);
     } catch (error) {
@@ -650,6 +671,11 @@ class ProductService {
       if (filters.tags) query.tags = { $in: filters.tags };
       if (filters.featured !== undefined) query.featured = filters.featured;
       
+      // Filtro por color - buscar en colorVariants
+      if (filters.color) {
+        query['colorVariants.colorName'] = { $regex: filters.color, $options: 'i' };
+      }
+      
       // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
         const searchTerm = filters.search.trim();
@@ -711,6 +737,14 @@ class ProductService {
                 },
                 else: '$categoryBreadcrumb'
               }
+            },
+            // Normalizar featured para ordenamiento: true = 1, false/null/undefined = 0
+            featuredSort: {
+              $cond: {
+                if: { $eq: ['$featured', true] },
+                then: 1,
+                else: 0
+              }
             }
           }
         },
@@ -738,8 +772,6 @@ class ProductService {
       ];
       
       const products = await this.collection.aggregate(pipeline).toArray();
-      
-      console.log(`📦 Productos encontrados con agregación: ${products.length}`);
       
       return products;
       

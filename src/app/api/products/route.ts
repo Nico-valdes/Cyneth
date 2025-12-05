@@ -17,6 +17,7 @@ export async function GET(request: Request) {
     const subcategory = searchParams.get('subcategory') || undefined;
     const brand = searchParams.get('brand') || undefined;
     const search = searchParams.get('search') || undefined;
+    const color = searchParams.get('color') || undefined;
     const page = parseInt(searchParams.get('page') || '1');
     const limit = parseInt(searchParams.get('limit') || '20');
     const skip = (page - 1) * limit;
@@ -32,6 +33,7 @@ export async function GET(request: Request) {
     if (subcategory) filters.subcategory = subcategory;
     if (brand) filters.brand = brand;
     if (search) filters.search = search;
+    if (color) filters.color = color;
     if (featured) filters.featured = true;
     if (showAll) filters.showAll = true;
     
@@ -41,7 +43,13 @@ export async function GET(request: Request) {
     }
     
     // Construir objeto de ordenamiento
-    const sortObj: any = {};
+    // IMPORTANTE: featuredSort debe ser el PRIMER campo para que los destacados aparezcan primero
+    // Usamos featuredSort que es un campo calculado en la agregación (1 = destacado, 0 = no destacado)
+    const sortObj: any = {
+      featuredSort: -1 // Destacados primero (siempre)
+    };
+    
+    // Agregar el ordenamiento secundario según el parámetro
     switch (sortBy) {
       case 'name':
         sortObj.name = sortOrder === 'asc' ? 1 : -1;
@@ -51,6 +59,12 @@ export async function GET(request: Request) {
         break;
       case 'sku':
         sortObj.sku = sortOrder === 'asc' ? 1 : -1;
+        break;
+      case 'newest':
+        sortObj.createdAt = -1; // Más recientes primero
+        break;
+      case 'oldest':
+        sortObj.createdAt = 1; // Más antiguos primero
         break;
       case 'createdAt':
       default:

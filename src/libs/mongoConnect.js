@@ -17,27 +17,44 @@ const client = new MongoClient(uri);
 // Variable global para cachear la conexión
 let cachedClient = null;
 
+let isConnecting = false;
+
 async function connectToDatabase() {
-  // Si ya tenemos una conexión, la retornamos
+  // Si ya tenemos una conexión cacheada, retornarla directamente (sin verificación costosa)
   if (cachedClient) {
     return cachedClient;
   }
+  
+  // Evitar múltiples conexiones simultáneas
+  if (isConnecting) {
+    // Esperar a que termine la conexión en curso
+    while (isConnecting) {
+      await new Promise(resolve => setTimeout(resolve, 50));
+    }
+    if (cachedClient) {
+      return cachedClient;
+    }
+  }
 
   try {
+    isConnecting = true;
+    
     // Conectar el cliente al servidor
     await client.connect();
-    
-    // Enviar ping para confirmar conexión exitosa
-    await client.db("admin").command({ ping: 1 });
-    console.log("✅ Conectado exitosamente a MongoDB!");
     
     // Cachear la conexión
     cachedClient = client;
     
+    // Solo imprimir en la primera conexión
+    console.log("✅ Conectado exitosamente a MongoDB!");
+    
     return client;
   } catch (error) {
     console.error("❌ Error conectando a MongoDB:", error);
+    cachedClient = null;
     throw error;
+  } finally {
+    isConnecting = false;
   }
 }
 

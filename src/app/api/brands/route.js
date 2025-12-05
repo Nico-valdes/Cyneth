@@ -1,9 +1,37 @@
 import { connectToDatabase } from '@/libs/mongoConnect';
 import BrandService from '@/services/BrandService';
+const serverCache = require('@/libs/serverCache');
 
 // GET - Obtener todas las marcas
 export async function GET(request) {
   try {
+    // Obtener parámetros de la URL
+    const { searchParams } = new URL(request.url);
+    const categorySlug = searchParams.get('category');
+    const sync = searchParams.get('sync');
+    
+    // Si se solicita sincronización, invalidar caché y ejecutarla
+    if (sync === 'true') {
+      serverCache.invalidate('brands_all');
+      if (categorySlug) {
+        serverCache.invalidate(`brands_category_${categorySlug}`);
+      }
+    }
+    
+    // Construir clave de caché
+    const cacheKey = categorySlug ? `brands_category_${categorySlug}` : 'brands_all';
+    
+    // Intentar obtener del caché
+    if (!sync) {
+      const cached = serverCache.get(cacheKey);
+      if (cached) {
+        return Response.json({
+          success: true,
+          data: cached
+        });
+      }
+    }
+    
     // Conectar a MongoDB
     const client = await connectToDatabase();
     const db = client.db('cyneth');
@@ -11,14 +39,8 @@ export async function GET(request) {
     // Crear instancia del servicio
     const brandService = new BrandService(db);
     
-    // Obtener parámetros de la URL
-    const { searchParams } = new URL(request.url);
-    const categorySlug = searchParams.get('category');
-    const sync = searchParams.get('sync');
-    
     let data = {};
     
-    // Si se solicita sincronización, ejecutarla primero
     if (sync === 'true') {
       await brandService.syncFromProducts();
     }
@@ -32,6 +54,9 @@ export async function GET(request) {
       const brands = await brandService.getAll();
       data = { brands };
     }
+    
+    // Guardar en caché
+    serverCache.set(cacheKey, data, 5 * 60 * 1000); // 5 minutos
     
     return Response.json({
       success: true,
