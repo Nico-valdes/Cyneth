@@ -30,11 +30,6 @@ import catsan from "../../public/cat-sanitario.jpg"
 import catacc from "../../public/cat-accesorios.jpg"
 
 
-// Importar videos con resoluciones específicas - COMENTADO HASTA TENER LAS 3 RESOLUCIONES
-// import videoMobile from "../../public/videos/loop-ferrettistore-2024-movil-home.mp4"
-// import videoTablet from "../../public/videos/loop-ferrettistore-home-2024-tablet.mp4"
-// import videoDesktop from "../../public/videos/loop-ferrettistore-home-2024-desktop.mp4"
-
 // Componente MilanoSlider estilo elegante
 function MilanoSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -187,7 +182,7 @@ export default function CleanHomepage() {
       icon: <Droplet className="w-8 h-8" />,
       description: "Diseño europeo y calidad premium",
       image: catgrif,
-      link: "/catalogo/griferias"
+      link: "/catalogo?category=68cda5f5ff392fb2b5d73dac&level=1"
     },
     {
       id: 2,
@@ -195,7 +190,7 @@ export default function CleanHomepage() {
       icon: <Bath className="w-8 h-8" />,
       description: "Elegancia y funcionalidad",
       image: catsan,
-      link: "/catalogo/sanitarios"
+      link: "/catalogo?category=68cda5f6ff392fb2b5d73dcd&level=0"
     },
     {
       id: 3,
@@ -203,7 +198,7 @@ export default function CleanHomepage() {
       icon: <ShowerHead className="w-8 h-8" />,
       description: "Experiencia de baño única",
       image: catduch,
-      link: "/catalogo/duchas"
+      link: "/catalogo?category=68cda5f4ff392fb2b5d73da3&level=1"
     },
     {
       id: 4,
@@ -211,7 +206,7 @@ export default function CleanHomepage() {
       icon: <Wrench className="w-8 h-8" />,
       description: "Complementos esenciales",
       image: catacc,
-      link: "/catalogo/accesorios"
+      link: "/catalogo?category=68cda5f5ff392fb2b5d73db2&level=0"
     }
   ];
 
@@ -251,6 +246,13 @@ export default function CleanHomepage() {
       image: "https://fvsa.com/wp-content/uploads/2021/07/0103_H6-ARRAYAN.jpg",
       category: "Muebles",
       link: "/productos/5"
+    },
+    {
+      id: 6,
+      name: "Grifo Monocomando Cocina",
+      image: "https://griferiapeirano.com/wp-content/uploads/2025/05/62-175GR_Pulse-lavatorio-de-pared-Grafito-500x500.jpg",
+      category: "Griferías",
+      link: "/productos/6"
     }
   ];
 
@@ -292,17 +294,17 @@ export default function CleanHomepage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-12 sm:mb-16 md:mb-20"
+            className="mb-8 sm:mb-10 md:mb-12"
           >
             <motion.div 
-              className="flex items-center mb-4 sm:mb-6 md:mb-8"
+              className="flex items-center mb-3 sm:mb-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.div 
-                className="w-6 sm:w-8 md:w-12 h-[1px] bg-gray-300 mr-3 sm:mr-4 md:mr-6"
+                className="w-6 sm:w-8 h-[1px] bg-gray-300 mr-3 sm:mr-4"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
@@ -310,15 +312,39 @@ export default function CleanHomepage() {
               ></motion.div>
               <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Categorías</span>
             </motion.div>
-            <motion.h2 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Explora
-            </motion.h2>
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 sm:gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <motion.h2 
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight mb-2 sm:mb-3"
+                >
+                  Explorá
+                </motion.h2>
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
+                  Nuestras categorías principales: productos de calidad premium para transformar tu hogar con diseño y funcionalidad.
+                </p>
+              </motion.div>
+              <Link href="/catalogo" className="w-full lg:w-auto">
+                <button 
+                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-full border-2 border-gray-900 cursor-pointer w-full lg:w-auto justify-center overflow-hidden"
+                >
+                  {/* Fondo con gradiente que se mueve de izquierda a derecha */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100"
+                    initial={{ x: '-100%' }}
+                    whileHover={{ x: '0%' }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                  ></motion.div>
+                  
+                  <span className="relative z-10 text-sm font-medium tracking-wide text-gray-900">VER TODAS LAS CATEGORÍAS</span>
+                  <ArrowRight size={16} className="relative z-10 text-gray-900 group-hover:translate-x-2 transition-transform duration-300" />
+                </button>
+              </Link>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
@@ -631,16 +657,18 @@ export default function CleanHomepage() {
         </div>
       </section>
 
-      {/* Popular Products Section - Responsive */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Popular Products Section - Redesigned with Personality */}
+      <section className="py-20 sm:py-28 lg:py-36 bg-white relative overflow-hidden font-sans">
+        
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-12 sm:mb-16 md:mb-20"
+            className="mb-16 sm:mb-20 md:mb-24"
           >
             <motion.div 
               className="flex items-center mb-4 sm:mb-6 md:mb-8"
@@ -664,88 +692,137 @@ export default function CleanHomepage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
+                className="relative"
               >
+                {/* Decoración lateral texto */}
+                <div className="absolute -left-6 top-0 bottom-0 w-px bg-gradient-to-b from-red-500/20 via-gray-200 to-transparent hidden lg:block"></div>
+                
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight mb-4 sm:mb-6">
                   Populares
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
-                  Descubre los productos más elegidos por nuestros clientes
-                </p>
+                <div className="space-y-4 relative pl-6 border-l-2 border-gray-100">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
+                    Descubre los productos más elegidos por nuestros clientes. <span className="text-gray-900 font-normal">Calidad premium y diseño que transforma espacios.</span>
+                  </p>
+                </div>
               </motion.div>
               <Link href="/catalogo" className="w-full lg:w-auto">
                 <motion.button 
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full lg:w-auto bg-gray-900 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 font-light text-sm sm:text-base md:text-lg tracking-wide hover:bg-gray-800 active:bg-gray-700 transition-all duration-500 flex items-center justify-center cursor-pointer touch-manipulation rounded"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full overflow-hidden transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95 w-full lg:w-auto justify-center"
                 >
-                  Ver todo el catálogo
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                  {/* Fondo animado con gradiente rojo */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Efecto de brillo sutil */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <span className="relative z-10 text-sm font-medium tracking-wide">VER TODO EL CATÁLOGO</span>
+                  <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
+                  
+                  {/* Borde sutil que aparece al hover */}
+                  <div className="absolute inset-0 rounded-full border-2 border-red-500/0 group-hover:border-red-500/40 transition-all duration-300"></div>
                 </motion.button>
               </Link>
             </div>
           </motion.div>
 
-          {/* Products Grid - Responsive */}
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
-             {popularProducts.map((product, index) => (
-               <motion.div
-                 key={product.id}
-                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
-                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                 transition={{ duration: 0.7, delay: 0.5 + (index * 0.1), ease: [0.4, 0, 0.2, 1] }}
-                 viewport={{ once: true }}
-                 className="group"
-               >
-                 <Link href={product.link}>
-                   <div className="bg-white border border-gray-50 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-700 cursor-pointer">
-                     {/* Large Image Focus */}
-                     <div className="aspect-square bg-gray-50 relative overflow-hidden">
-                       <img
-                         src={getOptimizedImageUrl(product.image)}
-                         alt={product.name}
-                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                         loading="lazy"
-                       />
-                       
-                       {/* Minimal Overlay on Hover */}
-                       <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                       
-                       {/* Floating Category - Minimal */}
-                       <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
-                         <div className="w-2 h-2 bg-white rounded-full shadow-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
-                       </div>
-                     </div>
-                     
-                     {/* Minimal Content */}
-                     <div className="p-4 sm:p-6 md:p-8 space-y-2 sm:space-y-3">
-                       <div className="flex items-center justify-between gap-2">
-                         <h3 className="font-light text-gray-900 text-base sm:text-lg tracking-wide group-hover:text-gray-600 transition-colors duration-500 line-clamp-2">
-                           {product.name}
-                         </h3>
-                         <div className="w-3 sm:w-4 h-[1px] bg-gray-300 group-hover:bg-red-500 group-hover:w-6 sm:group-hover:w-8 transition-all duration-500 flex-shrink-0"></div>
-                       </div>
-                       
-                       <p className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">
-                         {product.category}
-                       </p>
-                     </div>
-                   </div>
-                 </Link>
-               </motion.div>
-             ))}
-           </div>
+          {/* Products Grid - Redesigned with Personality */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
+            {popularProducts.map((product, index) => (
+              <motion.div
+                key={product.id}
+                initial={{ opacity: 0, y: 50, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.7, delay: 0.5 + (index * 0.1), ease: [0.4, 0, 0.2, 1] }}
+                viewport={{ once: true }}
+                className="group relative"
+              >
+                {/* Glow effect behind card */}
+                <div 
+                  className="absolute inset-0 bg-red-500/5 blur-2xl rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"
+                ></div>
+                
+                <Link href={product.link}>
+                  <div className="relative bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-red-100/50 transition-all duration-700 cursor-pointer h-full flex flex-col">
+                    {/* Image Container with enhanced effects */}
+                    <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+                      <img
+                        src={getOptimizedImageUrl(product.image)}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        loading="lazy"
+                      />
+                      
+                      
+                      
+                      {/* Decorative corner element */}
+                      <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
+                        <div className="relative">
+                          <div className="w-3 h-3 bg-white rounded-full shadow-lg opacity-60 group-hover:opacity-100 transition-opacity duration-300"></div>
+                          <div className="absolute inset-0 w-3 h-3 bg-red-500 rounded-full opacity-0 group-hover:opacity-30 blur-md transition-opacity duration-300"></div>
+                        </div>
+                      </div>
+                      
+                      {/* Category badge - enhanced */}
+                      <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
+                        <div className="px-3 py-1.5 bg-white/90 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Content - Enhanced */}
+                    <div className="p-6 sm:p-8 space-y-3 flex-grow flex flex-col">
+                      <div className="flex items-start justify-between gap-3 flex-grow">
+                        <h3 className="font-light text-gray-900 text-lg sm:text-xl tracking-wide group-hover:text-gray-700 transition-colors duration-500 leading-snug">
+                          {product.name}
+                        </h3>
+                        <div className="w-4 h-[1px] bg-gray-300 group-hover:bg-red-500 group-hover:w-8 transition-all duration-500 flex-shrink-0 mt-2"></div>
+                      </div>
+                      
+                      {/* Decorative line */}
+                      <div className="w-12 h-[1px] bg-gray-200 group-hover:bg-red-300 group-hover:w-16 transition-all duration-500"></div>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Contact Section - Contemporary - Responsive */}
+      {/* Contact Section - Enhanced with Company Identity */}
       <motion.section 
-        className="py-12 sm:py-16 md:py-24 lg:py-32 bg-gray-900"
+        className="py-20 sm:py-28 lg:py-36 bg-gray-900 relative overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Ambient glows */}
+        <div 
+          className="absolute top-0 left-1/4 w-[600px] h-[600px] pointer-events-none opacity-20"
+          style={{
+            background: 'radial-gradient(circle at 50% 50%, rgba(239, 68, 68, 0.15) 0%, transparent 70%)',
+            filter: 'blur(100px)',
+          }}
+        ></div>
+        <div 
+          className="absolute bottom-0 right-1/4 w-[500px] h-[500px] pointer-events-none opacity-15"
+          style={{
+            background: 'radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 70%)',
+            filter: 'blur(80px)',
+          }}
+        ></div>
+
+        {/* Decorative lines */}
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+        <div className="absolute left-8 sm:left-12 top-0 h-40 w-px bg-gradient-to-b from-white/20 to-transparent hidden lg:block"></div>
+        <div className="absolute right-8 sm:right-12 bottom-0 h-40 w-px bg-gradient-to-t from-white/20 to-transparent hidden lg:block"></div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -754,43 +831,82 @@ export default function CleanHomepage() {
             className="text-center"
           >
             {/* Header */}
-            <div className="mb-10 sm:mb-12 md:mb-16">
-              <div className="flex items-center justify-center mb-4 sm:mb-6 md:mb-8">
+            <div className="mb-12 sm:mb-16 md:mb-20">
+              <motion.div 
+                className="flex items-center justify-center mb-6 sm:mb-8 md:mb-10"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 mr-3 sm:mr-4 md:mr-6"></div>
-                <span className="text-[10px] sm:text-xs text-white/60 uppercase tracking-widest font-light">Contacto</span>
+                <span className="text-[10px] sm:text-xs text-white/60 uppercase tracking-widest font-light">Cyneth</span>
                 <div className="w-6 sm:w-8 md:w-12 h-[1px] bg-white/30 ml-3 sm:ml-4 md:ml-6"></div>
-              </div>
+              </motion.div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-4">
-                ¿Necesitas ayuda?
-              </h2>
+              <motion.h2 
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-white mb-6 sm:mb-8 md:mb-10 leading-tight px-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
+                Transformamos espacios con calidad y diseño
+              </motion.h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed px-4">
-                Nuestros especialistas te acompañan desde la planificación hasta la instalación.
-              </p>
+              <motion.div 
+                className="space-y-4 max-w-3xl mx-auto px-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <p className="text-base sm:text-lg md:text-xl text-white/80 font-light leading-relaxed">
+                  En <span className="text-white font-normal">Cyneth</span>, nos especializamos en ofrecer soluciones integrales de plomería y sanitarios de alta gama. 
+                </p>
+                <p className="text-sm sm:text-base text-white/60 font-light leading-relaxed">
+                  Nuestros especialistas te acompañan desde la planificación hasta la instalación, garantizando excelencia en cada proyecto residencial o comercial.
+                </p>
+              </motion.div>
             </div>
 
-            {/* CTA Buttons - Responsive */}
+            {/* CTA Buttons - Enhanced */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center px-4">
               <Link href="/contacto" className="w-full sm:w-auto">
                 <motion.button 
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full sm:w-auto bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 font-light text-sm sm:text-base md:text-lg tracking-wide hover:bg-gray-100 active:bg-gray-200 transition-all duration-500 flex items-center justify-center cursor-pointer touch-manipulation rounded"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-full overflow-hidden transition-all duration-300 hover:bg-gray-50 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95 w-full sm:w-auto justify-center"
                 >
-                  Contactar Especialista
-                  <div className="hidden sm:block w-4 h-[1px] bg-gray-400 group-hover:bg-red-500 group-hover:w-8 ml-4 transition-all duration-500"></div>
+                  {/* Fondo animado con gradiente rojo */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Efecto de brillo sutil */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <span className="relative z-10 text-sm font-medium tracking-wide text-gray-900 group-hover:text-white transition-colors duration-300">
+                    CONSULTAR CON ESPECIALISTA
+                  </span>
+                  <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300 text-gray-900 group-hover:text-white" />
+                  
+                  {/* Borde sutil que aparece al hover */}
+                  <div className="absolute inset-0 rounded-full border-2 border-red-500/0 group-hover:border-red-500/40 transition-all duration-300"></div>
                 </motion.button>
               </Link>
               
               <Link href="/catalogo" className="w-full sm:w-auto">
                 <motion.button 
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group w-full sm:w-auto border border-white/30 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 font-light text-sm sm:text-base md:text-lg tracking-wide hover:bg-white/5 active:bg-white/10 transition-all duration-500 flex items-center justify-center cursor-pointer touch-manipulation rounded"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative inline-flex items-center gap-3 px-8 py-4 border-2 border-white/40 text-white rounded-full overflow-hidden transition-all duration-300 hover:bg-white/10 hover:border-white/60 hover:shadow-2xl hover:shadow-red-200/20 cursor-pointer active:scale-95 w-full sm:w-auto justify-center"
                 >
-                  Explorar Catálogo
-                  <div className="hidden sm:block w-4 h-[1px] bg-white/50 group-hover:bg-white group-hover:w-8 ml-4 transition-all duration-500"></div>
+                  {/* Efecto de brillo sutil */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  
+                  <span className="relative z-10 text-sm font-medium tracking-wide">
+                    EXPLORAR CATÁLOGO COMPLETO
+                  </span>
+                  <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
                 </motion.button>
               </Link>
             </div>
