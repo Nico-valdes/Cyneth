@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef, useMemo, memo } from 'react'
 import { useRouter } from 'next/navigation'
-import { Trash2, Edit, Eye, Plus, Search, Filter, ChevronLeft, ChevronRight, X, RotateCcw } from 'lucide-react'
+import { Trash2, Edit, Eye, Plus, Search, Filter, ChevronLeft, ChevronRight, X, RotateCcw, Star } from 'lucide-react'
 import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
 import { useSearchDebounce } from '@/hooks/useDebounce'
 import { useCategoryFilters } from '@/hooks/useCategoryFilters'
@@ -47,12 +47,14 @@ const ProductItem = memo(({
   onView, 
   onEdit, 
   onDelete,
+  onToggleFeatured,
   getActiveColorVariants 
 }: {
   product: Product
   onView: () => void
   onEdit: () => void  
   onDelete: (product: Product) => void
+  onToggleFeatured: (product: Product) => void
   getActiveColorVariants: (product: Product) => any[]
 }) => {
   return (
@@ -154,6 +156,17 @@ const ProductItem = memo(({
             
             {/* Acciones */}
             <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+              <button
+                onClick={() => onToggleFeatured(product)}
+                className={`p-2 rounded-lg transition-all cursor-pointer ${
+                  product.featured
+                    ? 'text-amber-500 hover:text-amber-600 hover:bg-amber-50'
+                    : 'text-gray-400 hover:text-amber-600 hover:bg-amber-50'
+                }`}
+                title={product.featured ? 'Quitar de destacados' : 'Marcar como destacado'}
+              >
+                <Star size={16} fill={product.featured ? 'currentColor' : 'none'} />
+              </button>
               <button
                 onClick={onView}
                 className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all cursor-pointer"
@@ -388,6 +401,43 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     setProductToDelete(null)
   }
 
+  // Función para toggle de destacado
+  const handleToggleFeatured = async (product: Product) => {
+    try {
+      const newFeaturedValue = !product.featured;
+      const response = await fetch(`/api/products/${product._id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          featured: newFeaturedValue
+        })
+      })
+      
+      if (response.ok) {
+        // Actualizar el producto en el estado local inmediatamente
+        setProducts(prevProducts => 
+          prevProducts.map(p => 
+            p._id === product._id 
+              ? { ...p, featured: newFeaturedValue }
+              : p
+          )
+        )
+        // Recargar productos para asegurar sincronización con la BD
+        await fetchProducts()
+      } else {
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Error al actualizar el producto')
+      }
+    } catch (err) {
+      console.error('Error al actualizar destacado:', err)
+      setError(err instanceof Error ? err.message : 'Error al actualizar producto')
+      // Revertir cambio local si falló
+      await fetchProducts()
+    }
+  }
+
   if (loading && products.length === 0) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -435,165 +485,219 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         </div>
       </div>
 
-      {/* Filtros modernos y minimalistas */}
-      <div className="px-8 py-6 border-b border-gray-50">
-        <div className="space-y-6">
-          {/* Barra de búsqueda principal */}
-          <div className="relative max-w-md">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+      {/* Filtros modernos y mejorados */}
+      <div className="px-8 py-6 border-b border-gray-100 bg-gray-50/50">
+        <div className="space-y-5">
+          {/* Barra de búsqueda principal mejorada */}
+          <div className="relative max-w-lg">
+            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
             <input
               ref={searchInputRef}
               type="text"
-              placeholder="Buscar productos..."
+              placeholder="Buscar por nombre, SKU o descripción..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-10 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition-all bg-white"
+              className="w-full pl-12 pr-12 py-3.5 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500/30 focus:border-red-500 transition-all bg-white shadow-sm hover:shadow-md"
             />
             {searchTerm && (
               <button
                 onClick={() => setSearchTerm('')}
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
               >
-                <X size={16} />
+                <X size={18} />
               </button>
             )}
           </div>
 
-          {/* Filtros horizontales fluidos */}
-          <div className="flex flex-wrap items-center gap-4">
-            {/* Filtros jerárquicos de categorías - horizontales */}
-            {[0, 1, 2, 3].map((level) => {
-              const availableCategories = getAvailableCategories(level)
-              const currentFilter = categoryFilters.find(f => f.level === level)
-              
-              if (level > 0 && !categoryFilters.find(f => f.level === level - 1)) {
-                return null
-              }
-              
-              if (availableCategories.length === 0) return null
-              
-              return (
-                <select
-                  key={level}
-                  value={currentFilter?.categoryId || ''}
-                  onChange={(e) => {
-                    if (e.target.value) {
-                      const selectedCategory = availableCategories.find(cat => cat._id === e.target.value)
-                      if (selectedCategory) {
-                        selectCategory(level, selectedCategory._id, selectedCategory.name)
-                      }
-                    } else {
-                      clearFilterFromLevel(level)
-                    }
-                  }}
-                  className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 bg-white transition-all text-sm cursor-pointer"
-                >
-                  <option value="">
-                    {levelLabels[level].label}
-                  </option>
-                  {availableCategories.map((category) => (
-                    <option key={category._id} value={category._id}>
-                      {category.name}
-                    </option>
-                  ))}
-                </select>
-              )
-            })}
-
-            {/* Separador visual */}
-            {(hasActiveCategoryFilters || brands.length > 0) && (
-              <div className="h-6 w-px bg-gray-200" />
-            )}
-
-            {/* Filtro de marca */}
-            {brands.length > 0 && (
-              <select
-                value={selectedBrand}
-                onChange={(e) => setSelectedBrand(e.target.value)}
-                className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 bg-white transition-all text-sm cursor-pointer"
-              >
-                <option value="">Todas las marcas</option>
-                {brands.map((brand) => (
-                  <option key={brand} value={brand}>{brand}</option>
-                ))}
-              </select>
-            )}
-
-            {/* Filtro de estado */}
-            <select
-              value={selectedStatus}
-              onChange={(e) => setSelectedStatus(e.target.value)}
-              className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 bg-white transition-all text-sm cursor-pointer"
-            >
-              <option value="all">Todos los estados</option>
-              <option value="active">Solo activos</option>
-              <option value="inactive">Solo inactivos</option>
-            </select>
-
-            {/* Toggle destacados */}
-            <label className="flex items-center gap-2 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={showFeaturedOnly}
-                onChange={(e) => setShowFeaturedOnly(e.target.checked)}
-                className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500/20"
-              />
-              <span className="text-sm text-gray-700">Solo destacados</span>
-            </label>
-
-            {/* Separador */}
-            <div className="h-6 w-px bg-gray-200" />
-
-            {/* Ordenamiento */}
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="px-3 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/20 focus:border-red-500 bg-white transition-all text-sm cursor-pointer"
-            >
-              <option value="name">Nombre</option>
-              <option value="brand">Marca</option>
-              <option value="createdAt">Fecha</option>
-              <option value="sku">SKU</option>
-            </select>
-            
-            <button
-              onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
-              className="px-3 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 transition-all text-sm cursor-pointer"
-              title={sortOrder === 'asc' ? 'Ascendente' : 'Descendente'}
-            >
-              {sortOrder === 'asc' ? '↑' : '↓'}
-            </button>
-
-            {/* Limpiar filtros */}
-            {(searchTerm || hasActiveCategoryFilters || selectedBrand || selectedStatus !== 'all' || showFeaturedOnly || sortBy !== 'name' || sortOrder !== 'asc') && (
-              <>
-                <div className="h-6 w-px bg-gray-200" />
+          {/* Chips de filtros activos */}
+          {(searchTerm || hasActiveCategoryFilters || selectedBrand || selectedStatus !== 'all' || showFeaturedOnly) && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Filtros activos:</span>
+              {searchTerm && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm">
+                  <span>Búsqueda: "{searchTerm}"</span>
+                  <button
+                    onClick={() => setSearchTerm('')}
+                    className="text-blue-500 hover:text-blue-700 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              )}
+              {hasActiveCategoryFilters && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm">
+                  <span>{getCategoryPath()}</span>
+                  <button
+                    onClick={clearCategoryFilters}
+                    className="text-purple-500 hover:text-purple-700 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              )}
+              {selectedBrand && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-100 text-green-700 rounded-full text-sm">
+                  <span>Marca: {selectedBrand}</span>
+                  <button
+                    onClick={() => setSelectedBrand('')}
+                    className="text-green-500 hover:text-green-700 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              )}
+              {selectedStatus !== 'all' && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm">
+                  <span>Estado: {selectedStatus === 'active' ? 'Activos' : 'Inactivos'}</span>
+                  <button
+                    onClick={() => setSelectedStatus('all')}
+                    className="text-amber-500 hover:text-amber-700 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              )}
+              {showFeaturedOnly && (
+                <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-yellow-100 text-yellow-700 rounded-full text-sm">
+                  <Star size={14} className="fill-current" />
+                  <span>Destacados</span>
+                  <button
+                    onClick={() => setShowFeaturedOnly(false)}
+                    className="text-yellow-500 hover:text-yellow-700 cursor-pointer"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
+              )}
+              {(searchTerm || hasActiveCategoryFilters || selectedBrand || selectedStatus !== 'all' || showFeaturedOnly) && (
                 <button
                   onClick={clearFilters}
-                  className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-all text-sm cursor-pointer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-200 text-gray-700 rounded-full text-sm hover:bg-gray-300 transition-colors cursor-pointer"
                 >
                   <RotateCcw size={14} />
-                  Limpiar
+                  <span>Limpiar todo</span>
                 </button>
-              </>
-            )}
-          </div>
+              )}
+            </div>
+          )}
 
-          {/* Breadcrumb de categorías seleccionadas */}
-          {hasActiveCategoryFilters && (
-            <div className="flex items-center gap-2 text-sm">
-              <span className="text-gray-500">Filtrando por:</span>
-              <div className="flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 rounded-full">
-                <span>{getCategoryPath()}</span>
-                <button
-                  onClick={clearCategoryFilters}
-                  className="ml-1 text-blue-500 hover:text-blue-700 cursor-pointer"
+          {/* Filtros organizados en grupos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-3">
+            {/* Grupo: Categorías */}
+            <div className="space-y-2">
+              <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Categorías</label>
+              <div className="space-y-2">
+                {[0, 1, 2, 3].map((level) => {
+                  const availableCategories = getAvailableCategories(level)
+                  const currentFilter = categoryFilters.find(f => f.level === level)
+                  
+                  if (level > 0 && !categoryFilters.find(f => f.level === level - 1)) {
+                    return null
+                  }
+                  
+                  if (availableCategories.length === 0) return null
+                  
+                  return (
+                    <select
+                      key={level}
+                      value={currentFilter?.categoryId || ''}
+                      onChange={(e) => {
+                        if (e.target.value) {
+                          const selectedCategory = availableCategories.find(cat => cat._id === e.target.value)
+                          if (selectedCategory) {
+                            selectCategory(level, selectedCategory._id, selectedCategory.name)
+                          }
+                        } else {
+                          clearFilterFromLevel(level)
+                        }
+                      }}
+                      className="w-full px-3 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/30 focus:border-red-500 bg-white transition-all text-sm cursor-pointer shadow-sm hover:shadow-md"
+                    >
+                      <option value="">
+                        {levelLabels[level].label}
+                      </option>
+                      {availableCategories.map((category) => (
+                        <option key={category._id} value={category._id}>
+                          {category.name}
+                        </option>
+                      ))}
+                    </select>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* Grupo: Marca y Estado */}
+            <div className="space-y-2">
+              <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Marca</label>
+              {brands.length > 0 ? (
+                <select
+                  value={selectedBrand}
+                  onChange={(e) => setSelectedBrand(e.target.value)}
+                  className="w-full px-3 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/30 focus:border-red-500 bg-white transition-all text-sm cursor-pointer shadow-sm hover:shadow-md"
                 >
-                  <X size={14} />
+                  <option value="">Todas las marcas</option>
+                  {brands.map((brand) => (
+                    <option key={brand} value={brand}>{brand}</option>
+                  ))}
+                </select>
+              ) : (
+                <div className="px-3 py-2.5 text-sm text-gray-400 bg-gray-100 rounded-lg">Sin marcas</div>
+              )}
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Estado</label>
+              <select
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value)}
+                className="w-full px-3 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/30 focus:border-red-500 bg-white transition-all text-sm cursor-pointer shadow-sm hover:shadow-md"
+              >
+                <option value="all">Todos</option>
+                <option value="active">Activos</option>
+                <option value="inactive">Inactivos</option>
+              </select>
+            </div>
+
+            {/* Grupo: Destacados */}
+            <div className="space-y-2">
+              <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Destacados</label>
+              <label className="flex items-center gap-2 px-3 py-2.5 border border-gray-200 rounded-lg bg-white cursor-pointer select-none shadow-sm hover:shadow-md transition-all hover:bg-gray-50">
+                <input
+                  type="checkbox"
+                  checked={showFeaturedOnly}
+                  onChange={(e) => setShowFeaturedOnly(e.target.checked)}
+                  className="w-4 h-4 text-red-600 border-gray-300 rounded focus:ring-red-500/20"
+                />
+                <Star size={16} className={showFeaturedOnly ? 'text-amber-500 fill-current' : 'text-gray-400'} />
+                <span className="text-sm text-gray-700">Solo destacados</span>
+              </label>
+            </div>
+
+            {/* Grupo: Ordenamiento */}
+            <div className="space-y-2">
+              <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Ordenar por</label>
+              <div className="flex gap-2">
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="flex-1 px-3 py-2.5 border border-gray-200 rounded-lg focus:ring-2 focus:ring-red-500/30 focus:border-red-500 bg-white transition-all text-sm cursor-pointer shadow-sm hover:shadow-md"
+                >
+                  <option value="name">Nombre</option>
+                  <option value="brand">Marca</option>
+                  <option value="createdAt">Fecha</option>
+                  <option value="sku">SKU</option>
+                </select>
+                <button
+                  onClick={() => setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc')}
+                  className="px-3 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 transition-all text-sm cursor-pointer shadow-sm hover:shadow-md bg-white"
+                  title={sortOrder === 'asc' ? 'Ascendente' : 'Descendente'}
+                >
+                  {sortOrder === 'asc' ? '↑' : '↓'}
                 </button>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </div>
 
@@ -621,6 +725,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
               onView={() => router.push(`/admin/productos/${product._id}`)}
               onEdit={() => router.push(`/admin/productos/${product._id}/editar`)}
               onDelete={handleDeleteClick}
+              onToggleFeatured={handleToggleFeatured}
               getActiveColorVariants={getActiveColorVariants}
             />
           ))}

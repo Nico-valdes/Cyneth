@@ -140,6 +140,7 @@ class ProductService {
       if (filters.subcategory) query.subcategory = filters.subcategory;
       if (filters.brand) query.brand = filters.brand;
       if (filters.tags) query.tags = { $in: filters.tags };
+      if (filters.featured !== undefined) query.featured = filters.featured;
       
       // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
@@ -174,6 +175,7 @@ class ProductService {
         categoryBreadcrumb: 1,
         brand: 1,
         active: 1,
+        featured: 1, // ✅ AGREGADO: Campo destacado
         colorVariants: 1,
         createdAt: 1,
         updatedAt: 1
@@ -288,6 +290,8 @@ class ProductService {
           query.subcategory = filters.subcategory;
         }
       }
+      if (filters.brand) query.brand = filters.brand;
+      if (filters.featured !== undefined) query.featured = filters.featured;
       
       return await this.collection.countDocuments(query);
     } catch (error) {
@@ -644,6 +648,7 @@ class ProductService {
       }
       if (filters.brand) query.brand = filters.brand;
       if (filters.tags) query.tags = { $in: filters.tags };
+      if (filters.featured !== undefined) query.featured = filters.featured;
       
       // Búsqueda por texto - usar regex para búsqueda parcial flexible
       if (filters.search) {
@@ -724,6 +729,7 @@ class ProductService {
             categoryBreadcrumb: 1,
             brand: 1,
             active: 1,
+            featured: 1, // ✅ AGREGADO: Campo destacado
             colorVariants: 1,
             createdAt: 1,
             updatedAt: 1

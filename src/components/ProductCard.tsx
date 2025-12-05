@@ -113,13 +113,6 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
                       <Tag className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                   )}
-                  {product.featured && (
-                    <div className="absolute top-0.5 left-0.5 sm:top-1 sm:left-1">
-                      <span className="bg-red-600 text-white text-[10px] sm:text-xs px-1 py-0.5 rounded">
-                        Destacado
-                      </span>
-                    </div>
-                  )}
                 </div>
               </div>
 
@@ -225,15 +218,6 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
           ) : (
             <div className="w-full h-full flex items-center justify-center text-gray-300 bg-gray-50">
               <Tag className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
-            </div>
-          )}
-          
-          {/* Badge destacado - Responsive */}
-          {product.featured && (
-            <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
-              <span className="bg-black text-white text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 font-light tracking-wide rounded">
-                DESTACADO
-              </span>
             </div>
           )}
         </div>

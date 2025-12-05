@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getOptimizedImageUrl } from '@/utils/imageUtils';
+import { getOptimizedImageUrl, getMainImage } from '@/utils/imageUtils';
 import sanitario from "../../public/inodoro_milano.png"
 import sanitario2 from "../../public/inodoro_milano2.png"
 import sanitario3 from "../../public/inodoro_milano3.png"
@@ -174,6 +174,43 @@ function MilanoSlider() {
 }
 
 export default function CleanHomepage() {
+  const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);
+  const [isCatalogButtonHovered, setIsCatalogButtonHovered] = useState(false);
+  const [preloadedImageUrl, setPreloadedImageUrl] = useState<string | null>(null);
+
+  // Precargar un producto y su imagen de Cloudinary para activar la BD y CDN
+  useEffect(() => {
+    const preloadProduct = async () => {
+      try {
+        // Consulta silenciosa al backend para obtener un producto
+        const response = await fetch('/api/products?limit=1&active=true', {
+          method: 'GET',
+          // No mostrar errores al usuario
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.data?.products?.length > 0) {
+            const product = data.data.products[0];
+            // Obtener la imagen principal del producto
+            const mainImage = getMainImage(product);
+            if (mainImage) {
+              // Almacenar la URL para renderizarla de forma oculta
+              setPreloadedImageUrl(mainImage);
+            }
+          }
+        }
+      } catch (error) {
+        // Silenciar errores - esto es solo para precarga
+        console.debug('Precarga de producto silenciosa (opcional)');
+      }
+    };
+
+    // Ejecutar precarga al montar el componente
+    preloadProduct();
+  }, []);
+
   // Featured categories data
   const featuredCategories = [
     {
@@ -215,6 +252,7 @@ export default function CleanHomepage() {
     {
       id: 1,
       name: "Grifería Premium Milano",
+      description: "Diseño minimalista con tecnología de última generación. Ahorro de agua y máxima durabilidad.",
       image: "https://griferiapeirano.com/wp-content/uploads/2025/05/62-175GR_Pulse-lavatorio-de-pared-Grafito-500x500.jpg",
       category: "Griferías",
       link: "/productos/1"
@@ -222,6 +260,7 @@ export default function CleanHomepage() {
     {
       id: 2,
       name: "Inodoro Moderno Berlín",
+      description: "Líneas elegantes y funcionalidad superior. Fácil limpieza y diseño contemporáneo.",
       image: "https://ferrum.com/pub/media/catalog/product/cache/723de03bc8ecfa836485d5b2e3f2ed4a/d/a/dadwqdwd.jpg",
       category: "Sanitarios",
       link: "/productos/2"
@@ -229,6 +268,7 @@ export default function CleanHomepage() {
     {
       id: 3,
       name: "Bomba Presión Pro 500",
+      description: "Alto rendimiento y eficiencia energética. Ideal para sistemas de presión constante.",
       image: "https://ferrum.com/pub/media/catalog/product/cache/723de03bc8ecfa836485d5b2e3f2ed4a/l/a/lavatorio-mesada-trento-ferrum-bacha-blanco-tre-ms-301-bl-b_1.jpg",
       category: "Bombas",
       link: "/productos/3"
@@ -236,6 +276,7 @@ export default function CleanHomepage() {
     {
       id: 4,
       name: "Ducha Rain Experience",
+      description: "Experiencia de lluvia relajante. Múltiples funciones de agua para máximo confort.",
       image: "https://griferiapeirano.com/wp-content/uploads/2023/11/IMG_8117-768x654.jpg",
       category: "Accesorios",
       link: "/productos/4"
@@ -243,6 +284,7 @@ export default function CleanHomepage() {
     {
       id: 5,
       name: "Vanitory Elegance 80cm",
+      description: "Elegancia y espacio optimizado. Perfecto para baños modernos y funcionales.",
       image: "https://fvsa.com/wp-content/uploads/2021/07/0103_H6-ARRAYAN.jpg",
       category: "Muebles",
       link: "/productos/5"
@@ -250,6 +292,7 @@ export default function CleanHomepage() {
     {
       id: 6,
       name: "Grifo Monocomando Cocina",
+      description: "Control intuitivo y diseño ergonómico. Resistente y fácil de mantener.",
       image: "https://griferiapeirano.com/wp-content/uploads/2025/05/62-175GR_Pulse-lavatorio-de-pared-Grafito-500x500.jpg",
       category: "Griferías",
       link: "/productos/6"
@@ -318,31 +361,36 @@ export default function CleanHomepage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
+                className="w-full lg:w-auto"
               >
                 <motion.h2 
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-gray-900 leading-tight mb-2 sm:mb-3"
+                  className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-extralight text-gray-900 leading-tight mb-2 sm:mb-3"
                 >
                   Explorá
                 </motion.h2>
-                <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
                   Nuestras categorías principales: productos de calidad premium para transformar tu hogar con diseño y funcionalidad.
                 </p>
               </motion.div>
               <Link href="/catalogo" className="w-full lg:w-auto">
-                <button 
-                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-gray-900 rounded-full border-2 border-gray-900 cursor-pointer w-full lg:w-auto justify-center overflow-hidden"
+                <motion.button 
+                  className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-gray-900 rounded-full border-2 border-gray-900 cursor-pointer w-full lg:w-auto justify-center overflow-hidden"
+                  onMouseEnter={() => setIsButtonHovered(true)}
+                  onMouseLeave={() => setIsButtonHovered(false)}
                 >
-                  {/* Fondo con gradiente que se mueve de izquierda a derecha */}
+                  {/* Fondo negro que se expande desde la izquierda hacia la derecha como un sable láser */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-100"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: '0%' }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="absolute inset-0 bg-black rounded-full z-0"
+                    animate={{ scaleX: isButtonHovered ? 1 : 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    style={{ 
+                      transformOrigin: 'left center'
+                    }}
                   ></motion.div>
                   
-                  <span className="relative z-10 text-sm font-medium tracking-wide text-gray-900">VER TODAS LAS CATEGORÍAS</span>
-                  <ArrowRight size={16} className="relative z-10 text-gray-900 group-hover:translate-x-2 transition-transform duration-300" />
-                </button>
+                  <span className="relative z-10 text-xs sm:text-sm font-medium tracking-wide text-gray-900 group-hover:text-white transition-colors duration-300">VER TODAS LAS CATEGORÍAS</span>
+                  <ArrowRight size={14} className="relative z-10 text-gray-900 group-hover:text-white group-hover:translate-x-2 transition-all duration-300 sm:w-4 sm:h-4" />
+                </motion.button>
               </Link>
             </div>
           </motion.div>
@@ -617,25 +665,26 @@ export default function CleanHomepage() {
                 >
                   <Link href="/catalogo" className="inline-block">
                     <motion.button 
-                      whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
-                      className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full overflow-hidden transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95"
+                      className="group relative inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95"
+                      onMouseEnter={() => setIsInfoButtonHovered(true)}
+                      onMouseLeave={() => setIsInfoButtonHovered(false)}
                     >
-                      {/* Fondo animado con gradiente rojo */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      {/* Fondo con gradiente rojo que se expande desde la izquierda hacia la derecha como un sable láser */}
+                      <motion.div
+                        className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 rounded-full z-0"
+                        animate={{ scaleX: isInfoButtonHovered ? 1 : 0 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                        style={{ 
+                          transformOrigin: 'left center'
+                        }}
+                      ></motion.div>
                       
                       {/* Efecto de brillo sutil */}
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-[1]"></div>
                       
                       <span className="relative z-10 text-sm font-medium tracking-wide">SOLICITAR INFORMACIÓN</span>
                       <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
-                      
-                      {/* Borde sutil que aparece al hover */}
-                      <div className="absolute inset-0 rounded-full border-2 border-red-500/0 group-hover:border-red-500/40 transition-all duration-300"></div>
-                      
-                      {/* Puntos decorativos en las esquinas */}
-                      <div className="absolute top-2 left-2 w-1 h-1 bg-red-500 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
-                      <div className="absolute bottom-2 right-2 w-1 h-1 bg-red-500 rounded-full opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
                     </motion.button>
                   </Link>
                 </motion.div>
@@ -708,21 +757,23 @@ export default function CleanHomepage() {
               </motion.div>
               <Link href="/catalogo" className="w-full lg:w-auto">
                 <motion.button 
-                  whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gray-900 text-white rounded-full overflow-hidden transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95 w-full lg:w-auto justify-center"
+                  className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-gray-900 rounded-full border-2 border-gray-900 cursor-pointer w-full lg:w-auto justify-center overflow-hidden"
+                  onMouseEnter={() => setIsCatalogButtonHovered(true)}
+                  onMouseLeave={() => setIsCatalogButtonHovered(false)}
                 >
-                  {/* Fondo animado con gradiente rojo */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-red-500 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  {/* Fondo negro que se expande desde la izquierda hacia la derecha como un sable láser */}
+                  <motion.div
+                    className="absolute inset-0 bg-black rounded-full z-0"
+                    animate={{ scaleX: isCatalogButtonHovered ? 1 : 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    style={{ 
+                      transformOrigin: 'left center'
+                    }}
+                  ></motion.div>
                   
-                  {/* Efecto de brillo sutil */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  
-                  <span className="relative z-10 text-sm font-medium tracking-wide">VER TODO EL CATÁLOGO</span>
-                  <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
-                  
-                  {/* Borde sutil que aparece al hover */}
-                  <div className="absolute inset-0 rounded-full border-2 border-red-500/0 group-hover:border-red-500/40 transition-all duration-300"></div>
+                  <span className="relative z-10 text-xs sm:text-sm font-medium tracking-wide text-gray-900 group-hover:text-white transition-colors duration-300">VER TODO EL CATÁLOGO</span>
+                  <ArrowRight size={14} className="relative z-10 text-gray-900 group-hover:text-white group-hover:translate-x-2 transition-all duration-300 sm:w-4 sm:h-4" />
                 </motion.button>
               </Link>
             </div>
@@ -775,12 +826,19 @@ export default function CleanHomepage() {
                     
                     {/* Content - Enhanced */}
                     <div className="p-6 sm:p-8 space-y-3 flex-grow flex flex-col">
-                      <div className="flex items-start justify-between gap-3 flex-grow">
+                      <div className="flex items-start justify-between gap-3">
                         <h3 className="font-light text-gray-900 text-lg sm:text-xl tracking-wide group-hover:text-gray-700 transition-colors duration-500 leading-snug">
                           {product.name}
                         </h3>
                         <div className="w-4 h-[1px] bg-gray-300 group-hover:bg-red-500 group-hover:w-8 transition-all duration-500 flex-shrink-0 mt-2"></div>
                       </div>
+                      
+                      {/* Description */}
+                      {product.description && (
+                        <p className="text-sm text-gray-500 font-light leading-relaxed line-clamp-2">
+                          {product.description}
+                        </p>
+                      )}
                       
                       {/* Decorative line */}
                       <div className="w-12 h-[1px] bg-gray-200 group-hover:bg-red-300 group-hover:w-16 transition-all duration-500"></div>
@@ -913,6 +971,22 @@ export default function CleanHomepage() {
           </motion.div>
         </div>
       </motion.section>
+
+      {/* Imagen precargada oculta para activar BD y Cloudinary */}
+      {preloadedImageUrl && (
+        <div className="hidden">
+          <img
+            src={getOptimizedImageUrl(preloadedImageUrl, 1, 1)}
+            alt=""
+            loading="eager"
+            style={{ width: '1px', height: '1px', opacity: 0, position: 'absolute', pointerEvents: 'none' }}
+            onLoad={() => {
+              // Imagen precargada exitosamente
+              console.debug('Imagen de producto precargada');
+            }}
+          />
+        </div>
+      )}
     </motion.div>
   );
 }

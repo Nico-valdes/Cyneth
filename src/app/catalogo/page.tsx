@@ -62,6 +62,7 @@ function CatalogoContent() {
   const [allCategories, setAllCategories] = useState<Category[]>([])
   const [brands, setBrands] = useState<Brand[]>([])
   const [loading, setLoading] = useState(true)
+  const [loadingAllProducts, setLoadingAllProducts] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('')
   const [selectedBrand, setSelectedBrand] = useState('')
@@ -120,23 +121,18 @@ function CatalogoContent() {
     }
   }, [searchParams])
 
-  // Cargar datos iniciales
+  // Cargar datos iniciales - Primero destacados, luego todos
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true)
         
-        const [productsRes, categoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
-          fetch('/api/products?active=true&limit=1500'),
+        // Primero cargar categorías y marcas (necesarios para filtros)
+        const [categoriesRes, allCategoriesRes, brandsRes] = await Promise.all([
           fetch('/api/categories?type=main'), // Solo categorías principales
           fetch('/api/categories'), // Todas las categorías para filtrado
           fetch('/api/brands')
         ])
-
-        if (productsRes.ok) {
-          const productsData = await productsRes.json()
-          setProducts(productsData.data?.products || [])
-        }
 
         if (categoriesRes.ok) {
           const categoriesData = await categoriesRes.json()
@@ -153,9 +149,39 @@ function CatalogoContent() {
           const brandsData = await brandsRes.json()
           setBrands(brandsData.data?.brands || [])
         }
+
+        // PRIMERO: Cargar solo productos destacados para mostrar rápido
+        try {
+          const featuredRes = await fetch('/api/products?active=true&featured=true&limit=50')
+          if (featuredRes.ok) {
+            const featuredData = await featuredRes.json()
+            const featuredProducts = featuredData.data?.products || []
+            setProducts(featuredProducts)
+            console.log('⭐ Productos destacados cargados:', featuredProducts.length)
+          }
+        } catch (error) {
+          console.error('Error cargando productos destacados:', error)
+        } finally {
+          setLoading(false)
+        }
+
+        // DESPUÉS: Cargar todos los productos en segundo plano
+        setLoadingAllProducts(true)
+        try {
+          const allProductsRes = await fetch('/api/products?active=true&limit=1500')
+          if (allProductsRes.ok) {
+            const allProductsData = await allProductsRes.json()
+            const allProducts = allProductsData.data?.products || []
+            setProducts(allProducts)
+            console.log('📦 Todos los productos cargados:', allProducts.length)
+          }
+        } catch (error) {
+          console.error('Error cargando todos los productos:', error)
+        } finally {
+          setLoadingAllProducts(false)
+        }
       } catch (error) {
         console.error('Error cargando datos del catálogo:', error)
-      } finally {
         setLoading(false)
       }
     }
@@ -210,34 +236,16 @@ function CatalogoContent() {
     return matchesSearch && matchesCategory && matchesBrand && matchesColor
   })
 
-  // Ordenar productos
+  // Ordenar productos - Destacados primero
   const sortedProducts = [...filteredProducts].sort((a, b) => {
+    // Prioridad 1: Productos destacados siempre primero
+    if (a.featured && !b.featured) return -1
+    if (!a.featured && b.featured) return 1
+    
+    // Si ambos son destacados o ninguno, aplicar ordenamiento normal
     if (!sortBy) {
-      // Ordenamiento por defecto: productos con más variantes de color primero, luego inodoros
-      const aHasColorVariants = a.colorVariants && a.colorVariants.length > 0
-      const bHasColorVariants = b.colorVariants && b.colorVariants.length > 0
-      const aColorVariantsCount = a.colorVariants?.length || 0
-      const bColorVariantsCount = b.colorVariants?.length || 0
-      const aIsInodoro = a.name.toLowerCase().includes('inodoro')
-      const bIsInodoro = b.name.toLowerCase().includes('inodoro')
-      
-      // Prioridad 1: Productos con variantes de color (más variantes primero)
-      if (aHasColorVariants && !bHasColorVariants) return -1
-      if (!aHasColorVariants && bHasColorVariants) return 1
-      if (aHasColorVariants && bHasColorVariants) {
-        // Si ambos tienen variantes, ordenar por cantidad (más variantes primero)
-        if (bColorVariantsCount !== aColorVariantsCount) {
-          return bColorVariantsCount - aColorVariantsCount
-        }
-      }
-      
-      // Prioridad 2: Productos con "inodoro" en el nombre (solo si no tienen variantes de color)
-      if (!aHasColorVariants && !bHasColorVariants) {
-        if (aIsInodoro && !bIsInodoro) return -1
-        if (!aIsInodoro && bIsInodoro) return 1
-      }
-      
-      return 0
+      // Ordenamiento por defecto: alfabético por nombre
+      return a.name.localeCompare(b.name)
     }
     
     switch (sortBy) {
@@ -312,14 +320,7 @@ function CatalogoContent() {
             {/* Barra de controles - Móvil y Desktop */}
             <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
               {/* Contador de productos */}
-              {loading ? (
-                <div className="h-4 w-24 bg-white/20 rounded animate-pulse"></div>
-              ) : (
-                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0">
-                  <span className="font-medium">{sortedProducts.length}</span> producto{sortedProducts.length !== 1 ? 's' : ''}
-                </div>
-              )}
-              
+                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0"> 1081 productos</div>
               {/* Ordenar */}
               {loading ? (
                 <div className="h-8 w-32 bg-white/20 rounded animate-pulse"></div>
