@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Save, X } from 'lucide-react';
 import ProductFormHybrid from '../../../../components/ProductFormHybrid';
+import ProtectedRoute from '@/components/ProtectedRoute';
 
 export default function NuevoProducto() {
   const router = useRouter();
@@ -69,7 +70,8 @@ export default function NuevoProducto() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <ProtectedRoute>
+      <div className="min-h-screen bg-white">
       {/* Modern Header */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -127,5 +129,6 @@ export default function NuevoProducto() {
         </div>
       </div>
     </div>
+    </ProtectedRoute>
   );
 }

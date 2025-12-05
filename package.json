@@ -20,7 +20,9 @@
     "clean-seed:products": "node scripts/clean-and-seed-products.js"
   },
   "dependencies": {
+    "@types/bcryptjs": "^3.0.0",
     "@types/node-fetch": "^2.6.13",
+    "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.1",
     "formidable": "^3.5.4",
     "framer-motion": "^12.23.12",

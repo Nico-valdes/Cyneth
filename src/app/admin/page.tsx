@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import ProtectedRoute from '@/components/ProtectedRoute'
 import ProductList from '@/components/ProductList'
 import Image from 'next/image'
 import logo from "../../../public/Cyneth-logo.png"
@@ -149,8 +148,7 @@ export default function AdminPage() {
   }
 
   return (
-    <ProtectedRoute>
-      <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50 flex">
 
         {/* Sidebar minimalista */}
         <aside className={`${
@@ -276,6 +274,5 @@ export default function AdminPage() {
           />
         )}
       </div>
-    </ProtectedRoute>
   )
 }

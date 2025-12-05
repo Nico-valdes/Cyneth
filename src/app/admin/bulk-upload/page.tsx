@@ -1,3 +1,5 @@
+'use client'
+
 import BulkUpload from '@/components/BulkUpload'
 
 export default function BulkUploadPage() {

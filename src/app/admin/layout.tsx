@@ -1,18 +1,26 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 
-interface ProtectedRouteProps {
+export default function AdminLayout({
+  children,
+}: {
   children: React.ReactNode
-}
-
-export default function ProtectedRoute({ children }: ProtectedRouteProps) {
+}) {
+  const router = useRouter()
+  const pathname = usePathname()
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const router = useRouter()
 
   useEffect(() => {
+    // No proteger la ruta de login
+    if (pathname === '/admin/login') {
+      setIsAuthenticated(true)
+      setIsLoading(false)
+      return
+    }
+
     const checkAuth = () => {
       try {
         // Verificar si existe el token en las cookies
@@ -26,7 +34,7 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
         }
         
       } catch (error) {
-        console.error('ProtectedRoute - Error:', error)
+        console.error('AdminLayout - Error:', error)
         router.push('/admin/login')
       } finally {
         setIsLoading(false)
@@ -35,7 +43,7 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
 
     // Verificar después de un pequeño delay
     setTimeout(checkAuth, 200)
-  }, [router])
+  }, [router, pathname])
 
   if (isLoading) {
     return (
@@ -48,9 +56,16 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
     )
   }
 
+  // Si es la ruta de login, mostrar sin protección
+  if (pathname === '/admin/login') {
+    return <>{children}</>
+  }
+
+  // Si no está autenticado, no mostrar nada (ya se redirigió)
   if (!isAuthenticated) {
     return null
   }
 
   return <>{children}</>
 }
+

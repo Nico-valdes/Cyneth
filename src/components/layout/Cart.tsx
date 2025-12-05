@@ -1,7 +1,7 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
-import { X, ShoppingCart, Trash2, Plus, Minus, MessageCircle } from 'lucide-react'
+import { X, ShoppingCart, Trash2, Plus, Minus, MessageCircle, ArrowRight } from 'lucide-react'
 import { useCart } from '@/contexts/CartContext'
 import { getOptimizedImageUrl } from '@/utils/imageUtils'
 import Image from 'next/image'
@@ -42,68 +42,72 @@ export default function Cart() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 flex flex-col"
+            className="fixed right-0 top-0 h-full w-full sm:w-[420px] bg-white shadow-2xl z-50 flex flex-col"
           >
-            {/* Header */}
-            <div className="flex items-center justify-between p-6 border-b border-gray-200 bg-white">
-              <div className="flex items-center gap-3">
-                <ShoppingCart className="w-5 h-5 text-gray-700" />
-                <h2 className="text-lg font-light text-gray-900 tracking-wide">
-                  Carrito de Consulta
+            {/* Header minimalista */}
+            <div className="flex items-center justify-between px-6 sm:px-8 py-6 sm:py-8 border-b border-gray-100 bg-white">
+              <div className="flex items-center gap-4">
+                <div className="w-6 h-[1px] bg-gray-300"></div>
+                <h2 className="text-xl sm:text-2xl font-extralight text-gray-900 tracking-wide uppercase">
+                  Carrito
                 </h2>
               </div>
               <button
                 onClick={closeCart}
-                className="p-2 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer"
+                className="p-2 hover:bg-gray-50 rounded-full transition-colors cursor-pointer"
                 aria-label="Cerrar carrito"
               >
-                <X className="w-5 h-5 text-gray-500" />
+                <X className="w-5 h-5 text-gray-400" />
               </button>
             </div>
 
             {/* Contenido */}
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto bg-gray-50">
               {items.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-                  <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-4">
-                    <ShoppingCart className="w-8 h-8 text-gray-400" />
+                <div className="flex flex-col items-center justify-center h-full p-8 sm:p-12 text-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                    <ShoppingCart className="w-6 h-6 text-gray-400" />
                   </div>
-                  <h3 className="text-lg font-light text-gray-900 mb-2 tracking-wide">
+                  <h3 className="text-xl sm:text-2xl font-extralight text-gray-900 mb-3 tracking-wide">
                     Tu carrito está vacío
                   </h3>
-                  <p className="text-sm text-gray-500 font-light mb-6">
+                  <p className="text-sm sm:text-base text-gray-500 font-light mb-8 max-w-sm leading-relaxed">
                     Agrega productos para consultar precios y detalles
                   </p>
-                  <button
-                    onClick={closeCart}
-                    className="px-6 py-2 bg-gray-900 text-white font-light tracking-wide hover:bg-gray-800 transition-colors cursor-pointer"
-                  >
-                    Explorar catálogo
-                  </button>
+                  <Link href="/catalogo" onClick={closeCart}>
+                    <motion.button 
+                      className="group relative inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-gray-900 rounded-full border-2 border-gray-900 cursor-pointer overflow-hidden"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <span className="relative z-10 text-xs sm:text-sm font-medium tracking-wide">EXPLORAR CATÁLOGO</span>
+                      <ArrowRight size={14} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+                    </motion.button>
+                  </Link>
                 </div>
               ) : (
-                <div className="p-4 space-y-4">
+                <div className="p-6 sm:p-8 space-y-6">
                   {items.map((item) => (
                     <motion.div
                       key={item._id}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, x: -20 }}
-                      className="bg-white border border-gray-200 rounded-lg p-4 hover:border-gray-300 transition-colors"
+                      className="bg-white border border-gray-100 rounded-lg p-4 sm:p-6 hover:border-gray-200 transition-all"
                     >
-                      <div className="flex gap-4">
+                      <div className="flex gap-4 sm:gap-6">
                         {/* Imagen */}
-                        <div className="relative w-20 h-20 bg-gray-50 rounded-lg overflow-hidden flex-shrink-0">
+                        <div className="relative w-24 h-24 sm:w-28 sm:h-28 bg-gray-50 rounded-lg overflow-hidden flex-shrink-0">
                           {item.image ? (
                             <Image
-                              src={getOptimizedImageUrl(item.image)}
+                              src={getOptimizedImageUrl(item.image, 200, 200)}
                               alt={item.name}
                               fill
-                              className="object-contain p-2"
+                              className="object-cover"
                             />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-gray-300">
-                              <ShoppingCart className="w-6 h-6" />
+                              <ShoppingCart className="w-8 h-8" />
                             </div>
                           )}
                         </div>
@@ -115,52 +119,55 @@ export default function Cart() {
                             onClick={closeCart}
                             className="block"
                           >
-                            <h3 className="font-light text-gray-900 text-sm mb-1 hover:text-red-600 transition-colors line-clamp-2 tracking-wide">
+                            <h3 className="font-light text-gray-900 text-sm sm:text-base mb-2 hover:text-gray-700 transition-colors line-clamp-2 tracking-wide leading-snug">
                               {item.name}
                             </h3>
                           </Link>
-                          <p className="text-xs text-gray-500 font-light mb-1">
-                            {item.brand}
-                          </p>
-                          <p className="text-xs text-gray-400 font-mono mb-2">
-                            SKU: {item.sku}
-                          </p>
+                          <div className="flex items-center gap-3 mb-2">
+                            <p className="text-xs sm:text-sm text-gray-600 font-light">
+                              {item.brand}
+                            </p>
+                            <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+                            <p className="text-xs text-gray-400 font-mono">
+                              {item.sku}
+                            </p>
+                          </div>
                           {item.colorVariant && (
-                            <div className="flex items-center gap-2 mb-2">
+                            <div className="flex items-center gap-2 mb-4">
                               <div
-                                className="w-4 h-4 rounded-full border border-gray-300"
+                                className="w-4 h-4 rounded-full border border-gray-200 shadow-sm"
                                 style={{ backgroundColor: item.colorVariant.colorCode }}
                               />
-                              <span className="text-xs text-gray-600 font-light">
+                              <span className="text-xs text-gray-500 font-light">
                                 {item.colorVariant.colorName}
                               </span>
                             </div>
                           )}
 
                           {/* Controles de cantidad */}
-                          <div className="flex items-center justify-between mt-3">
-                            <div className="flex items-center gap-2 border border-gray-200 rounded">
+                          <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                            <div className="flex items-center gap-1 border border-gray-200 rounded-full">
                               <button
                                 onClick={() => updateQuantity(item.cartItemId, item.quantity - 1)}
-                                className="p-1.5 hover:bg-gray-100 transition-colors cursor-pointer"
+                                className="p-2 hover:bg-gray-50 transition-colors cursor-pointer rounded-l-full"
                                 aria-label="Disminuir cantidad"
                               >
-                                <Minus className="w-3 h-3 text-gray-600" />
+                                <Minus className="w-3.5 h-3.5 text-gray-600" />
                               </button>
-                              <span className="px-3 py-1 text-sm font-light text-gray-900 min-w-[2rem] text-center">
+                              <span className="px-4 py-2 text-sm font-light text-gray-900 min-w-[3rem] text-center border-x border-gray-200">
                                 {item.quantity}
                               </span>
                               <button
                                 onClick={() => updateQuantity(item.cartItemId, item.quantity + 1)}
-                                className="p-1.5 hover:bg-gray-100 transition-colors cursor-pointer"
+                                className="p-2 hover:bg-gray-50 transition-colors cursor-pointer rounded-r-full"
                                 aria-label="Aumentar cantidad"
                               >
-                                <Plus className="w-3 h-3 text-gray-600" />
+                                <Plus className="w-3.5 h-3.5 text-gray-600" />
                               </button>
                             </div>
                             <button
                               onClick={() => removeItem(item.cartItemId)}
-                              className="p-1.5 hover:bg-red-50 text-gray-400 hover:text-red-600 transition-colors cursor-pointer rounded"
+                              className="p-2 hover:bg-gray-50 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer rounded-full"
                               aria-label="Eliminar producto"
                             >
                               <Trash2 className="w-4 h-4" />
@@ -174,35 +181,44 @@ export default function Cart() {
               )}
             </div>
 
-            {/* Footer */}
+            {/* Footer minimalista */}
             {items.length > 0 && (
-              <div className="border-t border-gray-200 bg-white p-6 space-y-4">
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-gray-600 font-light tracking-wide">
-                    Total de productos:
-                  </span>
-                  <span className="font-light text-gray-900">
+              <div className="border-t border-gray-100 bg-white p-6 sm:p-8 space-y-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-6 h-[1px] bg-gray-300"></div>
+                    <span className="text-xs text-gray-400 uppercase tracking-widest font-light">
+                      Total
+                    </span>
+                  </div>
+                  <span className="font-extralight text-lg text-gray-900">
                     {getTotalItems()} {getTotalItems() === 1 ? 'producto' : 'productos'}
                   </span>
                 </div>
                 
-                <div className="flex gap-3">
+                <div className="flex flex-col gap-3">
+                  <motion.button
+                    onClick={handleWhatsApp}
+                    className="group relative w-full px-6 sm:px-8 py-3 sm:py-4 bg-black text-white rounded-full overflow-hidden transition-all cursor-pointer flex items-center justify-center gap-3"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <MessageCircle className="w-4 h-4 relative z-10" />
+                    <span className="relative z-10 text-xs sm:text-sm font-medium tracking-wide">
+                      CONSULTAR POR WHATSAPP
+                    </span>
+                    <ArrowRight size={14} className="relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+                  </motion.button>
+                  
                   <button
                     onClick={clearCart}
-                    className="flex-1 px-4 py-3 text-sm font-light text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors cursor-pointer tracking-wide"
+                    className="w-full px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm font-light text-gray-600 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all cursor-pointer tracking-wide rounded-full"
                   >
                     Limpiar todo
                   </button>
-                  <button
-                    onClick={handleWhatsApp}
-                    className="flex-1 px-4 py-3 text-sm font-light text-white bg-red-600 hover:bg-red-700 transition-colors cursor-pointer tracking-wide flex items-center justify-center gap-2"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    Consultar por WhatsApp
-                  </button>
                 </div>
                 
-                <p className="text-xs text-gray-500 text-center font-light">
+                <p className="text-xs text-gray-400 text-center font-light leading-relaxed pt-2 border-t border-gray-100">
                   Este carrito es para consultas. No se realizan compras online.
                 </p>
               </div>
