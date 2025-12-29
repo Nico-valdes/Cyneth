@@ -136,18 +136,25 @@ export default function ContactoPage() {
       href: 'mailto:ventas@cyneth.com.ar'
     },
     {
-      icon: MapPin,
-      title: 'Ubicación',
-      content: 'Buenos Aires, Argentina',
-      subtitle: 'Cobertura nacional',
-      href: '#'
-    },
-    {
       icon: Clock,
       title: 'Horarios',
-      content: 'Lun - Vie: 8:00 - 18:00',
+      content: 'Lun - Vie: 8:00 - 17:00',
       subtitle: 'Sábados: 9:00 - 13:00',
       href: '#'
+    }
+  ];
+
+  const locations = [
+    {
+      title: 'Sucursal Wilde',
+      address: 'Av. Ramon Franco 6181',
+      href: 'https://www.google.com/maps/search/?api=1&query=Av.+Ramon+Franco+6181,+Wilde,+Buenos+Aires'
+    },
+    {
+      title: 'Sucursal Hudson',
+      address: 'Calle 47 N° 6750, Local 26',
+      address2: 'Polo Design',
+      href: 'https://www.google.com/maps/search/?api=1&query=Calle+47+N°+6750,+Local+26,+Polo+Design,+Hudson,+Buenos+Aires'
     }
   ];
 
@@ -343,7 +350,7 @@ export default function ContactoPage() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {contactInfo.map((item, index) => (
               <motion.div
                 key={item.title}
@@ -376,6 +383,71 @@ export default function ContactoPage() {
               </motion.div>
             ))}
           </div>
+
+          {/* Locations Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-12 sm:mt-16 md:mt-20 lg:mt-24"
+          >
+            {/* Header Section */}
+            <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+              <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-400" />
+              </div>
+              <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+                <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 mr-2.5 sm:mr-3 md:mr-4 lg:mr-6"></div>
+                <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Ubicaciones</span>
+                <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 ml-2.5 sm:ml-3 md:ml-4 lg:ml-6"></div>
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extralight text-gray-900 leading-tight">
+                Nuestros Locales
+              </h3>
+            </div>
+
+            {/* Locations Grid */}
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
+                {/* Divider vertical - solo desktop */}
+                <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 transform -translate-x-1/2"></div>
+                
+                {locations.map((location, index) => (
+                  <motion.div
+                    key={location.title}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-center px-4 sm:px-6 md:px-8 lg:px-12"
+                  >
+                    <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
+                      {location.title}
+                    </h4>
+                    <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
+                      <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                        {location.address}
+                      </p>
+                      {location.address2 && (
+                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                          {location.address2}
+                        </p>
+                      )}
+                    </div>
+                    <a
+                      href={location.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-xs sm:text-sm md:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group font-light"
+                    >
+                      <span>Ver en Google Maps</span>
+                      <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 

@@ -3,14 +3,10 @@
 import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
 import { 
-  Users,
   Target,
   Eye,
-  Heart,
-  Lightbulb,
-  Shield,
   ArrowRight,
-  CheckCircle
+  MapPin
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -25,39 +21,6 @@ export default function NosotrosPage() {
     showComeBackMessage: true,
     comeBackMessage: '¡Volvé!'
   });
-  // Company values data
-  const values = [
-    {
-      id: 1,
-      title: "Compromiso",
-      description: "Con cada cliente y cada obra",
-      icon: <Heart className="w-8 h-8" />
-    },
-    {
-      id: 2,
-      title: "Calidad",
-      description: "En productos y servicios",
-      icon: <Shield className="w-8 h-8" />
-    },
-    {
-      id: 3,
-      title: "Confianza",
-      description: "Y transparencia en cada operación",
-      icon: <CheckCircle className="w-8 h-8" />
-    },
-    {
-      id: 4,
-      title: "Innovación",
-      description: "Y mejora continua para estar a la vanguardia",
-      icon: <Lightbulb className="w-8 h-8" />
-    },
-    {
-      id: 5,
-      title: "Trabajo en equipo",
-      description: "Con personal capacitado y motivado",
-      icon: <Users className="w-8 h-8" />
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -235,7 +198,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* Values Section - Preserving Essence */}
+      {/* Locations Section */}
       <section className="py-10 sm:py-14 md:py-20 lg:py-28 xl:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -244,45 +207,72 @@ export default function NosotrosPage() {
             viewport={{ once: true }}
             className="mb-10 sm:mb-14 md:mb-18 lg:mb-20"
           >
-            <div className="flex items-center mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-              <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 mr-2.5 sm:mr-3 md:mr-4 lg:mr-6"></div>
-              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Valores</span>
+            <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+              <MapPin className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-400" />
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-extralight text-gray-900 leading-tight">
-              Lo que nos guía
+            <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+              <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 mr-2.5 sm:mr-3 md:mr-4 lg:mr-6"></div>
+              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Ubicaciones</span>
+              <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 ml-2.5 sm:ml-3 md:ml-4 lg:ml-6"></div>
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-extralight text-gray-900 leading-tight text-center">
+              Nuestros Locales
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 md:gap-12 lg:gap-14">
-            {values.map((value, index) => (
-              <motion.div
-                key={value.id}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 max-w-5xl mx-auto relative">
+            {/* Sucursal Wilde */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-center md:border-r md:border-gray-200 md:pr-8 md:pr-10 lg:pr-12"
+            >
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5">
+                Sucursal Wilde
+              </h3>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-4 sm:mb-5 md:mb-6">
+                Av. Ramon Franco 6181
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Ramon+Franco+6181,+Wilde,+Buenos+Aires"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm sm:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group"
               >
-                <div className="space-y-4 sm:space-y-5 md:space-y-6">
-                  <div className="text-gray-400 group-hover:text-gray-600 transition-colors duration-300">
-                    <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8">
-                      {value.icon}
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-light text-gray-900 mb-2 sm:mb-2.5 md:mb-3 group-hover:text-gray-600 transition-colors duration-300">
-                      {value.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm md:text-base text-gray-600 font-light leading-relaxed">
-                      {value.description}
-                    </p>
-                  </div>
-                  
-                  <div className="w-5 sm:w-6 md:w-8 h-[1px] bg-gray-200 group-hover:bg-gray-400 transition-colors duration-300"></div>
-                </div>
-              </motion.div>
-            ))}
+                <span className="font-light">Ver en Google Maps</span>
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </motion.div>
+
+            {/* Sucursal Hudson */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center md:pl-8 md:pl-10 lg:pl-12"
+            >
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5">
+                Sucursal Hudson
+              </h3>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-2 sm:mb-3">
+                Calle 47 N° 6750, Local 26
+              </p>
+              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-4 sm:mb-5 md:mb-6">
+                Polo Design
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Calle+47+N°+6750,+Local+26,+Polo+Design,+Hudson,+Buenos+Aires"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-sm sm:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group"
+              >
+                <span className="font-light">Ver en Google Maps</span>
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </motion.div>
           </div>
         </div>
       </section>
