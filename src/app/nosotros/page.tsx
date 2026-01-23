@@ -199,50 +199,59 @@ export default function NosotrosPage() {
       </section>
 
       {/* Locations Section */}
-      <section className="py-10 sm:py-14 md:py-20 lg:py-28 xl:py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-10 sm:mb-14 md:mb-18 lg:mb-20"
-          >
-            <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-              <MapPin className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-400" />
-            </div>
-            <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-              <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 mr-2.5 sm:mr-3 md:mr-4 lg:mr-6"></div>
-              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Ubicaciones</span>
-              <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 ml-2.5 sm:ml-3 md:ml-4 lg:ml-6"></div>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-extralight text-gray-900 leading-tight text-center">
-              Nuestros Locales
-            </h2>
-          </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-12 sm:mt-16 md:mt-20 lg:mt-24 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
+        {/* Header Section */}
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+          <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-gray-400" />
+          </div>
+          <div className="flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
+            <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 mr-2.5 sm:mr-3 md:mr-4 lg:mr-6"></div>
+            <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-light">Ubicaciones</span>
+            <div className="w-5 sm:w-6 md:w-8 lg:w-12 h-[1px] bg-gray-300 ml-2.5 sm:ml-3 md:ml-4 lg:ml-6"></div>
+          </div>
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extralight text-gray-900 leading-tight">
+            Nuestros Locales
+          </h3>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 max-w-5xl mx-auto relative">
+        {/* Locations Grid */}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
+            {/* Divider vertical - solo desktop */}
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 transform -translate-x-1/2"></div>
+            
             {/* Sucursal Wilde */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-center md:border-r md:border-gray-200 md:pr-8 md:pr-10 lg:pr-12"
+              className="text-center px-4 sm:px-6 md:px-8 lg:px-12 h-full flex flex-col items-center"
             >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5">
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
                 Sucursal Wilde
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-4 sm:mb-5 md:mb-6">
-                Av. Ramon Franco 6181
-              </p>
+              </h4>
+              <div className="flex-1 flex flex-col items-center">
+                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                    Av. Ramon Franco 6181
+                  </p>
+                </div>
+              </div>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Av.+Ramon+Franco+6181,+Wilde,+Buenos+Aires"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-sm sm:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group"
+                className="inline-flex items-center text-xs sm:text-sm md:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group font-light"
               >
-                <span className="font-light">Ver en Google Maps</span>
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span>Ver en Google Maps</span>
+                <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>
 
@@ -252,30 +261,34 @@ export default function NosotrosPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-center md:pl-8 md:pl-10 lg:pl-12"
+              className="text-center px-4 sm:px-6 md:px-8 lg:px-12 h-full flex flex-col items-center"
             >
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-5">
+              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
                 Sucursal Hudson
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-2 sm:mb-3">
-                Calle 47 N° 6750, Local 26
-              </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light mb-4 sm:mb-5 md:mb-6">
-                Polo Design
-              </p>
+              </h4>
+              <div className="flex-1 flex flex-col items-center">
+                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                    Calle 47 N° 6750, Local 26
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                    Polo Design
+                  </p>
+                </div>
+              </div>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Calle+47+N°+6750,+Local+26,+Polo+Design,+Hudson,+Buenos+Aires"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-sm sm:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group"
+                className="inline-flex items-center text-xs sm:text-sm md:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group font-light"
               >
-                <span className="font-light">Ver en Google Maps</span>
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span>Ver en Google Maps</span>
+                <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>
           </div>
         </div>
-      </section>
+      </motion.div>
 
       {/* CTA Section - Responsive */}
       <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-gray-900">
@@ -299,7 +312,7 @@ export default function NosotrosPage() {
               </h2>
               
               <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed px-4">
-                Conoce más sobre nuestros productos y servicios. Estamos aquí para asesorarte en tu próximo proyecto.
+                Conoce más sobre nuestros productos y servicios. Estamos acá para asesorarte en tu próximo proyecto.
               </p>
             </div>
 

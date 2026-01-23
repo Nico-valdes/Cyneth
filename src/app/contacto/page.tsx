@@ -419,20 +419,22 @@ export default function ContactoPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="text-center px-4 sm:px-6 md:px-8 lg:px-12"
+                    className="text-center px-4 sm:px-6 md:px-8 lg:px-12 h-full flex flex-col items-center"
                   >
                     <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
                       {location.title}
                     </h4>
-                    <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
-                      <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
-                        {location.address}
-                      </p>
-                      {location.address2 && (
+                    <div className="flex-1 flex flex-col items-center">
+                      <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
-                          {location.address2}
+                          {location.address}
                         </p>
-                      )}
+                        {location.address2 && (
+                          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
+                            {location.address2}
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <a
                       href={location.href}
@@ -675,7 +677,7 @@ export default function ContactoPage() {
               </div>
               
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extralight text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-4">
-                ¿Listo para comenzar?
+                ¿Listo para empezar?
               </h2>
               
               <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed px-4">

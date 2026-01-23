@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, Suspense } from 'react'
+import { useState, useEffect, useRef, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { Search, Filter, Grid, List, ChevronDown, X, Settings } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -75,6 +75,8 @@ function CatalogoContent() {
   const [totalProducts, setTotalProducts] = useState(1081) // Hardcoded total
   const [totalPages, setTotalPages] = useState(1)
   const productsPerPage = 50
+  const isUpdatingFromURL = useRef(false)
+  const initialLoadComplete = useRef(false)
 
   // Metadata dinámica basada en filtros
   const categoryName = selectedCategory 
@@ -100,7 +102,7 @@ function CatalogoContent() {
     comeBackMessage: '¡Volvé!'
   })
 
-  // Leer parámetros de URL y aplicar filtros automáticamente
+  // Leer parámetros de URL y aplicar filtros automáticamente (solo al montar o cuando cambia la URL)
   useEffect(() => {
     const category = searchParams.get('category')
     const level = searchParams.get('level')
@@ -110,20 +112,98 @@ function CatalogoContent() {
     
     console.log('🔗 Parámetros de URL:', { category, level, brand, color, search })
     
+    // Marcar que estamos actualizando desde la URL
+    isUpdatingFromURL.current = true
+    
+    // Aplicar filtros directamente sin comparar con estado actual
+    setSelectedCategory(category || '')
+    setSelectedBrand(brand || '')
+    setSelectedColor(color || '')
+    setSearchTerm(search || '')
+    
     if (category) {
-      console.log('✅ Aplicando filtro de categoría:', category)
-      setSelectedCategory(category)
+      console.log('✅ Aplicando filtro de categoría desde URL:', category)
     }
-    if (brand) {
-      setSelectedBrand(brand)
+    
+    // Si es la primera carga y hay filtros en la URL, cargar productos inmediatamente
+    if (!initialLoadComplete.current && (category || brand || color || search)) {
+      setLoading(true)
+      
+      const params = new URLSearchParams()
+      params.set('active', 'true')
+      params.set('page', '1')
+      params.set('limit', productsPerPage.toString())
+      
+      if (category) params.set('category', category)
+      if (brand) params.set('brand', brand)
+      if (color) params.set('color', color)
+      if (search) params.set('search', search)
+      
+      const productsUrl = `/api/products?${params.toString()}`
+      
+      fetch(productsUrl)
+        .then(response => response.json())
+        .then(data => {
+          const newProducts = data.data?.products || []
+          const pagination = data.data?.pagination || {}
+          
+          setProducts(newProducts)
+          
+          if (pagination.total) {
+            setTotalProducts(pagination.total)
+            setTotalPages(pagination.pages || 1)
+          }
+          
+          console.log(`📦 Productos cargados desde URL (con filtros):`, newProducts.length)
+          setLoading(false)
+          initialLoadComplete.current = true
+        })
+        .catch(error => {
+          console.error('Error cargando productos desde URL:', error)
+          setLoading(false)
+          initialLoadComplete.current = true
+        })
     }
-    if (color) {
-      setSelectedColor(color)
-    }
-    if (search) {
-      setSearchTerm(search)
-    }
+    
+    // Resetear el flag después de un breve delay
+    setTimeout(() => {
+      isUpdatingFromURL.current = false
+    }, 100)
   }, [searchParams])
+
+  // Sincronizar URL con filtros activos (solo cuando cambian por interacción del usuario)
+  useEffect(() => {
+    // No actualizar URL si el cambio viene de leer la URL
+    if (isUpdatingFromURL.current) {
+      return
+    }
+    
+    const currentCategory = searchParams.get('category') || ''
+    const currentBrand = searchParams.get('brand') || ''
+    const currentColor = searchParams.get('color') || ''
+    const currentSearch = searchParams.get('search') || ''
+    
+    // Solo actualizar URL si hay diferencias
+    if (
+      selectedCategory !== currentCategory ||
+      selectedBrand !== currentBrand ||
+      selectedColor !== currentColor ||
+      searchTerm !== currentSearch
+    ) {
+      const params = new URLSearchParams()
+      
+      if (selectedCategory) params.set('category', selectedCategory)
+      if (selectedBrand) params.set('brand', selectedBrand)
+      if (selectedColor) params.set('color', selectedColor)
+      if (searchTerm) params.set('search', searchTerm)
+      
+      const newUrl = params.toString() 
+        ? `/catalogo?${params.toString()}`
+        : '/catalogo'
+      
+      router.replace(newUrl, { scroll: false })
+    }
+  }, [selectedCategory, selectedBrand, selectedColor, searchTerm, router, searchParams])
 
   // Función para construir URL de API con filtros y paginación
   const buildProductsUrl = (page: number = 1) => {
@@ -239,8 +319,60 @@ function CatalogoContent() {
           setBrands(brandsData)
         }
 
-        // Cargar productos destacados primero
-        await fetchProducts(1, false)
+        // Leer filtros de la URL
+        const categoryFromURL = searchParams.get('category')
+        const brandFromURL = searchParams.get('brand')
+        const colorFromURL = searchParams.get('color')
+        const searchFromURL = searchParams.get('search')
+        
+        // Aplicar filtros de URL al estado
+        if (categoryFromURL) setSelectedCategory(categoryFromURL)
+        if (brandFromURL) setSelectedBrand(brandFromURL)
+        if (colorFromURL) setSelectedColor(colorFromURL)
+        if (searchFromURL) setSearchTerm(searchFromURL)
+        
+        // Solo cargar productos si NO hay filtros en la URL
+        // Si hay filtros, el efecto que lee la URL los cargará
+        const hasFilters = categoryFromURL || brandFromURL || colorFromURL || searchFromURL
+        
+        if (!hasFilters) {
+          // Cargar todos los productos sin filtros
+          const params = new URLSearchParams()
+          params.set('active', 'true')
+          params.set('page', '1')
+          params.set('limit', productsPerPage.toString())
+          
+          const productsUrl = `/api/products?${params.toString()}`
+          
+          try {
+            setLoading(true)
+            const response = await fetch(productsUrl)
+            
+            if (response.ok) {
+              const data = await response.json()
+              const newProducts = data.data?.products || []
+              const pagination = data.data?.pagination || {}
+              
+              setProducts(newProducts)
+              
+              if (pagination.total) {
+                setTotalProducts(pagination.total)
+                setTotalPages(pagination.pages || 1)
+              }
+              
+              console.log(`📦 Productos cargados inicialmente (sin filtros):`, newProducts.length)
+            }
+          } catch (error) {
+            console.error('Error cargando productos iniciales:', error)
+          } finally {
+            setLoading(false)
+            initialLoadComplete.current = true
+          }
+        } else {
+          // Si hay filtros, NO marcar como completado aquí
+          // El efecto que lee la URL se encargará de cargar los productos y marcar como completado
+          console.log('⏳ Esperando carga de productos desde URL (hay filtros)')
+        }
       } catch (error) {
         console.error('Error cargando datos del catálogo:', error)
         setLoading(false)
@@ -250,8 +382,14 @@ function CatalogoContent() {
     fetchData()
   }, [])
 
-  // Recargar productos cuando cambian los filtros
+  // Recargar productos cuando cambian los filtros (solo después de la carga inicial)
   useEffect(() => {
+    // No recargar si la carga inicial aún no se completó
+    // o si el cambio viene de leer la URL en el primer render
+    if (!initialLoadComplete.current || isUpdatingFromURL.current) {
+      return
+    }
+    
     if (!loading) {
       setCurrentPage(1)
       fetchProducts(1, false)

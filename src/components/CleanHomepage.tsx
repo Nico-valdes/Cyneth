@@ -173,11 +173,21 @@ function MilanoSlider() {
   );
 }
 
+interface Category {
+  _id: string;
+  name: string;
+  slug: string;
+  level: number;
+  type: 'main' | 'sub';
+}
+
 export default function CleanHomepage() {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
   const [isInfoButtonHovered, setIsInfoButtonHovered] = useState(false);
   const [isCatalogButtonHovered, setIsCatalogButtonHovered] = useState(false);
   const [preloadedImageUrl, setPreloadedImageUrl] = useState<string | null>(null);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [categoriesLoaded, setCategoriesLoaded] = useState(false);
 
   // Precargar un producto y su imagen de Cloudinary para activar la BD y CDN
   useEffect(() => {
@@ -211,15 +221,78 @@ export default function CleanHomepage() {
     preloadProduct();
   }, []);
 
-  // Featured categories data
-  const featuredCategories = [
+  // Cargar categorías desde la API
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const response = await fetch('/api/categories');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.data?.categories) {
+            setCategories(data.data.categories);
+            setCategoriesLoaded(true);
+          }
+        }
+      } catch (error) {
+        console.error('Error cargando categorías:', error);
+        // Si falla, usar valores por defecto
+        setCategoriesLoaded(true);
+      }
+    };
+
+    loadCategories();
+  }, []);
+
+  // Función para buscar categoría por nombre (case-insensitive, parcial)
+  const findCategoryByName = (searchName: string): Category | null => {
+    if (!categories.length) return null;
+    
+    const normalizedSearch = searchName.toLowerCase().trim();
+    
+    // Buscar coincidencia exacta primero
+    let found = categories.find(cat => 
+      cat.name.toLowerCase() === normalizedSearch
+    );
+    
+    // Si no hay coincidencia exacta, buscar parcial
+    if (!found) {
+      found = categories.find(cat => {
+        const catName = cat.name.toLowerCase();
+        return catName.includes(normalizedSearch) || normalizedSearch.includes(catName);
+      });
+    }
+    
+    // Para búsquedas más específicas
+    if (!found) {
+      // Mapeo de términos de búsqueda a palabras clave
+      const keywordMap: { [key: string]: string[] } = {
+        'cocina': ['cocina', 'kitchen', 'griferia cocina'],
+        'baño': ['baño', 'bath', 'griferia baño', 'ducha'],
+        'sanitario': ['sanitario', 'inodoro', 'wc', 'toilet'],
+        'caño': ['caño', 'tubo', 'conexion', 'accesorio']
+      };
+      
+      const keywords = keywordMap[normalizedSearch] || [normalizedSearch];
+      found = categories.find(cat => {
+        const catName = cat.name.toLowerCase();
+        return keywords.some(keyword => catName.includes(keyword));
+      });
+    }
+    
+    return found || null;
+  };
+
+  // Featured categories data con enlaces dinámicos
+  // Puedes poner categoryId directamente o dejar que se busque por searchName
+  const featuredCategoriesData = [
     {
       id: 1,
       name: "Griferia para cocina",
       icon: <Droplet className="w-8 h-8" />,
       description: "Diseño europeo y calidad premium",
       image: catgrif,
-      link: "/catalogo?category=68cda5f5ff392fb2b5d73dac&level=1"
+      categoryId: "68cda5f5ff392fb2b5d73dac",
+      searchName: "cocina" 
     },
     {
       id: 2,
@@ -227,7 +300,8 @@ export default function CleanHomepage() {
       icon: <Bath className="w-8 h-8" />,
       description: "Elegancia y funcionalidad",
       image: catsan,
-      link: "/catalogo?category=68cda5f6ff392fb2b5d73dcd&level=0"
+      categoryId: "68cda5f6ff392fb2b5d73dcd", 
+      searchName: "sanitario"
     },
     {
       id: 3,
@@ -235,7 +309,8 @@ export default function CleanHomepage() {
       icon: <ShowerHead className="w-8 h-8" />,
       description: "Experiencia de baño única",
       image: catduch,
-      link: "/catalogo?category=68cda5f4ff392fb2b5d73da3&level=1"
+      categoryId: "68cda5f4ff392fb2b5d73da3",
+      searchName: "baño"
     },
     {
       id: 4,
@@ -243,9 +318,31 @@ export default function CleanHomepage() {
       icon: <Wrench className="w-8 h-8" />,
       description: "Complementos esenciales",
       image: catacc,
-      link: "/catalogo?category=68cda5f5ff392fb2b5d73db2&level=0"
+      categoryId: "68cda5f5ff392fb2b5d73db2",
+      searchName: "caño"
     }
   ];
+
+  // Construir categorías con enlaces dinámicos
+  const featuredCategories = featuredCategoriesData.map(cat => {
+    let link = '/catalogo'; // Fallback por defecto
+    
+    // Si hay categoryId hardcodeado, usarlo directamente
+    if (cat.categoryId) {
+      link = `/catalogo?category=${cat.categoryId}`;
+    } else if (cat.searchName) {
+      // Si no hay categoryId, buscar por nombre
+      const foundCategory = findCategoryByName(cat.searchName);
+      if (foundCategory) {
+        link = `/catalogo?category=${foundCategory._id}`;
+      }
+    }
+    
+    return {
+      ...cat,
+      link
+    };
+  });
 
   // Popular products data
   const popularProducts = [
@@ -308,9 +405,10 @@ export default function CleanHomepage() {
     >
       <Header />
 
-      {/* Hero Section with Banner Video - Responsive */}
+      {/* Hero Section with Banner Video - Resoluciones fijas por dispositivo */}
+      {/* Desktop: 2560x1000 (2.56:1) */}
       <motion.section 
-        className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] overflow-hidden"
+        className="relative w-full aspect-[2560/1000] overflow-hidden hidden lg:block"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -324,8 +422,44 @@ export default function CleanHomepage() {
         >
           <source src="/videos/banner-video3.mp4" type="video/mp4" />
         </video>
-        
-        {/* Overlay opcional para mejor legibilidad del contenido */}
+        <div className="absolute inset-0 bg-black/10"></div>
+      </motion.section>
+
+      {/* Tablet: 16:10 (1.6:1) */}
+      <motion.section 
+        className="relative w-full aspect-[16/10] overflow-hidden hidden md:block lg:hidden"
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <video 
+          autoPlay
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/banner-video3-tablet.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/10"></div>
+      </motion.section>
+
+      {/* Mobile: 1:1 (cuadrado) */}
+      <motion.section 
+        className="relative w-full aspect-square overflow-hidden block md:hidden"
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <video 
+          autoPlay
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/videos/banner-video3-mobile.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-black/10"></div>
       </motion.section>
 
@@ -663,7 +797,12 @@ export default function CleanHomepage() {
                   transition={{ delay: 0.6 }}
                   className="pt-4"
                 >
-                  <Link href="/catalogo" className="inline-block">
+                  <a 
+                    href="https://wa.me/541123168857?text=Hola!%20Me%20interesa%20obtener%20más%20información%20sobre%20el%20Inodoro%20Milano%20Smart%20Tec.%20¿Podrían%20brindarme%20detalles%20sobre%20precio%2C%20disponibilidad%20y%20características%20técnicas%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
                     <motion.button 
                       whileTap={{ scale: 0.95 }}
                       className="group relative inline-flex items-center gap-3 px-8 py-4 bg-black text-white rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-red-200/50 cursor-pointer active:scale-95"
@@ -686,7 +825,7 @@ export default function CleanHomepage() {
                       <span className="relative z-10 text-sm font-medium tracking-wide">SOLICITAR INFORMACIÓN</span>
                       <ArrowRight size={16} className="relative z-10 group-hover:translate-x-2 transition-transform duration-300" />
                     </motion.button>
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
             </div>
@@ -751,7 +890,7 @@ export default function CleanHomepage() {
                 </h2>
                 <div className="space-y-4 relative pl-6 border-l-2 border-gray-100">
                   <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light leading-relaxed max-w-2xl">
-                    Descubre los productos más elegidos por nuestros clientes. <span className="text-gray-900 font-normal">Calidad premium y diseño que transforma espacios.</span>
+                    Descubrí los productos más elegidos por nuestros clientes. <span className="text-gray-900 font-normal">Calidad premium y diseño que transforma espacios.</span>
                   </p>
                 </div>
               </motion.div>
