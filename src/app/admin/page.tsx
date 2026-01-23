@@ -84,25 +84,14 @@ export default function AdminPage() {
   const reloadProducts = async () => {
     try {
       setIsLoading(true);
-      console.log('🔍 Iniciando carga de productos...'); // Debug log
       
       const response = await fetch('/api/products?page=1&limit=50&active=true');
-      console.log('📡 Response status:', response.status); // Debug log
-      console.log('📡 Response ok:', response.ok); // Debug log
       
       if (response.ok) {
         const data = await response.json();
-        console.log('📦 API Response completa:', data); // Debug log
-        console.log('📦 Data type:', typeof data); // Debug log
-        console.log('📦 Data.success:', data?.success); // Debug log
-        console.log('📦 Data.data:', data?.data); // Debug log
-        console.log('📦 Data.data.products:', data?.data?.products); // Debug log
-        console.log('📦 Is products array:', Array.isArray(data?.data?.products)); // Debug log
         
         // La API devuelve { success: true, data: { products: [...] } }
         const productsArray = data?.data?.products || [];
-        console.log('✅ Products Array final:', productsArray); // Debug log
-        console.log('✅ Products count:', productsArray.length); // Debug log
         setProducts(productsArray);
       } else {
         console.error('❌ Error recargando productos:', response.statusText);

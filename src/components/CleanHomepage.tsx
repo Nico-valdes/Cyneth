@@ -420,14 +420,14 @@ export default function CleanHomepage() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/videos/banner-video3.mp4" type="video/mp4" />
+          <source src="/videos/banner_desktop.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/10"></div>
       </motion.section>
 
       {/* Tablet: 16:10 (1.6:1) */}
       <motion.section 
-        className="relative w-full aspect-[16/10] overflow-hidden hidden md:block lg:hidden"
+        className="relative w-full aspect-[18/10] overflow-hidden hidden md:block lg:hidden"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -439,7 +439,7 @@ export default function CleanHomepage() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/videos/banner-video3-tablet.mp4" type="video/mp4" />
+          <source src="/videos/banner_tablet.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/10"></div>
       </motion.section>
@@ -458,7 +458,7 @@ export default function CleanHomepage() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/videos/banner-video3-mobile.mp4" type="video/mp4" />
+          <source src="/videos/banner_celu.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/10"></div>
       </motion.section>

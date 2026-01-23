@@ -14,6 +14,10 @@ class ProductService {
     this.lastCacheUpdate = 0;
   }
 
+  escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
   // Obtener todas las categorías descendientes (hijas, nietas, etc.) de una categoría
   async getAllDescendantCategories(parentId) {
     try {
@@ -138,7 +142,18 @@ class ProductService {
       // Aplicar filtros
       if (filters.category) query.category = filters.category;
       if (filters.subcategory) query.subcategory = filters.subcategory;
-      if (filters.brand) query.brand = filters.brand;
+      if (filters.brand) {
+        const brandValue = String(filters.brand).trim();
+        if (brandValue) {
+          const brandRegex = new RegExp(`^${this.escapeRegExp(brandValue)}$`, 'i');
+          const brandFilter = { $or: [{ brand: brandRegex }, { brandSlug: brandRegex }] };
+          if (query.$and) {
+            query.$and.push(brandFilter);
+          } else {
+            query.$and = [brandFilter];
+          }
+        }
+      }
       if (filters.tags) query.tags = { $in: filters.tags };
       if (filters.featured !== undefined) query.featured = filters.featured;
       
@@ -295,7 +310,18 @@ class ProductService {
           query.subcategory = filters.subcategory;
         }
       }
-      if (filters.brand) query.brand = filters.brand;
+      if (filters.brand) {
+        const brandValue = String(filters.brand).trim();
+        if (brandValue) {
+          const brandRegex = new RegExp(`^${this.escapeRegExp(brandValue)}$`, 'i');
+          const brandFilter = { $or: [{ brand: brandRegex }, { brandSlug: brandRegex }] };
+          if (query.$and) {
+            query.$and.push(brandFilter);
+          } else {
+            query.$and = [brandFilter];
+          }
+        }
+      }
       if (filters.featured !== undefined) query.featured = filters.featured;
       
       // Filtro por color - buscar en colorVariants
@@ -667,7 +693,18 @@ class ProductService {
           query.subcategory = filters.subcategory;
         }
       }
-      if (filters.brand) query.brand = filters.brand;
+      if (filters.brand) {
+        const brandValue = String(filters.brand).trim();
+        if (brandValue) {
+          const brandRegex = new RegExp(`^${this.escapeRegExp(brandValue)}$`, 'i');
+          const brandFilter = { $or: [{ brand: brandRegex }, { brandSlug: brandRegex }] };
+          if (query.$and) {
+            query.$and.push(brandFilter);
+          } else {
+            query.$and = [brandFilter];
+          }
+        }
+      }
       if (filters.tags) query.tags = { $in: filters.tags };
       if (filters.featured !== undefined) query.featured = filters.featured;
       

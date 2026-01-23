@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Save, Plus, Trash2, Palette, Package, Ruler, Tag } from 'lucide-react';
 import ImageUploadField from './ImageUploadField';
+import Notice from '@/components/ui/Notice';
 
 interface Measurement {
   enabled: boolean;
@@ -94,6 +95,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   const [selectedPath, setSelectedPath] = useState<string[]>([]);
   const [editingAttribute, setEditingAttribute] = useState<{index: number, attribute: ProductAttribute} | null>(null);
   const [editingVariant, setEditingVariant] = useState<{index: number, variant: ColorVariant} | null>(null);
+  const [formNotice, setFormNotice] = useState<{ type: 'error' | 'success' | 'info' | 'warning'; message: string } | null>(null);
   
   const [availableColors] = useState([
     { name: 'Blanco Cromo', code: '#F5F5F5' },
@@ -160,14 +162,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   // Inicializar formulario con datos del producto
   useEffect(() => {
     if (product) {
-      console.log('🔍 Cargando producto para edición:', product); // Debug
-      console.log('📷 defaultImage del producto:', product.defaultImage); // Debug específico para imagen
-      console.log('📋 Atributos del producto:', product.attributes); // Debug para atributos
-      console.log('📋 ¿Es array de atributos?:', Array.isArray(product.attributes)); // Debug
-      console.log('📋 Tipo de atributos:', typeof product.attributes); // Debug
-      
       const finalAttributes = Array.isArray(product.attributes) ? product.attributes : [];
-      console.log('📋 Atributos finales para el formulario:', finalAttributes); // Debug
       
       setFormData({
         name: product.name || '',
@@ -311,14 +306,14 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
       
       // Verificar que el SKU base esté definido
       if (!formData.sku) {
-        alert('Debes definir el SKU base del producto antes de agregar variantes de color');
+        setFormNotice({ type: 'error', message: 'Definí el SKU base del producto antes de agregar variantes de color.' });
         return;
       }
       
       // Verificar que no exista ya una variante con el mismo SKU
       const existingSku = formData.colorVariants.find(v => v.sku === variantSku);
       if (existingSku) {
-        alert(`Ya existe una variante con el SKU: ${variantSku}`);
+        setFormNotice({ type: 'error', message: `Ya existe una variante con el SKU: ${variantSku}` });
         return;
       }
       
@@ -451,6 +446,22 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setFormNotice(null);
+    
+    if (!formData.name.trim()) {
+      setFormNotice({ type: 'error', message: 'El nombre del producto es obligatorio.' });
+      return;
+    }
+    
+    if (!formData.sku.trim()) {
+      setFormNotice({ type: 'error', message: 'El SKU es obligatorio.' });
+      return;
+    }
+    
+    if (!formData.category) {
+      setFormNotice({ type: 'error', message: 'Seleccioná al menos una categoría.' });
+      return;
+    }
     
     // Validaciones específicas para SKUs
     if (formData.colorVariants.length > 0) {
@@ -459,7 +470,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
       const uniqueSkus = new Set(skus);
       
       if (skus.length !== uniqueSkus.size) {
-        alert('Todas las variantes de color deben tener SKUs únicos');
+        setFormNotice({ type: 'error', message: 'Todas las variantes de color deben tener SKUs únicos.' });
         return;
       }
       
@@ -471,8 +482,10 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
       });
       
       if (invalidVariants.length > 0) {
-        alert('Los SKUs de las variantes no coinciden con el patrón esperado. Deberían ser: ' + 
-              invalidVariants.map(v => generateVariantSku(baseSku, v.colorName)).join(', '));
+        setFormNotice({
+          type: 'error',
+          message: `Los SKUs de las variantes no coinciden con el patrón esperado: ${invalidVariants.map(v => generateVariantSku(baseSku, v.colorName)).join(', ')}`
+        });
         return;
       }
     }
@@ -488,6 +501,13 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   return (
     <div className="w-full">
       <form id="product-form" onSubmit={handleSubmit} className="space-y-8">
+        {formNotice && (
+          <Notice
+            type={formNotice.type}
+            message={formNotice.message}
+            onClose={() => setFormNotice(null)}
+          />
+        )}
         {/* Header */}
         <div className="flex justify-between items-center">
           <h2 className="text-2xl font-bold text-gray-900">

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit, Trash2, Save, X, Tag } from 'lucide-react';
+import Notice from '@/components/ui/Notice';
 
 interface Brand {
   _id: string;
@@ -19,6 +20,11 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [newBrand, setNewBrand] = useState({ name: '' });
   const [editingBrand, setEditingBrand] = useState({ name: '' });
+  const [notice, setNotice] = useState<{ type: 'success' | 'error' | 'info' | 'warning'; message: string } | null>(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [brandToDelete, setBrandToDelete] = useState<Brand | null>(null);
 
   useEffect(() => {
     fetchBrands();
@@ -33,15 +39,20 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
       }
     } catch (error) {
       console.error('Error cargando marcas:', error);
+      setNotice({ type: 'error', message: 'No se pudieron cargar las marcas. Reintentá más tarde.' });
     } finally {
       setLoading(false);
     }
   };
 
   const createBrand = async () => {
-    if (!newBrand.name.trim()) return;
+    if (!newBrand.name.trim()) {
+      setNotice({ type: 'warning', message: 'El nombre de la marca es obligatorio.' });
+      return;
+    }
 
     try {
+      setIsSaving(true);
       const response = await fetch('/api/brands', {
         method: 'POST',
         headers: {
@@ -52,19 +63,28 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
 
       if (response.ok) {
         setNewBrand({ name: '' });
+        setNotice({ type: 'success', message: 'Marca creada correctamente.' });
         fetchBrands();
       } else {
-        console.error('Error creando marca');
+        const errorData = await response.json().catch(() => ({}));
+        setNotice({ type: 'error', message: errorData.error || 'Error creando marca.' });
       }
     } catch (error) {
       console.error('Error creando marca:', error);
+      setNotice({ type: 'error', message: 'Error creando marca.' });
+    } finally {
+      setIsSaving(false);
     }
   };
 
   const updateBrand = async (id: string) => {
-    if (!editingBrand.name.trim()) return;
+    if (!editingBrand.name.trim()) {
+      setNotice({ type: 'warning', message: 'El nombre de la marca es obligatorio.' });
+      return;
+    }
 
     try {
+      setIsSaving(true);
       const response = await fetch('/api/brands', {
         method: 'PUT',
         headers: {
@@ -79,34 +99,51 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
       if (response.ok) {
         setEditingId(null);
         setEditingBrand({ name: '' });
+        setNotice({ type: 'success', message: 'Marca actualizada correctamente.' });
         fetchBrands();
       } else {
-        console.error('Error actualizando marca');
+        const errorData = await response.json().catch(() => ({}));
+        setNotice({ type: 'error', message: errorData.error || 'Error actualizando marca.' });
       }
     } catch (error) {
       console.error('Error actualizando marca:', error);
+      setNotice({ type: 'error', message: 'Error actualizando marca.' });
+    } finally {
+      setIsSaving(false);
     }
   };
 
-  const deleteBrand = async (id: string) => {
-    if (!confirm('¿Estás seguro de que quieres eliminar esta marca?')) return;
+  const handleDeleteClick = (brand: Brand) => {
+    setBrandToDelete(brand);
+    setShowDeleteModal(true);
+  };
 
+  const deleteBrand = async () => {
+    if (!brandToDelete) return;
     try {
+      setIsDeleting(true);
       const response = await fetch('/api/brands', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ id }),
+        body: JSON.stringify({ id: brandToDelete._id }),
       });
 
       if (response.ok) {
+        setNotice({ type: 'success', message: 'Marca eliminada correctamente.' });
+        setShowDeleteModal(false);
+        setBrandToDelete(null);
         fetchBrands();
       } else {
-        console.error('Error eliminando marca');
+        const errorData = await response.json().catch(() => ({}));
+        setNotice({ type: 'error', message: errorData.error || 'Error eliminando marca.' });
       }
     } catch (error) {
       console.error('Error eliminando marca:', error);
+      setNotice({ type: 'error', message: 'Error eliminando marca.' });
+    } finally {
+      setIsDeleting(false);
     }
   };
 
@@ -132,13 +169,21 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
   }
 
   return (
-    <div className="bg-white border border-gray-200">
+    <div className="bg-white border border-gray-200 rounded-lg">
       {/* Header */}
       <div className="border-b border-gray-200 px-6 py-4">
         <h2 className="text-lg font-semibold text-gray-900">Gestión de Marcas</h2>
       </div>
 
       <div className="p-6">
+        {notice && (
+          <Notice
+            type={notice.type}
+            message={notice.message}
+            onClose={() => setNotice(null)}
+            className="mb-4"
+          />
+        )}
         {/* Agregar nueva marca */}
         <div className="border-b border-gray-200 pb-4 mb-6">
           <h3 className="text-sm font-medium text-gray-700 mb-3">Nueva Marca</h3>
@@ -150,13 +195,14 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
               onKeyPress={(e) => e.key === 'Enter' && createBrand()}
               className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-1 focus:ring-gray-500 focus:border-gray-500"
               placeholder="Nombre de la marca"
+              disabled={isSaving}
             />
             <button
               onClick={createBrand}
-              disabled={!newBrand.name.trim()}
+              disabled={!newBrand.name.trim() || isSaving}
               className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 disabled:bg-gray-300 disabled:cursor-not-allowed text-sm"
             >
-              Agregar
+              {isSaving ? 'Guardando...' : 'Agregar'}
             </button>
           </div>
         </div>
@@ -185,7 +231,8 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
                           />
                           <button
                             onClick={() => updateBrand(brand._id)}
-                            className="p-1 text-green-600 hover:bg-green-50 rounded"
+                            disabled={isSaving}
+                            className="p-1 text-green-600 hover:bg-green-50 rounded disabled:opacity-50"
                           >
                             <Save size={14} />
                           </button>
@@ -215,7 +262,7 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
                           <Edit size={14} />
                         </button>
                         <button
-                          onClick={() => deleteBrand(brand._id)}
+                          onClick={() => handleDeleteClick(brand)}
                           className="p-1 text-gray-400 hover:text-red-600 rounded"
                         >
                           <Trash2 size={14} />
@@ -229,6 +276,66 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal de confirmación de eliminación */}
+      {showDeleteModal && brandToDelete && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full">
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <Trash2 className="w-5 h-5 text-red-600" />
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-medium text-gray-900">Eliminar marca</h3>
+                  <p className="text-sm text-gray-500">Esta acción no se puede deshacer</p>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-gray-700">
+                  ¿Seguro que querés eliminar la marca{' '}
+                  <span className="font-medium text-gray-900">"{brandToDelete.name}"</span>?
+                </p>
+              </div>
+
+              <div className="flex items-center justify-end space-x-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowDeleteModal(false);
+                    setBrandToDelete(null);
+                  }}
+                  disabled={isDeleting}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  onClick={deleteBrand}
+                  disabled={isDeleting}
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  {isDeleting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                      Eliminando...
+                    </>
+                  ) : (
+                    <>
+                      <Trash2 size={16} className="mr-2" />
+                      Eliminar
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

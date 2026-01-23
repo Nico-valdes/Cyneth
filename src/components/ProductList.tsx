@@ -6,6 +6,7 @@ import { Trash2, Edit, Eye, Plus, Search, Filter, ChevronLeft, ChevronRight, X, 
 import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
 import { useSearchDebounce } from '@/hooks/useDebounce'
 import { useCategoryFilters } from '@/hooks/useCategoryFilters'
+import Notice from '@/components/ui/Notice'
 
 interface Product {
   _id: string
@@ -245,6 +246,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [productToDelete, setProductToDelete] = useState<Product | null>(null)
   const [isDeleting, setIsDeleting] = useState(false)
+  const [notice, setNotice] = useState<{ type: 'success' | 'error' | 'info' | 'warning'; message: string } | null>(null)
 
   // Ref para el input de búsqueda
   const searchInputRef = useRef<HTMLInputElement>(null)
@@ -382,6 +384,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         await fetchProducts()
         setShowDeleteModal(false)
         setProductToDelete(null)
+        setNotice({ type: 'success', message: 'Producto eliminado correctamente.' })
         
         if (onDelete) {
           onDelete(productToDelete._id)
@@ -390,7 +393,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         throw new Error('Error al eliminar el producto')
       }
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Error al eliminar producto')
+      setNotice({ type: 'error', message: err instanceof Error ? err.message : 'Error al eliminar producto' })
     } finally {
       setIsDeleting(false)
     }
@@ -426,13 +429,14 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         )
         // Recargar productos para asegurar sincronización con la BD
         await fetchProducts()
+        setNotice({ type: 'success', message: newFeaturedValue ? 'Producto marcado como destacado.' : 'Producto removido de destacados.' })
       } else {
         const errorData = await response.json()
         throw new Error(errorData.error || 'Error al actualizar el producto')
       }
     } catch (err) {
       console.error('Error al actualizar destacado:', err)
-      setError(err instanceof Error ? err.message : 'Error al actualizar producto')
+      setNotice({ type: 'error', message: err instanceof Error ? err.message : 'Error al actualizar producto' })
       // Revertir cambio local si falló
       await fetchProducts()
     }
@@ -482,6 +486,14 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
               Nuevo Producto
             </button>
           </div>
+          {notice && (
+            <Notice
+              type={notice.type}
+              message={notice.message}
+              onClose={() => setNotice(null)}
+              className="mt-4"
+            />
+          )}
         </div>
       </div>
 

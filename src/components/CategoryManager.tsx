@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Plus, Edit, Trash2, Save, X, Package, FolderOpen, Check, ChevronDown, ChevronRight, Edit2, Folder, FileText, MoreHorizontal, ArrowRight, Home } from 'lucide-react';
+import Notice from '@/components/ui/Notice';
 
 // Función para generar slug
 const generateSlug = (name: string) => {
@@ -44,6 +45,12 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [addingSubcategoryTo, setAddingSubcategoryTo] = useState<string | null>(null);
   const [newInlineCategory, setNewInlineCategory] = useState({ name: '' });
+  const [showCreateForm, setShowCreateForm] = useState(false);
+  const [notice, setNotice] = useState<{ type: 'success' | 'error' | 'info' | 'warning'; message: string } | null>(null);
+  const [isSaving, setIsSaving] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [categoryToDelete, setCategoryToDelete] = useState<Category | null>(null);
 
   useEffect(() => {
     fetchCategories();
@@ -66,15 +73,20 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
       }
     } catch (error) {
       console.error('Error cargando categorías:', error);
+      setNotice({ type: 'error', message: 'No se pudieron cargar las categorías. Reintentá más tarde.' });
     } finally {
       setLoading(false);
     }
   };
 
   const createCategory = async () => {
-    if (!newCategory.name.trim()) return;
+    if (!newCategory.name.trim()) {
+      setNotice({ type: 'warning', message: 'El nombre de la categoría es obligatorio.' });
+      return;
+    }
 
     try {
+      setIsSaving(true);
       const categoryData = {
         name: newCategory.name.trim(),
         slug: generateSlug(newCategory.name.trim()),
@@ -93,22 +105,35 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
 
       if (response.ok) {
         setNewCategory({ name: '', parent: '' });
+        setShowCreateForm(false);
+        setNotice({ type: 'success', message: 'Categoría creada correctamente.' });
         fetchCategories();
       } else {
         const errorData = await response.json();
         console.error('Error creando categoría:', errorData.error);
-        alert(`Error: ${errorData.error}`);
+        setNotice({ type: 'error', message: errorData.error || 'Error al crear la categoría.' });
       }
     } catch (error) {
       console.error('Error creando categoría:', error);
-      alert('Error al crear la categoría');
+      setNotice({ type: 'error', message: 'Error al crear la categoría.' });
+    } finally {
+      setIsSaving(false);
     }
   };
 
   const updateCategory = async (id: string) => {
-    if (!editingCategory.name.trim()) return;
+    if (!editingCategory.name.trim()) {
+      setNotice({ type: 'warning', message: 'El nombre de la categoría es obligatorio.' });
+      return;
+    }
+
+    if (hierarchyHelpers.wouldCreateCycle(id, editingCategory.parent || null)) {
+      setNotice({ type: 'error', message: 'La categoría seleccionada como padre genera un ciclo inválido.' });
+      return;
+    }
 
     try {
+      setIsSaving(true);
       const updateData = {
         id,
         name: editingCategory.name.trim(),
@@ -127,53 +152,70 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
       if (response.ok) {
         setEditingId(null);
         setEditingCategory({ name: '', parent: '' });
+        setNotice({ type: 'success', message: 'Categoría actualizada correctamente.' });
         fetchCategories();
       } else {
         const errorData = await response.json();
         console.error('Error actualizando categoría:', errorData.error);
-        alert(`Error: ${errorData.error}`);
+        setNotice({ type: 'error', message: errorData.error || 'Error al actualizar la categoría.' });
       }
     } catch (error) {
       console.error('Error actualizando categoría:', error);
-      alert('Error al actualizar la categoría');
+      setNotice({ type: 'error', message: 'Error al actualizar la categoría.' });
+    } finally {
+      setIsSaving(false);
     }
   };
 
-  const deleteCategory = async (id: string) => {
-    if (!confirm('¿Estás seguro de que quieres eliminar esta categoría?')) return;
+  const handleDeleteClick = (category: Category) => {
+    setCategoryToDelete(category);
+    setShowDeleteModal(true);
+  };
 
+  const deleteCategory = async () => {
+    if (!categoryToDelete) return;
     try {
-      const response = await fetch(`/api/categories?id=${id}`, {
+      setIsDeleting(true);
+      const response = await fetch(`/api/categories?id=${categoryToDelete._id}`, {
         method: 'DELETE',
       });
 
       if (response.ok) {
+        setNotice({ type: 'success', message: 'Categoría eliminada correctamente.' });
+        setShowDeleteModal(false);
+        setCategoryToDelete(null);
         fetchCategories();
       } else {
         const errorData = await response.json();
         console.error('Error eliminando categoría:', errorData.error);
-        alert(`Error: ${errorData.error}`);
+        setNotice({ type: 'error', message: errorData.error || 'Error al eliminar la categoría.' });
       }
     } catch (error) {
       console.error('Error eliminando categoría:', error);
-      alert('Error al eliminar la categoría');
+      setNotice({ type: 'error', message: 'Error al eliminar la categoría.' });
+    } finally {
+      setIsDeleting(false);
     }
   };
 
   // Función para crear subcategoría/categoría hija
   const createInlineCategory = async (parentId?: string) => {
-    if (!newInlineCategory.name.trim()) return;
+    if (!newInlineCategory.name.trim()) {
+      setNotice({ type: 'warning', message: 'El nombre de la subcategoría es obligatorio.' });
+      return;
+    }
 
     // Validar profundidad máxima (máximo 4 niveles)
     if (parentId) {
       const parentCategory = allCategories.find(cat => cat._id === parentId);
       if (parentCategory && parentCategory.level >= 3) {
-        alert('No se puede crear más de 4 niveles de categorías.');
+        setNotice({ type: 'warning', message: 'No se puede crear más de 4 niveles de categorías.' });
         return;
       }
     }
 
     try {
+      setIsSaving(true);
       const categoryData = {
         name: newInlineCategory.name.trim(),
         slug: generateSlug(newInlineCategory.name.trim()),
@@ -190,15 +232,18 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
       if (response.ok) {
         setNewInlineCategory({ name: '' });
         setAddingSubcategoryTo(null);
+        setNotice({ type: 'success', message: 'Subcategoría creada correctamente.' });
         fetchCategories();
       } else {
         const errorData = await response.json();
         console.error('Error creando categoría:', errorData.error);
-        alert(`Error: ${errorData.error}`);
+        setNotice({ type: 'error', message: errorData.error || 'Error al crear la categoría.' });
       }
     } catch (error) {
       console.error('Error creando categoría:', error);
-      alert('Error al crear la categoría');
+      setNotice({ type: 'error', message: 'Error al crear la categoría.' });
+    } finally {
+      setIsSaving(false);
     }
   };
 
@@ -386,10 +431,11 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                 <div className="flex gap-2">
                   <button
                     onClick={() => updateCategory(category._id)}
-                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
+                    disabled={isSaving}
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                   >
                     <Check size={14} />
-                    Guardar
+                    {isSaving ? 'Guardando...' : 'Guardar'}
                   </button>
                   <button
                     onClick={cancelEditing}
@@ -472,7 +518,7 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                     <Edit2 size={12} />
                   </button>
                   <button
-                    onClick={() => deleteCategory(category._id)}
+                    onClick={() => handleDeleteClick(category)}
                     className="p-1 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded transition-colors"
                     title="Eliminar categoría"
                   >
@@ -506,11 +552,11 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
                   <div className="flex gap-2">
                     <button
                       onClick={() => createInlineCategory(category._id)}
-                      disabled={!newInlineCategory.name.trim()}
+                      disabled={!newInlineCategory.name.trim() || isSaving}
                       className="px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:bg-gray-300 transition-colors text-sm font-medium flex items-center gap-2 cursor-pointer"
                     >
                       <Check size={14} />
-                      Crear
+                      {isSaving ? 'Creando...' : 'Crear'}
                     </button>
                     <button
                       onClick={cancelInlineCategory}
@@ -565,13 +611,7 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
             </div>
           
             <button 
-              onClick={() => {
-                // Expandir formulario de creación
-                const formSection = document.getElementById('category-creation-form');
-                if (formSection) {
-                  formSection.style.display = formSection.style.display === 'none' ? 'block' : 'none';
-                }
-              }}
+              onClick={() => setShowCreateForm(prev => !prev)}
               className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
             >
               <Plus size={18} />
@@ -582,8 +622,16 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
       </div>
 
       {/* Formulario de creación flotante */}
-      <div id="category-creation-form" className="px-8 py-4 bg-gray-50 border-b border-gray-100" style={{display: 'none'}}>
+      {showCreateForm && (
+      <div id="category-creation-form" className="px-8 py-4 bg-gray-50 border-b border-gray-100">
         <div className="max-w-4xl space-y-4">
+          {notice && (
+            <Notice
+              type={notice.type}
+              message={notice.message}
+              onClose={() => setNotice(null)}
+            />
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
@@ -613,12 +661,12 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
               className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-sm font-medium transition-colors flex items-center gap-2 cursor-pointer"
             >
               <Plus className="h-4 w-4" />
-              Crear Categoría
+              {isSaving ? 'Creando...' : 'Crear Categoría'}
             </button>
             <button
               onClick={() => {
                 setNewCategory({ name: '', parent: '' });
-                document.getElementById('category-creation-form')!.style.display = 'none';
+                setShowCreateForm(false);
               }}
               className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-sm font-medium cursor-pointer"
             >
@@ -627,8 +675,17 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
           </div>
         </div>
       </div>
+      )}
 
       <div className="px-8 py-6">
+        {notice && !showCreateForm && (
+          <Notice
+            type={notice.type}
+            message={notice.message}
+            onClose={() => setNotice(null)}
+            className="mb-4"
+          />
+        )}
         {/* Lista de categorías jerárquicas */}
         {hierarchicalCategories.length > 0 ? (
           <div className="space-y-3">
@@ -656,6 +713,66 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
           </div>
         )}
       </div>
+
+      {/* Modal de confirmación de eliminación */}
+      {showDeleteModal && categoryToDelete && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full">
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <Trash2 className="w-5 h-5 text-red-600" />
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-medium text-gray-900">Eliminar categoría</h3>
+                  <p className="text-sm text-gray-500">Esta acción no se puede deshacer</p>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-gray-700">
+                  ¿Seguro que querés eliminar la categoría{' '}
+                  <span className="font-medium text-gray-900">"{categoryToDelete.name}"</span>?
+                </p>
+              </div>
+
+              <div className="flex items-center justify-end space-x-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowDeleteModal(false);
+                    setCategoryToDelete(null);
+                  }}
+                  disabled={isDeleting}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="button"
+                  onClick={deleteCategory}
+                  disabled={isDeleting}
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                >
+                  {isDeleting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                      Eliminando...
+                    </>
+                  ) : (
+                    <>
+                      <Trash2 size={16} className="mr-2" />
+                      Eliminar
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
