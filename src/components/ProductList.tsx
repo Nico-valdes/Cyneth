@@ -19,9 +19,8 @@ interface Product {
   attributes?: Array<{ name: string; value: string }> | string
   measurements?: {
     enabled: boolean
-    unit: string
     description: string
-    availableSizes: string[]
+    variants: Array<{ size: string; sku: string; active?: boolean }>
   }
   colorVariants?: Array<{
     colorName: string

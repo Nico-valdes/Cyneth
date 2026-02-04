@@ -14,6 +14,10 @@ export interface CartItem {
     colorCode: string
     sku: string
   }
+  measurementVariant?: {
+    size: string
+    sku: string
+  }
   quantity: number
 }
 
@@ -38,11 +42,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const addItem = useCallback((product: Omit<CartItem, 'quantity' | 'cartItemId'>, quantity: number = 1) => {
     setItems(prevItems => {
-      // Crear un ID único para el item del carrito (incluye variante de color si existe)
-      // Usamos el colorName para diferenciar variantes, ya que el SKU principal es el mismo
-      const cartItemId = product.colorVariant 
-        ? `${product._id}-${product.colorVariant.colorName}`
-        : product._id
+      // ID único: producto + variante de color (si hay) + variante de medida (si hay)
+      const parts = [product._id]
+      if (product.colorVariant) parts.push(product.colorVariant.colorName)
+      if (product.measurementVariant) parts.push(product.measurementVariant.sku)
+      const cartItemId = parts.join('-')
 
       // Buscar si el producto ya existe en el carrito
       const existingItemIndex = prevItems.findIndex(item => item.cartItemId === cartItemId)

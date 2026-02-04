@@ -5,11 +5,16 @@ import { X, Save, Plus, Trash2, Palette, Package, Ruler, Tag } from 'lucide-reac
 import ImageUploadField from './ImageUploadField';
 import Notice from '@/components/ui/Notice';
 
+interface MeasurementVariant {
+  size: string;
+  sku: string;
+  active: boolean;
+}
+
 interface Measurement {
   enabled: boolean;
-  unit: string;
   description: string;
-  availableSizes: string[];
+  variants: MeasurementVariant[];
 }
 
 interface ColorVariant {
@@ -70,9 +75,8 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
     defaultImage: '',
     measurements: {
       enabled: false,
-      unit: 'mm',
       description: '',
-      availableSizes: []
+      variants: []
     },
     colorVariants: [],
     active: true,
@@ -96,6 +100,35 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   const [editingAttribute, setEditingAttribute] = useState<{index: number, attribute: ProductAttribute} | null>(null);
   const [editingVariant, setEditingVariant] = useState<{index: number, variant: ColorVariant} | null>(null);
   const [formNotice, setFormNotice] = useState<{ type: 'error' | 'success' | 'info' | 'warning'; message: string } | null>(null);
+
+  // Normaliza measurements desde BD (soporta formato viejo availableSizes o nuevo variants)
+  const normalizeMeasurements = (m: any, baseSku: string): Measurement => {
+    if (!m || typeof m !== 'object') {
+      return { enabled: false, description: '', variants: [] };
+    }
+    if (Array.isArray(m.variants) && !('availableSizes' in m)) {
+      return {
+        enabled: Boolean(m.enabled),
+        description: m.description || '',
+        variants: m.variants.map((v: any) => ({
+          size: v.size || '',
+          sku: v.sku || '',
+          active: v.active !== false
+        }))
+      };
+    }
+    const availableSizes = Array.isArray(m.availableSizes) ? m.availableSizes : [];
+    const sku = baseSku || 'PROD';
+    return {
+      enabled: Boolean(m.enabled),
+      description: m.description || '',
+      variants: availableSizes.map((size: string, i: number) => ({
+        size: String(size).trim(),
+        sku: `${sku}-${i}`,
+        active: true
+      }))
+    };
+  };
   
   const [availableColors] = useState([
     { name: 'Blanco Cromo', code: '#F5F5F5' },
@@ -173,7 +206,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
         description: product.description || '',
         attributes: finalAttributes,
         defaultImage: product.defaultImage || '',
-        measurements: product.measurements || { enabled: false, unit: 'mm', description: '', availableSizes: [] },
+        measurements: normalizeMeasurements(product.measurements, product.sku),
         colorVariants: product.colorVariants || [],
         active: product.active !== undefined ? product.active : true,
         featured: product.featured !== undefined ? product.featured : false
@@ -375,13 +408,18 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
 
   const addSize = () => {
     if (newSize.trim()) {
-      setFormData(prev => ({
-        ...prev,
-        measurements: {
-          ...prev.measurements,
-          availableSizes: [...prev.measurements.availableSizes, newSize.trim()]
-        }
-      }));
+      const sizeLabel = newSize.trim();
+      setFormData(prev => {
+        const nextIndex = prev.measurements.variants.length;
+        const variantSku = prev.sku ? `${prev.sku}-${nextIndex}` : `MED-${nextIndex}`;
+        return {
+          ...prev,
+          measurements: {
+            ...prev.measurements,
+            variants: [...prev.measurements.variants, { size: sizeLabel, sku: variantSku, active: true }]
+          }
+        };
+      });
       setNewSize('');
     }
   };
@@ -391,7 +429,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
       ...prev,
       measurements: {
         ...prev.measurements,
-        availableSizes: prev.measurements.availableSizes.filter((_, i) => i !== index)
+        variants: prev.measurements.variants.filter((_, i) => i !== index)
       }
     }));
   };
@@ -805,7 +843,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Medidas Específicas
+                  Medidas / Variantes (talla o medida + SKU)
                 </label>
                 <div className="flex gap-2 mb-2">
                   <input
@@ -824,13 +862,14 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
                   </button>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {formData.measurements.availableSizes.map((size, index) => (
-                    <div key={index} className="flex items-center bg-gray-100 px-3 py-1 rounded-md">
-                      <span className="text-sm">{size}</span>
+                  {formData.measurements.variants.map((variant, index) => (
+                    <div key={index} className="flex items-center bg-gray-100 px-3 py-1 rounded-md gap-2">
+                      <span className="text-sm">{variant.size}</span>
+                      <span className="text-xs text-gray-500">({variant.sku})</span>
                       <button
                         type="button"
                         onClick={() => removeSize(index)}
-                        className="ml-2 text-red-500 hover:text-red-700"
+                        className="text-red-500 hover:text-red-700"
                       >
                         <Trash2 size={14} />
                       </button>

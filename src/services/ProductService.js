@@ -10,6 +10,7 @@ class ProductService {
     
     // Caché en memoria para categorías (OPTIMIZACIÓN)
     this.categoryCache = new Map();
+    this.subcategoryCache = new Map(); // Evita crash si se usa enrichProductsWithCategories (legacy/ subcategories)
     this.cacheExpiry = 5 * 60 * 1000; // 5 minutos
     this.lastCacheUpdate = 0;
   }
@@ -63,27 +64,23 @@ class ProductService {
         throw new Error(`Errores de validación: ${validationErrors.join(', ')}`);
       }
 
-      // Construir path de categorías y breadcrumb
-      const categoryInfo = await this.productModel.buildCategoryPath(
-        this.db, 
-        productData.categorySlug, 
-        productData.subcategorySlug
-      );
-
       // Generar slug único si no se proporciona
       if (!productData.slug) {
         productData.slug = await this.generateUniqueSlug(productData.name);
       }
 
+      const categoryId = productData.category
+        ? (ObjectId.isValid(productData.category) ? new ObjectId(productData.category) : productData.category)
+        : null;
       const product = {
         ...productData,
-        categoryPath: categoryInfo.path,
-        categoryPathNames: categoryInfo.pathNames,
-        categoryBreadcrumb: categoryInfo.breadcrumb,
+        category: categoryId || productData.category,
         createdAt: new Date(),
         updatedAt: new Date()
       };
-      
+      delete product.categorySlug;
+      delete product.subcategorySlug;
+
       const result = await this.collection.insertOne(product);
       return { ...product, _id: result.insertedId };
     } catch (error) {
@@ -105,7 +102,9 @@ class ProductService {
           price: 1,
           image: 1,
           defaultImage: 1,
-          category: 1, // Ahora es ObjectId que referencia categories
+          images: 1,
+          category: 1,
+          slug: 1,
           brand: 1,
           brandSlug: 1,
           active: 1,
@@ -189,14 +188,19 @@ class ProductService {
         sku: 1,
         price: 1,
         image: 1,
-        defaultImage: 1, // ✅ AGREGADO: Campo faltante
+        defaultImage: 1,
         category: 1,
-        subcategory: 1,
-        categoryBreadcrumb: 1,
         brand: 1,
+        brandSlug: 1,
         active: 1,
-        featured: 1, // ✅ AGREGADO: Campo destacado
+        featured: 1,
         colorVariants: 1,
+        description: 1,
+        attributes: 1,
+        measurements: 1,
+        specifications: 1,
+        slug: 1,
+        images: 1,
         createdAt: 1,
         updatedAt: 1
       };
@@ -221,21 +225,14 @@ class ProductService {
     }
   }
 
-  // Actualizar producto con validación y categorías
+  // Actualizar producto con validación
   async update(id, updateData) {
     try {
-      // Si se están actualizando categorías, reconstruir el path
-      if (updateData.categorySlug || updateData.subcategorySlug) {
-        const categoryInfo = await this.productModel.buildCategoryPath(
-          this.db, 
-          updateData.categorySlug, 
-          updateData.subcategorySlug
-        );
-        
-        updateData.categoryPath = categoryInfo.path;
-        updateData.categoryPathNames = categoryInfo.pathNames;
-        updateData.categoryBreadcrumb = categoryInfo.breadcrumb;
+      if (updateData.category && ObjectId.isValid(updateData.category)) {
+        updateData.category = new ObjectId(updateData.category);
       }
+      delete updateData.categorySlug;
+      delete updateData.subcategorySlug;
 
       // Validar datos si se proporciona estructura completa
       if (updateData.name || updateData.sku || updateData.colorVariants) {
@@ -391,16 +388,15 @@ class ProductService {
     }
   }
 
-  // Obtener productos por path de categoría jerárquico
+  // Obtener productos por categoría (id o primer elemento del array como categoryId + descendientes)
   async getByCategoryPath(categoryPath, options = {}) {
     try {
-      const filters = { 
-        categoryPath: { $all: categoryPath },
-        active: true 
-      };
+      const categoryId = Array.isArray(categoryPath) ? categoryPath[0] : categoryPath;
+      if (!categoryId) return await this.find({ active: true }, options);
+      const filters = { category: categoryId, active: true };
       return await this.find(filters, options);
     } catch (error) {
-      console.error('Error obteniendo productos por path de categoría:', error);
+      console.error('Error obteniendo productos por categoría:', error);
       return [];
     }
   }
@@ -558,10 +554,15 @@ class ProductService {
         .project({ _id: 1, name: 1 })
         .toArray();
       
-      const subcategories = await this.db.collection('subcategories')
-        .find({ active: true })
-        .project({ _id: 1, name: 1, categoryId: 1 })
-        .toArray();
+      let subcategories = [];
+      try {
+        subcategories = await this.db.collection('subcategories')
+          .find({ active: true })
+          .project({ _id: 1, name: 1, categoryId: 1 })
+          .toArray();
+      } catch (e) {
+        // Colección unificada: solo 'categories'; subcategories puede no existir
+      }
       
       // Limpiar cachés anteriores
       this.categoryCache.clear();
@@ -747,32 +748,12 @@ class ProductService {
           }
         },
         {
-          $lookup: {
-            from: 'subcategories',
-            localField: 'subcategory',
-            foreignField: '_id',
-            as: 'subcategoryInfo',
-            pipeline: [
-              { $project: { name: 1 } }
-            ]
-          }
-        },
-        {
           $addFields: {
             categoryBreadcrumb: {
               $cond: {
                 if: { $gt: [{ $size: '$categoryInfo' }, 0] },
-                then: {
-                  $concat: [
-                    { $arrayElemAt: ['$categoryInfo.name', 0] },
-                    { $cond: {
-                      if: { $gt: [{ $size: '$subcategoryInfo' }, 0] },
-                      then: { $concat: [' > ', { $arrayElemAt: ['$subcategoryInfo.name', 0] }] },
-                      else: ''
-                    }}
-                  ]
-                },
-                else: '$categoryBreadcrumb'
+                then: { $arrayElemAt: ['$categoryInfo.name', 0] },
+                else: ''
               }
             },
             // Normalizar featured para ordenamiento: true = 1, false/null/undefined = 0
@@ -794,14 +775,20 @@ class ProductService {
             sku: 1,
             price: 1,
             image: 1,
-            defaultImage: 1, // ✅ AGREGADO: Campo faltante
+            defaultImage: 1,
             category: 1,
-            subcategory: 1,
             categoryBreadcrumb: 1,
             brand: 1,
+            brandSlug: 1,
             active: 1,
-            featured: 1, // ✅ AGREGADO: Campo destacado
+            featured: 1,
             colorVariants: 1,
+            description: 1,
+            attributes: 1,
+            measurements: 1,
+            specifications: 1,
+            slug: 1,
+            images: 1,
             createdAt: 1,
             updatedAt: 1
           }

@@ -88,10 +88,20 @@ export async function POST(request: NextRequest) {
       const validation = await bulkService.validateRow(row, headers);
       
       if (validation.isValid) {
-        // Transformar fila a producto
-        const product = await bulkService.transformRow(row, headers);
-        validProducts.push(product);
-        console.log(`   ✅ VÁLIDA: ${product.name}`);
+        // Transformar fila a producto (resuelve categoría a ObjectId, slug único, etc.)
+        const processed = await bulkService.transformRow(row, headers);
+        if (processed.errors.length > 0) {
+          validationErrors.push({
+            row: i + 2,
+            errors: processed.errors,
+            warnings: processed.warnings,
+            data: row
+          });
+          console.log(`   ❌ ERRORES (transformación): ${processed.errors.join(', ')}`);
+        } else {
+          validProducts.push(processed);
+          console.log(`   ✅ VÁLIDA: ${processed.product.name}`);
+        }
       } else {
         validationErrors.push({
           row: i + 2, // +2 porque Excel empieza en 1 y la primera fila son headers

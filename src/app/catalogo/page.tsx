@@ -72,7 +72,7 @@ function CatalogoContent() {
   const [sortBy, setSortBy] = useState('name')
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc')
   const [currentPage, setCurrentPage] = useState(1)
-  const [totalProducts, setTotalProducts] = useState(1081) // Hardcoded total
+  const [totalProducts, setTotalProducts] = useState(0)
   const [totalPages, setTotalPages] = useState(1)
   const productsPerPage = 50
   const isUpdatingFromURL = useRef(false)

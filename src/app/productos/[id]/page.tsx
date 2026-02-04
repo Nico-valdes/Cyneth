@@ -34,9 +34,8 @@ interface Product {
   attributes?: Array<{ name: string; value: string }>
   measurements?: {
     enabled: boolean
-    unit: string
     description: string
-    availableSizes: string[]
+    variants: Array<{ size: string; sku: string; active?: boolean }>
   }
   colorVariants?: Array<{
     colorName: string
@@ -58,6 +57,7 @@ export default function ProductDetailPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selectedVariant, setSelectedVariant] = useState(0)
+  const [selectedMeasurementIndex, setSelectedMeasurementIndex] = useState(0)
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
   const [imageError, setImageError] = useState(false)
   const [categoryBreadcrumb, setCategoryBreadcrumb] = useState<Array<{id: string, _id: string, name: string, slug: string, level: number}>>([])
@@ -226,7 +226,8 @@ export default function ProductDetailPage() {
 
         const data = await response.json()
         setProduct(data.data)
-        
+        setSelectedMeasurementIndex(0)
+
         // Construir breadcrumb de categorías (optimizado con caché)
         // No esperar a que termine para mostrar el producto
         buildCategoryBreadcrumb(data.data).catch(err => 
@@ -312,18 +313,22 @@ export default function ProductDetailPage() {
     if (!product) return
 
     const selectedVariantData = product.colorVariants?.[selectedVariant]
-    
+    const activeMeasures = (product.measurements?.variants ?? []).filter((v: { active?: boolean }) => v.active !== false)
+    const hasMeasurements = product.measurements?.enabled && activeMeasures.length > 0
+    const selectedMeasure = hasMeasurements ? activeMeasures[Math.min(selectedMeasurementIndex, activeMeasures.length - 1)] : null
+
     addItem({
       _id: product._id,
       name: product.name,
-      sku: product.sku, // Siempre usar el SKU principal del producto
+      sku: selectedMeasure ? selectedMeasure.sku : product.sku,
       brand: product.brand,
       image: currentImage || undefined,
       colorVariant: selectedVariantData ? {
         colorName: selectedVariantData.colorName,
         colorCode: selectedVariantData.colorCode,
-        sku: selectedVariantData.sku // El SKU de la variante solo se guarda en colorVariant para referencia
-      } : undefined
+        sku: selectedVariantData.sku
+      } : undefined,
+      measurementVariant: selectedMeasure ? { size: selectedMeasure.size, sku: selectedMeasure.sku } : undefined
     })
   }
 
@@ -436,7 +441,7 @@ export default function ProductDetailPage() {
                 </div>
 
                 {/* Variantes de color - Responsive y táctil */}
-                {product.colorVariants && product.colorVariants.length > 0 && (
+                {product && product.colorVariants && product.colorVariants.length > 0 && (
                   <div>
                     <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide">Colores Disponibles</h4>
                     <div className="space-y-2 sm:space-y-2">
@@ -562,27 +567,34 @@ export default function ProductDetailPage() {
                 </div>
               )}
 
-              {/* Medidas - Responsive */}
-              {product.measurements?.enabled && (
-                <div>
-                  <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide flex items-center">
-                    <Ruler className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-2" />
-                    Medidas Disponibles
-                  </h4>
-                  {product.measurements.description && (
-                    <p className="text-xs sm:text-sm text-gray-600 font-light leading-relaxed mb-2 sm:mb-3">{product.measurements.description}</p>
-                  )}
-                  {product.measurements.availableSizes.length > 0 && (
-                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                      {product.measurements.availableSizes.map((size, index) => (
-                        <span key={index} className="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-100 text-gray-700 text-xs sm:text-sm font-light tracking-wide border border-gray-200 rounded">
-                          {size}
-                        </span>
+              {/* Medidas - Desplegable para elegir variante y agregar al carrito */}
+              {product.measurements?.enabled && (() => {
+                const activeVariants = (product.measurements.variants ?? []).filter((v: { active?: boolean }) => v.active !== false)
+                if (activeVariants.length === 0) return null
+                return (
+                  <div>
+                    <h4 className="text-xs sm:text-sm text-gray-900 font-medium mb-3 sm:mb-4 uppercase tracking-wide flex items-center">
+                      <Ruler className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-2" />
+                      Medida
+                    </h4>
+                    {product.measurements.description && (
+                      <p className="text-xs sm:text-sm text-gray-600 font-light leading-relaxed mb-2 sm:mb-3">{product.measurements.description}</p>
+                    )}
+                    <select
+                      value={Math.min(selectedMeasurementIndex, activeVariants.length - 1)}
+                      onChange={(e) => setSelectedMeasurementIndex(Number(e.target.value))}
+                      className="w-full max-w-md px-3 py-2.5 sm:py-3 text-sm sm:text-base font-light text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600/20 focus:border-red-600 transition-colors cursor-pointer"
+                      aria-label="Seleccionar medida"
+                    >
+                      {activeVariants.map((v: { size: string; sku: string }, index: number) => (
+                        <option key={v.sku} value={index}>
+                          {v.size}{v.sku ? ` (SKU: ${v.sku})` : ''}
+                        </option>
                       ))}
-                    </div>
-                  )}
-                </div>
-              )}
+                    </select>
+                  </div>
+                )
+              })()}
 
               {/* Botones de acción - Responsive y táctil */}
               <div className="pt-4 sm:pt-6 border-t border-gray-200 space-y-2.5 sm:space-y-3">

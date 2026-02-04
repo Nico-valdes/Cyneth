@@ -21,20 +21,18 @@ export default function Cart() {
   const handleWhatsApp = async () => {
     // Construir mensaje sin codificar para copiar
     const messageText = items.map(item => {
-      const variantInfo = item.colorVariant 
-        ? ` - Color: ${item.colorVariant.colorName} (SKU: ${item.colorVariant.sku})`
-        : ''
-      return `${item.name} (SKU: ${item.sku})${variantInfo} - Cantidad: ${item.quantity}`
+      const colorInfo = item.colorVariant ? ` - Color: ${item.colorVariant.colorName}` : ''
+      const measureInfo = item.measurementVariant ? ` - Medida: ${item.measurementVariant.size}` : ''
+      return `${item.name} (SKU: ${item.sku})${colorInfo}${measureInfo} - Cantidad: ${item.quantity}`
     }).join('\n')
 
     const fullMessage = `Hola! Me interesa consultar sobre los siguientes productos:\n\n${messageText}\n\n¿Podrían brindarme más información y precios?`
 
     // Construir URL codificada para WhatsApp
     const encodedMessage = items.map(item => {
-      const variantInfo = item.colorVariant 
-        ? ` - Color: ${item.colorVariant.colorName} (SKU: ${item.colorVariant.sku})`
-        : ''
-      return `${item.name} (SKU: ${item.sku})${variantInfo} - Cantidad: ${item.quantity}`
+      const colorInfo = item.colorVariant ? ` - Color: ${item.colorVariant.colorName}` : ''
+      const measureInfo = item.measurementVariant ? ` - Medida: ${item.measurementVariant.size}` : ''
+      return `${item.name} (SKU: ${item.sku})${colorInfo}${measureInfo} - Cantidad: ${item.quantity}`
     }).join('%0A')
 
     const whatsappUrl = `https://wa.me/541123168857?text=Hola!%20Me%20interesa%20consultar%20sobre%20los%20siguientes%20productos:%0A%0A${encodedMessage}%0A%0A¿Podrían%20brindarme%20más%20información%20y%20precios?`
@@ -194,13 +192,20 @@ export default function Cart() {
                             </p>
                           </div>
                           {item.colorVariant && (
-                            <div className="flex items-center gap-2 mb-4">
+                            <div className="flex items-center gap-2 mb-1">
                               <div
                                 className="w-4 h-4 rounded-full border border-gray-200 shadow-sm"
                                 style={{ backgroundColor: item.colorVariant.colorCode }}
                               />
                               <span className="text-xs text-gray-500 font-light">
                                 {item.colorVariant.colorName}
+                              </span>
+                            </div>
+                          )}
+                          {item.measurementVariant && (
+                            <div className="flex items-center gap-2 mb-4">
+                              <span className="text-xs text-gray-500 font-light">
+                                Medida: {item.measurementVariant.size}
                               </span>
                             </div>
                           )}

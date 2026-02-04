@@ -134,6 +134,28 @@ export class ProductBulkService {
   }
 
   /**
+   * Resuelve nombre o slug de categoría a ObjectId
+   */
+  private async resolveCategoryToObjectId(categoryValue: string): Promise<{ _id: any } | null> {
+    if (!categoryValue || typeof categoryValue !== 'string') return null;
+    const trimmed = categoryValue.trim();
+    if (!trimmed) return null;
+    const slug = trimmed.toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();
+    const categoriesCollection = this.db.collection('categories');
+    const byName = await categoriesCollection.findOne({ name: new RegExp(`^${this.escapeRegex(trimmed)}$`, 'i') });
+    if (byName) return byName;
+    const bySlug = await categoriesCollection.findOne({ slug });
+    if (bySlug) return bySlug;
+    return categoriesCollection.findOne({ name: new RegExp(trimmed, 'i') });
+  }
+
+  private escapeRegex(s: string): string {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  /**
    * Transforma una fila del Excel en un objeto producto
    */
   public async transformRow(row: any[], headers: string[]): Promise<ProcessedProduct> {
@@ -157,6 +179,16 @@ export class ProductBulkService {
     if (!product.sku) {
       product.sku = this.generateSKU(product.name, product.brand);
       warnings.push(`SKU generado automáticamente: ${product.sku}`);
+    }
+
+    // Resolver categoría (nombre o slug) a ObjectId
+    if (product.category) {
+      const categoryDoc = await this.resolveCategoryToObjectId(String(product.category));
+      if (categoryDoc) {
+        product.category = categoryDoc._id;
+      } else {
+        errors.push(`Categoría no encontrada: "${product.category}". Debe existir en el sistema (por nombre o slug).`);
+      }
     }
 
     // Procesar atributos si existen
@@ -328,7 +360,7 @@ export class ProductBulkService {
     product.active = true;
     product.createdAt = new Date();
     product.updatedAt = new Date();
-    product.slug = this.generateSlug(product.name);
+    product.slug = await this.generateUniqueSlug(product.name);
 
     return {
       product,
@@ -338,9 +370,24 @@ export class ProductBulkService {
   }
 
   /**
-   * Inserta un producto en la base de datos
+   * Genera slug único para el producto (evita colisiones)
    */
-  public async insertProduct(product: ProcessedProduct): Promise<{
+  private async generateUniqueSlug(name: string): Promise<string> {
+    const baseSlug = this.generateSlug(name);
+    let slug = baseSlug;
+    let counter = 1;
+    const collection = this.productModel.getCollection();
+    while (await collection.findOne({ slug })) {
+      slug = `${baseSlug}-${counter}`;
+      counter++;
+    }
+    return slug;
+  }
+
+  /**
+   * Inserta un producto en la base de datos (objeto producto plano, no ProcessedProduct)
+   */
+  public async insertProduct(productData: any): Promise<{
     success: boolean;
     isDuplicate: boolean;
     duplicateReason?: string;
@@ -349,7 +396,7 @@ export class ProductBulkService {
     await this.ensureInitialized(); // Asegúrate de que los modelos estén inicializados
     try {
       // Verificar duplicados antes de insertar
-      const duplicateCheck = await this.checkDuplicate(product);
+      const duplicateCheck = await this.checkDuplicate(productData);
       
       if (duplicateCheck.isDuplicate) {
         return {
@@ -360,8 +407,8 @@ export class ProductBulkService {
         };
       }
 
-      // Si no es duplicado, insertar
-      await this.productModel.getCollection().insertOne(product);
+      // Si no es duplicado, insertar el objeto producto (no el wrapper)
+      await this.productModel.getCollection().insertOne(productData);
       return {
         success: true,
         isDuplicate: false
@@ -376,9 +423,9 @@ export class ProductBulkService {
   }
 
   /**
-   * Verifica si un producto ya existe en la base de datos
+   * Verifica si un producto ya existe en la base de datos (objeto producto plano)
    */
-  public async checkDuplicate(product: ProcessedProduct): Promise<{
+  public async checkDuplicate(product: any): Promise<{
     isDuplicate: boolean;
     existingProduct?: any;
     duplicateReason: string;
@@ -398,7 +445,19 @@ export class ProductBulkService {
         };
       }
 
-      // Verificar por SKU si existe
+      // Verificar por SKU si existe (producto principal o variantes de color)
+      if (product.sku) {
+        const existingBySKU = await this.productModel.getCollection().findOne({
+          $or: [{ sku: product.sku }, { 'colorVariants.sku': product.sku }]
+        });
+        if (existingBySKU) {
+          return {
+            isDuplicate: true,
+            existingProduct: existingBySKU,
+            duplicateReason: `SKU duplicado: ${product.sku}`
+          };
+        }
+      }
       if (product.variations && product.variations.length > 0) {
         for (const variation of product.variations) {
           if (variation.sku) {
@@ -467,28 +526,31 @@ export class ProductBulkService {
     for (let i = 0; i < products.length; i += batchSize) {
       const batch = products.slice(i, i + batchSize);
       
-      for (const product of batch) {
+      for (const item of batch) {
+        // item es ProcessedProduct { product, errors, warnings }; insertar solo el objeto producto
+        const productObj = item.product;
+        const displayName = productObj?.name ?? 'Sin nombre';
         try {
-          const result = await this.insertProduct(product);
+          const result = await this.insertProduct(productObj);
           
           if (result.success) {
             results.success++;
           } else if (result.isDuplicate) {
             results.duplicates++;
             results.duplicateDetails.push({
-              product: product.name,
+              product: displayName,
               reason: result.duplicateReason,
               existingProduct: result.existingProduct
             });
           } else {
             results.errors.push({
-              product: product.name,
+              product: displayName,
               error: 'Error al insertar en la base de datos'
             });
           }
         } catch (error: any) {
           results.errors.push({
-            product: product.name,
+            product: displayName,
             error: error.message
           });
         }

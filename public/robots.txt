@@ -1,0 +1,13 @@
+# Cyneth Sanitarios - robots.txt
+# Permitir rastreadores en el sitio público
+User-agent: *
+Allow: /
+
+# Ocultar panel de administración por completo
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /api/auth/
+
+# Sitemap (ajustar dominio si usás otro)
+Sitemap: https://cyneth.com.ar/sitemap.xml

@@ -17,7 +17,10 @@
     "migrate:attributes": "node scripts/migrate-attributes.js",
     "clean:products": "node scripts/clean-products.js",
     "seed:products": "node scripts/seed-products.js",
-    "clean-seed:products": "node scripts/clean-and-seed-products.js"
+    "clean-seed:products": "node scripts/clean-and-seed-products.js",
+    "migrate:measurements": "node src/scripts/migrate-measurements-to-variants.js",
+    "clean:product-category-path": "node src/scripts/clean-product-category-path.js",
+    "upload:products-duratop": "node src/scripts/upload-products-duratop-json.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^3.0.0",
