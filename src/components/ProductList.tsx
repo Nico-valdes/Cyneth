@@ -48,7 +48,8 @@ const ProductItem = memo(({
   onEdit, 
   onDelete,
   onToggleFeatured,
-  getActiveColorVariants 
+  getActiveColorVariants,
+  categorySlug
 }: {
   product: Product
   onView: () => void
@@ -56,6 +57,7 @@ const ProductItem = memo(({
   onDelete: (product: Product) => void
   onToggleFeatured: (product: Product) => void
   getActiveColorVariants: (product: Product) => any[]
+  categorySlug?: string
 }) => {
   return (
     <div className="group flex items-center gap-6 p-4 hover:bg-gray-50/50 rounded-lg transition-all duration-200">
@@ -126,9 +128,9 @@ const ProductItem = memo(({
                 </div>
               )}
             </div>
-            {product.description && (
-              <p className="text-xs text-gray-500 mt-1 line-clamp-1">
-                {product.description.length > 100 ? product.description.substring(0, 100) + '...' : product.description}
+            {categorySlug && (
+              <p className="text-xs text-gray-600 mt-1 line-clamp-1 font-mono">
+                {categorySlug}
               </p>
             )}
           </div>
@@ -215,7 +217,8 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     getSelectedCategoryId,
     getCategoryPath,
     hasActiveFilters: hasActiveCategoryFilters,
-    selectedFilters: categoryFilters
+    selectedFilters: categoryFilters,
+    filtersLoaded: categoryFiltersLoaded
   } = useCategoryFilters()
   
   // Otros filtros
@@ -250,6 +253,56 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   // Ref para el input de búsqueda
   const searchInputRef = useRef<HTMLInputElement>(null)
 
+  // ID de categoría seleccionada más específica (se recalcula en cada render)
+  const selectedCategoryId = getSelectedCategoryId()
+
+  // Validar que si hay filtros activos pero selectedCategoryId es null, limpiar los filtros
+  // Esto resuelve el problema donde los filtros se muestran como activos pero no funcionan
+  useEffect(() => {
+    if (categoryFiltersLoaded && hasActiveCategoryFilters && selectedCategoryId === null) {
+      // Los filtros están activos pero no hay categoría seleccionada válida, limpiar
+      clearCategoryFilters();
+    }
+  }, [categoryFiltersLoaded, hasActiveCategoryFilters, selectedCategoryId, clearCategoryFilters])
+
+  // Cargar filtros guardados al montar (para que se mantengan al volver de editar/crear)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const stored = window.localStorage.getItem('adminProductFilters');
+      if (!stored) return;
+      const parsed = JSON.parse(stored) as {
+        searchTerm?: string
+        selectedBrand?: string
+        selectedStatus?: string
+        showFeaturedOnly?: boolean
+        sortBy?: string
+        sortOrder?: 'asc' | 'desc'
+      };
+
+      if (parsed.searchTerm) {
+        setSearchTerm(parsed.searchTerm);
+      }
+      if (parsed.selectedBrand) {
+        setSelectedBrand(parsed.selectedBrand);
+      }
+      if (parsed.selectedStatus) {
+        setSelectedStatus(parsed.selectedStatus);
+      }
+      if (typeof parsed.showFeaturedOnly === 'boolean') {
+        setShowFeaturedOnly(parsed.showFeaturedOnly);
+      }
+      if (parsed.sortBy) {
+        setSortBy(parsed.sortBy);
+      }
+      if (parsed.sortOrder === 'asc' || parsed.sortOrder === 'desc') {
+        setSortOrder(parsed.sortOrder);
+      }
+    } catch (err) {
+      console.error('Error leyendo filtros de productos desde localStorage:', err);
+    }
+  }, [setSearchTerm])
+
   // Cargar productos optimizado para servidor
   const fetchProducts = useCallback(async () => {
     try {
@@ -268,7 +321,6 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
         params.append('search', debouncedSearchTerm.trim())
       }
       
-      const selectedCategoryId = getSelectedCategoryId()
       if (selectedCategoryId) {
         params.append('category', selectedCategoryId)
       }
@@ -303,7 +355,7 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
     } finally {
       setLoading(false)
     }
-  }, [currentPage, debouncedSearchTerm, getSelectedCategoryId, selectedBrand, selectedStatus, showFeaturedOnly, sortBy, sortOrder, productsPerPage])
+  }, [currentPage, debouncedSearchTerm, selectedCategoryId, selectedBrand, selectedStatus, showFeaturedOnly, sortBy, sortOrder, productsPerPage])
 
   // Cargar marcas para filtros (solo una vez)
   const fetchBrands = useCallback(async () => {
@@ -336,12 +388,34 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
   }, [fetchBrands])
 
   useEffect(() => {
-    fetchProducts()
-  }, [fetchProducts])
+    // Solo ejecutar fetchProducts cuando los filtros de categoría estén cargados
+    // Esto evita ejecutar la búsqueda antes de que los filtros se hayan restaurado desde localStorage
+    if (categoryFiltersLoaded) {
+      fetchProducts()
+    }
+  }, [fetchProducts, categoryFiltersLoaded])
+
+  // Guardar filtros en localStorage para que persistan al volver del editor
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const payload = {
+        searchTerm,
+        selectedBrand,
+        selectedStatus,
+        showFeaturedOnly,
+        sortBy,
+        sortOrder
+      };
+      window.localStorage.setItem('adminProductFilters', JSON.stringify(payload));
+    } catch (err) {
+      console.error('Error guardando filtros de productos en localStorage:', err);
+    }
+  }, [searchTerm, selectedBrand, selectedStatus, showFeaturedOnly, sortBy, sortOrder])
 
   useEffect(() => {
     setCurrentPage(1)
-  }, [debouncedSearchTerm, getSelectedCategoryId, selectedBrand, selectedStatus, showFeaturedOnly])
+  }, [debouncedSearchTerm, selectedCategoryId, selectedBrand, selectedStatus, showFeaturedOnly])
 
   // Memoizar cálculos costosos
   const getActiveColorVariants = useCallback((product: Product) => {
@@ -729,17 +803,23 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
 
         {/* Grid de productos optimizado */}
         <div className="space-y-4">
-          {products.map((product) => (
-            <ProductItem
-              key={product._id}
-              product={product}
-              onView={() => router.push(`/admin/productos/${product._id}`)}
-              onEdit={() => router.push(`/admin/productos/${product._id}/editar`)}
-              onDelete={handleDeleteClick}
-              onToggleFeatured={handleToggleFeatured}
-              getActiveColorVariants={getActiveColorVariants}
-            />
-          ))}
+          {products.map((product) => {
+            const category = allCategories.find(cat => cat._id === (product.category as any));
+            const categorySlug = (category as any)?.slug || category?.name;
+
+            return (
+              <ProductItem
+                key={product._id}
+                product={product}
+                onView={() => router.push(`/admin/productos/${product._id}`)}
+                onEdit={() => router.push(`/admin/productos/${product._id}/editar`)}
+                onDelete={handleDeleteClick}
+                onToggleFeatured={handleToggleFeatured}
+                getActiveColorVariants={getActiveColorVariants}
+                categorySlug={categorySlug}
+              />
+            )
+          })}
         </div>
 
         {/* Paginación minimalista */}

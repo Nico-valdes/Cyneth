@@ -20,12 +20,22 @@ class ProductService {
   }
 
   // Obtener todas las categorías descendientes (hijas, nietas, etc.) de una categoría
+  // IMPORTANTE: En la BD, parent puede estar guardado como ObjectId o como string (ej. categorías
+  // creadas desde el panel como Termotanques y Calefones). Por eso buscamos hijos con ambos formatos.
   async getAllDescendantCategories(parentId) {
     try {
-      const descendants = await this.categoriesCollection.aggregate([
-        {
-          $match: { _id: parentId }
-        },
+      let normalizedParentId = parentId;
+      if (ObjectId.isValid(parentId)) {
+        normalizedParentId = new ObjectId(parentId);
+      } else {
+        console.warn(`⚠️ getAllDescendantCategories: parentId no es un ObjectId válido: ${parentId}`);
+        return [];
+      }
+      const parentIdStr = normalizedParentId.toString();
+
+      // 1) GraphLookup: descendientes donde parent es ObjectId (caso “bien” guardado)
+      const byObjectId = await this.categoriesCollection.aggregate([
+        { $match: { _id: normalizedParentId } },
         {
           $graphLookup: {
             from: 'categories',
@@ -35,22 +45,37 @@ class ProductService {
             as: 'descendants'
           }
         },
-        {
-          $project: {
-            descendants: {
-              $map: {
-                input: '$descendants',
-                as: 'desc',
-                in: '$$desc._id'
-              }
-            }
-          }
-        }
+        { $project: { descendants: { $map: { input: '$descendants', as: 'desc', in: '$$desc._id' } } } }
       ]).toArray();
 
-      return descendants[0]?.descendants || [];
+      const fromObjectId = byObjectId[0]?.descendants || [];
+
+      // 2) Hijos directos donde parent está como string (ej. termotanques-y-calefones)
+      const directChildrenStringParent = await this.categoriesCollection
+        .find({ parent: parentIdStr })
+        .project({ _id: 1 })
+        .toArray();
+
+      if (directChildrenStringParent.length === 0) {
+        const result = fromObjectId;
+        console.log(`📊 getAllDescendantCategories: Categoría ${parentIdStr} tiene ${result.length} descendientes`);
+        return result;
+      }
+
+      // 3) Para cada hijo con parent string, obtener sus descendientes (recursivo, ObjectId y string)
+      const allIds = new Set(fromObjectId.map((id) => id.toString()));
+      for (const child of directChildrenStringParent) {
+        const childId = child._id;
+        allIds.add(childId.toString());
+        const nested = await this.getAllDescendantCategories(childId);
+        nested.forEach((id) => allIds.add(id.toString()));
+      }
+
+      const result = Array.from(allIds).map((id) => new ObjectId(id));
+      console.log(`📊 getAllDescendantCategories: Categoría ${parentIdStr} tiene ${result.length} descendientes (incl. parent como string)`);
+      return result;
     } catch (error) {
-      console.error('Error obteniendo categorías descendientes:', error);
+      console.error('❌ Error obteniendo categorías descendientes:', error);
       return [];
     }
   }
@@ -228,8 +253,16 @@ class ProductService {
   // Actualizar producto con validación
   async update(id, updateData) {
     try {
-      if (updateData.category && ObjectId.isValid(updateData.category)) {
-        updateData.category = new ObjectId(updateData.category);
+      // Asegurar que la categoría siempre se guarde como ObjectId si es válida
+      if (updateData.category) {
+        const originalCategory = updateData.category;
+        if (ObjectId.isValid(updateData.category)) {
+          updateData.category = new ObjectId(updateData.category);
+          console.log(`✅ ProductService.update: Categoría convertida a ObjectId: ${originalCategory} -> ${updateData.category.toString()}`);
+        } else {
+          // Si no es un ObjectId válido pero es un string que parece un ID, intentar convertirlo
+          console.warn(`⚠️ ProductService.update: Categoría recibida no es un ObjectId válido: ${updateData.category}`);
+        }
       }
       delete updateData.categorySlug;
       delete updateData.subcategorySlug;
@@ -250,10 +283,23 @@ class ProductService {
         updatedAt: new Date()
       };
       
+      console.log(`💾 ProductService.update: Actualizando producto ${id}`);
+      if (update.category) {
+        console.log(`   - Categoría a guardar: ${update.category.toString()} (tipo: ${update.category.constructor.name})`);
+      }
+      
       const result = await this.collection.updateOne(
         { _id: new ObjectId(id) },
         { $set: update }
       );
+      
+      console.log(`✅ ProductService.update: Producto actualizado. Modified: ${result.modifiedCount}, Matched: ${result.matchedCount}`);
+      
+      // Verificar que se guardó correctamente
+      if (result.modifiedCount > 0 && update.category) {
+        const updatedProduct = await this.findById(id);
+        console.log(`🔍 ProductService.update: Categoría guardada en BD: ${updatedProduct.category} (tipo: ${updatedProduct.category?.constructor?.name || typeof updatedProduct.category})`);
+      }
       
       return result.modifiedCount > 0;
     } catch (error) {
@@ -291,12 +337,18 @@ class ProductService {
         try {
           const categoryId = new ObjectId(filters.category);
           
-          // Obtener todas las categorías descendientes
+          // Obtener todas las categorías descendientes (ObjectId[])
           const allDescendants = await this.getAllDescendantCategories(categoryId);
           
-          // Buscar en la categoría seleccionada Y todas sus descendientes
-          query.category = { $in: [categoryId, ...allDescendants] };
+          // Incluir la categoría seleccionada y todas sus descendientes
+          const objectIds = [categoryId, ...allDescendants];
+          const stringIds = objectIds.map(id => id.toString());
+          
+          // Buscar productos cuya categoría sea cualquiera de esos IDs,
+          // ya sea guardada como ObjectId o como string
+          query.category = { $in: [...objectIds, ...stringIds] };
         } catch (error) {
+          console.error('Error procesando filtro de categoría en count:', error);
           query.category = filters.category;
         }
       }
@@ -673,15 +725,53 @@ class ProductService {
       // Aplicar filtros
       if (filters.category) {
         // En el modelo unificado, buscar en categoría y todas sus descendientes
+        // Soportando tanto ObjectId como string (datos legacy)
         try {
           const categoryId = new ObjectId(filters.category);
           
-          // Obtener todas las categorías descendientes
+          // Obtener todas las categorías descendientes (ObjectId[])
           const allDescendants = await this.getAllDescendantCategories(categoryId);
           
-          // Buscar en la categoría seleccionada Y todas sus descendientes
-          query.category = { $in: [categoryId, ...allDescendants] };
+          // Incluir la categoría seleccionada y todas sus descendientes
+          const objectIds = [categoryId, ...allDescendants];
+          const stringIds = objectIds.map(id => id.toString());
+          
+          // IMPORTANTE: MongoDB puede tener categorías guardadas como ObjectId o string
+          // Usar $or para buscar en ambos formatos, ya que $in puede no funcionar bien
+          // cuando mezcla ObjectIds y strings
+          const categoryFilter = {
+            $or: [
+              { category: { $in: objectIds } },  // Buscar como ObjectId
+              { category: { $in: stringIds } }   // Buscar como string
+            ]
+          };
+          
+          // Combinar con otros filtros usando $and si es necesario
+          if (query.$or || query.$and) {
+            if (!query.$and) {
+              query.$and = [];
+            }
+            // Si hay un $or existente (búsqueda de texto), agregarlo a $and
+            if (query.$or) {
+              query.$and.push({ $or: query.$or });
+              delete query.$or;
+            }
+            query.$and.push(categoryFilter);
+          } else {
+            // Si no hay otros filtros complejos, usar directamente
+            query.$or = categoryFilter.$or;
+          }
+          
+          console.log(`🔍 Filtro de categoría:`);
+          console.log(`   - Categoría seleccionada: ${categoryId.toString()}`);
+          console.log(`   - Descendientes encontrados: ${allDescendants.length}`);
+          console.log(`   - ObjectIds en filtro: ${objectIds.length}`);
+          console.log(`   - StringIds en filtro: ${stringIds.length}`);
+          if (allDescendants.length > 0) {
+            console.log(`   - IDs descendientes: ${allDescendants.map(id => id.toString()).join(', ')}`);
+          }
         } catch (error) {
+          console.error('Error procesando filtro de categoría:', error);
           // Si no es un ObjectId válido, usarlo como string para compatibilidad
           query.category = filters.category;
         }
@@ -718,12 +808,26 @@ class ProductService {
       if (filters.search) {
         const searchTerm = filters.search.trim();
         // Regex case-insensitive para buscar en nombre, SKU, marca y descripción
-        query.$or = [
-          { name: { $regex: searchTerm, $options: 'i' } },
-          { sku: { $regex: searchTerm, $options: 'i' } },
-          { brand: { $regex: searchTerm, $options: 'i' } },
-          { description: { $regex: searchTerm, $options: 'i' } }
-        ];
+        const searchFilter = {
+          $or: [
+            { name: { $regex: searchTerm, $options: 'i' } },
+            { sku: { $regex: searchTerm, $options: 'i' } },
+            { brand: { $regex: searchTerm, $options: 'i' } },
+            { description: { $regex: searchTerm, $options: 'i' } }
+          ]
+        };
+        
+        // Si ya hay un $and (por ejemplo, de categoría), agregar la búsqueda ahí
+        if (query.$and) {
+          query.$and.push(searchFilter);
+        } else if (query.$or && Array.isArray(query.$or) && query.$or.length > 0 && query.$or[0].category) {
+          // Si hay un $or de categoría, combinarlo con $and
+          const categoryOr = query.$or;
+          query.$and = [{ $or: categoryOr }, searchFilter];
+          delete query.$or;
+        } else {
+          query.$or = searchFilter.$or;
+        }
       }
       
       // Especificaciones específicas
@@ -732,6 +836,9 @@ class ProductService {
           query[`specifications.${key}`] = filters.specifications[key];
         });
       }
+      
+      // Log del query final para debugging
+      console.log('📋 Query final de MongoDB:', JSON.stringify(query, null, 2));
       
       // CONSULTA AGREGADA: Unir productos con categorías en una sola operación
       const pipeline = [

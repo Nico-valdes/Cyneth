@@ -25,6 +25,7 @@ export function useCategoryFilters() {
   const [hierarchicalCategories, setHierarchicalCategories] = useState<Category[]>([]);
   const [selectedFilters, setSelectedFilters] = useState<CategoryFilter[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filtersLoaded, setFiltersLoaded] = useState(false);
 
   // Cargar todas las categorías
   const fetchCategories = useCallback(async () => {
@@ -119,11 +120,64 @@ export function useCategoryFilters() {
     fetchCategories();
   }, [fetchCategories]);
 
+  // Cargar filtros de categoría guardados (para que se mantengan al volver del editor)
+  // Solo cargar cuando las categorías estén disponibles para validar que existan
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
+    // Si aún no hay categorías cargadas, esperar
+    if (allCategories.length === 0) {
+      // Si el loading terminó y no hay categorías, marcar como cargado (no hay nada que cargar)
+      if (!loading) {
+        setFiltersLoaded(true);
+      }
+      return;
+    }
+    
+    // Si ya se cargaron los filtros, no volver a cargar
+    if (filtersLoaded) return;
+    
+    try {
+      const stored = window.localStorage.getItem('adminCategoryFilters');
+      if (stored) {
+        const parsed = JSON.parse(stored) as CategoryFilter[];
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          // Validar que las categorías guardadas aún existan
+          const validFilters = parsed.filter(filter => 
+            allCategories.some(cat => cat._id === filter.categoryId)
+          );
+          if (validFilters.length > 0) {
+            setSelectedFilters(validFilters);
+          } else {
+            // Si ninguna categoría es válida, limpiar localStorage
+            window.localStorage.removeItem('adminCategoryFilters');
+          }
+        }
+      }
+      // Marcar como cargado independientemente de si había filtros o no
+      setFiltersLoaded(true);
+    } catch (err) {
+      console.error('Error leyendo filtros de categorías desde localStorage:', err);
+      setFiltersLoaded(true);
+    }
+  }, [allCategories, loading, filtersLoaded]);
+
+  // Guardar filtros de categoría cada vez que cambian
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.localStorage.setItem('adminCategoryFilters', JSON.stringify(selectedFilters));
+    } catch (err) {
+      console.error('Error guardando filtros de categorías en localStorage:', err);
+    }
+  }, [selectedFilters]);
+
   return {
     allCategories,
     hierarchicalCategories,
     selectedFilters,
     loading,
+    filtersLoaded,
     getAvailableCategories,
     selectCategory,
     clearFilterFromLevel,

@@ -39,7 +39,9 @@
     "upload:products-aqualaf": "node src/scripts/upload-products-duratop-json.js SubirProds/aqualaf_final_limpio_especificaciones_vacias.json",
     "update:product-images": "node src/scripts/update-product-images-from-json.js",
     "update:product-images-tigre-v6": "node src/scripts/update-product-images-from-json.js SubirProds/tigre_junta_elastica_final_v6.json",
-    "delete:products": "node src/scripts/delete-products.js"
+    "delete:products": "node src/scripts/delete-products.js",
+    "export:categories": "node src/scripts/export-categories-json.js",
+    "normalize:category-parents": "node src/scripts/normalize-category-parents.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^3.0.0",

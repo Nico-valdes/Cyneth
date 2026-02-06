@@ -122,6 +122,11 @@ export async function POST(request) {
     
     // Crear categoría
     const newCategory = await categoryService.create(categoryData);
+
+    // Invalidar caché para que el panel admin vea los cambios al instante
+    serverCache.invalidate('categories_all');
+    serverCache.invalidate('categories_main');
+    serverCache.invalidate('categories_main_hierarchical');
     
     return Response.json({
       success: true,
@@ -168,6 +173,11 @@ export async function PUT(request) {
         { status: 404 }
       );
     }
+
+    // Invalidar caché para refrescar listado de categorías
+    serverCache.invalidate('categories_all');
+    serverCache.invalidate('categories_main');
+    serverCache.invalidate('categories_main_hierarchical');
     
     return Response.json({
       success: true,
@@ -214,6 +224,11 @@ export async function DELETE(request) {
         { status: 404 }
       );
     }
+
+    // Invalidar caché tras eliminar
+    serverCache.invalidate('categories_all');
+    serverCache.invalidate('categories_main');
+    serverCache.invalidate('categories_main_hierarchical');
     
     return Response.json({
       success: true,

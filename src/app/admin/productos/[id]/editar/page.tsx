@@ -71,7 +71,12 @@ export default function EditarProducto() {
       });
 
       if (response.ok) {
-        router.push('/admin?tab=products');
+        // Forzar recarga de datos limpiando cache del navegador
+        // Redirigir con un timestamp para evitar cache
+        const timestamp = Date.now();
+        router.push(`/admin?tab=products&refresh=${timestamp}`);
+        // Forzar recarga completa de la página para asegurar datos frescos
+        router.refresh();
       } else {
         const errorData = await response.json();
         alert(`Error: ${errorData.message || 'No se pudo actualizar el producto'}`);

@@ -6,6 +6,46 @@ class CategoryService {
     this.productCollection = db.collection('products');
   }
 
+  // ================================
+  // Helpers para slug con contexto
+  // ================================
+
+  generateSlug(name) {
+    return (name || '')
+      .toString()
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  async ensureUniqueSlug(baseSlug, excludeId = null) {
+    let slug = baseSlug || 'categoria';
+    let counter = 1;
+
+    // Mientras exista otra categoría con el mismo slug, agregar sufijo incremental
+    // (excluyendo opcionalmente un _id concreto para updates)
+    // unique index está en slug, así evitamos errores de duplicado.
+    // Nota: usamos findOne en bucle porque la cantidad de colisiones esperada es baja.
+    // Si creciera mucho, se podría optimizar.
+    // eslint-disable-next-line no-constant-condition
+    while (true) {
+      const query = { slug };
+      if (excludeId) {
+        query._id = { $ne: new ObjectId(excludeId) };
+      }
+      const existing = await this.collection.findOne(query);
+      if (!existing) break;
+      slug = `${baseSlug}-${counter}`;
+      counter += 1;
+    }
+
+    return slug;
+  }
+
   // ========================================
   // CRUD BÁSICO
   // ========================================
@@ -19,15 +59,48 @@ class CategoryService {
       }
 
       // Auto-calcular level si no está definido
-      if (categoryData.parent && !categoryData.level) {
-        const parent = await this.collection.findOne({ _id: new ObjectId(categoryData.parent) });
-        if (parent) {
-          categoryData.level = parent.level + 1;
-        }
+      let parent = null;
+      if (categoryData.parent) {
+        parent = await this.collection.findOne({ _id: new ObjectId(categoryData.parent) });
+      }
+      if (parent && !categoryData.level && categoryData.level !== 0) {
+        categoryData.level = parent.level + 1;
       }
 
       // Auto-calcular type
       categoryData.type = categoryData.level === 0 ? 'main' : 'sub';
+
+      // Generar slug con contexto jerárquico:
+      // - Principal: slug = slug(name)
+      // - Hija: slug = parent.slug + '-' + slug(name)
+      const baseNameSlug = this.generateSlug(categoryData.name);
+      const parentSlug = parent?.slug || '';
+      const rawSlug = parentSlug ? `${parentSlug}-${baseNameSlug}` : baseNameSlug;
+      categoryData.slug = await this.ensureUniqueSlug(rawSlug);
+
+      // Campos que deben existir siempre (como en categorías de ejemplo)
+      if (categoryData.description === undefined) categoryData.description = '';
+      if (categoryData.productCount === undefined) categoryData.productCount = 0;
+      if (categoryData.totalProductCount === undefined) categoryData.totalProductCount = 0;
+
+      // order: siguiente número entre hermanos (mismo parent)
+      if (categoryData.order === undefined) {
+        const parentId = categoryData.parent ? new ObjectId(categoryData.parent) : null;
+        const siblingFilter = parentId ? { parent: parentId } : { $or: [{ parent: null }, { parent: '' }] };
+        const lastSibling = await this.collection
+          .find(siblingFilter)
+          .sort({ order: -1 })
+          .limit(1)
+          .project({ order: 1 })
+          .next();
+        categoryData.order = (lastSibling?.order ?? -1) + 1;
+      }
+
+      // Asegurar parent como ObjectId si viene como string
+      if (categoryData.parent && typeof categoryData.parent === 'string' && ObjectId.isValid(categoryData.parent)) {
+        categoryData.parent = new ObjectId(categoryData.parent);
+      }
+
       categoryData.createdAt = new Date();
       categoryData.updatedAt = new Date();
 
@@ -41,7 +114,40 @@ class CategoryService {
 
   async update(id, updateData) {
     try {
+      // Si cambia el nombre o el padre, recalcular slug con contexto
+      if (updateData.name || Object.prototype.hasOwnProperty.call(updateData, 'parent')) {
+        const current = await this.collection.findOne({ _id: new ObjectId(id) });
+        if (current) {
+          const newName = updateData.name || current.name;
+          const newParentId = Object.prototype.hasOwnProperty.call(updateData, 'parent')
+            ? updateData.parent
+            : current.parent;
+
+          let parent = null;
+          if (newParentId) {
+            parent = await this.collection.findOne({ _id: new ObjectId(newParentId) });
+          }
+
+          const baseNameSlug = this.generateSlug(newName);
+          const parentSlug = parent?.slug || '';
+          const rawSlug = parentSlug ? `${parentSlug}-${baseNameSlug}` : baseNameSlug;
+          updateData.slug = await this.ensureUniqueSlug(rawSlug, id);
+
+          // Ajustar level si cambia el parent
+          if (newParentId && (!updateData.level && updateData.level !== 0)) {
+            updateData.level = (parent?.level ?? 0) + 1;
+          } else if (!newParentId) {
+            updateData.level = 0;
+          }
+        }
+      }
+
       updateData.updatedAt = new Date();
+
+      // Asegurar parent como ObjectId si viene como string
+      if (updateData.parent && typeof updateData.parent === 'string' && ObjectId.isValid(updateData.parent)) {
+        updateData.parent = new ObjectId(updateData.parent);
+      }
       
       const result = await this.collection.updateOne(
         { _id: new ObjectId(id) },
