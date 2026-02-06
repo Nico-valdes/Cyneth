@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { X, Save, Plus, Trash2, Palette, Package, Ruler, Tag } from 'lucide-react';
+import { X, Save, Plus, Trash2, Palette, Package, Ruler, Tag, Edit2 } from 'lucide-react';
 import ImageUploadField from './ImageUploadField';
 import Notice from '@/components/ui/Notice';
 
@@ -99,6 +99,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   const [selectedPath, setSelectedPath] = useState<string[]>([]);
   const [editingAttribute, setEditingAttribute] = useState<{index: number, attribute: ProductAttribute} | null>(null);
   const [editingVariant, setEditingVariant] = useState<{index: number, variant: ColorVariant} | null>(null);
+  const [editingMeasurementVariant, setEditingMeasurementVariant] = useState<{ index: number; variant: MeasurementVariant } | null>(null);
   const [formNotice, setFormNotice] = useState<{ type: 'error' | 'success' | 'info' | 'warning'; message: string } | null>(null);
 
   // Normaliza measurements desde BD (soporta formato viejo availableSizes o nuevo variants)
@@ -425,6 +426,7 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
   };
 
   const removeSize = (index: number) => {
+    if (editingMeasurementVariant?.index === index) setEditingMeasurementVariant(null);
     setFormData(prev => ({
       ...prev,
       measurements: {
@@ -432,6 +434,37 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
         variants: prev.measurements.variants.filter((_, i) => i !== index)
       }
     }));
+  };
+
+  const startEditingMeasurementVariant = (index: number) => {
+    const v = formData.measurements.variants[index];
+    setEditingMeasurementVariant({ index, variant: { ...v } });
+  };
+
+  const updateMeasurementVariantField = (field: keyof MeasurementVariant, value: string | boolean) => {
+    if (!editingMeasurementVariant) return;
+    setEditingMeasurementVariant(prev => prev ? { ...prev, variant: { ...prev.variant, [field]: value } } : null);
+  };
+
+  const saveEditingMeasurementVariant = () => {
+    if (!editingMeasurementVariant) return;
+    const { index, variant } = editingMeasurementVariant;
+    if (!variant.size.trim() || !variant.sku.trim()) {
+      setFormNotice({ type: 'error', message: 'Medida y SKU son obligatorios en cada variante.' });
+      return;
+    }
+    setFormData(prev => ({
+      ...prev,
+      measurements: {
+        ...prev.measurements,
+        variants: prev.measurements.variants.map((v, i) => i === index ? variant : v)
+      }
+    }));
+    setEditingMeasurementVariant(null);
+  };
+
+  const cancelEditingMeasurementVariant = () => {
+    setEditingMeasurementVariant(null);
   };
 
   // Función para generar abreviaturas de colores
@@ -861,18 +894,88 @@ const ProductFormHybrid: React.FC<ProductFormProps> = ({
                     <Plus size={16} />
                   </button>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="space-y-2">
                   {formData.measurements.variants.map((variant, index) => (
-                    <div key={index} className="flex items-center bg-gray-100 px-3 py-1 rounded-md gap-2">
-                      <span className="text-sm">{variant.size}</span>
-                      <span className="text-xs text-gray-500">({variant.sku})</span>
-                      <button
-                        type="button"
-                        onClick={() => removeSize(index)}
-                        className="text-red-500 hover:text-red-700"
-                      >
-                        <Trash2 size={14} />
-                      </button>
+                    <div key={index} className="border border-gray-200 rounded-lg p-3 bg-white">
+                      {editingMeasurementVariant?.index === index ? (
+                        <div className="space-y-3">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                              <label className="block text-xs font-medium text-gray-500 mb-1">Medida / Talla</label>
+                              <input
+                                type="text"
+                                value={editingMeasurementVariant.variant.size}
+                                onChange={(e) => updateMeasurementVariantField('size', e.target.value)}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
+                                placeholder="Ej: 110mm, 1 M"
+                              />
+                            </div>
+                            <div>
+                              <label className="block text-xs font-medium text-gray-500 mb-1">SKU variante</label>
+                              <input
+                                type="text"
+                                value={editingMeasurementVariant.variant.sku}
+                                onChange={(e) => updateMeasurementVariantField('sku', e.target.value)}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md text-sm"
+                                placeholder="SKU único"
+                              />
+                            </div>
+                          </div>
+                          <label className="flex items-center gap-2 text-sm text-gray-700">
+                            <input
+                              type="checkbox"
+                              checked={editingMeasurementVariant.variant.active}
+                              onChange={(e) => updateMeasurementVariantField('active', e.target.checked)}
+                              className="rounded border-gray-300"
+                            />
+                            Activa (visible en tienda)
+                          </label>
+                          <div className="flex gap-2 pt-1">
+                            <button
+                              type="button"
+                              onClick={saveEditingMeasurementVariant}
+                              className="px-3 py-1.5 bg-green-600 text-white text-sm rounded-md hover:bg-green-700"
+                            >
+                              Guardar
+                            </button>
+                            <button
+                              type="button"
+                              onClick={cancelEditingMeasurementVariant}
+                              className="px-3 py-1.5 border border-gray-300 text-gray-700 text-sm rounded-md hover:bg-gray-50"
+                            >
+                              Cancelar
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="text-sm font-medium text-gray-900">{variant.size}</span>
+                            <span className="text-xs text-gray-500">({variant.sku})</span>
+                            {!variant.active && (
+                              <span className="text-xs bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded">Inactiva</span>
+                            )}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => startEditingMeasurementVariant(index)}
+                              className="p-1.5 text-gray-500 hover:text-indigo-600 hover:bg-indigo-50 rounded"
+                              title="Editar variante"
+                            >
+                              <Edit2 size={14} />
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => removeSize(index)}
+                              className="p-1.5 text-gray-500 hover:text-red-600 hover:bg-red-50 rounded"
+                              title="Eliminar"
+                            >
+                              <Trash2 size={14} />
+                            </button>
+                          </div>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>

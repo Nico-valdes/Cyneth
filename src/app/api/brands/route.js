@@ -104,6 +104,8 @@ export async function PUT(request) {
         { status: 404 }
       );
     }
+
+    serverCache.invalidate('brands_all');
     
     return Response.json({
       success: true,
@@ -149,6 +151,9 @@ export async function DELETE(request) {
         { status: 404 }
       );
     }
+
+    // Invalidar caché para que el panel vea la lista actualizada
+    serverCache.invalidate('brands_all');
     
     return Response.json({
       success: true,
@@ -187,6 +192,8 @@ export async function POST(request) {
     
     // Crear marca
     const newBrand = await brandService.create(brandData);
+
+    serverCache.invalidate('brands_all');
     
     return Response.json({
       success: true,

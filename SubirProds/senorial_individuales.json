@@ -1,0 +1,674 @@
+[
+  {
+    "name": "Termotanque Señorial Zafiro Gas 160",
+    "description": "Bajo consumo. Piloto analizador.\n\nMas seguro. Válvula de seguridad por sobrepresión.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nDetector de monóxido de carbono.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330012",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-gas-160",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 5400 Kcal/h\n\nRECUPERACIÓN: 193 L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 5950 Kcal/h\n\nRECUPERACIÓN: 218 L/h \n\n\nCapacidad: 160 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_160.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_160.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.786847Z",
+    "updatedAt": "2026-02-04T01:09:20.786858Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Gas 120",
+    "description": "Bajo consumo. Piloto analizador.\n\nMas seguro. Válvula de seguridad por sobrepresión.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nDetector de monóxido de carbono.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330003",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-gas-120",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 172 L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 160 L/h \n\n\nCapacidad: 118 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_120.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_120.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.786983Z",
+    "updatedAt": "2026-02-04T01:09:20.786987Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Gas 85",
+    "description": "Bajo consumo. Piloto analizador.\n\nMas seguro. Válvula de seguridad por sobrepresión.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nDetector de monóxido de carbono.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330002",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-gas-85",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 181 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 162 L/h \n\n\nCapacidad: 83 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_85.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_85.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787119Z",
+    "updatedAt": "2026-02-04T01:09:20.787124Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Gas 50",
+    "description": "Bajo consumo. Piloto analizador.\n\nMas seguro. Válvula de seguridad por sobrepresión.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nDetector de monóxido de carbono.\n\nProducto certificado por LENOR",
+    "sku": "SEÑ330001",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-gas-50",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 5150 Kcal/h\n\nRECUPERACIÓN: 194 L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 3700 Kcal/h\n\nRECUPERACIÓN: 148 L/h \n\n\nCapacidad: 50 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_50.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_50.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787249Z",
+    "updatedAt": "2026-02-04T01:09:20.787252Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Gas 30",
+    "description": "Bajo consumo. Piloto analizador.\n\nMas seguro. Válvula de seguridad por sobrepresión.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nDetector de monóxido de carbono.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330000",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-gas-30",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 176L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 163 L/h \n\n\nCapacidad: 29 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_30.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_gas_30.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787365Z",
+    "updatedAt": "2026-02-04T01:09:20.787368Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Eléctrico 95",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330006",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-elctrico-95",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 1500 W\n\n\nCapacidad: 80 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_95.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_95.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787489Z",
+    "updatedAt": "2026-02-04T01:09:20.787495Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Eléctrico 65",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330005",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-elctrico-65",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 1500 W\n\n\nCapacidad: 50 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_65.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_65.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787635Z",
+    "updatedAt": "2026-02-04T01:09:20.787640Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Eléctrico 40",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330004",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-elctrico-40",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 1500 W\n\n\nCapacidad: 30 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_40.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_40.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787784Z",
+    "updatedAt": "2026-02-04T01:09:20.787788Z"
+  },
+  {
+    "name": "Termotanque Señorial Zafiro Eléctrico 20",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330003",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-zafiro-elctrico-20",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 1500 W\n\n\nCapacidad: 20 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_20.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/zafiro_electrico_20.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.787912Z",
+    "updatedAt": "2026-02-04T01:09:20.787915Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Gas 120",
+    "description": "Bajo consumo. Piloto analizador.\n\nTriple barrera anti-fuga. Válvula de seguridad por sobrepresión, unidad magnética y termocupla.\n\nDetector de monóxido de carbono.\n\nMultigas: Kit de instalación de gas natural o envasado.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330009",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-gas-120",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 172 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 160 L/h\n\n\nCapacidad: 118 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_120.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_120.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788030Z",
+    "updatedAt": "2026-02-04T01:09:20.788033Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Gas 85",
+    "description": "Bajo consumo. Piloto analizador.\n\nTriple barrera anti-fuga. Válvula de seguridad por sobrepresión, unidad magnética y termocupla.\n\nDetector de monóxido de carbono.\n\nMultigas: Kit de instalación de gas natural o envasado.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330008",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-gas-85",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 181 L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 162 L/h \n\n\nCapacidad: 83 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_85.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_85.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788220Z",
+    "updatedAt": "2026-02-04T01:09:20.788225Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Gas 50",
+    "description": "Bajo consumo. Piloto analizador.\n\nTriple barrera anti-fuga. Válvula de seguridad por sobrepresión, unidad magnética y termocupla.\n\nDetector de monóxido de carbono.\n\nMultigas: Kit de instalación de gas natural o envasado.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330007",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-gas-50",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 5150 Kcal/h\n\nRECUPERACIÓN: 194 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 3700 Kcal/h\n\nRECUPERACIÓN: 148 L/h \n\n\nCapacidad: 50 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_50.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_50.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788366Z",
+    "updatedAt": "2026-02-04T01:09:20.788369Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Gas 30",
+    "description": "Bajo consumo. Piloto analizador.\n\nTriple barrera anti-fuga. Válvula de seguridad por sobrepresión, unidad magnética y termocupla.\n\nDetector de monóxido de carbono.\n\nMultigas: Kit de instalación de gas natural o envasado.\n\nProducto certificado por LENOR.",
+    "sku": "SEÑ330013",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-gas-30",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.44 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 4800 Kcal/h\n\nRECUPERACIÓN: 176 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 4500 Kcal/h\n\nRECUPERACIÓN: 163 L/h\n\n\nCapacidad: 29 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_30.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_gas_30.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788491Z",
+    "updatedAt": "2026-02-04T01:09:20.788495Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Eléctrico 120",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330011",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-elctrico-120",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA:1500 / 3000 W\n\n\nCapacidad: 120 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_electrico_120.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_electrico_120.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788653Z",
+    "updatedAt": "2026-02-04T01:09:20.788658Z"
+  },
+  {
+    "name": "Termotanque Señorial Family Eléctrico 90",
+    "description": "Bajo consumo. Ahorro de energía.\n\nMayor seguridad. Corte de energía por sobrecalentamiento.\n\nVálvula de seguridad por sobrepresión.\n\nProducto certificado por LENOR.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330010",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-family-elctrico-90",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 1500 / 3000 W\n\n\nCapacidad: 90 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/family_electrico_90.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/family_electrico_90.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.788798Z",
+    "updatedAt": "2026-02-04T01:09:20.788801Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Gas 110",
+    "description": "Aislamiento con poliuretano.\n\nIndicador de temperatura digital.\n\nPiloto analizador.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nProducto certificado por IGA.",
+    "sku": "SEÑ330091",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-gas-110",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.54 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 8200 Kcal/h\n\nRECUPERACIÓN: 328 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 8200 Kcal/h\n\nRECUPERACIÓN: 328 L/h\n\n\nCapacidad: 110 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2025/12/black_gas_110.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2025/12/black_gas_110.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.789863Z",
+    "updatedAt": "2026-02-04T01:09:20.789867Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Gas 75",
+    "description": "Aislamiento con poliuretano.\n\nIndicador de temperatura digital.\n\nPiloto analizador.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nProducto certificado por IGA.",
+    "sku": "SEÑ330090",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-gas-75",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.54 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 6400 Kcal/h\n\nRECUPERACIÓN: 232 L/h\n\n\n\n     Gas Licuado\n\nCONSUMO: 6400 Kcal/h\n\nRECUPERACIÓN: 232 L/h\n\n\nCapacidad: 75 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/black_gas_75.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/black_gas_75.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.790006Z",
+    "updatedAt": "2026-02-04T01:09:20.790009Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Gas 50",
+    "description": "Aislamiento con poliuretano.\n\nIndicador de temperatura digital.\n\nPiloto analizador.\n\nMultigas: Kit para instalación de gas natural o envasado.\n\nProducto certificado por IGA.",
+    "sku": "SEÑ330089",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-gas-50",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Gas Natural"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0.54 Mpa\n\n\n\n     Gas Natural\n\nCONSUMO: 3800 Kcal/h\n\nRECUPERACIÓN: 148 L/h \n\n\n\n     Gas Licuado\n\nCONSUMO: 3800 Kcal/h\n\nRECUPERACIÓN: 148 L/h \n\n\nCapacidad: 50 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/black_gas_50.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/black_gas_50.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.790150Z",
+    "updatedAt": "2026-02-04T01:09:20.790155Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Eléctrico 80",
+    "description": "Bajo consumo de electricidad, aislamiento con poliuretano.\n\nMayor eficiencia energética.\n\nRegulador de temperatura.\n\nIndicador de temperatura digital.\n\nProducto certificado por IRAM.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330094",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-elctrico-80",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 2000 W\n\n\nCapacidad: 78 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_80-1.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_80-1.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.790290Z",
+    "updatedAt": "2026-02-04T01:09:20.790294Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Eléctrico 60",
+    "description": "Bajo consumo de electricidad, aislamiento con poliuretano.\n\nMayor eficiencia energética.\n\nRegulador de temperatura.\n\nIndicador de temperatura digital.\n\nProducto certificado por IRAM.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330093",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-elctrico-60",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 2000 W\n\n\nCapacidad: 57 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_60-1.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_60-1.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.790443Z",
+    "updatedAt": "2026-02-04T01:09:20.790448Z"
+  },
+  {
+    "name": "Termotanque Señorial Black Eléctrico 40",
+    "description": "Bajo consumo de electricidad, aislamiento con poliuretano.\n\nMayor eficiencia energética.\n\nRegulador de temperatura.\n\nIndicador de temperatura digital.\n\nProducto certificado por IRAM.\n\nTODOS NUESTROS COMPONENTES ELECTRICOS TIENEN GARANTÍA DE 1 AÑO.",
+    "sku": "SEÑ330092",
+    "category": "68cda5f6ff392fb2b5d73dcd",
+    "slug": "termotanque-seorial-black-elctrico-40",
+    "brand": "Señorial",
+    "brandSlug": "senorial",
+    "attributes": [
+      {
+        "name": "Energía",
+        "value": "Eléctrico"
+      }
+    ],
+    "specifications": {
+      "informacion_tecnica": "Presión máxima de agua\n\n0,6MPa\n\n\n\n   Eléctrico\n\nPOTENCIA: 2000 W\n\n\nCapacidad: 37 Litros."
+    },
+    "measurements": {
+      "enabled": false,
+      "description": "",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_40-1.png",
+    "images": [
+      "https://senorial.com.ar/wp-content/uploads/2022/04/black_electrico_40-1.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T01:09:20.790574Z",
+    "updatedAt": "2026-02-04T01:09:20.790578Z"
+  }
+]

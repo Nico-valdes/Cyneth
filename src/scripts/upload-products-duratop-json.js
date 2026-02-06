@@ -1,10 +1,12 @@
 /**
- * Sube productos desde SubirProds/productos_duratop_x_final.json a MongoDB.
+ * Sube productos desde un JSON a MongoDB.
  * Para cada producto: sube las URLs de imagen a Cloudinary y guarda los links
  * de Cloudinary en defaultImage e images antes de insertar.
  *
  * Requiere en .env: MONGODB_URI, CLOUDINARY_URL
- * Ejecutar: node src/scripts/upload-products-duratop-json.js
+ * Uso:
+ *   node src/scripts/upload-products-duratop-json.js
+ *   node src/scripts/upload-products-duratop-json.js SubirProds/productos_sigas_final_v5.json
  */
 const path = require('path');
 const fs = require('fs');
@@ -13,7 +15,11 @@ require('dotenv').config({ path: path.resolve(__dirname, '../../.env') });
 const { connectToDatabase } = require('../libs/mongoConnect');
 const { ObjectId } = require('mongodb');
 
-const JSON_PATH = path.resolve(__dirname, '../../SubirProds/productos_duratop_x_final.json');
+const DEFAULT_JSON = 'SubirProds/productos_duratop_x_final.json';
+const jsonRelative = process.argv[2] || DEFAULT_JSON;
+const JSON_PATH = path.isAbsolute(jsonRelative)
+  ? jsonRelative
+  : path.resolve(__dirname, '../..', jsonRelative);
 const BATCH_SIZE = 1;
 const DELAY_MS = 800;
 const IMAGE_TIMEOUT_MS = 25000;
@@ -118,6 +124,7 @@ async function ensureUniqueSlug(collection, baseSlug) {
 }
 
 async function run() {
+  console.log('📂 Archivo:', JSON_PATH);
   if (!fs.existsSync(JSON_PATH)) {
     console.error('❌ No se encontró el archivo:', JSON_PATH);
     process.exit(1);

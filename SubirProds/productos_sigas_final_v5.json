@@ -1,0 +1,2404 @@
+[
+  {
+    "name": "Boquilla para montura de reparación",
+    "description": "",
+    "sku": "SIG60901020000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "boquilla-para-montura-de-reparacin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60901020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60901025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60901032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60901040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60901050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60901063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60901075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60901090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60901110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/516fcd1544a89eda95f9953ad8f7faec4cac4cd4.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/516fcd1544a89eda95f9953ad8f7faec4cac4cd4.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.643617Z",
+    "updatedAt": "2026-02-04T00:41:10.643640Z"
+  },
+  {
+    "name": "Boquillas para monturas",
+    "description": "",
+    "sku": "SIG60905063025",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "boquillas-para-monturas",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "P/MONTURAS 63-25",
+          "sku": "SIG60905063025",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 75-25",
+          "sku": "SIG60905075025",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 75-32",
+          "sku": "SIG60905075032",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 90-25",
+          "sku": "SIG60905090025",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 90-32",
+          "sku": "SIG60905090032",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 110-25",
+          "sku": "SIG60905110025",
+          "active": true
+        },
+        {
+          "size": "P/MONTURAS 110-32",
+          "sku": "SIG60905110032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/448e497d28f42861ee5eb72909877e7a6b26fc57.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/448e497d28f42861ee5eb72909877e7a6b26fc57.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.643973Z",
+    "updatedAt": "2026-02-04T00:41:10.643980Z"
+  },
+  {
+    "name": "Boquillas para termofusión",
+    "description": "",
+    "sku": "SIG08900400000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "boquillas-para-termofusin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "thermofusión 20mm",
+          "sku": "SIG08900400000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 25mm",
+          "sku": "SIG08900401000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 32mm",
+          "sku": "SIG08900402000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 40mm",
+          "sku": "SIG08900403000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 50mm",
+          "sku": "SIG08900404000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 63mm",
+          "sku": "SIG08900405000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 75mm",
+          "sku": "SIG08900406000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 90mm",
+          "sku": "SIG08900407000",
+          "active": true
+        },
+        {
+          "size": "thermofusión 110mm",
+          "sku": "SIG08900408000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a20716a22c038d33c5195811b045ccba0c896e64.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a20716a22c038d33c5195811b045ccba0c896e64.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.644399Z",
+    "updatedAt": "2026-02-04T00:41:10.644406Z"
+  },
+  {
+    "name": "Buje de reducción",
+    "description": "",
+    "sku": "SIG60241025020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "buje-de-reduccin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20mm",
+          "sku": "SIG60241025020",
+          "active": true
+        },
+        {
+          "size": "32x20mm",
+          "sku": "SIG60241032020",
+          "active": true
+        },
+        {
+          "size": "32x25mm",
+          "sku": "SIG60241032025",
+          "active": true
+        },
+        {
+          "size": "40x25mm",
+          "sku": "SIG60241040025",
+          "active": true
+        },
+        {
+          "size": "40x32mm",
+          "sku": "SIG60241040032",
+          "active": true
+        },
+        {
+          "size": "50x32mm",
+          "sku": "SIG60241050032",
+          "active": true
+        },
+        {
+          "size": "50x40mm",
+          "sku": "SIG60241050040",
+          "active": true
+        },
+        {
+          "size": "63x40mm",
+          "sku": "SIG60241063040",
+          "active": true
+        },
+        {
+          "size": "63x50mm",
+          "sku": "SIG60241063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ab68ec28fa12ac8e95efb9caa16eff611bea6ba1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ab68ec28fa12ac8e95efb9caa16eff611bea6ba1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.644855Z",
+    "updatedAt": "2026-02-04T00:41:10.644860Z"
+  },
+  {
+    "name": "CODO 90° C/ BASE HEMBRA EXTRA LARGA",
+    "description": "",
+    "sku": "SIG60097020015",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-90-c-base-hembra-extra-larga",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "H.EXTRA LARGA 20x1/2\" ST",
+          "sku": "SIG60097020015",
+          "active": true
+        },
+        {
+          "size": "H.EXTRA LARGA 25x1/2\" ST",
+          "sku": "SIG60097025015",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/57547c53d92d09aa5873f21689760f951f8a9e8e.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/57547c53d92d09aa5873f21689760f951f8a9e8e.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.645225Z",
+    "updatedAt": "2026-02-04T00:41:10.645230Z"
+  },
+  {
+    "name": "CODO 90° C/ BASE HEMBRA LARGA",
+    "description": "",
+    "sku": "SIG60096020015",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-90-c-base-hembra-larga",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "H.LARGA 20x1/2\" ST",
+          "sku": "SIG60096020015",
+          "active": true
+        },
+        {
+          "size": "H.LARGA 25x1/2\" ST",
+          "sku": "SIG60096025015",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/485ffa113d2d1c29e0b34ab530d892f3b9579466.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/485ffa113d2d1c29e0b34ab530d892f3b9579466.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.645531Z",
+    "updatedAt": "2026-02-04T00:41:10.645535Z"
+  },
+  {
+    "name": "Cinta Aluminizada",
+    "description": "",
+    "sku": "SIG60911048040",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "cinta-aluminizada",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ALUMINIO 48 mm x 40 mts",
+          "sku": "SIG60911048040",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/59654ecb9e84bcc53741735e6b2d2f731aecad9c.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/59654ecb9e84bcc53741735e6b2d2f731aecad9c.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.645843Z",
+    "updatedAt": "2026-02-04T00:41:10.645847Z"
+  },
+  {
+    "name": "Cinta de Protección UV",
+    "description": "",
+    "sku": "SIG60912038020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "cinta-de-proteccin-uv",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "PROTECCION UV 38MM X 20MT",
+          "sku": "SIG60912038020",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/0c9f904b45ab7a722cfa5465e815a399fc9060f4.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/0c9f904b45ab7a722cfa5465e815a399fc9060f4.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.646169Z",
+    "updatedAt": "2026-02-04T00:41:10.646174Z"
+  },
+  {
+    "name": "Codo MH a 45°",
+    "description": "",
+    "sku": "SIG60092045020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-mh-a-45",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 MM",
+          "sku": "SIG60092045020",
+          "active": true
+        },
+        {
+          "size": "25 MM",
+          "sku": "SIG60092045025",
+          "active": true
+        },
+        {
+          "size": "32 MM",
+          "sku": "SIG60092045032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/196613e742cd2054f25f41eaf3631331d354558e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/196613e742cd2054f25f41eaf3631331d354558e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.646486Z",
+    "updatedAt": "2026-02-04T00:41:10.646491Z"
+  },
+  {
+    "name": "Codo MH a 90°",
+    "description": "",
+    "sku": "SIG60092090020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-mh-a-90",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 MM",
+          "sku": "SIG60092090020",
+          "active": true
+        },
+        {
+          "size": "25 MM",
+          "sku": "SIG60092090025",
+          "active": true
+        },
+        {
+          "size": "32 MM",
+          "sku": "SIG60092090032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/042792cba2d277c64e5b82d39412bd83cbf33bb5.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/042792cba2d277c64e5b82d39412bd83cbf33bb5.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.646831Z",
+    "updatedAt": "2026-02-04T00:41:10.646836Z"
+  },
+  {
+    "name": "Codo a 45º",
+    "description": "",
+    "sku": "SIG60090045020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-a-45",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60090045020",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60090045025",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60090045032",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60090045040",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60090045050",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60090045063",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60090045075",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60090045090",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60090045110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/493fac7e9bfe5621e36bab36471642694550e9fd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/493fac7e9bfe5621e36bab36471642694550e9fd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.647246Z",
+    "updatedAt": "2026-02-04T00:41:10.647251Z"
+  },
+  {
+    "name": "Codo a 90º",
+    "description": "",
+    "sku": "SIG60090090020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-a-90",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60090090020",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60090090025",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60090090032",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60090090040",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60090090050",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60090090063",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60090090075",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60090090090",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60090090110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b7dedc592d1ab7d824ae55ff814e6c5ebaa70cac.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b7dedc592d1ab7d824ae55ff814e6c5ebaa70cac.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.647671Z",
+    "updatedAt": "2026-02-04T00:41:10.647676Z"
+  },
+  {
+    "name": "Codo a 90º c/RH",
+    "description": "",
+    "sku": "SIG60091020015",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "codo-a-90-crh",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20x1/2''mm",
+          "sku": "SIG60091020015",
+          "active": true
+        },
+        {
+          "size": "25x1/2''mm",
+          "sku": "SIG60091025015",
+          "active": true
+        },
+        {
+          "size": "25x3/4''mm",
+          "sku": "SIG60091025020",
+          "active": true
+        },
+        {
+          "size": "32x3/4''mm",
+          "sku": "SIG60091032020",
+          "active": true
+        },
+        {
+          "size": "32x1''mm",
+          "sku": "SIG60091032025",
+          "active": true
+        },
+        {
+          "size": "40x1''mm",
+          "sku": "SIG60091040025",
+          "active": true
+        },
+        {
+          "size": "40x1.1/4''mm",
+          "sku": "SIG60091040032",
+          "active": true
+        },
+        {
+          "size": "50x1.1/4''mm",
+          "sku": "SIG60091050032",
+          "active": true
+        },
+        {
+          "size": "50x1.1/2''mm",
+          "sku": "SIG60091050040",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b9b7cf9c29171dffd8ab47f2d877444fae2b5a76.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b9b7cf9c29171dffd8ab47f2d877444fae2b5a76.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.648134Z",
+    "updatedAt": "2026-02-04T00:41:10.648139Z"
+  },
+  {
+    "name": "Conexión p/medidor (Pilar)",
+    "description": "",
+    "sku": "SIG60382032000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "conexin-pmedidor-pilar",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "CONEXION P/MEDIDOR (PILAR) 32M x 1-1/4\"",
+          "sku": "SIG60382032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b8f4eb840e4b497ec76e37989eec6daaf628b8be.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b8f4eb840e4b497ec76e37989eec6daaf628b8be.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.648422Z",
+    "updatedAt": "2026-02-04T00:41:10.648427Z"
+  },
+  {
+    "name": "Cortatubo radial",
+    "description": "",
+    "sku": "SIG60900020032",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "cortatubo-radial",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20x40mm",
+          "sku": "SIG60900020032",
+          "active": true
+        },
+        {
+          "size": "20x63mm",
+          "sku": "SIG60900020063",
+          "active": true
+        },
+        {
+          "size": "50x110mm",
+          "sku": "SIG60900050110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ba792f4d42c411ec757379476a9258ee5cb933b5.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ba792f4d42c411ec757379476a9258ee5cb933b5.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.648737Z",
+    "updatedAt": "2026-02-04T00:41:10.648742Z"
+  },
+  {
+    "name": "Cuchilla de corta tubo",
+    "description": "",
+    "sku": "SIG60903020032",
+    "category": "68cda5f6ff392fb2b5d73dc4",
+    "slug": "cuchilla-de-corta-tubo",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 a 40mm",
+          "sku": "SIG60903020032",
+          "active": true
+        },
+        {
+          "size": "20 a 63mm",
+          "sku": "SIG60903020063",
+          "active": true
+        },
+        {
+          "size": "50 a 110mm",
+          "sku": "SIG60903050110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/41fb24871c409521bf5e0959a39ebe50f0b6357a.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/41fb24871c409521bf5e0959a39ebe50f0b6357a.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.649021Z",
+    "updatedAt": "2026-02-04T00:41:10.649026Z"
+  },
+  {
+    "name": "Cupla de reducción",
+    "description": "",
+    "sku": "SIG60240025020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "cupla-de-reduccin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20mm",
+          "sku": "SIG60240025020",
+          "active": true
+        },
+        {
+          "size": "32x20mm",
+          "sku": "SIG60240032020",
+          "active": true
+        },
+        {
+          "size": "32x25mm",
+          "sku": "SIG60240032025",
+          "active": true
+        },
+        {
+          "size": "40x25mm",
+          "sku": "SIG60240040025",
+          "active": true
+        },
+        {
+          "size": "40x32mm",
+          "sku": "SIG60240040032",
+          "active": true
+        },
+        {
+          "size": "50x32mm",
+          "sku": "SIG60240050032",
+          "active": true
+        },
+        {
+          "size": "50x40mm",
+          "sku": "SIG60240050040",
+          "active": true
+        },
+        {
+          "size": "63x40mm",
+          "sku": "SIG60240063040",
+          "active": true
+        },
+        {
+          "size": "63x50mm",
+          "sku": "SIG60240063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/41d2c85904811eebb78cafd34185f9dcb4c7bb94.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/41d2c85904811eebb78cafd34185f9dcb4c7bb94.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.649474Z",
+    "updatedAt": "2026-02-04T00:41:10.649479Z"
+  },
+  {
+    "name": "Cupla eléctrica",
+    "description": "",
+    "sku": "SIG60270020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "cupla-elctrica",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ELECTRICA 20 MM",
+          "sku": "SIG60270020000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 25 MM",
+          "sku": "SIG60270025000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 32 MM",
+          "sku": "SIG60270032000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 40 MM",
+          "sku": "SIG60270040000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 50 MM",
+          "sku": "SIG60270050000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 63 MM",
+          "sku": "SIG60270063000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 75MM",
+          "sku": "SIG60270075000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 90MM",
+          "sku": "SIG60270090000",
+          "active": true
+        },
+        {
+          "size": "ELECTRICA 110MM",
+          "sku": "SIG60270110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ab792f0c13c7a80c7d2b866764ee6628e89f8a57.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ab792f0c13c7a80c7d2b866764ee6628e89f8a57.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.649896Z",
+    "updatedAt": "2026-02-04T00:41:10.649901Z"
+  },
+  {
+    "name": "Curva de sobrepasaje",
+    "description": "",
+    "sku": "SIG60085020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "curva-de-sobrepasaje",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60085020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60085025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60085032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e5f70e3a179cd0cbcbe26555992e2e821ac5d592.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e5f70e3a179cd0cbcbe26555992e2e821ac5d592.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.650251Z",
+    "updatedAt": "2026-02-04T00:41:10.650256Z"
+  },
+  {
+    "name": "Herramienta para Vaina Protección UV",
+    "description": "",
+    "sku": "SIG60900431040",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "herramienta-para-vaina-proteccin-uv",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "P-VAINA PROTEC. UV 20 A 40 MM",
+          "sku": "SIG60900431040",
+          "active": true
+        },
+        {
+          "size": "P-VAINA PROTEC. UV 50-63 MM",
+          "sku": "SIG60900431063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ba280f4252035e278798e556877fb92c6108dc3e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ba280f4252035e278798e556877fb92c6108dc3e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.650560Z",
+    "updatedAt": "2026-02-04T00:41:10.650564Z"
+  },
+  {
+    "name": "Kit Termofusor a batería DN 16-40",
+    "description": "",
+    "sku": "SIG8900115000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "kit-termofusor-a-batera-dn-16-40",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "",
+          "sku": "SIG8900115000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/0ee43f62de78946522109ded9aaeb0f80bd048c1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/0ee43f62de78946522109ded9aaeb0f80bd048c1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.650817Z",
+    "updatedAt": "2026-02-04T00:41:10.650822Z"
+  },
+  {
+    "name": "Kit repuesto Llave esférica",
+    "description": "",
+    "sku": "SIG60409161000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "kit-repuesto-llave-esfrica",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "S LLAVE ESFERICA 20-25",
+          "sku": "SIG60409161000",
+          "active": true
+        },
+        {
+          "size": "S LLAVE ESFERICA 32-40",
+          "sku": "SIG60409161032",
+          "active": true
+        },
+        {
+          "size": "S LLAVE ESFERICA C/TOPE 20-25-32",
+          "sku": "SIG60411161000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9cf541a29c46442f13ceedf0be219d8287f2fe21.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9cf541a29c46442f13ceedf0be219d8287f2fe21.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.651157Z",
+    "updatedAt": "2026-02-04T00:41:10.651163Z"
+  },
+  {
+    "name": "Llave Alem 7/32 para ajuste tornillo de fijación de boquillas",
+    "description": "",
+    "sku": "SIG08900510000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "llave-alem-732-para-ajuste-tornillo-de-fijacin-de-boquillas",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Allem 7/32",
+          "sku": "SIG08900510000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/892bde64071862a718309e2aa745c6f378620a3d.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/892bde64071862a718309e2aa745c6f378620a3d.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.651451Z",
+    "updatedAt": "2026-02-04T00:41:10.651455Z"
+  },
+  {
+    "name": "Llave de paso esférica",
+    "description": "",
+    "sku": "SIG60161020000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "llave-de-paso-esfrica",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60161020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60161025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60161032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60161040000",
+          "active": true
+        },
+        {
+          "size": "50mm BRONCE",
+          "sku": "SIG60161050040",
+          "active": true
+        },
+        {
+          "size": "63mm BRONCE",
+          "sku": "SIG60161063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a918f98c32baf969b0c78f5224a221ef8fbe312d.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a918f98c32baf969b0c78f5224a221ef8fbe312d.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.651877Z",
+    "updatedAt": "2026-02-04T00:41:10.651883Z"
+  },
+  {
+    "name": "Llave pinza para extracción de boquillas",
+    "description": "",
+    "sku": "SIG08900500000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "llave-pinza-para-extraccin-de-boquillas",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "extraer boquillas",
+          "sku": "SIG08900500000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b1ca8b9f2d334dfc1f3067f872d5948f3d33e2bb.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b1ca8b9f2d334dfc1f3067f872d5948f3d33e2bb.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.652159Z",
+    "updatedAt": "2026-02-04T00:41:10.652164Z"
+  },
+  {
+    "name": "Montura de reparación",
+    "description": "",
+    "sku": "SIG60361020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "montura-de-reparacin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60361020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60361025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60361032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60361040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60361050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60361063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60361075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60361090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60361110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/42002ea252c9af255f03c2ed63b531e6f13a9993.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/42002ea252c9af255f03c2ed63b531e6f13a9993.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.652551Z",
+    "updatedAt": "2026-02-04T00:41:10.652556Z"
+  },
+  {
+    "name": "Montura derivación",
+    "description": "",
+    "sku": "SIG60360063025",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "montura-derivacin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "DERIVACION 63-25",
+          "sku": "SIG60360063025",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 75-25",
+          "sku": "SIG60360075025",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 75-32",
+          "sku": "SIG60360075032",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 90-25",
+          "sku": "SIG60360090025",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 90-32",
+          "sku": "SIG60360090032",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 110-25",
+          "sku": "SIG60360110025",
+          "active": true
+        },
+        {
+          "size": "DERIVACION 110-32",
+          "sku": "SIG60360110032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/379e716612550e74f877b480d5742c80577dea7a.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/379e716612550e74f877b480d5742c80577dea7a.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.652941Z",
+    "updatedAt": "2026-02-04T00:41:10.652946Z"
+  },
+  {
+    "name": "Máquina Dual para electrofusión",
+    "description": "",
+    "sku": "SIG60900201000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "mquina-dual-para-electrofusin",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "MAQUINA DUAL ELECTROFUSION",
+          "sku": "SIG60900201000",
+          "active": true
+        },
+        {
+          "size": "ELECTROFUSOR LECTOR CODIGO BARRAS",
+          "sku": "SIG60900201204",
+          "active": true
+        },
+        {
+          "size": "LECTOR CODIGO BARRAS",
+          "sku": "SIG60900204000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/7b96374cdc4400a1f8b834816c2d24c4e148504e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/7b96374cdc4400a1f8b834816c2d24c4e148504e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.653260Z",
+    "updatedAt": "2026-02-04T00:41:10.653270Z"
+  },
+  {
+    "name": "Niple corto con tope",
+    "description": "",
+    "sku": "SIG60280020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "niple-corto-con-tope",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60280020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60280025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60280032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60280040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60280050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60280063000",
+          "active": true
+        },
+        {
+          "size": "75 mm",
+          "sku": "SIG60280075000",
+          "active": true
+        },
+        {
+          "size": "90 mm",
+          "sku": "SIG60280090000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/cd64231d7c787b79059fb4bc88e74d4126ebd4c5.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/cd64231d7c787b79059fb4bc88e74d4126ebd4c5.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.653604Z",
+    "updatedAt": "2026-02-04T00:41:10.653609Z"
+  },
+  {
+    "name": "Prolongador válvula esférica",
+    "description": "",
+    "sku": "SIG60420161000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "prolongador-vlvula-esfrica",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20-25-32",
+          "sku": "SIG60420161000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/1231e6e59fa7b9d61ecdb183849838d007d97747.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/1231e6e59fa7b9d61ecdb183849838d007d97747.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.653839Z",
+    "updatedAt": "2026-02-04T00:41:10.653843Z"
+  },
+  {
+    "name": "Reductor anular",
+    "description": "",
+    "sku": "SIG60243032020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "reductor-anular",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "32-20",
+          "sku": "SIG60243032020",
+          "active": true
+        },
+        {
+          "size": "40-20",
+          "sku": "SIG60243040020",
+          "active": true
+        },
+        {
+          "size": "40-25",
+          "sku": "SIG60243040025",
+          "active": true
+        },
+        {
+          "size": "50-25",
+          "sku": "SIG60243050025",
+          "active": true
+        },
+        {
+          "size": "50-32",
+          "sku": "SIG60243050032",
+          "active": true
+        },
+        {
+          "size": "63-32",
+          "sku": "SIG60243063032",
+          "active": true
+        },
+        {
+          "size": "63-40",
+          "sku": "SIG60243063040",
+          "active": true
+        },
+        {
+          "size": "75-32",
+          "sku": "SIG60243075032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5e44ceccd2077a0f405abec73176c5a62444c0dd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/5e44ceccd2077a0f405abec73176c5a62444c0dd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.654164Z",
+    "updatedAt": "2026-02-04T00:41:10.654183Z"
+  },
+  {
+    "name": "Tapa",
+    "description": "",
+    "sku": "SIG60300020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "tapa",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60300020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60300025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60300032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60300040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60300050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60300063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60300075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60300090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60300110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/13c4a2983e86dc791bb23a0020188a6ce7807507.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/13c4a2983e86dc791bb23a0020188a6ce7807507.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.654604Z",
+    "updatedAt": "2026-02-04T00:41:10.654609Z"
+  },
+  {
+    "name": "Tapón roscado",
+    "description": "",
+    "sku": "SIG08290015000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "tapn-roscado",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TAPON ROSCADO 1/2\" (Para pruebas hermeticidad)",
+          "sku": "SIG08290015000",
+          "active": true
+        },
+        {
+          "size": "TAPON ROSCADO 3/4\" (Para pruebas hermeticidad)",
+          "sku": "SIG08290020000",
+          "active": true
+        },
+        {
+          "size": "TAPON ROSCADO 1\" (Para pruebas hermeticidad)",
+          "sku": "SIG08290025000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9ad57c9423892dff0499c784bc54e2900da9cfd0.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9ad57c9423892dff0499c784bc54e2900da9cfd0.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.654945Z",
+    "updatedAt": "2026-02-04T00:41:10.654951Z"
+  },
+  {
+    "name": "Te de reducción central",
+    "description": "",
+    "sku": "SIG60133025020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "te-de-reduccin-central",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20mm",
+          "sku": "SIG60133025020",
+          "active": true
+        },
+        {
+          "size": "32x20mm",
+          "sku": "SIG60133032020",
+          "active": true
+        },
+        {
+          "size": "32x25mm",
+          "sku": "SIG60133032025",
+          "active": true
+        },
+        {
+          "size": "40x25mm",
+          "sku": "SIG60133040025",
+          "active": true
+        },
+        {
+          "size": "40x32mm",
+          "sku": "SIG60133040032",
+          "active": true
+        },
+        {
+          "size": "50x32mm",
+          "sku": "SIG60133050032",
+          "active": true
+        },
+        {
+          "size": "50x40mm",
+          "sku": "SIG60133050040",
+          "active": true
+        },
+        {
+          "size": "63x40mm",
+          "sku": "SIG60133063040",
+          "active": true
+        },
+        {
+          "size": "63x50mm",
+          "sku": "SIG60133063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/bd09cf43528b97fa01e52f700a49020eaff4b188.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/bd09cf43528b97fa01e52f700a49020eaff4b188.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.655625Z",
+    "updatedAt": "2026-02-04T00:41:10.655632Z"
+  },
+  {
+    "name": "Te de reducción extrema",
+    "description": "",
+    "sku": "SIG60134020025",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "te-de-reduccin-extrema",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "REDUC. 20 EXTR. 25",
+          "sku": "SIG60134020025",
+          "active": true
+        },
+        {
+          "size": "REDUC. 20 EXTR. 32",
+          "sku": "SIG60134020032",
+          "active": true
+        },
+        {
+          "size": "REDUC. 25 EXTR. 20",
+          "sku": "SIG60134025020",
+          "active": true
+        },
+        {
+          "size": "REDUC. 32 EXTR. 20",
+          "sku": "SIG60134032020",
+          "active": true
+        },
+        {
+          "size": "REDUC. 32 EXTR. 25",
+          "sku": "SIG60134032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/bc44b4f5cdd53ceccebb9f261d475091fd4d16c7.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/bc44b4f5cdd53ceccebb9f261d475091fd4d16c7.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.656127Z",
+    "updatedAt": "2026-02-04T00:41:10.656140Z"
+  },
+  {
+    "name": "Te de reducción extrema y central",
+    "description": "",
+    "sku": "SIG60135032020",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "te-de-reduccin-extrema-y-central",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "RED. EXTR. Y CENT. 32-25-20",
+          "sku": "SIG60135032020",
+          "active": true
+        },
+        {
+          "size": "RED. EXTR. Y CENT. 32-20-25",
+          "sku": "SIG60135032225",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e19651afc087034d56f04e81d9dc39bd3de00924.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e19651afc087034d56f04e81d9dc39bd3de00924.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.656617Z",
+    "updatedAt": "2026-02-04T00:41:10.656624Z"
+  },
+  {
+    "name": "Te normal",
+    "description": "",
+    "sku": "SIG60130020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "te-normal",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60130020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60130025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60130032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60130040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60130050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60130063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60130075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60130090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60130110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b2c5d2b9eafa0fd97989989d3e1fc541df34333b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b2c5d2b9eafa0fd97989989d3e1fc541df34333b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.657104Z",
+    "updatedAt": "2026-02-04T00:41:10.657110Z"
+  },
+  {
+    "name": "Termofusor 1400w - 220v S/Boquillas",
+    "description": "",
+    "sku": "SIG08900111018",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "termofusor-1400w---220v-sboquillas",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "S/BOQ P/110MM",
+          "sku": "SIG08900111018",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e71ba0d0acdceead13b84fc9c0fae7758eb63a18.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e71ba0d0acdceead13b84fc9c0fae7758eb63a18.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.657525Z",
+    "updatedAt": "2026-02-04T00:41:10.657531Z"
+  },
+  {
+    "name": "Termofusor 220v 1200w",
+    "description": "",
+    "sku": "SIG08900111012",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "termofusor-220v-1200w",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "AST 2021 1200W - 220V S/BOQ",
+          "sku": "SIG08900111012",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b2670515ad49eff3251850f22209fe23ed9df5c1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b2670515ad49eff3251850f22209fe23ed9df5c1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.657846Z",
+    "updatedAt": "2026-02-04T00:41:10.657851Z"
+  },
+  {
+    "name": "Termofusor 220v 800w",
+    "description": "",
+    "sku": "SIG08900111008",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "termofusor-220v-800w",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "AST 2020 800W - 220V S/BOQ",
+          "sku": "SIG08900111008",
+          "active": true
+        },
+        {
+          "size": "AST 2020 800W - 220V C/BOQ 20 A 32",
+          "sku": "SIG08900112008",
+          "active": true
+        },
+        {
+          "size": "AST 2020 800W - 220V C/BOQ 20 A 63",
+          "sku": "SIG08900113008",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b19f6bb0cd560c7aa12c63f2665872427b3e5048.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b19f6bb0cd560c7aa12c63f2665872427b3e5048.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.658213Z",
+    "updatedAt": "2026-02-04T00:41:10.658218Z"
+  },
+  {
+    "name": "Termofusor de banco 50 A 125 (Inc. boquillas de 50 a 125 mm)",
+    "description": "",
+    "sku": "SIG08900205000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "termofusor-de-banco-50-a-125-inc-boquillas-de-50-a-125-mm",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "(Incluye boquillas 50 a 125 mm)",
+          "sku": "SIG08900205000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/606095f6ddd389fa7ea9efb606fe3d00c808a6fd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/606095f6ddd389fa7ea9efb606fe3d00c808a6fd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.658552Z",
+    "updatedAt": "2026-02-04T00:41:10.658557Z"
+  },
+  {
+    "name": "Tornillo para fijación de boquillas",
+    "description": "",
+    "sku": "SIG08901000000",
+    "category": "68cda5f6ff392fb2b5d73dc6",
+    "slug": "tornillo-para-fijacin-de-boquillas",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "fijacion boquilla",
+          "sku": "SIG08901000000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/7c452a7790a5829dfde3cbe48578760004d7cc77.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/7c452a7790a5829dfde3cbe48578760004d7cc77.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.658911Z",
+    "updatedAt": "2026-02-04T00:41:10.658916Z"
+  },
+  {
+    "name": "Transición hembra",
+    "description": "",
+    "sku": "SIG60271020015",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "transicin-hembra",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20x1/2''mm",
+          "sku": "SIG60271020015",
+          "active": true
+        },
+        {
+          "size": "25x1/2''mm",
+          "sku": "SIG60271025015",
+          "active": true
+        },
+        {
+          "size": "25x3/4''mm",
+          "sku": "SIG60271025020",
+          "active": true
+        },
+        {
+          "size": "32x1''mm",
+          "sku": "SIG60271032025",
+          "active": true
+        },
+        {
+          "size": "40x1.1/4''mm",
+          "sku": "SIG60271040032",
+          "active": true
+        },
+        {
+          "size": "50x1.1/2''mm",
+          "sku": "SIG60271050040",
+          "active": true
+        },
+        {
+          "size": "63x2''mm",
+          "sku": "SIG60271063050",
+          "active": true
+        },
+        {
+          "size": "75x2.1/2''mm",
+          "sku": "SIG60271075063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/23975a3551e3ad02bcb7f02c46d368653213988b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/23975a3551e3ad02bcb7f02c46d368653213988b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.659333Z",
+    "updatedAt": "2026-02-04T00:41:10.659338Z"
+  },
+  {
+    "name": "Transición macho",
+    "description": "",
+    "sku": "SIG60272020015",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "transicin-macho",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20x1/2''mm",
+          "sku": "SIG60272020015",
+          "active": true
+        },
+        {
+          "size": "25x1/2''mm",
+          "sku": "SIG60272025015",
+          "active": true
+        },
+        {
+          "size": "25x3/4''mm",
+          "sku": "SIG60272025020",
+          "active": true
+        },
+        {
+          "size": "32x1''mm",
+          "sku": "SIG60272032025",
+          "active": true
+        },
+        {
+          "size": "40x1.1/4mm",
+          "sku": "SIG60272040032",
+          "active": true
+        },
+        {
+          "size": "50x1.1/2''mm",
+          "sku": "SIG60272050040",
+          "active": true
+        },
+        {
+          "size": "63x2''mm",
+          "sku": "SIG60272063050",
+          "active": true
+        },
+        {
+          "size": "75x2.1/2''mm",
+          "sku": "SIG60272075063",
+          "active": true
+        },
+        {
+          "size": "90x3''mm",
+          "sku": "SIG60272090080",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e1527ef7f4c65ad07dff58581f0052dcfc3dafcd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e1527ef7f4c65ad07dff58581f0052dcfc3dafcd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.659784Z",
+    "updatedAt": "2026-02-04T00:41:10.659789Z"
+  },
+  {
+    "name": "Tubo acero polietileno",
+    "description": "",
+    "sku": "SIG60100020000",
+    "category": "68cda5f6ff392fb2b5d73dc4",
+    "slug": "tubo-acero-polietileno",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60100020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60100025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60100032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60100040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60100050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60100063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60100075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60100090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60100110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/18653dbb75cfa042b0f9d834d87a1efbdefcd4df.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/18653dbb75cfa042b0f9d834d87a1efbdefcd4df.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.660253Z",
+    "updatedAt": "2026-02-04T00:41:10.660258Z"
+  },
+  {
+    "name": "Unión normal",
+    "description": "",
+    "sku": "SIG60340020000",
+    "category": "68cda5f6ff392fb2b5d73dc5",
+    "slug": "unin-normal",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "SIG60340020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "SIG60340025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "SIG60340032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "SIG60340040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "SIG60340050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "SIG60340063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "SIG60340075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "SIG60340090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "SIG60340110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/972732e0fdf87ef2ee6a50dcf8a2d8855bdd4a6f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/972732e0fdf87ef2ee6a50dcf8a2d8855bdd4a6f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.660961Z",
+    "updatedAt": "2026-02-04T00:41:10.660977Z"
+  },
+  {
+    "name": "Vaina de Protección UV tubo",
+    "description": "",
+    "sku": "SIG60109020000",
+    "category": "68cda5f6ff392fb2b5d73dc4",
+    "slug": "vaina-de-proteccin-uv-tubo",
+    "brand": "SIGAS THERMOFUSION",
+    "brandSlug": "sigas-thermofusion",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "PROTECCION UV TUBO 20 MM",
+          "sku": "SIG60109020000",
+          "active": true
+        },
+        {
+          "size": "PROTECCION UV TUBO 25 MM",
+          "sku": "SIG60109025000",
+          "active": true
+        },
+        {
+          "size": "PROTECCION UV TUBO 32 MM",
+          "sku": "SIG60109032000",
+          "active": true
+        },
+        {
+          "size": "PROTECCION UV TUBO 40 MM",
+          "sku": "SIG60109040000",
+          "active": true
+        },
+        {
+          "size": "PROTECCION UV TUBO 50 MM",
+          "sku": "SIG60109050000",
+          "active": true
+        },
+        {
+          "size": "PROTECCION UV TUBO 63 MM",
+          "sku": "SIG60109063000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9de5e2a469da7a2088685a6807901ad9d39ed55f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9de5e2a469da7a2088685a6807901ad9d39ed55f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T00:41:10.661360Z",
+    "updatedAt": "2026-02-04T00:41:10.661365Z"
+  }
+]

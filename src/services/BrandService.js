@@ -62,10 +62,55 @@ class BrandService {
     }
   }
 
-  // Obtener todas las marcas
+  // Contar productos por marca (consulta directa a products). Por slug y por nombre normalizado.
+  async getProductCountsByBrand() {
+    const normalize = (s) => (s && String(s).toLowerCase().trim()) || '';
+
+    const [bySlug, byName] = await Promise.all([
+      this.productCollection
+        .aggregate([
+          { $match: { brandSlug: { $exists: true, $ne: '', $ne: null } } },
+          { $group: { _id: '$brandSlug', count: { $sum: 1 } } }
+        ])
+        .toArray(),
+      this.productCollection
+        .aggregate([
+          { $match: { brand: { $exists: true, $ne: '', $ne: null } } },
+          { $group: { _id: '$brand', count: { $sum: 1 } } }
+        ])
+        .toArray()
+    ]);
+
+    const bySlugMap = {};
+    const byNameMap = {};
+    for (const row of bySlug) {
+      const k = normalize(row._id);
+      if (k) bySlugMap[k] = row.count;
+    }
+    for (const row of byName) {
+      const k = normalize(row._id);
+      if (k) byNameMap[k] = (byNameMap[k] || 0) + row.count;
+    }
+
+    return { bySlug: bySlugMap, byName: byNameMap };
+  }
+
+  // Obtener todas las marcas (con contador en vivo desde products)
   async getAll() {
     try {
-      return await this.collection.find({ active: true }).sort({ name: 1 }).toArray();
+      const [brands, counts] = await Promise.all([
+        this.collection.find({ active: true }).sort({ name: 1 }).toArray(),
+        this.getProductCountsByBrand()
+      ]);
+
+      const normalize = (s) => (s && String(s).toLowerCase().trim()) || '';
+
+      return brands.map((b) => {
+        const slugNorm = normalize(b.slug);
+        const nameNorm = normalize(b.name);
+        const productCount = (slugNorm && counts.bySlug[slugNorm]) ?? (nameNorm && counts.byName[nameNorm]) ?? 0;
+        return { ...b, productCount };
+      });
     } catch (error) {
       console.error('Error obteniendo marcas:', error);
       return [];

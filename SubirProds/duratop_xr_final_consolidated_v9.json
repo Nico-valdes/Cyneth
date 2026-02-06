@@ -1,0 +1,3056 @@
+[
+  {
+    "name": "Rejilla Interna",
+    "description": "",
+    "sku": "DUXR10724000000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "rejilla-interna",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REJILLA INTERNA",
+          "sku": "DUXR10724000000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c84daacd1ba098214f1ab77943985a9eb0330e59.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c84daacd1ba098214f1ab77943985a9eb0330e59.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068653Z",
+    "updatedAt": "2026-02-06T04:12:56.068672Z"
+  },
+  {
+    "name": "Trampa Antirretorno C/Rejilla Interna",
+    "description": "",
+    "sku": "DUXR10723000724",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "trampa-antirretorno-crejilla-interna",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "TRAMPA ANTIRRETORNO C/REJILLA INTERNA",
+          "sku": "DUXR10723000724",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/47c76cf8c9d2d704cf83dc47754c0699b8c3a43c.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/47c76cf8c9d2d704cf83dc47754c0699b8c3a43c.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068688Z",
+    "updatedAt": "2026-02-06T04:12:56.068690Z"
+  },
+  {
+    "name": "Conector Vertical",
+    "description": "",
+    "sku": "DUXR10720110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "conector-vertical",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CONECTOR VERTICAL 110",
+          "sku": "DUXR10720110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/994c05b97eb763f69a7d215edea9f2e9bd226c74.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/994c05b97eb763f69a7d215edea9f2e9bd226c74.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068705Z",
+    "updatedAt": "2026-02-06T04:12:56.068708Z"
+  },
+  {
+    "name": "Conector Lateral H Der.",
+    "description": "",
+    "sku": "DUXR10721110001",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "conector-lateral-h-der",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CONECTOR LATERAL H 105 DER. 110",
+          "sku": "DUXR10721110001",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9fc6cee06bdda9d65ae8353eb5599fe73c6f1d9b.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9fc6cee06bdda9d65ae8353eb5599fe73c6f1d9b.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068723Z",
+    "updatedAt": "2026-02-06T04:12:56.068738Z"
+  },
+  {
+    "name": "Conector Lateral H  Izq.",
+    "description": "",
+    "sku": "DUXR10721110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "conector-lateral-h-izq",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CONECTOR LATERAL H 105 IZQ. 110",
+          "sku": "DUXR10721110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/95f0619d2c58458f6bc9e27c8c439ea423d0af2b.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/95f0619d2c58458f6bc9e27c8c439ea423d0af2b.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068763Z",
+    "updatedAt": "2026-02-06T04:12:56.068766Z"
+  },
+  {
+    "name": "Tapa Lateral H 105",
+    "description": "",
+    "sku": "DUXR10722000105",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tapa-lateral-h-105",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "TAPA LATERAL H 105",
+          "sku": "DUXR10722000105",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/556f59a43b1fe71580f943e02ba942cb9091e7cd.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/556f59a43b1fe71580f943e02ba942cb9091e7cd.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068781Z",
+    "updatedAt": "2026-02-06T04:12:56.068783Z"
+  },
+  {
+    "name": "Tapa Lateral H 55",
+    "description": "",
+    "sku": "DUXR10722000055",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tapa-lateral-h-55",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "TAPA LATERAL H 55",
+          "sku": "DUXR10722000055",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/bc3e9181f2cae779d2016801b09bd3835b764ae3.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/bc3e9181f2cae779d2016801b09bd3835b764ae3.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068798Z",
+    "updatedAt": "2026-02-06T04:12:56.068801Z"
+  },
+  {
+    "name": "Colector H Reja Plástica",
+    "description": "",
+    "sku": "DUXR10711110050",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "colector-h-reja-plstica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "COLECTOR H 105x0.5M REJA PLASTICA",
+          "sku": "DUXR10711110050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9287cf29922c2ad3e3e454cf0d7f6a184e1493d5.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9287cf29922c2ad3e3e454cf0d7f6a184e1493d5.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068822Z",
+    "updatedAt": "2026-02-06T04:12:56.068824Z"
+  },
+  {
+    "name": "Colector H Reja Metálica",
+    "description": "",
+    "sku": "DUXR10710110050",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "colector-h-reja-metlica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "COLECTOR H 105x0.5M REJA METALICA",
+          "sku": "DUXR10710110050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/1f277728cbe50bda481a85eedfcaf4a85de56eff.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/1f277728cbe50bda481a85eedfcaf4a85de56eff.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068840Z",
+    "updatedAt": "2026-02-06T04:12:56.068843Z"
+  },
+  {
+    "name": "Canal H Reja Plástica",
+    "description": "",
+    "sku": "DUXR10703110100",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "canal-h-reja-plstica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CANAL H 55x1M REJA PLASTICA",
+          "sku": "DUXR10703110100",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a51f802a603d6502f5900b67fe92e2e78674069c.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a51f802a603d6502f5900b67fe92e2e78674069c.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068861Z",
+    "updatedAt": "2026-02-06T04:12:56.068863Z"
+  },
+  {
+    "name": "Canal H Reja Metálica",
+    "description": "",
+    "sku": "DUXR10702110100",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "canal-h-reja-metlica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CANAL H 55x1M REJA METALICA",
+          "sku": "DUXR10702110100",
+          "active": true
+        },
+        {
+          "size": "CANAL H 105x1M REJA METALICA",
+          "sku": "DUXR10700110100",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c34f4696b88a4b3f3631f03d0b0b56a420ad5dc2.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c34f4696b88a4b3f3631f03d0b0b56a420ad5dc2.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068879Z",
+    "updatedAt": "2026-02-06T04:12:56.068882Z"
+  },
+  {
+    "name": "Canal H Reja Plastica",
+    "description": "",
+    "sku": "DUXR10701110100",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "canal-h-reja-plastica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CANAL H 105x1M REJA PLASTICA",
+          "sku": "DUXR10701110100",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/593f947d5c6002f05ddad7c5414958b874b0856b.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/593f947d5c6002f05ddad7c5414958b874b0856b.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068897Z",
+    "updatedAt": "2026-02-06T04:12:56.068899Z"
+  },
+  {
+    "name": "Kit Dual Salida Vertical",
+    "description": "",
+    "sku": "DUXR30621550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-dual-salida-vertical",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT DUAL 550 SAL.40 VERT.",
+          "sku": "DUXR30621550040",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 550 SAL.63 SIFON VERT.",
+          "sku": "DUXR30621550063",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 750 SAL.40 VERT.",
+          "sku": "DUXR30621750040",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 750 SAL.63 SIFON VERT.",
+          "sku": "DUXR30621750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/01f62c2ebf388df4326ecffbe323f9d6707446ab.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/01f62c2ebf388df4326ecffbe323f9d6707446ab.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068929Z",
+    "updatedAt": "2026-02-06T04:12:56.068935Z"
+  },
+  {
+    "name": "Kit Dual Salida Horizontal",
+    "description": "",
+    "sku": "DUXR30620550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-dual-salida-horizontal",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT DUAL 550 SAL.40 HORIZ.",
+          "sku": "DUXR30620550040",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 550 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30620550063",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 750 SAL.40 HORIZ.",
+          "sku": "DUXR30620750040",
+          "active": true
+        },
+        {
+          "size": "KIT DUAL 750 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30620750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d27c00c39b60ec22d55c352054241b63e8a6e3e1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d27c00c39b60ec22d55c352054241b63e8a6e3e1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068960Z",
+    "updatedAt": "2026-02-06T04:12:56.068963Z"
+  },
+  {
+    "name": "Kit Longitudinal Salida Vertical",
+    "description": "",
+    "sku": "DUXR30611550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-longitudinal-salida-vertical",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT LONGITUDINAL 550 SAL.40 VERT.",
+          "sku": "DUXR30611550040",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 550 SAL.63 SIFON VERT.",
+          "sku": "DUXR30611550063",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 750 SAL.40 VERT.",
+          "sku": "DUXR30611750040",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 750 SAL.63 SIFON VERT.",
+          "sku": "DUXR30611750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/fcf9d86eda4b78a91502be89d479afae84d57382.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/fcf9d86eda4b78a91502be89d479afae84d57382.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.068981Z",
+    "updatedAt": "2026-02-06T04:12:56.068984Z"
+  },
+  {
+    "name": "Kit Longitudinal Salida Horizontal",
+    "description": "",
+    "sku": "DUXR30610550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-longitudinal-salida-horizontal",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT LONGITUDINAL 550 SAL.40 HORIZ.",
+          "sku": "DUXR30610550040",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 550 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30610550063",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 750 SAL.40 HORIZ.",
+          "sku": "DUXR30610750040",
+          "active": true
+        },
+        {
+          "size": "KIT LONGITUDINAL 750 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30610750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/fead8cd8034b4f9b983707947cf0ef7543a987aa.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/fead8cd8034b4f9b983707947cf0ef7543a987aa.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069002Z",
+    "updatedAt": "2026-02-06T04:12:56.069005Z"
+  },
+  {
+    "name": "Kit Transversal Salida Vertical",
+    "description": "",
+    "sku": "DUXR30601550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-transversal-salida-vertical",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT TRANSVERSAL 550 SAL.40 VERT.",
+          "sku": "DUXR30601550040",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 550 SAL.63 SIFON VERT.",
+          "sku": "DUXR30601550063",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 750 SAL.40 VERT.",
+          "sku": "DUXR30601750040",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 750 SAL.63 SIFON VERT.",
+          "sku": "DUXR30601750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/827e6034cbd7a1b4e8f9a56b60c06b1b1f446dc6.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/827e6034cbd7a1b4e8f9a56b60c06b1b1f446dc6.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069021Z",
+    "updatedAt": "2026-02-06T04:12:56.069024Z"
+  },
+  {
+    "name": "Kit Transversal Salida Horizontal",
+    "description": "",
+    "sku": "DUXR30600550040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-transversal-salida-horizontal",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT TRANSVERSAL 550 SAL.40 HORIZ.",
+          "sku": "DUXR30600550040",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 550 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30600550063",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 750 SAL.40 HORIZ.",
+          "sku": "DUXR30600750040",
+          "active": true
+        },
+        {
+          "size": "KIT TRANSVERSAL 750 SAL.63 SIFON HORIZ.",
+          "sku": "DUXR30600750063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d44d9eeee2e58f68f7d64de670ffc9f225d51042.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d44d9eeee2e58f68f7d64de670ffc9f225d51042.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069043Z",
+    "updatedAt": "2026-02-06T04:12:56.069046Z"
+  },
+  {
+    "name": "Biselador para tubos",
+    "description": "",
+    "sku": "DUXR10630040160",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "biselador-para-tubos",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "BISELADOR PARA TUBOS DURATOP 40 - 160 MM",
+          "sku": "DUXR10630040160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e1a3234015dda4284d545f58f2a34a1acaec8298.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e1a3234015dda4284d545f58f2a34a1acaec8298.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069061Z",
+    "updatedAt": "2026-02-06T04:12:56.069064Z"
+  },
+  {
+    "name": "Obturador neumático",
+    "description": "",
+    "sku": "DUXR10 620110160",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "obturador-neumtico",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "OBTURADOR NEUMATICO 110-160",
+          "sku": "DUXR10 620110160",
+          "active": true
+        },
+        {
+          "size": "OBTURADOR NEUMATICO 40-50-63",
+          "sku": "DUXR10620040063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/2499358343ae2bb999cafbad1707df60798c40f1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/2499358343ae2bb999cafbad1707df60798c40f1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069083Z",
+    "updatedAt": "2026-02-06T04:12:56.069086Z"
+  },
+  {
+    "name": "Solución lubricante",
+    "description": "",
+    "sku": "DUXR10610400000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "solucin-lubricante",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "SOLUCION LUBRICANTE X 400 CM3",
+          "sku": "DUXR10610400000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b53bed5c21bcdcadd62f2ab206e1c4e7f1d73675.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b53bed5c21bcdcadd62f2ab206e1c4e7f1d73675.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069103Z",
+    "updatedAt": "2026-02-06T04:12:56.069105Z"
+  },
+  {
+    "name": "Rejilla Redonda Sifónica 22cm XRS",
+    "description": "",
+    "sku": "DUXR30324220100",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "rejilla-redonda-sifnica-22cm-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REJILLA REDONDA SIFÓNICA 22cm XRS",
+          "sku": "DUXR30324220100",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/784c6ab34aac70bba52e806191627052c3071a59.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/784c6ab34aac70bba52e806191627052c3071a59.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069125Z",
+    "updatedAt": "2026-02-06T04:12:56.069128Z"
+  },
+  {
+    "name": "Rejilla Redonda 22cm XRS",
+    "description": "",
+    "sku": "DUXR30324220000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "rejilla-redonda-22cm-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REJILLA REDONDA 22cm XRS",
+          "sku": "DUXR30324220000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/72e95458c18f942b4202b5930ca291adb8c4c7d1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/72e95458c18f942b4202b5930ca291adb8c4c7d1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069145Z",
+    "updatedAt": "2026-02-06T04:12:56.069148Z"
+  },
+  {
+    "name": "Marco Y Reja De Fundición 30x30 XRS",
+    "description": "",
+    "sku": "DUXR30323300000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "marco-y-reja-de-fundicin-30x30-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "MARCO Y REJA DE FUNDICION 30x30 XRS",
+          "sku": "DUXR30323300000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/40ace38fb79af0c8368667b39820b8a64e5a40c0.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/40ace38fb79af0c8368667b39820b8a64e5a40c0.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069169Z",
+    "updatedAt": "2026-02-06T04:12:56.069173Z"
+  },
+  {
+    "name": "Marco y Reja De Fundición 20x20 XRS",
+    "description": "",
+    "sku": "DUXR30323200000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "marco-y-reja-de-fundicin-20x20-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "MARCO Y REJA DE FUNDICION 20x20 XRS",
+          "sku": "DUXR30323200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/90e11f23451521e04be1db4227e343965ff6a70b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/90e11f23451521e04be1db4227e343965ff6a70b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069192Z",
+    "updatedAt": "2026-02-06T04:12:56.069195Z"
+  },
+  {
+    "name": "Reja Plástica 20x20 XRS",
+    "description": "",
+    "sku": "DUXR30322200000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "reja-plstica-20x20-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REJA PLASTICA 20x20 XRS",
+          "sku": "DUXR30322200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/19e4dabbfb655819f82e11f83f3eed2228a0ca16.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/19e4dabbfb655819f82e11f83f3eed2228a0ca16.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069213Z",
+    "updatedAt": "2026-02-06T04:12:56.069216Z"
+  },
+  {
+    "name": "Porta empalme suspendida",
+    "description": "",
+    "sku": "DUXR10420354110",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "porta-empalme-suspendida",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "PORTA PILETA SUSPENDIDA 110 mm",
+          "sku": "DUXR10420354110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/07f18c27b332930b7f149e1b6ba77d53eef1a9a5.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/07f18c27b332930b7f149e1b6ba77d53eef1a9a5.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069232Z",
+    "updatedAt": "2026-02-06T04:12:56.069234Z"
+  },
+  {
+    "name": "Porta empalme horizontal suspendido",
+    "description": "",
+    "sku": "DUXR30420381110",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "porta-empalme-horizontal-suspendido",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "PORTA EMPALME HORIZ. SUSPENDIDO",
+          "sku": "DUXR30420381110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/4de9dba4ad84fb2e24cadc76b582331afdf273ea.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/4de9dba4ad84fb2e24cadc76b582331afdf273ea.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069251Z",
+    "updatedAt": "2026-02-06T04:12:56.069254Z"
+  },
+  {
+    "name": "Tapón",
+    "description": "",
+    "sku": "DUXR30290040000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tapn",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "TAPON XRS 40",
+          "sku": "DUXR30290040000",
+          "active": true
+        },
+        {
+          "size": "TAPON XRS 50",
+          "sku": "DUXR30290050000",
+          "active": true
+        },
+        {
+          "size": "TAPÓN XRS 58",
+          "sku": "DUXR30290058000",
+          "active": true
+        },
+        {
+          "size": "TAPON XRS 63",
+          "sku": "DUXR30290063000",
+          "active": true
+        },
+        {
+          "size": "TAPÓN XRS 78",
+          "sku": "DUXR30290078000",
+          "active": true
+        },
+        {
+          "size": "TAPÓN XRS 110",
+          "sku": "DUXR30290110000",
+          "active": true
+        },
+        {
+          "size": "TAPÓN XRS 160",
+          "sku": "DUXR30290160000",
+          "active": true
+        },
+        {
+          "size": "TAPON XRS 200",
+          "sku": "DUXR30290200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/14c7868fa16cf46b039250b3e1a6f36675eed87b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/14c7868fa16cf46b039250b3e1a6f36675eed87b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069274Z",
+    "updatedAt": "2026-02-06T04:12:56.069277Z"
+  },
+  {
+    "name": "Grampa metálica 1000",
+    "description": "",
+    "sku": "DUXR10411110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "grampa-metlica-1000",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "GRAMPA METALICA 1000 110 mm",
+          "sku": "DUXR10411110000",
+          "active": true
+        },
+        {
+          "size": "GRAMPA METALICA 1000 160 mm",
+          "sku": "DUXR10411160000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b00ce9b84ef504e62813502e33e61018ab7c7c20.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b00ce9b84ef504e62813502e33e61018ab7c7c20.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069294Z",
+    "updatedAt": "2026-02-06T04:12:56.069297Z"
+  },
+  {
+    "name": "Grampa metálica SL",
+    "description": "",
+    "sku": "DUXR10412110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "grampa-metlica-sl",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "GRAMPA METALICA SL 110",
+          "sku": "DUXR10412110000",
+          "active": true
+        },
+        {
+          "size": "GRAMPA METALICA SL 160",
+          "sku": "DUXR10412160000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b87a4d2ee922702ccc6227fb8ed733b759cabac2.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b87a4d2ee922702ccc6227fb8ed733b759cabac2.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069314Z",
+    "updatedAt": "2026-02-06T04:12:56.069316Z"
+  },
+  {
+    "name": "Guarnición elastomérica",
+    "description": "",
+    "sku": "DUXR10520000040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "guarnicin-elastomrica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "GUARNICION ELASTOMERICA 40 mm",
+          "sku": "DUXR10520000040",
+          "active": true
+        },
+        {
+          "size": "GUARNICION ELASTOMERICA 50 mm",
+          "sku": "DUXR10520000050",
+          "active": true
+        },
+        {
+          "size": "GUARNICION ELASTOMERICA 63 mm",
+          "sku": "DUXR10520000063",
+          "active": true
+        },
+        {
+          "size": "GUARNICION ELASTOMERICA 110 mm",
+          "sku": "DUXR10520000110",
+          "active": true
+        },
+        {
+          "size": "GUARNICION ELASTOMERICA 160 mm",
+          "sku": "DUXR10520000160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/f4059d679a4fb5de22d48d848f612ced554c9510.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/f4059d679a4fb5de22d48d848f612ced554c9510.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069335Z",
+    "updatedAt": "2026-02-06T04:12:56.069338Z"
+  },
+  {
+    "name": "Abrazadera metálica",
+    "description": "",
+    "sku": "DUXR10410040000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "abrazadera-metlica",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "ABRAZADERA METALICA 40 MM",
+          "sku": "DUXR10410040000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 50 MM",
+          "sku": "DUXR10410050000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 58 MM",
+          "sku": "DUXR10410058000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 63 MM",
+          "sku": "DUXR10410063000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 78 MM",
+          "sku": "DUXR10410078000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 110 MM",
+          "sku": "DUXR10410110000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 160 MM",
+          "sku": "DUXR10410160000",
+          "active": true
+        },
+        {
+          "size": "ABRAZADERA METALICA 200 MM",
+          "sku": "DUXR10410200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c4bc3ff6c91e532f69722e5ad4c5cfebb934fcea.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c4bc3ff6c91e532f69722e5ad4c5cfebb934fcea.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069358Z",
+    "updatedAt": "2026-02-06T04:12:56.069361Z"
+  },
+  {
+    "name": "Traba metálica tapón XR",
+    "description": "",
+    "sku": "DUXR30401110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "traba-metlica-tapn-xr",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "TRABA METALICA TAPON XR DE 110 MM",
+          "sku": "DUXR30401110000",
+          "active": true
+        },
+        {
+          "size": "TRABA METALICA TAPON XR DE 160 MM",
+          "sku": "DUXR30401160000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d6b8c73a7e3170dd343a2fcb78f798acdcc0efa1.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d6b8c73a7e3170dd343a2fcb78f798acdcc0efa1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069379Z",
+    "updatedAt": "2026-02-06T04:12:56.069382Z"
+  },
+  {
+    "name": "Caño cámara M-H",
+    "description": "",
+    "sku": "DUXR30201110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "cao-cmara-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CAÑO CÁMARA XRS M-H 110",
+          "sku": "DUXR30201110000",
+          "active": true
+        },
+        {
+          "size": "CAÑO CÁMARA XRS M-H 160",
+          "sku": "DUXR30201160000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c476d7835683230e925d924bbd0175c299865624.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c476d7835683230e925d924bbd0175c299865624.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069400Z",
+    "updatedAt": "2026-02-06T04:12:56.069403Z"
+  },
+  {
+    "name": "Receptaculo Pluvial Salida Horiz.",
+    "description": "",
+    "sku": "DUXR10725110001",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "receptaculo-pluvial-salida-horiz",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RECEPTACULO PLUVIAL SALIDA HORIZ. 110",
+          "sku": "DUXR10725110001",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5e0a6ad06fea78aa3b2b6714c572690a694d24d6.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/5e0a6ad06fea78aa3b2b6714c572690a694d24d6.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069420Z",
+    "updatedAt": "2026-02-06T04:12:56.069422Z"
+  },
+  {
+    "name": "Receptaculo Pluvial Salida Vert.",
+    "description": "",
+    "sku": "DUXR10725110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "receptaculo-pluvial-salida-vert",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RECEPTACULO PLUVIAL SALIDA VERT. 110",
+          "sku": "DUXR10725110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b76c675c276cbaa735769ed7e14dbf4bff6dc7b7.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b76c675c276cbaa735769ed7e14dbf4bff6dc7b7.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069440Z",
+    "updatedAt": "2026-02-06T04:12:56.069443Z"
+  },
+  {
+    "name": "Kit Reja Plástica 20X20 - 160 MM XRS",
+    "description": "",
+    "sku": "DUXR30615358160",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-reja-plstica-20x20---160-mm-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "KIT REJA PLAST 20x20 - 160 MM XRS",
+          "sku": "DUXR30615358160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/4aac68a5b29ed82b348237f6591ec330bc2dec87.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/4aac68a5b29ed82b348237f6591ec330bc2dec87.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069462Z",
+    "updatedAt": "2026-02-06T04:12:56.069465Z"
+  },
+  {
+    "name": "Kit Reja Fund 20x20 - 160 MM XRS",
+    "description": "",
+    "sku": "DUXR30616358160",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "kit-reja-fund-20x20---160-mm-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Kit Reja Fund 20x20 - 160 Mm XRS",
+          "sku": "DUXR30616358160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/591958b597bb20434c22e9b5df3b58932596525d.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/591958b597bb20434c22e9b5df3b58932596525d.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069482Z",
+    "updatedAt": "2026-02-06T04:12:56.069485Z"
+  },
+  {
+    "name": "Embudo Sifónico Vertical 110 XRS",
+    "description": "",
+    "sku": "DUXR30317110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-sifnico-vertical-110-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "EMBUDO SIFONICO VERTICAL 110 XRS",
+          "sku": "DUXR30317110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/2af87dcbfab334fd393a7fa8e32422ff337df4c2.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/2af87dcbfab334fd393a7fa8e32422ff337df4c2.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069503Z",
+    "updatedAt": "2026-02-06T04:12:56.069506Z"
+  },
+  {
+    "name": "Embudo Sifónico Horizontal 110 XRS",
+    "description": "",
+    "sku": "DUXR30316110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-sifnico-horizontal-110-xrs",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "EMBUDO SIFÓNICO HORIZ 110 XRS",
+          "sku": "DUXR30316110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e5b2277a89b27468c6e1e03e9293ebb253bccf1f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e5b2277a89b27468c6e1e03e9293ebb253bccf1f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069524Z",
+    "updatedAt": "2026-02-06T04:12:56.069527Z"
+  },
+  {
+    "name": "Sobre Embudo Reja Fundicion 30 x 30",
+    "description": "",
+    "sku": "DUXR30321110300",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "sobre-embudo-reja-fundicion-30-x-30",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Sobre Embudo Reja Fundicion 30 x 30",
+          "sku": "DUXR30321110300",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b8cedf79459f5f5da8e89210216ff709a17e8d1f.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b8cedf79459f5f5da8e89210216ff709a17e8d1f.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069545Z",
+    "updatedAt": "2026-02-06T04:12:56.069547Z"
+  },
+  {
+    "name": "Embudo Vertical 110 Reja Fundición 20 x 20",
+    "description": "",
+    "sku": "DUXR30313110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-vertical-110-reja-fundicin-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Vertical 110 Reja Fundicion 20 x 20",
+          "sku": "DUXR30313110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/dddd890a1d885bcf7cc9ed0b30433e199a1b4571.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/dddd890a1d885bcf7cc9ed0b30433e199a1b4571.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069565Z",
+    "updatedAt": "2026-02-06T04:12:56.069568Z"
+  },
+  {
+    "name": "Embudo Horizontal 110 Reja Fundición 20 x 20",
+    "description": "",
+    "sku": "DUXR30312110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-horizontal-110-reja-fundicin-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Horizontal 110 Reja Fundicion 20 x 20",
+          "sku": "DUXR30312110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/743deeb4a03cfbcd25e4c0bd0f2ad5e028b2965a.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/743deeb4a03cfbcd25e4c0bd0f2ad5e028b2965a.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069587Z",
+    "updatedAt": "2026-02-06T04:12:56.069589Z"
+  },
+  {
+    "name": "Bajo Embudo Vertical 110 p/membrana",
+    "description": "",
+    "sku": "DUXR30319110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "bajo-embudo-vertical-110-pmembrana",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Bajo Embudo Vertical 110 p/membrana",
+          "sku": "DUXR30319110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/dd8707054a80670b8b0930564c5184b93d04cc52.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/dd8707054a80670b8b0930564c5184b93d04cc52.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069606Z",
+    "updatedAt": "2026-02-06T04:12:56.069609Z"
+  },
+  {
+    "name": "Bajo Embudo Horizontal 110 p/membrana",
+    "description": "",
+    "sku": "DUXR30318110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "bajo-embudo-horizontal-110-pmembrana",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Bajo Embudo Horizontal 110 p/membrana",
+          "sku": "DUXR30318110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/88f935614799641f20cee20cd987d51e8fe4b10b.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/88f935614799641f20cee20cd987d51e8fe4b10b.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069624Z",
+    "updatedAt": "2026-02-06T04:12:56.069627Z"
+  },
+  {
+    "name": "Embudo Redondo Horizontal 110 p/membrana",
+    "description": "",
+    "sku": "DUXR30314110220",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-redondo-horizontal-110-pmembrana",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Redondo Horizontal 110 p/membrana",
+          "sku": "DUXR30314110220",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/64f833345edd4c63b473626d225b469f09cea3ad.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/64f833345edd4c63b473626d225b469f09cea3ad.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069643Z",
+    "updatedAt": "2026-02-06T04:12:56.069646Z"
+  },
+  {
+    "name": "Sobre Embudo Reja Fundicion 20 x 20",
+    "description": "",
+    "sku": "DUXR30321110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "sobre-embudo-reja-fundicion-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Sobre Embudo Reja Fundicion 20 x 20",
+          "sku": "DUXR30321110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3ac743e0b8915ecd588092b0434ae181400c145f.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3ac743e0b8915ecd588092b0434ae181400c145f.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069662Z",
+    "updatedAt": "2026-02-06T04:12:56.069664Z"
+  },
+  {
+    "name": "Sobre Embudo Reja Plastica 20 x 20",
+    "description": "",
+    "sku": "DUXR30320110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "sobre-embudo-reja-plastica-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Sobre Embudo Reja Plastica 20 x 20",
+          "sku": "DUXR30320110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a6cd4708517363c0e52b243053a40aee02a25186.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a6cd4708517363c0e52b243053a40aee02a25186.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069681Z",
+    "updatedAt": "2026-02-06T04:12:56.069683Z"
+  },
+  {
+    "name": "Embudo Redondo Vertical 110 p/membrana",
+    "description": "",
+    "sku": "DUXR30315110220",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-redondo-vertical-110-pmembrana",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Redondo Vertical 110 p/membrana",
+          "sku": "DUXR30315110220",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a5110283ceb9db54ea0dff540b85b9b50524ca15.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a5110283ceb9db54ea0dff540b85b9b50524ca15.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069700Z",
+    "updatedAt": "2026-02-06T04:12:56.069703Z"
+  },
+  {
+    "name": "Embudo Vertical 110 Reja Fundicion 30 x 30",
+    "description": "",
+    "sku": "DUXR30313110300",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-vertical-110-reja-fundicion-30-x-30",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Vertical 110 Reja Fundicion 30 x 30",
+          "sku": "DUXR30313110300",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a9496d000f17ee6ec58276adaa3c4645c7ea40c4.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a9496d000f17ee6ec58276adaa3c4645c7ea40c4.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069720Z",
+    "updatedAt": "2026-02-06T04:12:56.069722Z"
+  },
+  {
+    "name": "Embudo Horizontal 110 Reja Fundicion 30 x 30",
+    "description": "",
+    "sku": "DUXR30312110300",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-horizontal-110-reja-fundicion-30-x-30",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Horizontal 110 Reja Fundicion 30 x 30",
+          "sku": "DUXR30312110300",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/cc22fd9dd13b6b6e9bb507abcc941b13ed61ff95.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/cc22fd9dd13b6b6e9bb507abcc941b13ed61ff95.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069743Z",
+    "updatedAt": "2026-02-06T04:12:56.069745Z"
+  },
+  {
+    "name": "Embudo Horizontal 63 Reja Fundicion 20 x 20",
+    "description": "",
+    "sku": "DUXR30312063200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-horizontal-63-reja-fundicion-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Horizontal 63 Reja Fundicion 20 x 20",
+          "sku": "DUXR30312063200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9df961177a6c2a52df3640da3e46e0540409050f.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9df961177a6c2a52df3640da3e46e0540409050f.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069769Z",
+    "updatedAt": "2026-02-06T04:12:56.069772Z"
+  },
+  {
+    "name": "Embudo Vertical 110 Reja Plastica 20 x 20",
+    "description": "",
+    "sku": "DUXR30311110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-vertical-110-reja-plastica-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Vertical 110 Reja Plastica 20 x 20",
+          "sku": "DUXR30311110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/4494fe7e606fb895e2529b627829111b4cca8119.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/4494fe7e606fb895e2529b627829111b4cca8119.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069794Z",
+    "updatedAt": "2026-02-06T04:12:56.069797Z"
+  },
+  {
+    "name": "Embudo Horizontal 110 Reja Plastica 20 x 20",
+    "description": "",
+    "sku": "DUXR30310110200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-horizontal-110-reja-plastica-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Horizontal 110 Reja Plastica 20 x 20",
+          "sku": "DUXR30310110200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/52bd853e8bc2c37bf9da4c2b0905505f7afb7dd2.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/52bd853e8bc2c37bf9da4c2b0905505f7afb7dd2.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069815Z",
+    "updatedAt": "2026-02-06T04:12:56.069818Z"
+  },
+  {
+    "name": "Embudo Horizontal 63 Reja Plastica 20 x 20",
+    "description": "",
+    "sku": "DUXR30310063200",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "embudo-horizontal-63-reja-plastica-20-x-20",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Embudo Horizontal 63 Reja Plastica 20 x 20",
+          "sku": "DUXR30310063200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/fcf9c63d4f893e9f8b0905ab376e182371d95b32.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/fcf9c63d4f893e9f8b0905ab376e182371d95b32.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069835Z",
+    "updatedAt": "2026-02-06T04:12:56.069837Z"
+  },
+  {
+    "name": "Empalme de acceso horizontal",
+    "description": "",
+    "sku": "DUXR30381063250",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "empalme-de-acceso-horizontal",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "EMPALME ACCESO HORIZ. XRS 110X63X50",
+          "sku": "DUXR30381063250",
+          "active": true
+        },
+        {
+          "size": "EMPALME DE ACCESO HORIZONTAL",
+          "sku": "DUXR30381063258",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/824e9e40cadcc07ac6a00904a7c21d861e9ed3f4.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/824e9e40cadcc07ac6a00904a7c21d861e9ed3f4.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069854Z",
+    "updatedAt": "2026-02-06T04:12:56.069856Z"
+  },
+  {
+    "name": "Ramal doble 87° 30' con ventilación",
+    "description": "",
+    "sku": "DUXR30180180110",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-doble-87-30-con-ventilacin",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL DOBLE XRS 87°30 C/VENT 110 X 110",
+          "sku": "DUXR30180180110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/460d2c07d1661912d7ccbbd8030d5901ae4e790d.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/460d2c07d1661912d7ccbbd8030d5901ae4e790d.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069875Z",
+    "updatedAt": "2026-02-06T04:12:56.069877Z"
+  },
+  {
+    "name": "Ramal doble 180° M-H",
+    "description": "",
+    "sku": "DUXR30180110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-doble-180-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL DOBLE XRS 180° M-H 110 X 110",
+          "sku": "DUXR30180110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/daf28405a16129e872d66f54dc49e33a3276cda3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/daf28405a16129e872d66f54dc49e33a3276cda3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069893Z",
+    "updatedAt": "2026-02-06T04:12:56.069895Z"
+  },
+  {
+    "name": "Ramal simple M-H 45°",
+    "description": "",
+    "sku": "DUXR30165050000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-simple-m-h-45",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 50",
+          "sku": "DUXR30165050000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 58 X 58",
+          "sku": "DUXR30165058000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 63 x 63",
+          "sku": "DUXR30165063000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 78 X 78",
+          "sku": "DUXR30165078000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 78 X 58",
+          "sku": "DUXR30165078058",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 110 X 110",
+          "sku": "DUXR30165110000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 110X50",
+          "sku": "DUXR30165110050",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 45° 110 X 58",
+          "sku": "DUXR30165110058",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165110063",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165110078",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165160000",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165160110",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165200110",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H 45°",
+          "sku": "DUXR30165200160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3ecf62afdd004db8711b70beb3e0a499729664c3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3ecf62afdd004db8711b70beb3e0a499729664c3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069936Z",
+    "updatedAt": "2026-02-06T04:12:56.069943Z"
+  },
+  {
+    "name": "Ramal invertido",
+    "description": "",
+    "sku": "DUXR30132110050",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-invertido",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL INVERTIDO XRS 110 X 50",
+          "sku": "DUXR30132110050",
+          "active": true
+        },
+        {
+          "size": "RAMAL INVERTIDO XRS 110 X 58",
+          "sku": "DUXR30132110058",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/61147881824596aa9fb73c00594e8257801cdf85.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/61147881824596aa9fb73c00594e8257801cdf85.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069963Z",
+    "updatedAt": "2026-02-06T04:12:56.069966Z"
+  },
+  {
+    "name": "Ramal simple 87º 30' con ventilación",
+    "description": "",
+    "sku": "DUXR30131110000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-simple-87-30-con-ventilacin",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL SIMPLE 87º30' C/VENTILACION 110x110",
+          "sku": "DUXR30131110000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS 87°30 C/VENT 110 X 63",
+          "sku": "DUXR30131110063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/45182b1cf08cfe1ccf8bfbc4d6f5bf53d851a28b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/45182b1cf08cfe1ccf8bfbc4d6f5bf53d851a28b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.069986Z",
+    "updatedAt": "2026-02-06T04:12:56.069989Z"
+  },
+  {
+    "name": "Ramal simple M-H",
+    "description": "",
+    "sku": "DUXR30130040000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "ramal-simple-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 40 X 40",
+          "sku": "DUXR30130040000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 50 X 50",
+          "sku": "DUXR30130050000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 58 X 58",
+          "sku": "DUXR30130058000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 63 X 63",
+          "sku": "DUXR30130063000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 78 X 78",
+          "sku": "DUXR30130078000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 78 X 58",
+          "sku": "DUXR30130078058",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30´ 110 X 110",
+          "sku": "DUXR30130110000",
+          "active": true
+        },
+        {
+          "size": "RAMAL SIMPLE XRS M-H 87°30 110X50",
+          "sku": "DUXR30130110050",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H",
+          "sku": "DUXR30130110058",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H",
+          "sku": "DUXR30130110063",
+          "active": true
+        },
+        {
+          "size": "Ramal simple M-H",
+          "sku": "DUXR30130110078",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/096a4e5b03f5e0ee0df98df2839f7fdd1a92b0ca.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/096a4e5b03f5e0ee0df98df2839f7fdd1a92b0ca.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070007Z",
+    "updatedAt": "2026-02-06T04:12:56.070010Z"
+  },
+  {
+    "name": "Codo con 3 acometidas ortogonales",
+    "description": "",
+    "sku": "DUXR30097110363",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "codo-con-3-acometidas-ortogonales",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CODO CON 3 ACOMETIDAS ORTOGONALES",
+          "sku": "DUXR30097110363",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9e7ae609c6d94f6e8f9db0aa23c65e1435a07457.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9e7ae609c6d94f6e8f9db0aa23c65e1435a07457.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070027Z",
+    "updatedAt": "2026-02-06T04:12:56.070030Z"
+  },
+  {
+    "name": "Codo 87°30´ M-H",
+    "description": "",
+    "sku": "DUXR30091090040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "codo-8730-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CODO XRS 87°30´ M-H 40",
+          "sku": "DUXR30091090040",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 50",
+          "sku": "DUXR30091090050",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 58",
+          "sku": "DUXR30091090058",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 63",
+          "sku": "DUXR30091090063",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 78",
+          "sku": "DUXR30091090078",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 110",
+          "sku": "DUXR30091090110",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 160",
+          "sku": "DUXR30091090160",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 87°30´ M-H 200",
+          "sku": "DUXR30091090200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/50c0a25907ce321667c88293e21c37452b89a11f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/50c0a25907ce321667c88293e21c37452b89a11f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070050Z",
+    "updatedAt": "2026-02-06T04:12:56.070053Z"
+  },
+  {
+    "name": "Codo 45° M-H",
+    "description": "",
+    "sku": "DUXR30091045040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "codo-45-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CODO XRS 45° M-H 40",
+          "sku": "DUXR30091045040",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 50",
+          "sku": "DUXR30091045050",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 58",
+          "sku": "DUXR30091045058",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 63",
+          "sku": "DUXR30091045063",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 78",
+          "sku": "DUXR30091045078",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 110",
+          "sku": "DUXR30091045110",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 160",
+          "sku": "DUXR30091045160",
+          "active": true
+        },
+        {
+          "size": "CODO XRS 45° M-H 200",
+          "sku": "DUXR30091045200",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3b4506000f6dae126c73c8bfadc004f392ab9ffe.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3b4506000f6dae126c73c8bfadc004f392ab9ffe.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070072Z",
+    "updatedAt": "2026-02-06T04:12:56.070075Z"
+  },
+  {
+    "name": "Reductor Anular",
+    "description": "",
+    "sku": "DUXR30243063050",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "reductor-anular",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REDUCTOR ANULAR XRS M-H 63 X 50",
+          "sku": "DUXR30243063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/7bd11a925570050445e96a32483279510489d225.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/7bd11a925570050445e96a32483279510489d225.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070089Z",
+    "updatedAt": "2026-02-06T04:12:56.070092Z"
+  },
+  {
+    "name": "Reducción Excéntrica Anular",
+    "description": "",
+    "sku": "DUXR30244050040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "reduccin-excntrica-anular",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "REDUCCIÓN EXC ANULAR XRS M-H 50 X 40",
+          "sku": "DUXR30244050040",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXC ANULAR XRS M-H 63 X 40",
+          "sku": "DUXR30244063040",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXC ANULAR XRS M-H 110 X 63",
+          "sku": "DUXR30244110063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/36c88bf6276d6a0f01fec980ba77fefe40bca74d.png",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/36c88bf6276d6a0f01fec980ba77fefe40bca74d.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070111Z",
+    "updatedAt": "2026-02-06T04:12:56.070114Z"
+  },
+  {
+    "name": "Manguito de reparación",
+    "description": "",
+    "sku": "DUXR30341040000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "manguito-de-reparacin",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "MANGUITO DESLIZANTE XRS 40",
+          "sku": "DUXR30341040000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 50",
+          "sku": "DUXR30341050000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 58",
+          "sku": "DUXR30341058000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 63",
+          "sku": "DUXR30341063000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 78",
+          "sku": "DUXR30341078000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 110",
+          "sku": "DUXR30341110000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 160",
+          "sku": "DUXR30341160000",
+          "active": true
+        },
+        {
+          "size": "MANGUITO DESLIZANTE XRS 200",
+          "sku": "DUXR30341200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ebc88d02fe849fe1711e561d7bd58d85f3f4cae8.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ebc88d02fe849fe1711e561d7bd58d85f3f4cae8.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070135Z",
+    "updatedAt": "2026-02-06T04:12:56.070138Z"
+  },
+  {
+    "name": "Cupla",
+    "description": "",
+    "sku": "DUXR30340040000",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "cupla",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "CUPLA XRS 40",
+          "sku": "DUXR30340040000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 50",
+          "sku": "DUXR30340050000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 58",
+          "sku": "DUXR30340058000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 63",
+          "sku": "DUXR30340063000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 78",
+          "sku": "DUXR30340078000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 110",
+          "sku": "DUXR30340110000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 160",
+          "sku": "DUXR30340160000",
+          "active": true
+        },
+        {
+          "size": "CUPLA XRS 200",
+          "sku": "DUXR30340200000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c0c482e7d80155ad5846eb05c1b07189b98b79d2.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c0c482e7d80155ad5846eb05c1b07189b98b79d2.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070155Z",
+    "updatedAt": "2026-02-06T04:12:56.070158Z"
+  },
+  {
+    "name": "Reducción Excéntrica M-H",
+    "description": "",
+    "sku": "DUXR",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "reduccin-excntrica-m-h",
+    "brand": "DURATOP XR",
+    "brandSlug": "duratop-xr",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "Descripción Completa",
+      "variants": [
+        {
+          "size": "Reducción Excéntrica M-H",
+          "sku": "DUXR",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 58 X 40",
+          "sku": "DUXR30242058040",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 63 X 58",
+          "sku": "DUXR30242063058",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 78 X 58",
+          "sku": "DUXR30242078058",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 78 X 63",
+          "sku": "DUXR30242078063",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 78 X 75",
+          "sku": "DUXR30242078075",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 110 X 58",
+          "sku": "DUXR30242110058",
+          "active": true
+        },
+        {
+          "size": "REDUCCIÓN EXCÉNTRICA XRS M-H 110 X 78",
+          "sku": "DUXR30242110078",
+          "active": true
+        },
+        {
+          "size": "Reducción Excéntrica M-H",
+          "sku": "DUXR30242160110",
+          "active": true
+        },
+        {
+          "size": "Reducción Excéntrica M-H",
+          "sku": "DUXR30242200160",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/54922cd636f5b7e5c18793bbf45cb5599b000081.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/54922cd636f5b7e5c18793bbf45cb5599b000081.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T04:12:56.070178Z",
+    "updatedAt": "2026-02-06T04:12:56.070180Z"
+  },
+    {
+      "name": "Tubo Duratop XR 40",
+      "description": "",
+      "sku": "DUXR30100040100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-40",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 40 X 3.0 X 1 M",
+            "sku": "DUXR30100040100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 40 X 3.0 X 3 M",
+            "sku": "DUXR30100040300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 40 X 3.0 X 4 M",
+            "sku": "DUXR30100040400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969055Z",
+      "updatedAt": "2026-02-06T03:36:44.969071Z"
+    },
+    {
+      "name": "Tubo Duratop XR M-H 50",
+      "description": "",
+      "sku": "DUXR30100050100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-especial",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR M-H 50 X 4.0 X 1 M",
+            "sku": "DUXR30100050100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR M-H 50 X 4.0 X 3 M",
+            "sku": "DUXR30100050300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR M-H 50 X 4.0 X 4 M",
+            "sku": "DUXR30100050400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969082Z",
+      "updatedAt": "2026-02-06T03:36:44.969085Z"
+    },
+    {
+      "name": "Tubo Duratop XR 58",
+      "description": "",
+      "sku": "DUXR30100058100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-58",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 58 X 4.0 X 1 M",
+            "sku": "DUXR30100058100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 58 X 4.0 X 3 M",
+            "sku": "DUXR30100058300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 58 X 4.0 X 4 M",
+            "sku": "DUXR30100058400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969093Z",
+      "updatedAt": "2026-02-06T03:36:44.969095Z"
+    },
+    {
+      "name": "Tubo Duratop XR 63",
+      "description": "",
+      "sku": "DUXR30100063100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-63",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 63 X 4.0 X 1 M",
+            "sku": "DUXR30100063100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 63 X 4.0 X 3 M",
+            "sku": "DUXR30100063300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 63 X 4.0 X 4 M",
+            "sku": "DUXR30100063400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969102Z",
+      "updatedAt": "2026-02-06T03:36:44.969104Z"
+    },
+    {
+      "name": "Tubo Duratop XR 78",
+      "description": "",
+      "sku": "DUXR30100078100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-78",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 78 X 4.3 X 1 M",
+            "sku": "DUXR30100078100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 78 X 4.3 X 3 M",
+            "sku": "DUXR30100078300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 78 X 4.3 X 4 M",
+            "sku": "DUXR30100078400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969111Z",
+      "updatedAt": "2026-02-06T03:36:44.969113Z"
+    },
+    {
+      "name": "Tubo Duratop XR 110",
+      "description": "",
+      "sku": "DUXR30100110100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-110",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 110 X 5.3 X 1 M",
+            "sku": "DUXR30100110100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 110 X 5.3 X 3 M",
+            "sku": "DUXR30100110300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 110 X 5.3 X 4 M",
+            "sku": "DUXR30100110400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969120Z",
+      "updatedAt": "2026-02-06T03:36:44.969122Z"
+    },
+    {
+      "name": "Tubo Duratop XR 160",
+      "description": "",
+      "sku": "DUXR30100160100",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-160",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 160 X 5.3 X 1 M",
+            "sku": "DUXR30100160100",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 160 X 5.3 X 3 M",
+            "sku": "DUXR30100160300",
+            "active": true
+          },
+          {
+            "size": "TUBO XR 160 X 5.3 X 4 M",
+            "sku": "DUXR30100160400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969129Z",
+      "updatedAt": "2026-02-06T03:36:44.969131Z"
+    },
+    {
+      "name": "Tubo Duratop XR 200",
+      "description": "",
+      "sku": "DUXR30100200400",
+      "category": "68cda5f5ff392fb2b5d73dbc",
+      "slug": "tubo-duratop-xr-200",
+      "brand": "DURATOP XR",
+      "brandSlug": "duratop-xr",
+      "attributes": [],
+      "specifications": {},
+      "measurements": {
+        "enabled": true,
+        "description": "Medida Completa",
+        "variants": [
+          {
+            "size": "TUBO XR 200 X 6.2 X 4 M",
+            "sku": "DUXR30100200400",
+            "active": true
+          }
+        ]
+      },
+      "colorVariants": [],
+      "defaultImage": "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg",
+      "images": [
+        "https://www.grupodema.com.ar/uploads/documents/5cdf2cca807023e17c5aadff1ab4bd1450f5b650.jpeg"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-02-06T03:36:44.969138Z",
+      "updatedAt": "2026-02-06T03:36:44.969140Z"
+    }
+    ]

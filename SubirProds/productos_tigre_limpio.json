@@ -1,0 +1,2470 @@
+[
+  {
+    "name": "Válvula Esférica",
+    "description": "",
+    "sku": "TIF223289051",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF223289051",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22328913",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328859_llave_de_paso_normal_iso_4.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328859_llave_de_paso_normal_iso_4.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.729909Z",
+    "updatedAt": "2026-02-04T03:07:24.729920Z"
+  },
+  {
+    "name": "Unión Simple",
+    "description": "",
+    "sku": "TIF2232500010",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-simple",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232500010",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22325027",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22325035",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF22325043",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF22325051",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF22325060",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF22325078",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF22325094",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22325205",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22325213",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325000_luva_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325000_luva_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.730170Z",
+    "updatedAt": "2026-02-04T03:07:24.730174Z"
+  },
+  {
+    "name": "Unión Doble Mixta con Brida",
+    "description": "",
+    "sku": "TIFx1.1/4\"223263171",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-mixta-con-brida",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "40",
+          "sku": "TIFx1.1/4\"223263171",
+          "active": true
+        },
+        {
+          "size": "50",
+          "sku": "TIF22326341",
+          "active": true
+        },
+        {
+          "size": "63x2\"",
+          "sku": "TIF22326392",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "TIF22326414",
+          "active": true
+        },
+        {
+          "size": "90x3\"",
+          "sku": "TIF22326457",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22326104",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22326112",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326040_uni_o_dupla_com_parafusos_iso_4.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326040_uni_o_dupla_com_parafusos_iso_4.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.730400Z",
+    "updatedAt": "2026-02-04T03:07:24.730405Z"
+  },
+  {
+    "name": "Unión Doble Mixta",
+    "description": "",
+    "sku": "TIFx1/2\"2232580910",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-mixta",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232580910",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22325825",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22325876",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//c/5/c575bed678de6bdf82bb963448f6b42a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//c/5/c575bed678de6bdf82bb963448f6b42a.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.730638Z",
+    "updatedAt": "2026-02-04T03:07:24.730643Z"
+  },
+  {
+    "name": "Unión Doble con Brida",
+    "description": "",
+    "sku": "TIF223260401",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-con-brida",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "040",
+          "sku": "TIF223260401",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF22326058",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF22326066",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF22326074",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF22326090",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22326210",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22326228",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326040_uni_o_dupla_com_parafusos_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326040_uni_o_dupla_com_parafusos_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.730860Z",
+    "updatedAt": "2026-02-04T03:07:24.730863Z"
+  },
+  {
+    "name": "Tubo PPR3 PN25 IRAM 13470",
+    "description": "",
+    "sku": "TIF1701031025",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-ppr3-pn25-iram-13470",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF1701031025",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF17010336",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF17010352",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF17010379",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF17010395",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF17010417",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF17010433",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF17010450",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/2/e2717792d689f560a2e4509a943acc86.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/2/e2717792d689f560a2e4509a943acc86.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.731066Z",
+    "updatedAt": "2026-02-04T03:07:24.731070Z"
+  },
+  {
+    "name": "Tubo PPR3 PN20 IRAM 13470",
+    "description": "",
+    "sku": "TIF1701001825",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-ppr3-pn20-iram-13470",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF1701001825",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF17010034",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF17010050",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF17010077",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF17010093",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF17010115",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF17010131",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF17010158",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/7/17010018_17010310_17010557_tubo_-_ppr_pn_12_iso_1.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/7/17010018_17010310_17010557_tubo_-_ppr_pn_12_iso_1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.731307Z",
+    "updatedAt": "2026-02-04T03:07:24.731312Z"
+  },
+  {
+    "name": "Tubo PPR3 PN12.5 IRAM 13470",
+    "description": "",
+    "sku": "TIF1701051425",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-ppr3-pn125-iram-13470",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF1701051425",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF17010530",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF17010557",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF17010573",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF17010590",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF17010611",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF17010638",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF17010654",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/7/17010514_tubo_ppr3_pn12.5_iram_13470_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/7/17010514_tubo_ppr3_pn12.5_iram_13470_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.731528Z",
+    "updatedAt": "2026-02-04T03:07:24.731532Z"
+  },
+  {
+    "name": "Tubo Macho Fusión",
+    "description": "",
+    "sku": "TIFx1/2\"2232800010Não",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-macho-fusin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232800010Não",
+          "active": true
+        },
+        {
+          "size": "20",
+          "sku": "TIF22328018",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22328026",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22328034",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22328077",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22328069",
+          "active": true
+        },
+        {
+          "size": "40",
+          "sku": "TIF22328131",
+          "active": true
+        },
+        {
+          "size": "50",
+          "sku": "TIF22328247",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22328352",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "TIF22328468",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328000_conector_macho_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328000_conector_macho_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.732273Z",
+    "updatedAt": "2026-02-04T03:07:24.732292Z"
+  },
+  {
+    "name": "Tubo Hembra Fusión Macho",
+    "description": "",
+    "sku": "TIFx1/2\"2232860310Não",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-hembra-fusin-macho",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232860310Não",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22328638",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22327496_conector_f_mea_iso_6.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22327496_conector_f_mea_iso_6.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.732975Z",
+    "updatedAt": "2026-02-04T03:07:24.732983Z"
+  },
+  {
+    "name": "Tubo Hembra",
+    "description": "",
+    "sku": "TIFx1/2\"2232750010",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-hembra",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232750010",
+          "active": true
+        },
+        {
+          "size": "20",
+          "sku": "TIF22327518",
+          "active": true
+        },
+        {
+          "size": "20",
+          "sku": "TIF22327496",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22327526",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22327534",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22327577",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22327569",
+          "active": true
+        },
+        {
+          "size": "40",
+          "sku": "TIF22327631",
+          "active": true
+        },
+        {
+          "size": "50",
+          "sku": "TIF22327690",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22327755",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22327496_conector_f_mea_iso_1.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22327496_conector_f_mea_iso_1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.733343Z",
+    "updatedAt": "2026-02-04T03:07:24.733349Z"
+  },
+  {
+    "name": "Tubo Con Media Unión",
+    "description": "",
+    "sku": "TIFx1/2\"2232960010",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-con-media-unin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232960010",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22329618",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22329626",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22329669",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/a/aadb6888076faadb828db28c258e1dd7.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/a/aadb6888076faadb828db28c258e1dd7.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.733621Z",
+    "updatedAt": "2026-02-04T03:07:24.733627Z"
+  },
+  {
+    "name": "Tijera Corta Tubos Manual",
+    "description": "",
+    "sku": "TIF374271101",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "tijera-corta-tubos-manual",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20-40",
+          "sku": "TIF374271101",
+          "active": true
+        },
+        {
+          "size": "20-75",
+          "sku": "TIF37433900",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37427110_tesoura_p_tubo_ppr_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37427110_tesoura_p_tubo_ppr_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.733904Z",
+    "updatedAt": "2026-02-04T03:07:24.733909Z"
+  },
+  {
+    "name": "Te Rosca Central Macho",
+    "description": "",
+    "sku": "TIFx1/2\"2232480210",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-rosca-central-macho",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232480210",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22324829",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22324837",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324845",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324853",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22324870",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324802_t_com_rosca_central_macho_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324802_t_com_rosca_central_macho_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.734200Z",
+    "updatedAt": "2026-02-04T03:07:24.734205Z"
+  },
+  {
+    "name": "Te Rosca Central Hembra",
+    "description": "",
+    "sku": "TIFx1/2\"2232450010",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-rosca-central-hembra",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232450010",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22324527",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22324535",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324543",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324551",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22324578",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324500_t_com_rosca_central_f_mea_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324500_t_com_rosca_central_f_mea_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.734483Z",
+    "updatedAt": "2026-02-04T03:07:24.734489Z"
+  },
+  {
+    "name": "Te Reducción Extrema",
+    "description": "",
+    "sku": "TIFx25x202232422510",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-reduccin-extrema",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25",
+          "sku": "TIFx25x202232422510",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324233",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324241",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//4/a/4a55fc3e3d9c967aceff635315a22369.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//4/a/4a55fc3e3d9c967aceff635315a22369.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.734732Z",
+    "updatedAt": "2026-02-04T03:07:24.734737Z"
+  },
+  {
+    "name": "Te Reducción Central",
+    "description": "",
+    "sku": "TIF2232303210",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-reduccin-central",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20",
+          "sku": "TIF2232303210",
+          "active": true
+        },
+        {
+          "size": "32x20",
+          "sku": "TIF22323059",
+          "active": true
+        },
+        {
+          "size": "32x25",
+          "sku": "TIF22323067",
+          "active": true
+        },
+        {
+          "size": "40x25",
+          "sku": "TIF22323253",
+          "active": true
+        },
+        {
+          "size": "40x32",
+          "sku": "TIF22323261",
+          "active": true
+        },
+        {
+          "size": "50x32",
+          "sku": "TIF22323440",
+          "active": true
+        },
+        {
+          "size": "50x40",
+          "sku": "TIF22323458",
+          "active": true
+        },
+        {
+          "size": "63x40",
+          "sku": "TIF22323652",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22323660",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "TIF22323857",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22323032_t_de_redu_o_central_iso_1.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22323032_t_de_redu_o_central_iso_1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.734979Z",
+    "updatedAt": "2026-02-04T03:07:24.734985Z"
+  },
+  {
+    "name": "Te Red. Extrema y Central",
+    "description": "",
+    "sku": "TIFx20x202232432210",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-red-extrema-y-central",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25",
+          "sku": "TIFx20x202232432210",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324365",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324349",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324357",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22324373",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/8/28a29e6b0ca9a9242675cba550009b18.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/8/28a29e6b0ca9a9242675cba550009b18.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.735193Z",
+    "updatedAt": "2026-02-04T03:07:24.735196Z"
+  },
+  {
+    "name": "Te Normal",
+    "description": "",
+    "sku": "TIF2232250810",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-normal",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232250810",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22322524",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22322532",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF22322540",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF22322559",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF22322567",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF22322575",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF22322591",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22322800",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22322613",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322508_t_normal_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322508_t_normal_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.735403Z",
+    "updatedAt": "2026-02-04T03:07:24.735406Z"
+  },
+  {
+    "name": "Te Misturador MH",
+    "description": "",
+    "sku": "TIF2232272910",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-misturador-mh",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232272910",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22322737",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322729_te_misturador_fmm_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322729_te_misturador_fmm_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.735610Z",
+    "updatedAt": "2026-02-04T03:07:24.735615Z"
+  },
+  {
+    "name": "Te Misturador HH",
+    "description": "",
+    "sku": "TIFx1/2\"2232271010",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-misturador-hh",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232271010",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22322702",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322710_t_misturador_fff_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322710_t_misturador_fff_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.735822Z",
+    "updatedAt": "2026-02-04T03:07:24.735825Z"
+  },
+  {
+    "name": "Te a 90° HH Rosca Plastica",
+    "description": "",
+    "sku": "TIFx1/2\"2232490025Não",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-a-90-hh-rosca-plastica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232490025Não",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22324918",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324900_te_a_90_hh_rosca_plastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22324900_te_a_90_hh_rosca_plastica_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.736021Z",
+    "updatedAt": "2026-02-04T03:07:24.736025Z"
+  },
+  {
+    "name": "Tarugo de Reparación",
+    "description": "",
+    "sku": "TIF2232514010",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "tarugo-de-reparacin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "00-",
+          "sku": "TIF2232514010",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325140_tarugo_de_reparacion_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325140_tarugo_de_reparacion_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.736240Z",
+    "updatedAt": "2026-02-04T03:07:24.736244Z"
+  },
+  {
+    "name": "Tapa",
+    "description": "",
+    "sku": "TIF2232550710",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "tapa",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232550710",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22325523",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22325531",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF22325540",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF22325558",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF22325566",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF22325574",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF22325590",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22325116",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22325124",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325507_cap_gua_quente_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22325507_cap_gua_quente_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.736448Z",
+    "updatedAt": "2026-02-04T03:07:24.736452Z"
+  },
+  {
+    "name": "Montura con Derivación",
+    "description": "",
+    "sku": "TIF376455081Não",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "montura-con-derivacin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "63x20",
+          "sku": "TIF376455081Não",
+          "active": true
+        },
+        {
+          "size": "63x25",
+          "sku": "TIF37645516",
+          "active": true
+        },
+        {
+          "size": "63x32",
+          "sku": "TIF37645524",
+          "active": true
+        },
+        {
+          "size": "75x20",
+          "sku": "TIF37660132",
+          "active": true
+        },
+        {
+          "size": "75x25",
+          "sku": "TIF37645540",
+          "active": true
+        },
+        {
+          "size": "75x32",
+          "sku": "TIF37645559",
+          "active": true
+        },
+        {
+          "size": "90x20",
+          "sku": "TIF37660140",
+          "active": true
+        },
+        {
+          "size": "90x25",
+          "sku": "TIF37645575",
+          "active": true
+        },
+        {
+          "size": "90",
+          "sku": "TIF37645583",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF37645486",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//5/0/508b806f759c4d2a523c55f568ac62a0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//5/0/508b806f759c4d2a523c55f568ac62a0.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.736725Z",
+    "updatedAt": "2026-02-04T03:07:24.736730Z"
+  },
+  {
+    "name": "Llave de Paso Pleno",
+    "description": "",
+    "sku": "TIF223289561",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-de-paso-pleno",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF223289561",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22328964",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328956_llave_de_paso_pleno_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328956_llave_de_paso_pleno_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.736961Z",
+    "updatedAt": "2026-02-04T03:07:24.736966Z"
+  },
+  {
+    "name": "Llave de Paso Normal",
+    "description": "",
+    "sku": "TIF223288591",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-de-paso-normal",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF223288591",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22328867",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328859_llave_de_paso_normal_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328859_llave_de_paso_normal_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.737172Z",
+    "updatedAt": "2026-02-04T03:07:24.737176Z"
+  },
+  {
+    "name": "Curva de Sobrepasaje Inyectada",
+    "description": "",
+    "sku": "TIF2232230310",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curva-de-sobrepasaje-inyectada",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232230310",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22322311",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22322320",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/3/936c97381eaa67bed6fcaf0b0f5bee2b.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/3/936c97381eaa67bed6fcaf0b0f5bee2b.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.737429Z",
+    "updatedAt": "2026-02-04T03:07:24.737436Z"
+  },
+  {
+    "name": "Curva de Sobrepasaje",
+    "description": "",
+    "sku": "TIF2232200110",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curva-de-sobrepasaje",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232200110",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22322028",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22322036",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322001_curva_de_transposi_o_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22322001_curva_de_transposi_o_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.737678Z",
+    "updatedAt": "2026-02-04T03:07:24.737684Z"
+  },
+  {
+    "name": "Curva a 90°",
+    "description": "",
+    "sku": "TIF2232170610",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curva-a-90",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232170610",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22321722",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22321730",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321706_curva_90__iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321706_curva_90__iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.737894Z",
+    "updatedAt": "2026-02-04T03:07:24.737917Z"
+  },
+  {
+    "name": "Cupla para Construcción en Seco",
+    "description": "",
+    "sku": "TIFx1/2\"223287005",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cupla-para-construccin-en-seco",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"223287005",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328700_luva_dry_fix_para_dry_wall_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22328700_luva_dry_fix_para_dry_wall_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.738185Z",
+    "updatedAt": "2026-02-04T03:07:24.738191Z"
+  },
+  {
+    "name": "Colector",
+    "description": "",
+    "sku": "TIFx4/20223256041",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "colector",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "32",
+          "sku": "TIFx4/20223256041",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22325612",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22325302",
+          "active": true
+        },
+        {
+          "size": "40",
+          "sku": "TIF22325418",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/e/3e59628dc05f5b836e08a3b134a07e9b.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/e/3e59628dc05f5b836e08a3b134a07e9b.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.738522Z",
+    "updatedAt": "2026-02-04T03:07:24.738527Z"
+  },
+  {
+    "name": "Codo Reducción",
+    "description": "",
+    "sku": "TIF2232950210",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-reduccin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20",
+          "sku": "TIF2232950210",
+          "active": true
+        },
+        {
+          "size": "32x25",
+          "sku": "TIF22329529",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//4/0/40c749cc96d2708cd316482b720401d5.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//4/0/40c749cc96d2708cd316482b720401d5.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.738764Z",
+    "updatedAt": "2026-02-04T03:07:24.738769Z"
+  },
+  {
+    "name": "Codo a 90° Rosca Macho",
+    "description": "",
+    "sku": "TIFx1/2\"2232121810",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-rosca-macho",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232121810",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22321226",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22321234",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22321242",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22321250",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22321269",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321218_joelho_90_com_rosca_macho_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321218_joelho_90_com_rosca_macho_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.738983Z",
+    "updatedAt": "2026-02-04T03:07:24.738987Z"
+  },
+  {
+    "name": "Codo a 90° Rosca Hembra XL",
+    "description": "",
+    "sku": "TIFx1/2\"2232145510",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-rosca-hembra-xl",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232145510",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321455_codo_a_90_rosca_hembra_xl_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321455_codo_a_90_rosca_hembra_xl_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.739177Z",
+    "updatedAt": "2026-02-04T03:07:24.739181Z"
+  },
+  {
+    "name": "Codo a 90° Rosca Hembra Larga",
+    "description": "",
+    "sku": "TIFx1/2\"2232140410",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-rosca-hembra-larga",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232140410",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321404_joelho_90_com_rosca_f_mea_extensa_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321404_joelho_90_com_rosca_f_mea_extensa_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.739374Z",
+    "updatedAt": "2026-02-04T03:07:24.739377Z"
+  },
+  {
+    "name": "Codo a 90° Rosca Hembra",
+    "description": "",
+    "sku": "TIFx1/2\"2232100510",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-rosca-hembra",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"2232100510",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22321021",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22321030",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22321056",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22321048",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22321064",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321005_joelho_90_com_rosca_f_mea_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22321005_joelho_90_com_rosca_f_mea_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.739595Z",
+    "updatedAt": "2026-02-04T03:07:24.739600Z"
+  },
+  {
+    "name": "Codo a 90° MH",
+    "description": "",
+    "sku": "TIF2232090410",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-mh",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232090410",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22320912",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22320920",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/4/74bd25ed84494f9745ee0ab852cbb9b7.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/4/74bd25ed84494f9745ee0ab852cbb9b7.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.739824Z",
+    "updatedAt": "2026-02-04T03:07:24.739828Z"
+  },
+  {
+    "name": "Codo a 90° Con Media Unión",
+    "description": "",
+    "sku": "TIFx1/2\"223213075Sim",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90-con-media-unin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIFx1/2\"223213075Sim",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22321315",
+          "active": true
+        },
+        {
+          "size": "32x1\"",
+          "sku": "TIF22321323",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/0/609bf5dde4cec3af828940f8bdf7d6ac.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/0/609bf5dde4cec3af828940f8bdf7d6ac.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.740043Z",
+    "updatedAt": "2026-02-04T03:07:24.740047Z"
+  },
+  {
+    "name": "Codo a 90°",
+    "description": "",
+    "sku": "TIF2232080710",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232080710",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22320823",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22320831",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF22320840",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF22320858",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF22320866",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF22320874",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF22320890",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22320700",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22320718",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22320807_joelho_90__iso_3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22320807_joelho_90__iso_3.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.740299Z",
+    "updatedAt": "2026-02-04T03:07:24.740305Z"
+  },
+  {
+    "name": "Codo a 45° MH",
+    "description": "",
+    "sku": "TIF2232060210",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-45-mh",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF2232060210",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF22320610",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF22320629",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/6/d6f102e5ee90717a44d811dfa2811ea0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/6/d6f102e5ee90717a44d811dfa2811ea0.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.740514Z",
+    "updatedAt": "2026-02-04T03:07:24.740518Z"
+  },
+  {
+    "name": "Codo a 45°",
+    "description": "",
+    "sku": "TIF2232050510",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-45",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "TIF2232050510",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "TIF22320521",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "TIF22320530",
+          "active": true
+        },
+        {
+          "size": "40",
+          "sku": "TIF22320548",
+          "active": true
+        },
+        {
+          "size": "50",
+          "sku": "TIF22320556",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22320564",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "TIF22320572",
+          "active": true
+        },
+        {
+          "size": "90",
+          "sku": "TIF22320599",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF22320726",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF22320734",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22320505_joelho_45__iso_1.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22320505_joelho_45__iso_1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.740748Z",
+    "updatedAt": "2026-02-04T03:07:24.740755Z"
+  },
+  {
+    "name": "Capuchón Cromado 20/25 MM",
+    "description": "",
+    "sku": "TIF3742905810",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "capuchn-cromado-2025-mm",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20/25",
+          "sku": "TIF3742905810",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37429058_capuchon_cromado_20_25_mm_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37429058_capuchon_cromado_20_25_mm_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.740963Z",
+    "updatedAt": "2026-02-04T03:07:24.740966Z"
+  },
+  {
+    "name": "Campana Cromada 20/25 MM",
+    "description": "",
+    "sku": "TIF3742904010",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "campana-cromada-2025-mm",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20/25",
+          "sku": "TIF3742904010",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37429040_campana_cromada_20_25_mm_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//3/7/37429040_campana_cromada_20_25_mm_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.741167Z",
+    "updatedAt": "2026-02-04T03:07:24.741171Z"
+  },
+  {
+    "name": "Cabezal Llave de Paso 20/25 MM",
+    "description": "",
+    "sku": "TIF3742906610",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cabezal-llave-de-paso-2025-mm",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20/25",
+          "sku": "TIF3742906610",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/5/e5fb46f59b176962bb2884480e411a47.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/5/e5fb46f59b176962bb2884480e411a47.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.741446Z",
+    "updatedAt": "2026-02-04T03:07:24.741452Z"
+  },
+  {
+    "name": "Buje de Reducción Plano",
+    "description": "",
+    "sku": "TIF2232931625",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "buje-de-reduccin-plano",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20",
+          "sku": "TIF2232931625",
+          "active": true
+        },
+        {
+          "size": "32x20",
+          "sku": "TIF22329332",
+          "active": true
+        },
+        {
+          "size": "32x25",
+          "sku": "TIF22329324",
+          "active": true
+        },
+        {
+          "size": "40x25",
+          "sku": "TIF22329359",
+          "active": true
+        },
+        {
+          "size": "40x32",
+          "sku": "TIF22329340",
+          "active": true
+        },
+        {
+          "size": "50x25",
+          "sku": "TIF22329367",
+          "active": true
+        },
+        {
+          "size": "50x32",
+          "sku": "TIF22329375",
+          "active": true
+        },
+        {
+          "size": "50x40",
+          "sku": "TIF22329383",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22329391",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22329405",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22329308_buje_de_reduccion_plano_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22329308_buje_de_reduccion_plano_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.742011Z",
+    "updatedAt": "2026-02-04T03:07:24.742018Z"
+  },
+  {
+    "name": "Buje de Reducción",
+    "description": "",
+    "sku": "TIF2232652010Não",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "buje-de-reduccin",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "25x20",
+          "sku": "TIF2232652010Não",
+          "active": true
+        },
+        {
+          "size": "32x20",
+          "sku": "TIF22326554",
+          "active": true
+        },
+        {
+          "size": "32x25",
+          "sku": "TIF22326562",
+          "active": true
+        },
+        {
+          "size": "40x25",
+          "sku": "TIF22326724",
+          "active": true
+        },
+        {
+          "size": "40x32",
+          "sku": "TIF22326732",
+          "active": true
+        },
+        {
+          "size": "50x32",
+          "sku": "TIF22326830",
+          "active": true
+        },
+        {
+          "size": "50x40",
+          "sku": "TIF22326848",
+          "active": true
+        },
+        {
+          "size": "63x40",
+          "sku": "TIF22326945",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "TIF22326953",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "TIF22327054",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326520_bucha_de_redu_o_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/2/22326520_bucha_de_redu_o_iso.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.742365Z",
+    "updatedAt": "2026-02-04T03:07:24.742371Z"
+  },
+  {
+    "name": "KIT BARRAM N/T QD DIST 27/36 DISJ",
+    "description": "",
+    "sku": "TIF374482731",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "kit-barram-nt-qd-dist-2736-disj",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "020",
+          "sku": "TIF374482731",
+          "active": true
+        },
+        {
+          "size": "025",
+          "sku": "TIF37448281",
+          "active": true
+        },
+        {
+          "size": "032",
+          "sku": "TIF37448290",
+          "active": true
+        },
+        {
+          "size": "040",
+          "sku": "TIF37448303",
+          "active": true
+        },
+        {
+          "size": "050",
+          "sku": "TIF37448311",
+          "active": true
+        },
+        {
+          "size": "063",
+          "sku": "TIF37448320",
+          "active": true
+        },
+        {
+          "size": "075",
+          "sku": "TIF37448338",
+          "active": true
+        },
+        {
+          "size": "090",
+          "sku": "TIF37448346",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "TIF37448354",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "TIF37448362",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/b/ebe5af4b9f9d6a22427557d82e967075.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/b/ebe5af4b9f9d6a22427557d82e967075.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-04T03:07:24.742636Z",
+    "updatedAt": "2026-02-04T03:07:24.742641Z"
+  }
+]

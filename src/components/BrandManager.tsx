@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit, Trash2, Save, X, Tag } from 'lucide-react';
+import { Plus, Edit, Trash2, Save, X, Tag, CheckCircle, AlertCircle } from 'lucide-react';
 import Notice from '@/components/ui/Notice';
 
 interface Brand {
@@ -25,6 +25,7 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [brandToDelete, setBrandToDelete] = useState<Brand | null>(null);
+  const [resultModal, setResultModal] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
 
   useEffect(() => {
     fetchBrands();
@@ -131,17 +132,21 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
       });
 
       if (response.ok) {
-        setNotice({ type: 'success', message: 'Marca eliminada correctamente.' });
         setShowDeleteModal(false);
         setBrandToDelete(null);
-        fetchBrands();
+        await fetchBrands();
+        setResultModal({ type: 'success', message: 'La marca ha sido eliminada correctamente.' });
       } else {
         const errorData = await response.json().catch(() => ({}));
-        setNotice({ type: 'error', message: errorData.error || 'Error eliminando marca.' });
+        setShowDeleteModal(false);
+        setBrandToDelete(null);
+        setResultModal({ type: 'error', message: errorData.error || 'Error al eliminar la marca.' });
       }
     } catch (error) {
       console.error('Error eliminando marca:', error);
-      setNotice({ type: 'error', message: 'Error eliminando marca.' });
+      setShowDeleteModal(false);
+      setBrandToDelete(null);
+      setResultModal({ type: 'error', message: 'Error al eliminar la marca.' });
     } finally {
       setIsDeleting(false);
     }
@@ -333,6 +338,33 @@ const BrandManager: React.FC<BrandManagerProps> = () => {
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de resultado (éxito o error) */}
+      {resultModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-sm w-full p-6 text-center">
+            {resultModal.type === 'success' ? (
+              <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
+            ) : (
+              <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
+            )}
+            <p className={`text-sm font-medium ${resultModal.type === 'success' ? 'text-gray-900' : 'text-red-700'}`}>
+              {resultModal.message}
+            </p>
+            <button
+              type="button"
+              onClick={() => setResultModal(null)}
+              className={`mt-5 w-full px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                resultModal.type === 'success'
+                  ? 'bg-green-600 text-white hover:bg-green-700'
+                  : 'bg-red-600 text-white hover:bg-red-700'
+              }`}
+            >
+              Aceptar
+            </button>
           </div>
         </div>
       )}

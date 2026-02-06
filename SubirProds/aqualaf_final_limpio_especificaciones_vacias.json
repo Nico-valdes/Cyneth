@@ -1,0 +1,5452 @@
+[
+  {
+    "name": "Cocina sobremesada Lacar",
+    "description": "",
+    "sku": "AQU29001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-lacar",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LACAR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/29001-LACAR-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/29001-LACAR-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.239796Z",
+    "updatedAt": "2026-02-06T05:12:23.239813Z"
+  },
+  {
+    "name": "Cocina exterior pico U Lacar",
+    "description": "",
+    "sku": "AQU29002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-lacar",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LACAR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/29002-LACAR-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/29002-LACAR-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.239949Z",
+    "updatedAt": "2026-02-06T05:12:23.239952Z"
+  },
+  {
+    "name": "Cocina embutir pico U Lacar",
+    "description": "",
+    "sku": "AQU29003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-lacar",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LACAR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/29003-LACAR-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/29003-LACAR-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240072Z",
+    "updatedAt": "2026-02-06T05:12:23.240076Z"
+  },
+  {
+    "name": "Cocina embutir pico S Lacar",
+    "description": "",
+    "sku": "AQU29005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-lacar",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LACAR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/29005-LACAR-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/29005-LACAR-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240189Z",
+    "updatedAt": "2026-02-06T05:12:23.240191Z"
+  },
+  {
+    "name": "Cocina exterior pico S Lacar",
+    "description": "",
+    "sku": "AQU29006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-lacar",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LACAR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/29006-LACAR-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/29006-LACAR-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240310Z",
+    "updatedAt": "2026-02-06T05:12:23.240316Z"
+  },
+  {
+    "name": "Cocina sobremesada Aukan lever",
+    "description": "",
+    "sku": "AQU9001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9001-AUKAN-LEVER-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9001-AUKAN-LEVER-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240468Z",
+    "updatedAt": "2026-02-06T05:12:23.240471Z"
+  },
+  {
+    "name": "Cocina exterior pico U Aukan lever",
+    "description": "",
+    "sku": "AQU9002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9002-AUKAN-LEVER-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9002-AUKAN-LEVER-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240592Z",
+    "updatedAt": "2026-02-06T05:12:23.240595Z"
+  },
+  {
+    "name": "Cocina embutir pico U Aukan lever",
+    "description": "",
+    "sku": "AQU9003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9003-AUKAN-LEVER-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9003-AUKAN-LEVER-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240708Z",
+    "updatedAt": "2026-02-06T05:12:23.240711Z"
+  },
+  {
+    "name": "Cocina embutir pico S Aukan lever",
+    "description": "",
+    "sku": "AQU9005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9005-AUKAN-LEVER-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9005-AUKAN-LEVER-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240828Z",
+    "updatedAt": "2026-02-06T05:12:23.240831Z"
+  },
+  {
+    "name": "Cocina exterior pico S Aukan lever",
+    "description": "",
+    "sku": "AQU9006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9006-AUKAN-LEVER-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9006-AUKAN-LEVER-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.240949Z",
+    "updatedAt": "2026-02-06T05:12:23.240952Z"
+  },
+  {
+    "name": "Cocina sobremesada Liwen",
+    "description": "",
+    "sku": "AQU6001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6001-LIWEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6001-LIWEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241062Z",
+    "updatedAt": "2026-02-06T05:12:23.241065Z"
+  },
+  {
+    "name": "Cocina exterior pico U Liwen",
+    "description": "",
+    "sku": "AQU6002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6002-LIWEN-c-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6002-LIWEN-c-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241173Z",
+    "updatedAt": "2026-02-06T05:12:23.241176Z"
+  },
+  {
+    "name": "Cocina embutir pico U Liwen",
+    "description": "",
+    "sku": "AQU6003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6003-LIWEN-c-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6003-LIWEN-c-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241343Z",
+    "updatedAt": "2026-02-06T05:12:23.241350Z"
+  },
+  {
+    "name": "Cocina embutir pico S Liwen",
+    "description": "",
+    "sku": "AQU6005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6005-LIWEN-d-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6005-LIWEN-d-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241490Z",
+    "updatedAt": "2026-02-06T05:12:23.241493Z"
+  },
+  {
+    "name": "Cocina exterior pico S Liwen",
+    "description": "",
+    "sku": "AQU6006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6006-LIWEN-c-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6006-LIWEN-c-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241609Z",
+    "updatedAt": "2026-02-06T05:12:23.241612Z"
+  },
+  {
+    "name": "Cocina exterior pico J Liwen",
+    "description": "",
+    "sku": "AQU6007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6007-LIWEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6007-LIWEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241723Z",
+    "updatedAt": "2026-02-06T05:12:23.241726Z"
+  },
+  {
+    "name": "Cocina sobremesada Huilen",
+    "description": "",
+    "sku": "AQU12001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12001-HUILEN-c-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12001-HUILEN-c-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.241893Z",
+    "updatedAt": "2026-02-06T05:12:23.241899Z"
+  },
+  {
+    "name": "Cocina exterior pico U Huilen",
+    "description": "",
+    "sku": "AQU12002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12002-HUILEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12002-HUILEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242022Z",
+    "updatedAt": "2026-02-06T05:12:23.242025Z"
+  },
+  {
+    "name": "Cocina embutir pico U Huilen",
+    "description": "",
+    "sku": "AQU12003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12003-HUILEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12003-HUILEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242138Z",
+    "updatedAt": "2026-02-06T05:12:23.242141Z"
+  },
+  {
+    "name": "Cocina embutir pico S Huilen",
+    "description": "",
+    "sku": "AQU12005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12005-HUILEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12005-HUILEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242249Z",
+    "updatedAt": "2026-02-06T05:12:23.242252Z"
+  },
+  {
+    "name": "Cocina exterior pico S Huilen",
+    "description": "",
+    "sku": "AQU12006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12006-HUILEN-a-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12006-HUILEN-a-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242396Z",
+    "updatedAt": "2026-02-06T05:12:23.242401Z"
+  },
+  {
+    "name": "Cocina exterior Pico J Huilen",
+    "description": "",
+    "sku": "AQU12007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12007-HUILEN-c-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12007-HUILEN-c-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242532Z",
+    "updatedAt": "2026-02-06T05:12:23.242536Z"
+  },
+  {
+    "name": "Cocina sobremesada Domo Classic",
+    "description": "",
+    "sku": "AQU28001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28001-DOMO-CLASSIC-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28001-DOMO-CLASSIC-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242651Z",
+    "updatedAt": "2026-02-06T05:12:23.242654Z"
+  },
+  {
+    "name": "Cocina exterior pico U Domo Classic",
+    "description": "",
+    "sku": "AQU28002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28002-DOMO-CLASSIC-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28002-DOMO-CLASSIC-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242764Z",
+    "updatedAt": "2026-02-06T05:12:23.242767Z"
+  },
+  {
+    "name": "Cocina embutir pico U Domo Classic",
+    "description": "",
+    "sku": "AQU28003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28003-DOMO-CLASSIC-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28003-DOMO-CLASSIC-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242880Z",
+    "updatedAt": "2026-02-06T05:12:23.242883Z"
+  },
+  {
+    "name": "Cocina embutir pico S Domo Classic",
+    "description": "",
+    "sku": "AQU28005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28005-DOMO-CLASSIC-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28005-DOMO-CLASSIC-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.242992Z",
+    "updatedAt": "2026-02-06T05:12:23.242995Z"
+  },
+  {
+    "name": "Cocina exterior pico S Domo Classic",
+    "description": "",
+    "sku": "AQU28006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28006-DOMO-CLASSIC-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28006-DOMO-CLASSIC-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243101Z",
+    "updatedAt": "2026-02-06T05:12:23.243104Z"
+  },
+  {
+    "name": "Cocina exterior pico J Domo Classic",
+    "description": "",
+    "sku": "AQU28007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28007-DOMO-COCINA-EXT-PICO-J.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28007-DOMO-COCINA-EXT-PICO-J.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243209Z",
+    "updatedAt": "2026-02-06T05:12:23.243212Z"
+  },
+  {
+    "name": "Cocina sobremesada AQ7000",
+    "description": "",
+    "sku": "AQU19001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19001-AQ7000-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19001-AQ7000-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243341Z",
+    "updatedAt": "2026-02-06T05:12:23.243346Z"
+  },
+  {
+    "name": "Cocina exterior Pico U AQ7000",
+    "description": "",
+    "sku": "AQU19002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19002-AQ7000-PICO-U-EXTERIOR-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19002-AQ7000-PICO-U-EXTERIOR-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243487Z",
+    "updatedAt": "2026-02-06T05:12:23.243490Z"
+  },
+  {
+    "name": "Cocina embutir pico U AQ7000",
+    "description": "",
+    "sku": "AQU19003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19003-AQ7000-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19003-AQ7000-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243606Z",
+    "updatedAt": "2026-02-06T05:12:23.243609Z"
+  },
+  {
+    "name": "Cocina embutir pico S AQ7000",
+    "description": "",
+    "sku": "AQU19005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19005-AQ7000-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19005-AQ7000-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243719Z",
+    "updatedAt": "2026-02-06T05:12:23.243722Z"
+  },
+  {
+    "name": "Cocina exterior pico S AQ7000",
+    "description": "",
+    "sku": "AQU19006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19006-AQ7000-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19006-AQ7000-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243833Z",
+    "updatedAt": "2026-02-06T05:12:23.243836Z"
+  },
+  {
+    "name": "Cocina exterior pico alto AQ7000",
+    "description": "",
+    "sku": "AQU19007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-alto-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19007-AQ7000-COCINA-EXT-PICO-J.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19007-AQ7000-COCINA-EXT-PICO-J.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.243948Z",
+    "updatedAt": "2026-02-06T05:12:23.243951Z"
+  },
+  {
+    "name": "Cocina sobremesada AQ6000",
+    "description": "",
+    "sku": "AQU5001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5001-AQ6000-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5001-AQ6000-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244060Z",
+    "updatedAt": "2026-02-06T05:12:23.244064Z"
+  },
+  {
+    "name": "Cocina exterior pico U AQ6000",
+    "description": "",
+    "sku": "AQU5002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5002-AQ6000-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5002-AQ6000-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244170Z",
+    "updatedAt": "2026-02-06T05:12:23.244173Z"
+  },
+  {
+    "name": "Cocina embutir pico U AQ6000",
+    "description": "",
+    "sku": "AQU5003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5003-AQ6000-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5003-AQ6000-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244277Z",
+    "updatedAt": "2026-02-06T05:12:23.244280Z"
+  },
+  {
+    "name": "Cocina embutir pico S AQ6000",
+    "description": "",
+    "sku": "AQU5005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5005-AQ6000-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5005-AQ6000-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244433Z",
+    "updatedAt": "2026-02-06T05:12:23.244439Z"
+  },
+  {
+    "name": "Cocina exterior pico S AQ6000",
+    "description": "",
+    "sku": "AQU5006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5006-AQ6000-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5006-AQ6000-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244560Z",
+    "updatedAt": "2026-02-06T05:12:23.244563Z"
+  },
+  {
+    "name": "cocina exterior pico J AQ6000",
+    "description": "",
+    "sku": "AQU5007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5007-AQ6000-COCINA-EXT-PICO-J.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5007-AQ6000-COCINA-EXT-PICO-J.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244679Z",
+    "updatedAt": "2026-02-06T05:12:23.244683Z"
+  },
+  {
+    "name": "Cocina sobremesada AQ4000",
+    "description": "",
+    "sku": "AQU33001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aq4000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ4000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/33001-AQ4000-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/33001-AQ4000-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244794Z",
+    "updatedAt": "2026-02-06T05:12:23.244797Z"
+  },
+  {
+    "name": "Cocina exterior pico J AQ4000",
+    "description": "",
+    "sku": "AQU33007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-aq4000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ4000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/33007-AQ4000-COCINA-EXT-PICO-J.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/33007-AQ4000-COCINA-EXT-PICO-J.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.244910Z",
+    "updatedAt": "2026-02-06T05:12:23.244913Z"
+  },
+  {
+    "name": "Cocina sobremesada Itati cruz",
+    "description": "",
+    "sku": "AQU1001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1001-ITATI-CRUZ-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1001-ITATI-CRUZ-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245022Z",
+    "updatedAt": "2026-02-06T05:12:23.245025Z"
+  },
+  {
+    "name": "Cocina exterior pico U Itati cruz",
+    "description": "",
+    "sku": "AQU1002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1002-ITATI-CRUZ-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1002-ITATI-CRUZ-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245132Z",
+    "updatedAt": "2026-02-06T05:12:23.245134Z"
+  },
+  {
+    "name": "Cocina embutir pico U Itati cuz",
+    "description": "",
+    "sku": "AQU1003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-itati-cuz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1003-ITATI-CRUZ-COCINA-EMBUT-PICO-U.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1003-ITATI-CRUZ-COCINA-EMBUT-PICO-U.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245242Z",
+    "updatedAt": "2026-02-06T05:12:23.245245Z"
+  },
+  {
+    "name": "Cocina embutir pico S Itati cruz",
+    "description": "",
+    "sku": "AQU1005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1005-ITATI-CRUZ-COCINA-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1005-ITATI-CRUZ-COCINA-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245392Z",
+    "updatedAt": "2026-02-06T05:12:23.245397Z"
+  },
+  {
+    "name": "Cocina exterior pico S Itati cruz",
+    "description": "",
+    "sku": "AQU1006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1006-ITATI-CRUZPICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1006-ITATI-CRUZPICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245533Z",
+    "updatedAt": "2026-02-06T05:12:23.245536Z"
+  },
+  {
+    "name": "Cocina sobremesada Itati lever",
+    "description": "",
+    "sku": "AQU2001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2001-ITATI-LEVER-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2001-ITATI-LEVER-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245653Z",
+    "updatedAt": "2026-02-06T05:12:23.245656Z"
+  },
+  {
+    "name": "Cocina exterior pico U Itati lever",
+    "description": "",
+    "sku": "AQU2002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2002-ITATI-LEVER-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2002-ITATI-LEVER-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245770Z",
+    "updatedAt": "2026-02-06T05:12:23.245773Z"
+  },
+  {
+    "name": "Cocina embutir pico U Itati lever",
+    "description": "",
+    "sku": "AQU2003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2003-ITATI-LEVER-COCINA-EMBUT-PICO-U.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2003-ITATI-LEVER-COCINA-EMBUT-PICO-U.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245882Z",
+    "updatedAt": "2026-02-06T05:12:23.245885Z"
+  },
+  {
+    "name": "Cocina embutir pico S Itati lever",
+    "description": "",
+    "sku": "AQU2005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2005-ITATI-LEVER-COCINA-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2005-ITATI-LEVER-COCINA-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.245993Z",
+    "updatedAt": "2026-02-06T05:12:23.245995Z"
+  },
+  {
+    "name": "Cocina exterior pico S Itati lever",
+    "description": "",
+    "sku": "AQU2006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2006-ITATI-LEVER-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2006-ITATI-LEVER-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246103Z",
+    "updatedAt": "2026-02-06T05:12:23.246106Z"
+  },
+  {
+    "name": "Cocina sobremesada Domo",
+    "description": "",
+    "sku": "AQU21001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-domo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/21001-DOMO-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/21001-DOMO-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246213Z",
+    "updatedAt": "2026-02-06T05:12:23.246216Z"
+  },
+  {
+    "name": "Cocina exterior pico U Domo",
+    "description": "",
+    "sku": "AQU21002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-domo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/21002-DOMO-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/21002-DOMO-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246348Z",
+    "updatedAt": "2026-02-06T05:12:23.246354Z"
+  },
+  {
+    "name": "Cocina embutir pico U Domo",
+    "description": "",
+    "sku": "AQU21003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-domo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/21003-DOMO-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/21003-DOMO-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246492Z",
+    "updatedAt": "2026-02-06T05:12:23.246495Z"
+  },
+  {
+    "name": "Cocina embutir pico S Domo",
+    "description": "",
+    "sku": "AQU21005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-domo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/21005-DOMO-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/21005-DOMO-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246616Z",
+    "updatedAt": "2026-02-06T05:12:23.246619Z"
+  },
+  {
+    "name": "Cocina exterior pico S Domo",
+    "description": "",
+    "sku": "AQU21006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-domo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/21006-DOMO-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/21006-DOMO-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246728Z",
+    "updatedAt": "2026-02-06T05:12:23.246731Z"
+  },
+  {
+    "name": "Cocina sobremesada Aymara lever",
+    "description": "",
+    "sku": "AQU30001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aymara-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AYMARA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/30001-AYMARA-LEVER-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/30001-AYMARA-LEVER-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246843Z",
+    "updatedAt": "2026-02-06T05:12:23.246846Z"
+  },
+  {
+    "name": "Cocina exterior pico U Aymara lever",
+    "description": "",
+    "sku": "AQU30002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aymara-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AYMARA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/30002-AYMARA-LEVER-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/30002-AYMARA-LEVER-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.246955Z",
+    "updatedAt": "2026-02-06T05:12:23.246958Z"
+  },
+  {
+    "name": "Cocina embutir pico U Aymara lever",
+    "description": "",
+    "sku": "AQU30003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aymara-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AYMARA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/30003-AYMARA-LEVER-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/30003-AYMARA-LEVER-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247064Z",
+    "updatedAt": "2026-02-06T05:12:23.247067Z"
+  },
+  {
+    "name": "Cocina embutir pico S Aymara lever",
+    "description": "",
+    "sku": "AQU30005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aymara-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AYMARA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/30005-AYMARA-LEVER-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/30005-AYMARA-LEVER-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247173Z",
+    "updatedAt": "2026-02-06T05:12:23.247176Z"
+  },
+  {
+    "name": "Cocina exterior pico S Aymara lever",
+    "description": "",
+    "sku": "AQU30006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aymara-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AYMARA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/30006-AYMARA-LEVER-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/30006-AYMARA-LEVER-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247282Z",
+    "updatedAt": "2026-02-06T05:12:23.247285Z"
+  },
+  {
+    "name": "Cocina sobremesada Cuyen",
+    "description": "",
+    "sku": "AQU8001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8001-CUYEN-COCINA-DE-SOBREMESADA-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8001-CUYEN-COCINA-DE-SOBREMESADA-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247440Z",
+    "updatedAt": "2026-02-06T05:12:23.247445Z"
+  },
+  {
+    "name": "Cocina exterior pico U Cuyen",
+    "description": "",
+    "sku": "AQU8002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8002-CUYEN-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8002-CUYEN-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247564Z",
+    "updatedAt": "2026-02-06T05:12:23.247567Z"
+  },
+  {
+    "name": "Cocina embutir pico U Cuyen",
+    "description": "",
+    "sku": "AQU8003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8003-CUYEN-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8003-CUYEN-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247676Z",
+    "updatedAt": "2026-02-06T05:12:23.247679Z"
+  },
+  {
+    "name": "Cocina embutir pico S Cuyen",
+    "description": "",
+    "sku": "AQU8005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8005-CUYEN-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8005-CUYEN-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247786Z",
+    "updatedAt": "2026-02-06T05:12:23.247789Z"
+  },
+  {
+    "name": "Cocina exterior pico S Cuyen",
+    "description": "",
+    "sku": "AQU8006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8006-CUYEN-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8006-CUYEN-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.247902Z",
+    "updatedAt": "2026-02-06T05:12:23.247905Z"
+  },
+  {
+    "name": "Cocina sobremesada Aruma lever",
+    "description": "",
+    "sku": "AQU4001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4001-ARUMA-LEVER-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4001-ARUMA-LEVER-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248013Z",
+    "updatedAt": "2026-02-06T05:12:23.248016Z"
+  },
+  {
+    "name": "Cocina exterior pico U Aruma lever",
+    "description": "",
+    "sku": "AQU4002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4002-ARUMA-LEVER-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4002-ARUMA-LEVER-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248124Z",
+    "updatedAt": "2026-02-06T05:12:23.248126Z"
+  },
+  {
+    "name": "Cocina embutir pico U Aruma lever",
+    "description": "",
+    "sku": "AQU4003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4003-ARUMA-LEVER-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4003-ARUMA-LEVER-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248234Z",
+    "updatedAt": "2026-02-06T05:12:23.248237Z"
+  },
+  {
+    "name": "Cocina embutir pico S Aruma lever",
+    "description": "",
+    "sku": "AQU4005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4005-ARUMA-LEVER-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4005-ARUMA-LEVER-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248376Z",
+    "updatedAt": "2026-02-06T05:12:23.248381Z"
+  },
+  {
+    "name": "Cocina exterior pico S Aruma lever",
+    "description": "",
+    "sku": "AQU4006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4006-ARUMA-LEVER-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4006-ARUMA-LEVER-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248516Z",
+    "updatedAt": "2026-02-06T05:12:23.248519Z"
+  },
+  {
+    "name": "Cocina sobremesada Aruma cruz",
+    "description": "",
+    "sku": "AQU3001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3001-ARUMA-CRUZ-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3001-ARUMA-CRUZ-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248635Z",
+    "updatedAt": "2026-02-06T05:12:23.248638Z"
+  },
+  {
+    "name": "Cocina exterior pico U Aruma cruz",
+    "description": "",
+    "sku": "AQU3002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3002-ARUMA-CRUZ-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3002-ARUMA-CRUZ-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248749Z",
+    "updatedAt": "2026-02-06T05:12:23.248752Z"
+  },
+  {
+    "name": "Cocina embutir pico U Aruma cruz",
+    "description": "",
+    "sku": "AQU3003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3003-ARUMA-CRUZ-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3003-ARUMA-CRUZ-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248865Z",
+    "updatedAt": "2026-02-06T05:12:23.248868Z"
+  },
+  {
+    "name": "Cocina embutir pico S Aruma cruz",
+    "description": "",
+    "sku": "AQU3005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3005-ARUMA-CRUZ-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3005-ARUMA-CRUZ-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.248977Z",
+    "updatedAt": "2026-02-06T05:12:23.248980Z"
+  },
+  {
+    "name": "Cocina exterior pico S Aruma cruz",
+    "description": "",
+    "sku": "AQU3006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3006-ARUMA-CRUZ-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3006-ARUMA-CRUZ-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249085Z",
+    "updatedAt": "2026-02-06T05:12:23.249088Z"
+  },
+  {
+    "name": "Cocina sobremesada Mailén",
+    "description": "",
+    "sku": "AQU16001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-mailn",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16001-MAILEN-COCINA-DE-SOBREMESADA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16001-MAILEN-COCINA-DE-SOBREMESADA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249202Z",
+    "updatedAt": "2026-02-06T05:12:23.249206Z"
+  },
+  {
+    "name": "Cocina exterior pico U Mailén",
+    "description": "",
+    "sku": "AQU16002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-mailn",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16002-MAILEN-PICO-U-EXTERIOR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16002-MAILEN-PICO-U-EXTERIOR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249344Z",
+    "updatedAt": "2026-02-06T05:12:23.249349Z"
+  },
+  {
+    "name": "Cocina embutir pico U Mailén",
+    "description": "",
+    "sku": "AQU16003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-u-mailn",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16003-MAILEN-PICO-U-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16003-MAILEN-PICO-U-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249489Z",
+    "updatedAt": "2026-02-06T05:12:23.249492Z"
+  },
+  {
+    "name": "Cocina embutir pico S Mailén",
+    "description": "",
+    "sku": "AQU16005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-embutir-pico-s-mailn",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16005-MAILEN-PICO-S-DE-EMBUTIR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16005-MAILEN-PICO-S-DE-EMBUTIR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249608Z",
+    "updatedAt": "2026-02-06T05:12:23.249610Z"
+  },
+  {
+    "name": "Cocina exterior pico S Mailén",
+    "description": "",
+    "sku": "AQU16006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-s-mailn",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16006-MAILEN-PICO-S-EXT.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16006-MAILEN-PICO-S-EXT.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249723Z",
+    "updatedAt": "2026-02-06T05:12:23.249726Z"
+  },
+  {
+    "name": "Cocina sobremesada Aluminé",
+    "description": "",
+    "sku": "AQU56004",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2d_01_00002_raw.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2d_01_00002_raw.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249836Z",
+    "updatedAt": "2026-02-06T05:12:23.249839Z"
+  },
+  {
+    "name": "Cocina sobremesada con rotula Aluminé",
+    "description": "",
+    "sku": "AQU56004RT",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-con-rotula-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/56004RT-alumine-sobremesada-con-rotula-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/56004RT-alumine-sobremesada-con-rotula-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.249949Z",
+    "updatedAt": "2026-02-06T05:12:23.249952Z"
+  },
+  {
+    "name": "Cocina cisne Aluminé",
+    "description": "",
+    "sku": "AQU56005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/56005-alumine-cisne-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/56005-alumine-cisne-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250059Z",
+    "updatedAt": "2026-02-06T05:12:23.250062Z"
+  },
+  {
+    "name": "Cocina cisne con rotula Aluminé",
+    "description": "",
+    "sku": "AQU56005RT",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-con-rotula-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/56005RT-alumine-cisne-con-rotula-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/56005RT-alumine-cisne-con-rotula-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250170Z",
+    "updatedAt": "2026-02-06T05:12:23.250172Z"
+  },
+  {
+    "name": "Cocina sobremesada cook Aluminé",
+    "description": "",
+    "sku": "AQU56006",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-cook-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2d_01_00001_raw-4.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2d_01_00001_raw-4.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250278Z",
+    "updatedAt": "2026-02-06T05:12:23.250281Z"
+  },
+  {
+    "name": "Cocina pared pico alto Aluminé",
+    "description": "",
+    "sku": "AQU56007",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-pared-pico-alto-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-alumine-cocina-56007-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-alumine-cocina-56007-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250438Z",
+    "updatedAt": "2026-02-06T05:12:23.250443Z"
+  },
+  {
+    "name": "Cocina sobremesada Alhue",
+    "description": "",
+    "sku": "AQU18004",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-alhue",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALHUÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/18004-alhue-sobremesada.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/18004-alhue-sobremesada.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250565Z",
+    "updatedAt": "2026-02-06T05:12:23.250568Z"
+  },
+  {
+    "name": "Cocina cisne Alhue",
+    "description": "",
+    "sku": "AQU18005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-alhue",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALHUÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/18005-alhue-cisne.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/18005-alhue-cisne.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250679Z",
+    "updatedAt": "2026-02-06T05:12:23.250682Z"
+  },
+  {
+    "name": "Cocina cisne con rotula Alhue",
+    "description": "",
+    "sku": "AQU18005RT",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-con-rotula-alhue",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALHUÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Alhue-18005RT-cisne-con-rotulaWEB.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Alhue-18005RT-cisne-con-rotulaWEB.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250791Z",
+    "updatedAt": "2026-02-06T05:12:23.250795Z"
+  },
+  {
+    "name": "Cocina de pared Spot",
+    "description": "",
+    "sku": "AQU31002",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-de-pared-spot",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "SPOT"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/31002-SPOT-COCINA-DE-PARED-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/31002-SPOT-COCINA-DE-PARED-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.250908Z",
+    "updatedAt": "2026-02-06T05:12:23.250912Z"
+  },
+  {
+    "name": "Cocina sobremesada Samara",
+    "description": "",
+    "sku": "AQU58005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-samara",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "SAMARA"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-samara-58005.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-samara-58005.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251066Z",
+    "updatedAt": "2026-02-06T05:12:23.251071Z"
+  },
+  {
+    "name": "Cocina extraible Alondra",
+    "description": "",
+    "sku": "AQU57004",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-extraible-alondra",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALONDRA"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-alondra-57004.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-alondra-57004.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251201Z",
+    "updatedAt": "2026-02-06T05:12:23.251204Z"
+  },
+  {
+    "name": "Cocina sobremesada Flex color Azul",
+    "description": "",
+    "sku": "AQU59005/AZ",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-flex-color-azul",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "FLEX COLOR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-azul-59005-AZ.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-azul-59005-AZ.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251430Z",
+    "updatedAt": "2026-02-06T05:12:23.251435Z"
+  },
+  {
+    "name": "Cocina sobremesada Flex color Blanco",
+    "description": "",
+    "sku": "AQU59005/BL",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-flex-color-blanco",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "FLEX COLOR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-blanco-59005-BL.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-blanco-59005-BL.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251568Z",
+    "updatedAt": "2026-02-06T05:12:23.251571Z"
+  },
+  {
+    "name": "Cocina sobremesada Flex color Naranja",
+    "description": "",
+    "sku": "AQU59005/NA",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-flex-color-naranja",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "FLEX COLOR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-naranja-59005-NA.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-naranja-59005-NA.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251686Z",
+    "updatedAt": "2026-02-06T05:12:23.251689Z"
+  },
+  {
+    "name": "Cocina sobremesada Flex color Negro",
+    "description": "",
+    "sku": "AQU59005/NE",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-flex-color-negro",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "FLEX COLOR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-negro-59005-NG.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-negro-59005-NG.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251846Z",
+    "updatedAt": "2026-02-06T05:12:23.251851Z"
+  },
+  {
+    "name": "Cocina sobremesada Flex color Rojo",
+    "description": "",
+    "sku": "AQU59005/RO",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-flex-color-rojo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "FLEX COLOR"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-rojo-59005_RO.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-flex-color-rojo-59005_RO.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.251986Z",
+    "updatedAt": "2026-02-06T05:12:23.251989Z"
+  },
+  {
+    "name": "Cocina Twin Deca con filtro",
+    "description": "",
+    "sku": "AQU18009",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-twin-deca-con-filtro",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DECA MONOCOMANDO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-deca-TWIN-18009.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-deca-TWIN-18009.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252106Z",
+    "updatedAt": "2026-02-06T05:12:23.252109Z"
+  },
+  {
+    "name": "Cocina sobremesada Pranzo Gourmet",
+    "description": "",
+    "sku": "AQU58006",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-pranzo-gourmet",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "GOURMET PRANZO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/MONOCOM-GOURMET-PRANZO.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/MONOCOM-GOURMET-PRANZO.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252220Z",
+    "updatedAt": "2026-02-06T05:12:23.252223Z"
+  },
+  {
+    "name": "Cocina monocomando Status",
+    "description": "",
+    "sku": "AQU45005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-status",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "STATUS MONOCOMANDO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-cuadrado-cocina-STATUS.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-cuadrado-cocina-STATUS.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252359Z",
+    "updatedAt": "2026-02-06T05:12:23.252364Z"
+  },
+  {
+    "name": "Cocina sobremesada Aukan Cruz",
+    "description": "",
+    "sku": "AQU69001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_204800-copia.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_204800-copia.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252503Z",
+    "updatedAt": "2026-02-06T05:12:23.252506Z"
+  },
+  {
+    "name": "Cocina pared exterior pico U Aukan Cruz",
+    "description": "",
+    "sku": "AQU69002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-exterior-pico-u-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183454-copia.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183454-copia.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252623Z",
+    "updatedAt": "2026-02-06T05:12:23.252626Z"
+  },
+  {
+    "name": "Cocina pared embutir pico U Aukan Cruz",
+    "description": "",
+    "sku": "AQU69003",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-embutir-pico-u-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_203925-copia.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_203925-copia.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252738Z",
+    "updatedAt": "2026-02-06T05:12:23.252741Z"
+  },
+  {
+    "name": "Cocina pared embutir pico S Aukan Cruz",
+    "description": "",
+    "sku": "AQU69005",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-embutir-pico-s-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_203328-copia.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_203328-copia.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252851Z",
+    "updatedAt": "2026-02-06T05:12:23.252855Z"
+  },
+  {
+    "name": "Cocina pared exterior pico S Aukan Cruz",
+    "description": "",
+    "sku": "AQU69006",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-exterior-pico-s-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183104-copia.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183104-copia.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.252963Z",
+    "updatedAt": "2026-02-06T05:12:23.252966Z"
+  },
+  {
+    "name": "Cocina pared exterior pico J Aukan Cruz",
+    "description": "",
+    "sku": "AQU69007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-exterior-pico-j-aukan-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183929-copia-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20211004_183929-copia-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253073Z",
+    "updatedAt": "2026-02-06T05:12:23.253076Z"
+  },
+  {
+    "name": "Cocina sobremesada Lamy Cromo",
+    "description": "",
+    "sku": "AQU49001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-lamy-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LAMY CROMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/cocina-sobremesada-aukan-cruzWEB.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/cocina-sobremesada-aukan-cruzWEB.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253185Z",
+    "updatedAt": "2026-02-06T05:12:23.253188Z"
+  },
+  {
+    "name": "Cocina sobremesada Spot Gourmet",
+    "description": "",
+    "sku": "AQU31005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-spot-gourmet",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "SPOT"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/31005-SPOT-GOURMET.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/31005-SPOT-GOURMET.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253294Z",
+    "updatedAt": "2026-02-06T05:12:23.253309Z"
+  },
+  {
+    "name": "Cocina monocomando Status Black",
+    "description": "",
+    "sku": "AQU45008",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-status-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "STATUS MONOCOMANDO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/45008-STATUS-BLACK.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/45008-STATUS-BLACK.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253465Z",
+    "updatedAt": "2026-02-06T05:12:23.253468Z"
+  },
+  {
+    "name": "Cocina sobremesada Gamel",
+    "description": "",
+    "sku": "AQU92008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-gamel",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "GAMEL"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/92008-GRIFERIA-GAMEL.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/92008-GRIFERIA-GAMEL.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253585Z",
+    "updatedAt": "2026-02-06T05:12:23.253588Z"
+  },
+  {
+    "name": "Cocina sobremesada Max Cromo",
+    "description": "",
+    "sku": "AQU43001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-max-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAX CROMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-002-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-002-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253700Z",
+    "updatedAt": "2026-02-06T05:12:23.253703Z"
+  },
+  {
+    "name": "Cocina pared exterior pico J Max Cromo",
+    "description": "",
+    "sku": "AQU43007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pared-exterior-pico-j-max-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAX CROMO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-022-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-022-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253814Z",
+    "updatedAt": "2026-02-06T05:12:23.253817Z"
+  },
+  {
+    "name": "Cocina sobremesada Max Plus",
+    "description": "",
+    "sku": "AQU44001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-max-plus",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAX PLUS"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-002-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-002-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.253924Z",
+    "updatedAt": "2026-02-06T05:12:23.253927Z"
+  },
+  {
+    "name": "Cocina exterior pared Max Plus",
+    "description": "",
+    "sku": "AQU44007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pared-max-plus",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAX PLUS"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-022-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-022-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254035Z",
+    "updatedAt": "2026-02-06T05:12:23.254038Z"
+  },
+  {
+    "name": "Cocina sobremesada de 2 vias plus Aluminé",
+    "description": "",
+    "sku": "AQU56009",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-de-2-vias-plus-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/56009-alumine-sobremesada-2-vias-plus.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/56009-alumine-sobremesada-2-vias-plus.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254150Z",
+    "updatedAt": "2026-02-06T05:12:23.254153Z"
+  },
+  {
+    "name": "Cocina sobremesada de 2 vias Aluminé",
+    "description": "",
+    "sku": "AQU56008",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-de-2-vias-alumin",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/56008-alumine-dos-vias-sobremesada-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/56008-alumine-dos-vias-sobremesada-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254263Z",
+    "updatedAt": "2026-02-06T05:12:23.254266Z"
+  },
+  {
+    "name": "Cocina exterior pico J Aukan Lever",
+    "description": "",
+    "sku": "AQU9007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-aukan-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AUKAN LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/9007-aukan-lever-pico-j-ext-web-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/9007-aukan-lever-pico-j-ext-web-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254415Z",
+    "updatedAt": "2026-02-06T05:12:23.254420Z"
+  },
+  {
+    "name": "Cocina Start Deca",
+    "description": "",
+    "sku": "AQU18003",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-start-deca",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "Start Deca"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-start-18003.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/monocomando-start-18003.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254541Z",
+    "updatedAt": "2026-02-06T05:12:23.254544Z"
+  },
+  {
+    "name": "Cocina monocomando Vernazza",
+    "description": "",
+    "sku": "AQU62005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-vernazza",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "VERNAZZA"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "",
+    "images": [],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254655Z",
+    "updatedAt": "2026-02-06T05:12:23.254658Z"
+  },
+  {
+    "name": "Cocina monocomando Vernazza Black",
+    "description": "",
+    "sku": "AQU62008",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-vernazza-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "VERNAZZA"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/62008-COCINA-VERNAZZA-BLACK.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/62008-COCINA-VERNAZZA-BLACK.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254767Z",
+    "updatedAt": "2026-02-06T05:12:23.254770Z"
+  },
+  {
+    "name": "Cocina pico fijo AQ6000",
+    "description": "",
+    "sku": "AQU5004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5004-AQ6000-PICO-FIJO-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5004-AQ6000-PICO-FIJO-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254883Z",
+    "updatedAt": "2026-02-06T05:12:23.254887Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm AQ6000",
+    "description": "",
+    "sku": "AQU5008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5008-AQ6000-PICO-U-EXT-20CM-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5008-AQ6000-PICO-U-EXT-20CM-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.254997Z",
+    "updatedAt": "2026-02-06T05:12:23.255000Z"
+  },
+  {
+    "name": "Lavadero exterior AQ6000",
+    "description": "",
+    "sku": "AQU5009",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "lavadero-exterior-aq6000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 6000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/5009-aq6000-lavadero-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/5009-aq6000-lavadero-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255106Z",
+    "updatedAt": "2026-02-06T05:12:23.255109Z"
+  },
+  {
+    "name": "Cocina pico fijo AQ7000",
+    "description": "",
+    "sku": "AQU19004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-aq7000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 7000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/19004-aq7000-pico-fijo-emb-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/19004-aq7000-pico-fijo-emb-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255214Z",
+    "updatedAt": "2026-02-06T05:12:23.255217Z"
+  },
+  {
+    "name": "Cocina sobremesada AQ8000",
+    "description": "",
+    "sku": "AQU20001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-aq8000",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AQ 8000"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/20001-AQ800-COCINA-SOBREMESADA-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/20001-AQ800-COCINA-SOBREMESADA-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255349Z",
+    "updatedAt": "2026-02-06T05:12:23.255355Z"
+  },
+  {
+    "name": "Cocina pico fijo Aruma Cruz",
+    "description": "",
+    "sku": "AQU3004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3004-aruma-cruz-pico-fijo-emb-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3004-aruma-cruz-pico-fijo-emb-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255494Z",
+    "updatedAt": "2026-02-06T05:12:23.255497Z"
+  },
+  {
+    "name": "Cocina exterior pico J Aruma Cruz",
+    "description": "",
+    "sku": "AQU3007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3007-aruma-cruz-pico-j-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3007-aruma-cruz-pico-j-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255612Z",
+    "updatedAt": "2026-02-06T05:12:23.255615Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Aruma Cruz",
+    "description": "",
+    "sku": "AQU3008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-aruma-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/3008-aruma-cruz-cocina-pico-u-20-cm-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/3008-aruma-cruz-cocina-pico-u-20-cm-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255728Z",
+    "updatedAt": "2026-02-06T05:12:23.255731Z"
+  },
+  {
+    "name": "Cocina pico fijo Aruma Lever",
+    "description": "",
+    "sku": "AQU4004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4004-ARUMA-LEVER-PICO-FIJO-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4004-ARUMA-LEVER-PICO-FIJO-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255846Z",
+    "updatedAt": "2026-02-06T05:12:23.255849Z"
+  },
+  {
+    "name": "Cocina exterior pico J Aruma Lever",
+    "description": "",
+    "sku": "AQU4007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-aruma-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ARUMA LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/4007-aruma-lever-pico-j-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/4007-aruma-lever-pico-j-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.255958Z",
+    "updatedAt": "2026-02-06T05:12:23.255961Z"
+  },
+  {
+    "name": "Cocina pico fijo Cuyen",
+    "description": "",
+    "sku": "AQU8004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8004-CUYEN-PICO-FIJO-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8004-CUYEN-PICO-FIJO-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256068Z",
+    "updatedAt": "2026-02-06T05:12:23.256071Z"
+  },
+  {
+    "name": "Cocina exterior pico J Cuyen",
+    "description": "",
+    "sku": "AQU8007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-cuyen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "CUYEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/8007-cuyen-pico-j-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/8007-cuyen-pico-j-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256175Z",
+    "updatedAt": "2026-02-06T05:12:23.256178Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Domo Classic",
+    "description": "",
+    "sku": "AQU28008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-domo-classic",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DOMO CLASSIC"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/28008-domo-classic-pico-u-20-cm-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/28008-domo-classic-pico-u-20-cm-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256283Z",
+    "updatedAt": "2026-02-06T05:12:23.256286Z"
+  },
+  {
+    "name": "Cocina pico fijo Huilen",
+    "description": "",
+    "sku": "AQU12004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12004-HUILEN-b-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12004-HUILEN-b-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256439Z",
+    "updatedAt": "2026-02-06T05:12:23.256445Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Huilen",
+    "description": "",
+    "sku": "AQU12008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12008-HUILEN-d-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12008-HUILEN-d-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256561Z",
+    "updatedAt": "2026-02-06T05:12:23.256564Z"
+  },
+  {
+    "name": "Lavadero exterior Huilen",
+    "description": "",
+    "sku": "AQU12009",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "lavadero-exterior-huilen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "HUILEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12009-HUILEN-a-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-12009-HUILEN-a-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256674Z",
+    "updatedAt": "2026-02-06T05:12:23.256677Z"
+  },
+  {
+    "name": "Cocina pico fijo Itati Cruz",
+    "description": "",
+    "sku": "AQU1004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1004-ITATI-CRUZ-PICO-FIJO-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1004-ITATI-CRUZ-PICO-FIJO-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256785Z",
+    "updatedAt": "2026-02-06T05:12:23.256788Z"
+  },
+  {
+    "name": "Cocina exterior pico J Itati Cruz",
+    "description": "",
+    "sku": "AQU1007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-j-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1007-itati-pico-j-ext-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1007-itati-pico-j-ext-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.256902Z",
+    "updatedAt": "2026-02-06T05:12:23.256905Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Itati Cruz",
+    "description": "",
+    "sku": "AQU1008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-itati-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI CRUZ"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/1008-ITATI-CRUZ-PICO-U-EXT-20-CM-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/1008-ITATI-CRUZ-PICO-U-EXT-20-CM-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257013Z",
+    "updatedAt": "2026-02-06T05:12:23.257016Z"
+  },
+  {
+    "name": "Cocina pico J exterior Itati Lever",
+    "description": "",
+    "sku": "AQU2007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-j-exterior-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2007-itati-lever-pico-j-exterior-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2007-itati-lever-pico-j-exterior-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257122Z",
+    "updatedAt": "2026-02-06T05:12:23.257125Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Itati Lever",
+    "description": "",
+    "sku": "AQU2008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-itati-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ITATI LEVER"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/2008-Cocina-pico-u-de-embutir-20-cm-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/2008-Cocina-pico-u-de-embutir-20-cm-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257233Z",
+    "updatedAt": "2026-02-06T05:12:23.257236Z"
+  },
+  {
+    "name": "Cocina pico fijo Liwen",
+    "description": "",
+    "sku": "AQU6004",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-pico-fijo-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/6004-liwen-pico-fijo-emb-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/6004-liwen-pico-fijo-emb-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257372Z",
+    "updatedAt": "2026-02-06T05:12:23.257377Z"
+  },
+  {
+    "name": "Cocina exterior pico U 20 cm Liwen",
+    "description": "",
+    "sku": "AQU6008",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-exterior-pico-u-20-cm-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6008-LIWEN-a-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6008-LIWEN-a-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257511Z",
+    "updatedAt": "2026-02-06T05:12:23.257514Z"
+  },
+  {
+    "name": "Lavadero exterior Liwen",
+    "description": "",
+    "sku": "AQU6009",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "lavadero-exterior-liwen",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "LIWEN"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre tradicional"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6009-LIWEN1881-scaled.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/Aqualaf-6009-LIWEN1881-scaled.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257628Z",
+    "updatedAt": "2026-02-06T05:12:23.257631Z"
+  },
+  {
+    "name": "Cocina sobremesada Mailén Plus",
+    "description": "",
+    "sku": "AQU16007",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-mailn-plus",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "MAILEN PLUS"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/16007-mailen-plus-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/16007-mailen-plus-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257742Z",
+    "updatedAt": "2026-02-06T05:12:23.257745Z"
+  },
+  {
+    "name": "Cocina cisne Arezzo",
+    "description": "",
+    "sku": "AQU92005",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-arezzo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AREZZO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/92005-monocomando-pico-AREZZO.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/92005-monocomando-pico-AREZZO.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257852Z",
+    "updatedAt": "2026-02-06T05:12:23.257855Z"
+  },
+  {
+    "name": "Cocina sobremesada Arezzo",
+    "description": "",
+    "sku": "AQU92004",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-sobremesada-arezzo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "AREZZO"
+      },
+      {
+        "name": "Tipo",
+        "value": "Cierre cerámico"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2024/07/92004-monocomando-arezzo.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2024/07/92004-monocomando-arezzo.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.257961Z",
+    "updatedAt": "2026-02-06T05:12:23.257964Z"
+  },
+  {
+    "name": "Cocina cisne Aluminé Swan",
+    "description": "",
+    "sku": "AQU56001",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-cisne-alumin-swan",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/05/56001-alumine-SWAN-1-scaled.png",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/05/56001-alumine-SWAN-1-scaled.png"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258070Z",
+    "updatedAt": "2026-02-06T05:12:23.258073Z"
+  },
+  {
+    "name": "Cocina Aluminé Tall",
+    "description": "",
+    "sku": "AQU56003",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-alumin-tall",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ALUMINÉ"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/05/56003-ALUMINE-COCINA-TALL-1-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/05/56003-ALUMINE-COCINA-TALL-1-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258175Z",
+    "updatedAt": "2026-02-06T05:12:23.258178Z"
+  },
+  {
+    "name": "Cocina Monocomando Total Black",
+    "description": "",
+    "sku": "AQU59006",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-total-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "TOTAL-BLACK"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/08/Total-Black-1.jpeg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/08/Total-Black-1.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258279Z",
+    "updatedAt": "2026-02-06T05:12:23.258282Z"
+  },
+  {
+    "name": "Cocina monocomando Novelty Cromo",
+    "description": "",
+    "sku": "AQU58008",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-novelty-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "NOVELTY"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/Novelty_58008-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/Novelty_58008-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258431Z",
+    "updatedAt": "2026-02-06T05:12:23.258436Z"
+  },
+  {
+    "name": "Cocina monocomando Novelty Black",
+    "description": "",
+    "sku": "AQU58007",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-novelty-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "NOVELTY"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/Novelty_58007-1.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/Novelty_58007-1.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258549Z",
+    "updatedAt": "2026-02-06T05:12:23.258552Z"
+  },
+  {
+    "name": "Cocina monocomando Drink",
+    "description": "",
+    "sku": "AQU58003",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-drink",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DRINK"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/Drink_58003.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/Drink_58003.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258658Z",
+    "updatedAt": "2026-02-06T05:12:23.258661Z"
+  },
+  {
+    "name": "Cocina monocomando Devil Cromo",
+    "description": "",
+    "sku": "AQU58001",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-devil-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DEVIL"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/Devil_cromo_58001.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/Devil_cromo_58001.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258762Z",
+    "updatedAt": "2026-02-06T05:12:23.258765Z"
+  },
+  {
+    "name": "Cocina monocomando Devil Black",
+    "description": "",
+    "sku": "AQU58002",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-monocomando-devil-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "DEVIL"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/Devil_Black_58002.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/Devil_Black_58002.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258871Z",
+    "updatedAt": "2026-02-06T05:12:23.258874Z"
+  },
+  {
+    "name": "Cocina Articulada de pared Cromo",
+    "description": "",
+    "sku": "AQU60010 CR",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-articulada-de-pared-cromo",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "REBATIBLE"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_cromo_60010CR.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_cromo_60010CR.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.258977Z",
+    "updatedAt": "2026-02-06T05:12:23.258980Z"
+  },
+  {
+    "name": "Cocina Articulada de pared Platil",
+    "description": "",
+    "sku": "AQU60010 CEP",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-articulada-de-pared-platil",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "REBATIBLE"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_platil_60010-CEP.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_platil_60010-CEP.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.259080Z",
+    "updatedAt": "2026-02-06T05:12:23.259083Z"
+  },
+  {
+    "name": "Cocina Articulada de pared Black",
+    "description": "",
+    "sku": "AQU60010 BK",
+    "category": "68cda5f5ff392fb2b5d73dae",
+    "slug": "cocina-articulada-de-pared-black",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "REBATIBLE"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_BLACK_60010-BK.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/09/articulada_BLACK_60010-BK.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.259182Z",
+    "updatedAt": "2026-02-06T05:12:23.259185Z"
+  },
+  {
+    "name": "Cocina sobremesada Eco Lever",
+    "description": "",
+    "sku": "AQU10001",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-eco-lever",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ECO"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/12/10001-cocina-eco-lever-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/12/10001-cocina-eco-lever-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.259286Z",
+    "updatedAt": "2026-02-06T05:12:23.259289Z"
+  },
+  {
+    "name": "Cocina sobremesada Eco Cruz",
+    "description": "",
+    "sku": "AQU10002",
+    "category": "68cda5f5ff392fb2b5d73dad",
+    "slug": "cocina-sobremesada-eco-cruz",
+    "brand": "Aqualaf",
+    "brandSlug": "aqualaf",
+    "attributes": [
+      {
+        "name": "Línea",
+        "value": "ECO"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://aqualaf.com.ar/wp-content/uploads/2025/12/10002-cocina-eco-cruz-web.jpg",
+    "images": [
+      "https://aqualaf.com.ar/wp-content/uploads/2025/12/10002-cocina-eco-cruz-web.jpg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T05:12:23.259592Z",
+    "updatedAt": "2026-02-06T05:12:23.259598Z"
+  }
+]

@@ -1,0 +1,3981 @@
+[
+  {
+    "name": "Rebabador para Monturas",
+    "description": "",
+    "sku": "DUX08900302136",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "rebabador-para-monturas",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20/25",
+          "sku": "DUX08900302136",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "DUX08900304136",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c4d7ceb135cd53af70a9792fcee3101c59674c49.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c4d7ceb135cd53af70a9792fcee3101c59674c49.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.078031Z",
+    "updatedAt": "2026-02-06T02:56:56.078057Z"
+  },
+  {
+    "name": "Soporte metálico para codos",
+    "description": "",
+    "sku": "DUX08900610400",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "soporte-metlico-para-codos",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "SOPORTE METALICO PARA CODOS 400mm",
+          "sku": "DUX08900610400",
+          "active": true
+        },
+        {
+          "size": "SOPORTE METALICO PARA CODOS 480mm",
+          "sku": "DUX08900610480",
+          "active": true
+        },
+        {
+          "size": "SOPORTE METALICO PARA CODOS 600mm",
+          "sku": "DUX08900610600",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d9e10373f5f555fb7547ab76251c6a5fb38edea6.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d9e10373f5f555fb7547ab76251c6a5fb38edea6.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.078361Z",
+    "updatedAt": "2026-02-06T02:56:56.078366Z"
+  },
+  {
+    "name": "Fresa Acqua Luminum",
+    "description": "",
+    "sku": "DUX08900220000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "fresa-acqua-luminum",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 mm",
+          "sku": "DUX08900220000",
+          "active": true
+        },
+        {
+          "size": "25 mm",
+          "sku": "DUX08900225000",
+          "active": true
+        },
+        {
+          "size": "32 mm",
+          "sku": "DUX08900232000",
+          "active": true
+        },
+        {
+          "size": "40 mm",
+          "sku": "DUX08900240000",
+          "active": true
+        },
+        {
+          "size": "50/63 mm",
+          "sku": "DUX08900250063",
+          "active": true
+        },
+        {
+          "size": "75/90 mm",
+          "sku": "DUX08900275090",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/14e6c2ddd53c54e492d6c87af436a6e4f211ff42.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/14e6c2ddd53c54e492d6c87af436a6e4f211ff42.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.078693Z",
+    "updatedAt": "2026-02-06T02:56:56.078700Z"
+  },
+  {
+    "name": "Llave pinza, llave Alem, Tornillo",
+    "description": "",
+    "sku": "DUX08900500000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-pinza-llave-alem-tornillo",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Llave pinza para extracción de boquillas",
+          "sku": "DUX08900500000",
+          "active": true
+        },
+        {
+          "size": "Llave Allem 7/32",
+          "sku": "DUX08900900000",
+          "active": true
+        },
+        {
+          "size": "Tornillo para fijacion de boquilla",
+          "sku": "DUX08901000000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3b7135023065c1770854684c5f88018729ac2570.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3b7135023065c1770854684c5f88018729ac2570.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.078974Z",
+    "updatedAt": "2026-02-06T02:56:56.078979Z"
+  },
+  {
+    "name": "Tijeras corta tubo",
+    "description": "",
+    "sku": "DUX08900202000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "tijeras-corta-tubo",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tijera cortatubo hasta 32",
+          "sku": "DUX08900202000",
+          "active": true
+        },
+        {
+          "size": "Tij.Cortatubo H/63",
+          "sku": "DUX08900203000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/2dd022662e316e1411b2a94e948f6a2289180b3e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/2dd022662e316e1411b2a94e948f6a2289180b3e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.079261Z",
+    "updatedAt": "2026-02-06T02:56:56.079267Z"
+  },
+  {
+    "name": "Soporte metálico con codos",
+    "description": "",
+    "sku": "DUX08095020096",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "soporte-metlico-con-codos",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Soporte metalico p/ codos terminales con 2 codos con RH larga de 20x1/2",
+          "sku": "DUX08095020096",
+          "active": true
+        },
+        {
+          "size": "Soporte metalico p/ codos terminales con 2 codos con RH extra larga de 20x1/2",
+          "sku": "DUX08095020097",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/422a6aa366e2cbd5229013c02192c45bbbce88df.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/422a6aa366e2cbd5229013c02192c45bbbce88df.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.079464Z",
+    "updatedAt": "2026-02-06T02:56:56.079468Z"
+  },
+  {
+    "name": "Perforador para monturas",
+    "description": "",
+    "sku": "DUX08900301136",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "perforador-para-monturas",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Perforador p/Monturas 20/25",
+          "sku": "DUX08900301136",
+          "active": true
+        },
+        {
+          "size": "Perforador p/Monturas 32",
+          "sku": "DUX08900303136",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/f5b8db9a51d98830bcadea3b0ab2214c59e5fc1a.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/f5b8db9a51d98830bcadea3b0ab2214c59e5fc1a.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.079663Z",
+    "updatedAt": "2026-02-06T02:56:56.079666Z"
+  },
+  {
+    "name": "Nivel",
+    "description": "",
+    "sku": "DUX08901030000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "nivel",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "es",
+          "sku": "DUX08901030000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c2b8837bf5d0ed8eed86421e5ca0fcc0d02c1cfb.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c2b8837bf5d0ed8eed86421e5ca0fcc0d02c1cfb.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.079837Z",
+    "updatedAt": "2026-02-06T02:56:56.079840Z"
+  },
+  {
+    "name": "Boquilla para reparación de perforaciones",
+    "description": "",
+    "sku": "DUX08900410000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "boquilla-para-reparacin-de-perforaciones",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Boquilla Reparadora",
+          "sku": "DUX08900410000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/7e31cca3918127b2a63cc074f7428ab17459bfd4.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/7e31cca3918127b2a63cc074f7428ab17459bfd4.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.080037Z",
+    "updatedAt": "2026-02-06T02:56:56.080043Z"
+  },
+  {
+    "name": "Boquillas para termofusión",
+    "description": "",
+    "sku": "DUX08900400000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "boquillas-para-termofusin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Boquilla M-H de 20mm",
+          "sku": "DUX08900400000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 25mm",
+          "sku": "DUX08900401000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 32mm",
+          "sku": "DUX08900402000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 40mm",
+          "sku": "DUX08900403000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 50mm",
+          "sku": "DUX08900404000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 63mm",
+          "sku": "DUX08900405000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 75mm",
+          "sku": "DUX08900406000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 90mm",
+          "sku": "DUX08900407000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 110mm",
+          "sku": "DUX08900408000",
+          "active": true
+        },
+        {
+          "size": "Boquilla M-H de 16mm",
+          "sku": "DUX08900409000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3998e10fecfd66c4bf7737689c4a62d3faaf0853.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3998e10fecfd66c4bf7737689c4a62d3faaf0853.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.080462Z",
+    "updatedAt": "2026-02-06T02:56:56.080468Z"
+  },
+  {
+    "name": "Boquillas para montura",
+    "description": "",
+    "sku": "DUX08900413000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "boquillas-para-montura",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Boquilla para montura 63 x 20/25",
+          "sku": "DUX08900413000",
+          "active": true
+        },
+        {
+          "size": "Boquilla para montura 75 x 20/25",
+          "sku": "DUX08900415000",
+          "active": true
+        },
+        {
+          "size": "Boquilla para montura 90 x 20/25",
+          "sku": "DUX08900416000",
+          "active": true
+        },
+        {
+          "size": "Boquilla para montura 75 x 32",
+          "sku": "DUX08900417000",
+          "active": true
+        },
+        {
+          "size": "Boquilla para montura 90 x 32",
+          "sku": "DUX08900418000",
+          "active": true
+        },
+        {
+          "size": "Boquilla para montura 110 x 32",
+          "sku": "DUX08900419000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/55628bdb2c0614d4c69e2f03ad46d26c0e327d40.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/55628bdb2c0614d4c69e2f03ad46d26c0e327d40.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.080733Z",
+    "updatedAt": "2026-02-06T02:56:56.080737Z"
+  },
+  {
+    "name": "Kit Termofusor a batería DN 16-40",
+    "description": "",
+    "sku": "DUX08900115000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "kit-termofusor-a-batera-dn-16-40",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "KIT TERMOFUSOR A BATERÍA DN 16-40",
+          "sku": "DUX08900115000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/182a5a93c90cb6e336e48b03ff5b8f2102dbde6a.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/182a5a93c90cb6e336e48b03ff5b8f2102dbde6a.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.080962Z",
+    "updatedAt": "2026-02-06T02:56:56.080967Z"
+  },
+  {
+    "name": "Termofusor 220v 1200w",
+    "description": "",
+    "sku": "DUX08900111012",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "termofusor-220v-1200w",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TERMOFUSOR AST 2021 1200W - 220V S/BOQ",
+          "sku": "DUX08900111012",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e225f387b72206209a7f65300336018a723f06ce.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e225f387b72206209a7f65300336018a723f06ce.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.081185Z",
+    "updatedAt": "2026-02-06T02:56:56.081190Z"
+  },
+  {
+    "name": "Máquina Dual para electrofusión",
+    "description": "",
+    "sku": "DUX60900201000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "mquina-dual-para-electrofusin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Maquina Dual para Electrofusion EF-2000",
+          "sku": "DUX60900201000",
+          "active": true
+        },
+        {
+          "size": "Electrofusor con lector de codigo de barras",
+          "sku": "DUX60900201204",
+          "active": true
+        },
+        {
+          "size": "Lector de codigo para barras",
+          "sku": "DUX60900204000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/11c54cea9dca78d6c7a5a9a30e9b873b6fd4991e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/11c54cea9dca78d6c7a5a9a30e9b873b6fd4991e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.081404Z",
+    "updatedAt": "2026-02-06T02:56:56.081407Z"
+  },
+  {
+    "name": "Termofusor de banco 50 A 125 (Inc. boquillas de 50 a 125 mm)",
+    "description": "",
+    "sku": "DUX08900205000",
+    "category": "68cda5f5ff392fb2b5d73db6",
+    "slug": "termofusor-de-banco-50-a-125-inc-boquillas-de-50-a-125-mm",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TERMOFUSOR DE BANCO 50 A 125 (Incluye boquillas de 50 a 125 mm)",
+          "sku": "DUX08900205000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d5dc84fb66fedc4cc8f95f5963ab937d065fc810.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d5dc84fb66fedc4cc8f95f5963ab937d065fc810.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.081655Z",
+    "updatedAt": "2026-02-06T02:56:56.081661Z"
+  },
+  {
+    "name": "Termofusor 220v 1800w",
+    "description": "",
+    "sku": "DUX08900111018",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "termofusor-220v-1800w",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TERMOFUSOR 1800W - 220V S/BOQ P/110MM",
+          "sku": "DUX08900111018",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/98e92ad6ed63bfc26c17c928f7de4496db9b0000.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/98e92ad6ed63bfc26c17c928f7de4496db9b0000.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.081858Z",
+    "updatedAt": "2026-02-06T02:56:56.081862Z"
+  },
+  {
+    "name": "Termofusor 220v 800w",
+    "description": "",
+    "sku": "DUX08900111008",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "termofusor-220v-800w",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TERMOFUSOR AST 2020 800W - 220V S/BOQ",
+          "sku": "DUX08900111008",
+          "active": true
+        },
+        {
+          "size": "TERMOFUSOR AST 2020 800W - 220V C/BOQ 20 A 32",
+          "sku": "DUX08900112008",
+          "active": true
+        },
+        {
+          "size": "TERMOFUSOR AST 2020 800W - 220V C/BOQ 20 A 63",
+          "sku": "DUX08900113008",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/948e339961a5390591518313e2979e4a18923484.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/948e339961a5390591518313e2979e4a18923484.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.082102Z",
+    "updatedAt": "2026-02-06T02:56:56.082108Z"
+  },
+  {
+    "name": "Separador de Tubos",
+    "description": "",
+    "sku": "DUX08413020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "separador-de-tubos",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "DUX08413020000",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "DUX08413025000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/981b4098c6dab9b90e2a331b507f2d8c2b291b4c.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/981b4098c6dab9b90e2a331b507f2d8c2b291b4c.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.082330Z",
+    "updatedAt": "2026-02-06T02:56:56.082334Z"
+  },
+  {
+    "name": "Tapón roscado",
+    "description": "",
+    "sku": "DUX08290015000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "tapn-roscado",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "TAPON ROSCADO 1/2\" (Para pruebas hidraulicas)",
+          "sku": "DUX08290015000",
+          "active": true
+        },
+        {
+          "size": "TAPON ROSCADO 3/4\"  (Para pruebas hidraulicas)",
+          "sku": "DUX08290020000",
+          "active": true
+        },
+        {
+          "size": "TAPON ROSCADO 1\"  (Para pruebas hidraulicas)",
+          "sku": "DUX08290025000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/bf1bbb87ecbd156223d896895dd33d0545cec2b3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/bf1bbb87ecbd156223d896895dd33d0545cec2b3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.082544Z",
+    "updatedAt": "2026-02-06T02:56:56.082548Z"
+  },
+  {
+    "name": "Salida de tanque",
+    "description": "",
+    "sku": "DUX08260040000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "salida-de-tanque",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Salida de tanque",
+          "sku": "DUX08260040000",
+          "active": true
+        },
+        {
+          "size": "Salida de tanque",
+          "sku": "DUX08260063000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d569824715cce34313ae77262347a3efaa4546b9.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d569824715cce34313ae77262347a3efaa4546b9.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.082761Z",
+    "updatedAt": "2026-02-06T02:56:56.082765Z"
+  },
+  {
+    "name": "Tarugo de reparación de PPCR",
+    "description": "",
+    "sku": "DUX08900499000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "tarugo-de-reparacin-de-ppcr",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tarugos p/Reparación",
+          "sku": "DUX08900499000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/e676a0bb0540d9a7e77826d0a9bf5013025ec0ef.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/e676a0bb0540d9a7e77826d0a9bf5013025ec0ef.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.082999Z",
+    "updatedAt": "2026-02-06T02:56:56.083004Z"
+  },
+  {
+    "name": "Montura de derivación",
+    "description": "",
+    "sku": "DUX08136063020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "montura-de-derivacin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Montura de Derivacion 63x20",
+          "sku": "DUX08136063020",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 63x25",
+          "sku": "DUX08136063025",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 75x20",
+          "sku": "DUX08136075020",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 75x25",
+          "sku": "DUX08136075025",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 75x32",
+          "sku": "DUX08136075032",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 90x20",
+          "sku": "DUX08136090020",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 90x25",
+          "sku": "DUX08136090025",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 90x32",
+          "sku": "DUX08136090032",
+          "active": true
+        },
+        {
+          "size": "Montura de Derivacion 110 x 32",
+          "sku": "DUX08136110032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/39bbd05838634279a8d8d2d4a2189f8799fd4dde.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/129634c76eb6d49b314235b133ca224cd25ac31f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/39bbd05838634279a8d8d2d4a2189f8799fd4dde.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/129634c76eb6d49b314235b133ca224cd25ac31f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.083436Z",
+    "updatedAt": "2026-02-06T02:56:56.083444Z"
+  },
+  {
+    "name": "Cupla eléctrica",
+    "description": "",
+    "sku": "DUX08270020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cupla-elctrica",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Cupla Electrica 20 mm",
+          "sku": "DUX08270020000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 25 mm",
+          "sku": "DUX08270025000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 32 mm",
+          "sku": "DUX08270032000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 40 mm",
+          "sku": "DUX08270040000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 50 mm",
+          "sku": "DUX08270050000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 63 mm",
+          "sku": "DUX08270063000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 75 mm",
+          "sku": "DUX08270075000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 90 mm",
+          "sku": "DUX08270090000",
+          "active": true
+        },
+        {
+          "size": "Cupla Electrica 110 mm",
+          "sku": "DUX08270110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/bb9a9913b07f6719dbd4b35a2fc3ba4e91b5a198.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/18a17b02d506431c23779f0f7d211139942c5fa2.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/bb9a9913b07f6719dbd4b35a2fc3ba4e91b5a198.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/18a17b02d506431c23779f0f7d211139942c5fa2.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.083925Z",
+    "updatedAt": "2026-02-06T02:56:56.083932Z"
+  },
+  {
+    "name": "Buje soporte",
+    "description": "",
+    "sku": "DUX08901241020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "buje-soporte",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "DUX08901241020",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "DUX08901241025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/2144984657a914790f75690b3b7265bce4dc3986.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/2144984657a914790f75690b3b7265bce4dc3986.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.084270Z",
+    "updatedAt": "2026-02-06T02:56:56.084277Z"
+  },
+  {
+    "name": "Prolongador llave de paso total",
+    "description": "",
+    "sku": "DUX08420162000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "prolongador-llave-de-paso-total",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "PROLONGADOR LLAVE DE PASO TOTAL",
+          "sku": "DUX08420162000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/187b6b174f48c64f865b9f319b0c349d7d789de0.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/187b6b174f48c64f865b9f319b0c349d7d789de0.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.084540Z",
+    "updatedAt": "2026-02-06T02:56:56.084546Z"
+  },
+  {
+    "name": "Cubre rosca plástica",
+    "description": "",
+    "sku": "DUX08405162000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cubre-rosca-plstica",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Cubre Rosca Plast",
+          "sku": "DUX08405162000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b0c90151be24e3820ce1b7c5175b1e948e3f8616.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b0c90151be24e3820ce1b7c5175b1e948e3f8616.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.084789Z",
+    "updatedAt": "2026-02-06T02:56:56.084795Z"
+  },
+  {
+    "name": "Capuchón cromado",
+    "description": "",
+    "sku": "DUX08401162000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "capuchn-cromado",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Capuchón Cromado",
+          "sku": "DUX08401162000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/38034794ab4d158df481d4ad613453621e3f69ff.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/38034794ab4d158df481d4ad613453621e3f69ff.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.085063Z",
+    "updatedAt": "2026-02-06T02:56:56.085070Z"
+  },
+  {
+    "name": "Campana cromada deslizante",
+    "description": "",
+    "sku": "DUX08402162000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "campana-cromada-deslizante",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Campana Cromada Deslizante",
+          "sku": "DUX08402162000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b76deab994e3dbeabf373fab8110c332d3ff2221.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b76deab994e3dbeabf373fab8110c332d3ff2221.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.085327Z",
+    "updatedAt": "2026-02-06T02:56:56.085333Z"
+  },
+  {
+    "name": "Cabezal a pistón",
+    "description": "",
+    "sku": "DUX08403162000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cabezal-a-pistn",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Mariposa Plastica",
+          "sku": "DUX08403162000",
+          "active": true
+        },
+        {
+          "size": "Bronce",
+          "sku": "DUX08404162000",
+          "active": true
+        },
+        {
+          "size": "Polimero-Bronce",
+          "sku": "DUX08404166000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/fbc675975be8303b8cfd02bce4dde9936a2293f3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/fbc675975be8303b8cfd02bce4dde9936a2293f3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.086486Z",
+    "updatedAt": "2026-02-06T02:56:56.086507Z"
+  },
+  {
+    "name": "Llave de paso con fijación",
+    "description": "",
+    "sku": "DUX08162120000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-de-paso-con-fijacin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "LLAVE DE PASO C/FIJACIÓN 20MM CABEZAL BRONCE",
+          "sku": "DUX08162120000",
+          "active": true
+        },
+        {
+          "size": "LLAVE DE PASO C/FIJACIÓN 25MM CABEZAL BRONCE",
+          "sku": "DUX08162125000",
+          "active": true
+        },
+        {
+          "size": "LLAVE DE PASO C/FIJACIÓN 20MM CABEZAL POLIM/BCE",
+          "sku": "DUX08166120000",
+          "active": true
+        },
+        {
+          "size": "LLAVE DE PASO C/FIJACIÓN 25MM CABEZAL POLIM/BCE",
+          "sku": "DUX08166125000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/13f05a0554f18c7b7bdefb4157fcbf3a1e295f6d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/70f45a66028f7a7b3451a8e443d18f9718a9f7d6.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/13f05a0554f18c7b7bdefb4157fcbf3a1e295f6d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/70f45a66028f7a7b3451a8e443d18f9718a9f7d6.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.087809Z",
+    "updatedAt": "2026-02-06T02:56:56.087847Z"
+  },
+  {
+    "name": "Válvula esférica c/media unión mixta macho",
+    "description": "",
+    "sku": "DUX08170020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica-cmedia-unin-mixta-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 20X1/2\" M",
+          "sku": "DUX08170020015",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 25X3/4\" M",
+          "sku": "DUX08170025020",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 32X1\" M",
+          "sku": "DUX08170032025",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 40X1-1/4\" M",
+          "sku": "DUX08170040032",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 50X1-1/2\" M",
+          "sku": "DUX08170050040",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 63X2\" M",
+          "sku": "DUX08170063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/dbd1dc399a744d8bab994505b7dd8b18383b0554.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/dbd1dc399a744d8bab994505b7dd8b18383b0554.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.088497Z",
+    "updatedAt": "2026-02-06T02:56:56.088506Z"
+  },
+  {
+    "name": "Válvula esférica c/media unión mixta hembra",
+    "description": "",
+    "sku": "DUX08169020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica-cmedia-unin-mixta-hembra",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 20X1/2\" H",
+          "sku": "DUX08169020015",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 25X3/4\" H",
+          "sku": "DUX08169025020",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 32X1\" H",
+          "sku": "DUX08169032025",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 40X1-1/4\" H",
+          "sku": "DUX08169040032",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 50X1-1/2\" H",
+          "sku": "DUX08169050040",
+          "active": true
+        },
+        {
+          "size": "VALVULA ESFERICA C/MU MIXTA 63X2\" H",
+          "sku": "DUX08169063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/daf876fdc3eb047bd54bd3c79afab613f083392e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/daf876fdc3eb047bd54bd3c79afab613f083392e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.088929Z",
+    "updatedAt": "2026-02-06T02:56:56.088937Z"
+  },
+  {
+    "name": "Válvula esférica c/ media unión",
+    "description": "",
+    "sku": "DUX08163332020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica-c-media-unin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Valvula esferica c/ media union 20mm",
+          "sku": "DUX08163332020",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica c/ media union 25mm",
+          "sku": "DUX08163332025",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica c/ media union 32mm",
+          "sku": "DUX08163332032",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica c/ media union 40mm",
+          "sku": "DUX08163332040",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica c/ media union 50mm",
+          "sku": "DUX08163332050",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica c/ media union 63mm",
+          "sku": "DUX08163332063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/81e3bf33dbeb5d21227986141684ad4285b4c730.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/81e3bf33dbeb5d21227986141684ad4285b4c730.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.089367Z",
+    "updatedAt": "2026-02-06T02:56:56.089374Z"
+  },
+  {
+    "name": "Válvula esférica con unión doble bridada",
+    "description": "",
+    "sku": "DUX08163331075",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica-con-unin-doble-bridada",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Valvula esferica con union doble bridada 75mm",
+          "sku": "DUX08163331075",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica con union doble bridada 90mm",
+          "sku": "DUX08163331090",
+          "active": true
+        },
+        {
+          "size": "Valvula esferica con union doble bridada 110mm",
+          "sku": "DUX08163331110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/54bd753dc937bb0141f78bfbe821f366682147dd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/54bd753dc937bb0141f78bfbe821f366682147dd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.089712Z",
+    "updatedAt": "2026-02-06T02:56:56.089719Z"
+  },
+  {
+    "name": "Válvula esférica con manija",
+    "description": "",
+    "sku": "DUX",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "vlvula-esfrica-con-manija",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "",
+          "sku": "DUX",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163020000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163025000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163032000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163040000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163050000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163063000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163075000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163090000",
+          "active": true
+        },
+        {
+          "size": "Válvula esférica con manija",
+          "sku": "DUX08163110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/f92a196824f68560071bf5f4183fbc95b1d43ea9.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/f92a196824f68560071bf5f4183fbc95b1d43ea9.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.090154Z",
+    "updatedAt": "2026-02-06T02:56:56.090160Z"
+  },
+  {
+    "name": "Llave esférica",
+    "description": "",
+    "sku": "DUX08161020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-esfrica",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "DUX08161020000",
+          "active": true
+        },
+        {
+          "size": "25 mm",
+          "sku": "DUX08161025000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/23ddda04bea81e042779a9388c3b0432d47e73a6.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/a3de4f8c9562dbad34e7eadd6f057f2d6bb80666.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/23ddda04bea81e042779a9388c3b0432d47e73a6.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/a3de4f8c9562dbad34e7eadd6f057f2d6bb80666.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.090463Z",
+    "updatedAt": "2026-02-06T02:56:56.090469Z"
+  },
+  {
+    "name": "Llave de paso",
+    "description": "",
+    "sku": "DUX",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "llave-de-paso",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "",
+          "sku": "DUX",
+          "active": true
+        },
+        {
+          "size": "20mm c/ cab. Bronce",
+          "sku": "DUX08162020000",
+          "active": true
+        },
+        {
+          "size": "25mm c/ cab. Bronce",
+          "sku": "DUX08162025000",
+          "active": true
+        },
+        {
+          "size": "32mm c/ cab. Bronce",
+          "sku": "DUX08162032000",
+          "active": true
+        },
+        {
+          "size": "20mm c/ cab. Polímero-Bronce",
+          "sku": "DUX08166020000",
+          "active": true
+        },
+        {
+          "size": "25mm c/ cab. Polímero-Bronce",
+          "sku": "DUX08166025000",
+          "active": true
+        },
+        {
+          "size": "32mm c/ cab. Polímero-Bronce",
+          "sku": "DUX08166032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/893077965f6b455805e8f39661f23fc8913af2f9.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/4e4f37647e214e37b81e53833974c30b3fe78c77.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/893077965f6b455805e8f39661f23fc8913af2f9.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/4e4f37647e214e37b81e53833974c30b3fe78c77.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.090849Z",
+    "updatedAt": "2026-02-06T02:56:56.090856Z"
+  },
+  {
+    "name": "Te de reducción extrema y central",
+    "description": "",
+    "sku": "DUX08135032020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-de-reduccin-extrema-y-central",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee.Red.Ext/Cent.32x25x20",
+          "sku": "DUX08135032020",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext/Cent.32x20x25",
+          "sku": "DUX08135032225",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/53a2b2d697319fdc16b9bc6443cf354cec17a692.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/17f12ab00a7f2529653847d69b440111ca9f5752.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/53a2b2d697319fdc16b9bc6443cf354cec17a692.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/17f12ab00a7f2529653847d69b440111ca9f5752.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.091148Z",
+    "updatedAt": "2026-02-06T02:56:56.091154Z"
+  },
+  {
+    "name": "Te de reducción extrema",
+    "description": "",
+    "sku": "DUX08134020025",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-de-reduccin-extrema",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee Red.Ext.20 E 25mm",
+          "sku": "DUX08134020025",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext.20 E 32mm",
+          "sku": "DUX08134020032",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext.25 E 20mm",
+          "sku": "DUX08134025020",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext.25 E 32",
+          "sku": "DUX08134025032",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext.32 E 20mm",
+          "sku": "DUX08134032020",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Ext.32 E 25",
+          "sku": "DUX08134032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/017e5fd16817deb0fc71adca45a46664fdc334ae.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/6325b75c7e0f2a3922239b3205557a1f336ad8a3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/017e5fd16817deb0fc71adca45a46664fdc334ae.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/6325b75c7e0f2a3922239b3205557a1f336ad8a3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.091530Z",
+    "updatedAt": "2026-02-06T02:56:56.091536Z"
+  },
+  {
+    "name": "Te de reducción central",
+    "description": "",
+    "sku": "DUX08133025020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-de-reduccin-central",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee Red.Cent.25 x 20mm",
+          "sku": "DUX08133025020",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.32 x 20mm",
+          "sku": "DUX08133032020",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.32 x 25mm",
+          "sku": "DUX08133032025",
+          "active": true
+        },
+        {
+          "size": "Tee Red. Central 40 x 25mm",
+          "sku": "DUX08133040025",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.40 x 32mm",
+          "sku": "DUX08133040032",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Central 50 x 32mm",
+          "sku": "DUX08133050032",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.50 x 40mm",
+          "sku": "DUX08133050040",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Central 63 x 40mm",
+          "sku": "DUX08133063040",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.63 x 50mm",
+          "sku": "DUX08133063050",
+          "active": true
+        },
+        {
+          "size": "Tee Red.Cent.75x5O mm.",
+          "sku": "DUX08133075050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/06b69a7bedc920707c19c91e7c49359ef26ff2bf.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3f76ba67b0ad1cedff03485a4f162edbe92d57d8.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/06b69a7bedc920707c19c91e7c49359ef26ff2bf.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3f76ba67b0ad1cedff03485a4f162edbe92d57d8.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.092007Z",
+    "updatedAt": "2026-02-06T02:56:56.092013Z"
+  },
+  {
+    "name": "Te con rosca central macho",
+    "description": "",
+    "sku": "DUX08132020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-con-rosca-central-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee c/Ros.Cent M.20x1/2\"",
+          "sku": "DUX08132020015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.Cent.M.25x1/2\"",
+          "sku": "DUX08132025015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.Cent.M.25x3/4\"",
+          "sku": "DUX08132025020",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.Cent.M.32x1/2\"",
+          "sku": "DUX08132032015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.Cent.M.32x3/4\"",
+          "sku": "DUX08132032020",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.Cent.M.32x1\"",
+          "sku": "DUX08132032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/89dd26cb37759b970867163ec8352e6e39bfbcbd.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/303cf1a6b7e132db660941e09485cb7492f574a4.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/89dd26cb37759b970867163ec8352e6e39bfbcbd.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/303cf1a6b7e132db660941e09485cb7492f574a4.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.092481Z",
+    "updatedAt": "2026-02-06T02:56:56.092489Z"
+  },
+  {
+    "name": "Te con rosca central hembra",
+    "description": "",
+    "sku": "DUX08131020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-con-rosca-central-hembra",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee c/Ros.c/H.20x1/2\"",
+          "sku": "DUX08131020015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.c/H.25x1/2\"",
+          "sku": "DUX08131025015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.c/H.25x3/4\"",
+          "sku": "DUX08131025020",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.c/H.32x1/2\"",
+          "sku": "DUX08131032015",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.c/H.32x3/4\"",
+          "sku": "DUX08131032020",
+          "active": true
+        },
+        {
+          "size": "Tee c/Ros.c/H.32x1\"",
+          "sku": "DUX08131032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/63189de58eba8da0962a18c30c20cf7cb4dd0de7.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ed4c8fdfc414729203806c27ee3bf4844bb0a07b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/63189de58eba8da0962a18c30c20cf7cb4dd0de7.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ed4c8fdfc414729203806c27ee3bf4844bb0a07b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.092840Z",
+    "updatedAt": "2026-02-06T02:56:56.092847Z"
+  },
+  {
+    "name": "Te normal",
+    "description": "",
+    "sku": "DUX08130020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "te-normal",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tee Normal de 20mm",
+          "sku": "DUX08130020000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 25mm",
+          "sku": "DUX08130025000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 32mm",
+          "sku": "DUX08130032000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 40mm",
+          "sku": "DUX08130040000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 50mm",
+          "sku": "DUX08130050000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 63mm",
+          "sku": "DUX08130063000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 75mm",
+          "sku": "DUX08130075000",
+          "active": true
+        },
+        {
+          "size": "Tee Normal de 90mm",
+          "sku": "DUX08130090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "DUX08130110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/142893c90d601a3ef8551346d7b1a76070a74b7e.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/95ab06d4d96f32169fcca32eaaa1662c98eba5db.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/142893c90d601a3ef8551346d7b1a76070a74b7e.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/95ab06d4d96f32169fcca32eaaa1662c98eba5db.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.093208Z",
+    "updatedAt": "2026-02-06T02:56:56.093214Z"
+  },
+  {
+    "name": "Curvas de Sobrepasaje",
+    "description": "",
+    "sku": "DUX08085020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curvas-de-sobrepasaje",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "CURVA DE SOBREPASAJE 20MM",
+          "sku": "DUX08085020000",
+          "active": true
+        },
+        {
+          "size": "CURVA DE SOBREPASAJE 25MM",
+          "sku": "DUX08085025000",
+          "active": true
+        },
+        {
+          "size": "CURVA DE SOBREPASAJE 32MM",
+          "sku": "DUX08085032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/8b6a67f228cacb9c69fdcae2c7b1f70be2be7a66.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/8b6a67f228cacb9c69fdcae2c7b1f70be2be7a66.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.093517Z",
+    "updatedAt": "2026-02-06T02:56:56.093523Z"
+  },
+  {
+    "name": "Sobrepaso Fusion",
+    "description": "",
+    "sku": "DUX08084020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "sobrepaso-fusion",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 mm",
+          "sku": "DUX08084020000",
+          "active": true
+        },
+        {
+          "size": "25 mm",
+          "sku": "DUX08084025000",
+          "active": true
+        },
+        {
+          "size": "32 mm",
+          "sku": "DUX08084032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9ac49f3b163870d68031f962d3fa48f40c18e1f9.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/22c6ea4eab6def9da6d627b8b59f5eccfd875a23.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9ac49f3b163870d68031f962d3fa48f40c18e1f9.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/22c6ea4eab6def9da6d627b8b59f5eccfd875a23.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.093790Z",
+    "updatedAt": "2026-02-06T02:56:56.093794Z"
+  },
+  {
+    "name": "Curva de sobrepasaje para armar H-H",
+    "description": "",
+    "sku": "DUX08086020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curva-de-sobrepasaje-para-armar-h-h",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Curva Sobrepasaje Armada 20mm",
+          "sku": "DUX08086020000",
+          "active": true
+        },
+        {
+          "size": "Curva Sobrepasaje Armada 25mm",
+          "sku": "DUX08086025000",
+          "active": true
+        },
+        {
+          "size": "Curva Sobrepasaje Armada 32mm",
+          "sku": "DUX08086032000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/63eec4e23babfc82df507669a0c46eac3af40635.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/a4b05966c5e612c07522748e06a3bae7eb3cf455.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/63eec4e23babfc82df507669a0c46eac3af40635.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/a4b05966c5e612c07522748e06a3bae7eb3cf455.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.094131Z",
+    "updatedAt": "2026-02-06T02:56:56.094138Z"
+  },
+  {
+    "name": "Curva a 90º",
+    "description": "",
+    "sku": "DUX08002090020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "curva-a-90",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Curva a 90° de 20 mm",
+          "sku": "DUX08002090020",
+          "active": true
+        },
+        {
+          "size": "Curva a 90° de 25 mm",
+          "sku": "DUX08002090025",
+          "active": true
+        },
+        {
+          "size": "Curva a 90° de 32 mm",
+          "sku": "DUX08002090032",
+          "active": true
+        },
+        {
+          "size": "Curva a 90° de 40 mm",
+          "sku": "DUX08002090040",
+          "active": true
+        },
+        {
+          "size": "Curva a 90° de 50 mm",
+          "sku": "DUX08002090050",
+          "active": true
+        },
+        {
+          "size": "Curva a 90° de 63 mm",
+          "sku": "DUX08002090063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/84178c3ff150dd4df227863b46789f957c5cd485.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/b77b08f18283545f2de65b4ce257938357ab98b2.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/84178c3ff150dd4df227863b46789f957c5cd485.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/b77b08f18283545f2de65b4ce257938357ab98b2.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.094558Z",
+    "updatedAt": "2026-02-06T02:56:56.094565Z"
+  },
+  {
+    "name": "Codo 90º c/base hembra extra larga",
+    "description": "",
+    "sku": "DUX08097020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-90-cbase-hembra-extra-larga",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo 90º C/Base Hembra Extra Larga",
+          "sku": "DUX08097020015",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c406faaa45374e366bdbc27a70f60c93cf357d31.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c406faaa45374e366bdbc27a70f60c93cf357d31.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.094840Z",
+    "updatedAt": "2026-02-06T02:56:56.094846Z"
+  },
+  {
+    "name": "Codo 90º c/base hembra larga",
+    "description": "",
+    "sku": "DUX08096020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-90-cbase-hembra-larga",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo 90º C/Base Hembra Larga",
+          "sku": "DUX08096020015",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/51a1c8e28d94c9698c84bdf59e89f9de783b6d02.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/51a1c8e28d94c9698c84bdf59e89f9de783b6d02.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.095102Z",
+    "updatedAt": "2026-02-06T02:56:56.095110Z"
+  },
+  {
+    "name": "Codo 90º con rosca macho",
+    "description": "",
+    "sku": "DUX08092020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-90-con-rosca-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "C.A 90ºRos.M.20 x 1/2\"",
+          "sku": "DUX08092020015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.M.25 x 1/2\"",
+          "sku": "DUX08092025015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.M.25 x 3/4\"",
+          "sku": "DUX08092025020",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.M.32 x 1/2\"",
+          "sku": "DUX08092032015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.M.32 x 3/4\"",
+          "sku": "DUX08092032020",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.M.32 x 1\"",
+          "sku": "DUX08092032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b237219e158f726a6ae14e24e98f1b1996a4f330.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/0d3024af9d38276138e655d7634523ad26785121.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b237219e158f726a6ae14e24e98f1b1996a4f330.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/0d3024af9d38276138e655d7634523ad26785121.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.095448Z",
+    "updatedAt": "2026-02-06T02:56:56.095454Z"
+  },
+  {
+    "name": "Codo 90º con rosca hembra",
+    "description": "",
+    "sku": "DUX08091020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-90-con-rosca-hembra",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "C.A 90ºRos.H.20x1/2\"",
+          "sku": "DUX08091020015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.H.25 x 1/2\"",
+          "sku": "DUX08091025015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.H.25 x 3/4\"",
+          "sku": "DUX08091025020",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.H.32 x 1/2\"",
+          "sku": "DUX08091032015",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.H.32x 3/4\"",
+          "sku": "DUX08091032020",
+          "active": true
+        },
+        {
+          "size": "C.A 90ºRos.H.32 x 1\"",
+          "sku": "DUX08091032025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/0b0ab971ba497e80871de1bbae5d286a8fe3304d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/da4e2f710ce1fb31f66e451b33620755ad098f03.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/0b0ab971ba497e80871de1bbae5d286a8fe3304d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/da4e2f710ce1fb31f66e451b33620755ad098f03.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.095779Z",
+    "updatedAt": "2026-02-06T02:56:56.095783Z"
+  },
+  {
+    "name": "Codo macho-hembra a 90º",
+    "description": "",
+    "sku": "DUX08092090020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-macho-hembra-a-90",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo Normal a 90º M-H 20mm",
+          "sku": "DUX08092090020",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º M.H.25mm",
+          "sku": "DUX08092090025",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/73f14da066dd3b3b2c3f9043e0ecc78bcd28f599.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/126a2fb986213dcfe9ce93469ac8a11aa894a90f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/73f14da066dd3b3b2c3f9043e0ecc78bcd28f599.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/126a2fb986213dcfe9ce93469ac8a11aa894a90f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.096036Z",
+    "updatedAt": "2026-02-06T02:56:56.096042Z"
+  },
+  {
+    "name": "Codo macho-hembra a 45º",
+    "description": "",
+    "sku": "DUX08092045020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-macho-hembra-a-45",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo MH a 45º de 20mm",
+          "sku": "DUX08092045020",
+          "active": true
+        },
+        {
+          "size": "Codo MH a 45º de 25mm",
+          "sku": "DUX08092045025",
+          "active": true
+        },
+        {
+          "size": "Codo MH a 45º de 32mm",
+          "sku": "DUX08092045032",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/f01fd2ed4ee0db5b00b343c09ffec12801fc795d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/2785920267b0d206a406922d160266a4d819364b.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/f01fd2ed4ee0db5b00b343c09ffec12801fc795d.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/2785920267b0d206a406922d160266a4d819364b.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.096321Z",
+    "updatedAt": "2026-02-06T02:56:56.096326Z"
+  },
+  {
+    "name": "Codo a 90º",
+    "description": "",
+    "sku": "DUX08090090020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-90",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo Normal a 90º de 20mm",
+          "sku": "DUX08090090020",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 25mm",
+          "sku": "DUX08090090025",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90 de 32 mm",
+          "sku": "DUX08090090032",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 40mm",
+          "sku": "DUX08090090040",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 50mm",
+          "sku": "DUX08090090050",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 63mm",
+          "sku": "DUX08090090063",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 75mm",
+          "sku": "DUX08090090075",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 90mm",
+          "sku": "DUX08090090090",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 90º de 110mm",
+          "sku": "DUX08090090110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a1c1ba42a657f210d455058e1c8bcd905b38cca2.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ecd8ecd42d1969dc7a319b315ce1f8ba21d211ba.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a1c1ba42a657f210d455058e1c8bcd905b38cca2.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ecd8ecd42d1969dc7a319b315ce1f8ba21d211ba.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.096780Z",
+    "updatedAt": "2026-02-06T02:56:56.096786Z"
+  },
+  {
+    "name": "Codo a 45º",
+    "description": "",
+    "sku": "DUX08090045020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "codo-a-45",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Codo Normal a 45º de 20mm",
+          "sku": "DUX08090045020",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 25mm",
+          "sku": "DUX08090045025",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 32mm",
+          "sku": "DUX08090045032",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 40mm",
+          "sku": "DUX08090045040",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 50mm",
+          "sku": "DUX08090045050",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 63mm",
+          "sku": "DUX08090045063",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 75mm",
+          "sku": "DUX08090045075",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 90mm",
+          "sku": "DUX08090045090",
+          "active": true
+        },
+        {
+          "size": "Codo Normal a 45º de 110mm",
+          "sku": "DUX08090045110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/1030d8893484051eee6e2d0855e59c3941858540.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/d9b5502df6c3292570f8907d1df3ff612bf6af53.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/1030d8893484051eee6e2d0855e59c3941858540.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/d9b5502df6c3292570f8907d1df3ff612bf6af53.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.097351Z",
+    "updatedAt": "2026-02-06T02:56:56.097358Z"
+  },
+  {
+    "name": "Cruz con sobrepaso",
+    "description": "",
+    "sku": "DUXCRUZ CON SOBREPASO 20",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "cruz-con-sobrepaso",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "08-180085020",
+          "sku": "DUXCRUZ CON SOBREPASO 20",
+          "active": true
+        },
+        {
+          "size": "08-180085025",
+          "sku": "DUXCRUZ CON SOBREPASO 25 X 20",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/472634dded4f731dd1e41dca60610a619c323049.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/472634dded4f731dd1e41dca60610a619c323049.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.097620Z",
+    "updatedAt": "2026-02-06T02:56:56.097625Z"
+  },
+  {
+    "name": "Unión doble plástica RM",
+    "description": "",
+    "sku": "DUX08333040032",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-plstica-rm",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "UNION DOBLE PLASTICA RM 40 x 1 1/4",
+          "sku": "DUX08333040032",
+          "active": true
+        },
+        {
+          "size": "UNION DOBLE PLASTICA RM 50 x 1 1/2",
+          "sku": "DUX08333050040",
+          "active": true
+        },
+        {
+          "size": "UNION DOBLE PLASTICA RM 63 x 2",
+          "sku": "DUX08333063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/c48dc9baa9b89ae19a8e50ae5f00da16462f9a67.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/c48dc9baa9b89ae19a8e50ae5f00da16462f9a67.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.097894Z",
+    "updatedAt": "2026-02-06T02:56:56.097899Z"
+  },
+  {
+    "name": "Adaptador hembra c/brida metálica Ansi",
+    "description": "",
+    "sku": "DUX08323063000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "adaptador-hembra-cbrida-metlica-ansi",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ADAPTADOR HEMBRA 63MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08323063000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 75MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08323075000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 90MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08323090000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 110MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08323110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/ca2dffed96a640aa525c6bd355f8bf6249fda0b9.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/ca2dffed96a640aa525c6bd355f8bf6249fda0b9.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.098183Z",
+    "updatedAt": "2026-02-06T02:56:56.098190Z"
+  },
+  {
+    "name": "Adaptador macho c/brida metálica Ansi",
+    "description": "",
+    "sku": "DUX08322063000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "adaptador-macho-cbrida-metlica-ansi",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ADAPTADOR MACHO 63MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08322063000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 75MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08322075000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 90MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08322090000",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 110MM C/BRIDA METALICA ANSI B16.5",
+          "sku": "DUX08322110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/d8ce3a71368315a3ea8457da9bb7811f76dcc662.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/d8ce3a71368315a3ea8457da9bb7811f76dcc662.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.098458Z",
+    "updatedAt": "2026-02-06T02:56:56.098462Z"
+  },
+  {
+    "name": "Adaptador hembra c/brida metal Ansi",
+    "description": "",
+    "sku": "DUX08323063150",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "adaptador-hembra-cbrida-metal-ansi",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ADAPTADOR HEMBRA 63MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08323063150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 75MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08323075150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 90MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08323090150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR HEMBRA 110 MM C/BRIDA ANSI 150LB",
+          "sku": "DUX08323110150",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3e0abdfa28d593d968cc6459ef13c3d47f44b2cd.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3e0abdfa28d593d968cc6459ef13c3d47f44b2cd.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.098726Z",
+    "updatedAt": "2026-02-06T02:56:56.098732Z"
+  },
+  {
+    "name": "Adaptador macho c/brida metal Ansi",
+    "description": "",
+    "sku": "DUX08322063150",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "adaptador-macho-cbrida-metal-ansi",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "ADAPTADOR MACHO 63MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08322063150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 75MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08322075150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 90MM C/BRIDA METAL ANSI B16.5-150LB",
+          "sku": "DUX08322090150",
+          "active": true
+        },
+        {
+          "size": "ADAPTADOR MACHO 110MM C/BRIDA ANSI 150LB",
+          "sku": "DUX08322110150",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3d668a09a5e0ab9a6440638bd1c8a0d4c35cd7ad.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3d668a09a5e0ab9a6440638bd1c8a0d4c35cd7ad.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.099053Z",
+    "updatedAt": "2026-02-06T02:56:56.099060Z"
+  },
+  {
+    "name": "Adaptador de brida",
+    "description": "",
+    "sku": "DUX08321020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "adaptador-de-brida",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20",
+          "sku": "DUX08321020000",
+          "active": true
+        },
+        {
+          "size": "25",
+          "sku": "DUX08321025000",
+          "active": true
+        },
+        {
+          "size": "32",
+          "sku": "DUX08321032000",
+          "active": true
+        },
+        {
+          "size": "40",
+          "sku": "DUX08321040000",
+          "active": true
+        },
+        {
+          "size": "50",
+          "sku": "DUX08321050000",
+          "active": true
+        },
+        {
+          "size": "63",
+          "sku": "DUX08321063000",
+          "active": true
+        },
+        {
+          "size": "75",
+          "sku": "DUX08321075000",
+          "active": true
+        },
+        {
+          "size": "90",
+          "sku": "DUX08321090000",
+          "active": true
+        },
+        {
+          "size": "110",
+          "sku": "DUX08321110000",
+          "active": true
+        },
+        {
+          "size": "125",
+          "sku": "DUX08321125000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/627d9f934d96b398fed9bb01447f2363c49f2854.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/627d9f934d96b398fed9bb01447f2363c49f2854.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.099473Z",
+    "updatedAt": "2026-02-06T02:56:56.099478Z"
+  },
+  {
+    "name": "Niple corto con topes",
+    "description": "",
+    "sku": "DUX",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "niple-corto-con-topes",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "",
+          "sku": "DUX",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 20 MM",
+          "sku": "DUX08280020000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 25 MM",
+          "sku": "DUX08280025000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 32 MM",
+          "sku": "DUX08280032000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 40 MM",
+          "sku": "DUX08280040000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 50 mm",
+          "sku": "DUX08280050000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 63 mm",
+          "sku": "DUX08280063000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 75 MM",
+          "sku": "DUX08280075000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 90 MM",
+          "sku": "DUX08280090000",
+          "active": true
+        },
+        {
+          "size": "NIPLE CON TOPE 110 MM",
+          "sku": "DUX08280110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/b824c284fde8f4ec68cc1bd997bc18e32a9aca36.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/b824c284fde8f4ec68cc1bd997bc18e32a9aca36.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.099926Z",
+    "updatedAt": "2026-02-06T02:56:56.099931Z"
+  },
+  {
+    "name": "Unión doble mixta RH con tuerca plástica",
+    "description": "",
+    "sku": "DUX08332020015",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-mixta-rh-con-tuerca-plstica",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Union doble plastica RH 20 x 1/2",
+          "sku": "DUX08332020015",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica RH 25 x 3/4",
+          "sku": "DUX08332025020",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica RH 32 x 1",
+          "sku": "DUX08332032025",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica RH 40 x 1 1/4",
+          "sku": "DUX08332040032",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica RH 50 x 1 1/2",
+          "sku": "DUX08332050040",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica RH 63 x 2",
+          "sku": "DUX08332063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/2841b7026ec4b2f9e100be65868b08a46a48edc6.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/2841b7026ec4b2f9e100be65868b08a46a48edc6.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.100224Z",
+    "updatedAt": "2026-02-06T02:56:56.100229Z"
+  },
+  {
+    "name": "Unión doble con tuerca plástica",
+    "description": "",
+    "sku": "DUX08332020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-con-tuerca-plstica",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Union doble plastica 20 mm",
+          "sku": "DUX08332020000",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica 25 mm",
+          "sku": "DUX08332025000",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica 32 mm",
+          "sku": "DUX08332032000",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica 40 mm",
+          "sku": "DUX08332040000",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica 50 mm",
+          "sku": "DUX08332050000",
+          "active": true
+        },
+        {
+          "size": "Union doble plastica 63 mm",
+          "sku": "DUX08332063000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/69d149345229ca2c74a6a21dbc5425161e55cc00.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/69d149345229ca2c74a6a21dbc5425161e55cc00.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.100732Z",
+    "updatedAt": "2026-02-06T02:56:56.100737Z"
+  },
+  {
+    "name": "Tapa",
+    "description": "",
+    "sku": "DUX08300020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "tapa",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Hembra de 20mm",
+          "sku": "DUX08300020000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 25mm",
+          "sku": "DUX08300025000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 32mm",
+          "sku": "DUX08300032000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 40mm",
+          "sku": "DUX08300040000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 50mm",
+          "sku": "DUX08300050000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 63mm",
+          "sku": "DUX08300063000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 75mm",
+          "sku": "DUX08300075000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 90mm",
+          "sku": "DUX08300090000",
+          "active": true
+        },
+        {
+          "size": "Hembra de 110mm",
+          "sku": "DUX08300110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/a07797c6bf36da5f4f2e461949027c6e41da8a94.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/76e45537d5ab3161ca734c72746123b0c180e836.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/a07797c6bf36da5f4f2e461949027c6e41da8a94.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/76e45537d5ab3161ca734c72746123b0c180e836.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.101072Z",
+    "updatedAt": "2026-02-06T02:56:56.101078Z"
+  },
+  {
+    "name": "Unión doble mixta con brida",
+    "description": "",
+    "sku": "DUX08331040032",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-mixta-con-brida",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Unión Doble Bridada Mixta 40 x 1.1/4\"",
+          "sku": "DUX08331040032",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada Mixta 50 x 1.1/2\"",
+          "sku": "DUX08331050040",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada Mixta 63 x 2\"",
+          "sku": "DUX08331063050",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada Mixta 75 x 2.1/2\"",
+          "sku": "DUX08331075063",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada Mixta 90 x 3\"",
+          "sku": "DUX08331090080",
+          "active": true
+        },
+        {
+          "size": "Unión doble bridada mixta 110 x 4´´",
+          "sku": "DUX08331110100",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9c41b8d87eaaefa80455c2bd224aace72dfa488e.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/7ce6983a5df6fb84a8895df7afa1d870c31573ee.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9c41b8d87eaaefa80455c2bd224aace72dfa488e.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/7ce6983a5df6fb84a8895df7afa1d870c31573ee.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.101349Z",
+    "updatedAt": "2026-02-06T02:56:56.101353Z"
+  },
+  {
+    "name": "Unión doble con brida",
+    "description": "",
+    "sku": "DUX08331040040",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-doble-con-brida",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Unión Doble Bridada  40 x 40",
+          "sku": "DUX08331040040",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada 50 x 50",
+          "sku": "DUX08331050050",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada 63 x 63",
+          "sku": "DUX08331063063",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada 75 x 75",
+          "sku": "DUX08331075075",
+          "active": true
+        },
+        {
+          "size": "Unión Doble Bridada 90 x 90",
+          "sku": "DUX08331090090",
+          "active": true
+        },
+        {
+          "size": "Unión doble bridada 110 x 110",
+          "sku": "DUX08331110110",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/3e2a6a58168014674afe18c0290fa3daa06750a7.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/37fcaa12e3440a608697a1756d9d072538b83876.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/3e2a6a58168014674afe18c0290fa3daa06750a7.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/37fcaa12e3440a608697a1756d9d072538b83876.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.101612Z",
+    "updatedAt": "2026-02-06T02:56:56.101616Z"
+  },
+  {
+    "name": "Tubo macho con enchufe macho",
+    "description": "",
+    "sku": "DUX08274020015",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-macho-con-enchufe-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tubo Macho Fus.Macho 20x1/2",
+          "sku": "DUX08274020015",
+          "active": true
+        },
+        {
+          "size": "Tubo Macho Fus Macho 25x3/4",
+          "sku": "DUX08274025020",
+          "active": true
+        },
+        {
+          "size": "Tubo Macho Fus.Macho 32x1",
+          "sku": "DUX08274032025",
+          "active": true
+        },
+        {
+          "size": "Tubo Macho Fus.Macho 40x1.1/4",
+          "sku": "DUX08274040032",
+          "active": true
+        },
+        {
+          "size": "Tubo Macho Fus.Macho 50x11/2",
+          "sku": "DUX08274050040",
+          "active": true
+        },
+        {
+          "size": "Tubo Macho Fus.Macho 63 x 2",
+          "sku": "DUX08274063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/0f47dba74128e8ff686a58981beeb1666091fc24.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/e82aef855970921d6131ab7617b08ff576019257.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/0f47dba74128e8ff686a58981beeb1666091fc24.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/e82aef855970921d6131ab7617b08ff576019257.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.101929Z",
+    "updatedAt": "2026-02-06T02:56:56.101935Z"
+  },
+  {
+    "name": "Tubo macho",
+    "description": "",
+    "sku": "DUX08272020015",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20 x 1/2''",
+          "sku": "DUX08272020015",
+          "active": true
+        },
+        {
+          "size": "20 x 3/4''",
+          "sku": "DUX08272020020",
+          "active": true
+        },
+        {
+          "size": "25 x 1/2''",
+          "sku": "DUX08272025015",
+          "active": true
+        },
+        {
+          "size": "25 x 3/4''",
+          "sku": "DUX08272025020",
+          "active": true
+        },
+        {
+          "size": "32 x 3/4''",
+          "sku": "DUX08272032020",
+          "active": true
+        },
+        {
+          "size": "32 x 1''",
+          "sku": "DUX08272032025",
+          "active": true
+        },
+        {
+          "size": "40 x 1.1/4''",
+          "sku": "DUX08272040032",
+          "active": true
+        },
+        {
+          "size": "50 x 1.1/2''",
+          "sku": "DUX08272050040",
+          "active": true
+        },
+        {
+          "size": "63 x 2''",
+          "sku": "DUX08272063050",
+          "active": true
+        },
+        {
+          "size": "75 x 2 1/2",
+          "sku": "DUX08272075063",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/624a946b1e88544815e54b49ee4d1b12bdc216f8.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/357278a22ad6f26cf8a1b4200c854c38edf701c7.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/624a946b1e88544815e54b49ee4d1b12bdc216f8.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/357278a22ad6f26cf8a1b4200c854c38edf701c7.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.102289Z",
+    "updatedAt": "2026-02-06T02:56:56.102294Z"
+  },
+  {
+    "name": "Tubo hembra con enchufe macho",
+    "description": "",
+    "sku": "DUX08273020015",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-hembra-con-enchufe-macho",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tubo Hembra Fus. Macho 20x1/2",
+          "sku": "DUX08273020015",
+          "active": true
+        },
+        {
+          "size": "Tubo Hembra Fus Macho 25x3/4",
+          "sku": "DUX08273025020",
+          "active": true
+        },
+        {
+          "size": "Tubo Hembra Fus.Macho 32x1",
+          "sku": "DUX08273032025",
+          "active": true
+        },
+        {
+          "size": "Tubo Hembra Fus.Macho 40x1.1/4",
+          "sku": "DUX08273040032",
+          "active": true
+        },
+        {
+          "size": "Tubo Hembra Fus.Macho 50x11/2",
+          "sku": "DUX08273050040",
+          "active": true
+        },
+        {
+          "size": "Tubo Hembra Fus.Macho 63 x 2",
+          "sku": "DUX08273063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/be8ea2168c3422dbb06d58b153222bf7fd13bedf.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3c0db1f403968e815b9dc848e0bf5d5090c7e2d5.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/be8ea2168c3422dbb06d58b153222bf7fd13bedf.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3c0db1f403968e815b9dc848e0bf5d5090c7e2d5.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.102556Z",
+    "updatedAt": "2026-02-06T02:56:56.102560Z"
+  },
+  {
+    "name": "Tubo hembra",
+    "description": "",
+    "sku": "DUX08271020010",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-hembra",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20x3/8''",
+          "sku": "DUX08271020010",
+          "active": true
+        },
+        {
+          "size": "20 x 1/2''",
+          "sku": "DUX08271020015",
+          "active": true
+        },
+        {
+          "size": "20 x 3/4''",
+          "sku": "DUX08271020020",
+          "active": true
+        },
+        {
+          "size": "25 x 1/2''",
+          "sku": "DUX08271025015",
+          "active": true
+        },
+        {
+          "size": "25 x 3/4''",
+          "sku": "DUX08271025020",
+          "active": true
+        },
+        {
+          "size": "32 x 3/4''",
+          "sku": "DUX08271032020",
+          "active": true
+        },
+        {
+          "size": "32 x 1''",
+          "sku": "DUX08271032025",
+          "active": true
+        },
+        {
+          "size": "40 x 1.1/4''",
+          "sku": "DUX08271040032",
+          "active": true
+        },
+        {
+          "size": "50 x 1.1/2''",
+          "sku": "DUX08271050040",
+          "active": true
+        },
+        {
+          "size": "63 x 2''",
+          "sku": "DUX08271063050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/62bb3d84af960e0e660b17ab19393c992a049e8b.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ed59cb68511165660c350ee5ebee865eae9c12a3.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/62bb3d84af960e0e660b17ab19393c992a049e8b.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/ed59cb68511165660c350ee5ebee865eae9c12a3.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.102868Z",
+    "updatedAt": "2026-02-06T02:56:56.102871Z"
+  },
+  {
+    "name": "Buje de reducción",
+    "description": "",
+    "sku": "DUX08241025020",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "buje-de-reduccin",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Buje Reducción 25 x 20mm",
+          "sku": "DUX08241025020",
+          "active": true
+        },
+        {
+          "size": "Buj.Reducción 32 x 20mm",
+          "sku": "DUX08241032020",
+          "active": true
+        },
+        {
+          "size": "Buj.Reducción 32 x 25mm",
+          "sku": "DUX08241032025",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 40 x 25mm",
+          "sku": "DUX08241040025",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 40 x 32mm",
+          "sku": "DUX08241040032",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 50 x 32mm",
+          "sku": "DUX08241050032",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 50 x 40mm",
+          "sku": "DUX08241050040",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 63 x 40mm",
+          "sku": "DUX08241063040",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 63 x 50mm",
+          "sku": "DUX08241063050",
+          "active": true
+        },
+        {
+          "size": "Buje Reducción 75 x 50mm",
+          "sku": "DUX08241075050",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/1e2ac2c763d02c569bfe9a23d6939afaae9bdf34.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/1fcf75211b57ba84e02c1bda9849e7520b26308f.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/1e2ac2c763d02c569bfe9a23d6939afaae9bdf34.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/1fcf75211b57ba84e02c1bda9849e7520b26308f.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.103276Z",
+    "updatedAt": "2026-02-06T02:56:56.103282Z"
+  },
+  {
+    "name": "Unión Normal",
+    "description": "",
+    "sku": "DUX08340020000",
+    "category": "68cda5f5ff392fb2b5d73db5",
+    "slug": "unin-normal",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "20mm",
+          "sku": "DUX08340020000",
+          "active": true
+        },
+        {
+          "size": "25mm",
+          "sku": "DUX08340025000",
+          "active": true
+        },
+        {
+          "size": "32mm",
+          "sku": "DUX08340032000",
+          "active": true
+        },
+        {
+          "size": "40mm",
+          "sku": "DUX08340040000",
+          "active": true
+        },
+        {
+          "size": "50mm",
+          "sku": "DUX08340050000",
+          "active": true
+        },
+        {
+          "size": "63mm",
+          "sku": "DUX08340063000",
+          "active": true
+        },
+        {
+          "size": "75mm",
+          "sku": "DUX08340075000",
+          "active": true
+        },
+        {
+          "size": "90mm",
+          "sku": "DUX08340090000",
+          "active": true
+        },
+        {
+          "size": "110mm",
+          "sku": "DUX08340110000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/01332252c26b3d67f2856abc672e0e675af7d284.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3e136ae69b10b32af0c7e3819c0fe80da27505e8.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/01332252c26b3d67f2856abc672e0e675af7d284.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/3e136ae69b10b32af0c7e3819c0fe80da27505e8.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.103621Z",
+    "updatedAt": "2026-02-06T02:56:56.103626Z"
+  },
+  {
+    "name": "Tubos Acqua System® Lilac",
+    "description": "",
+    "sku": "DUX08212020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubos-acqua-system-lilac",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212020000",
+          "active": true
+        },
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212025000",
+          "active": true
+        },
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212032000",
+          "active": true
+        },
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212040000",
+          "active": true
+        },
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212050000",
+          "active": true
+        },
+        {
+          "size": "Tubos Acqua System® Lilac",
+          "sku": "DUX08212063000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/1bb61866fc20db750f95ca1120bcfb44f62668b6.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/1bb61866fc20db750f95ca1120bcfb44f62668b6.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.103952Z",
+    "updatedAt": "2026-02-06T02:56:56.103959Z"
+  },
+  {
+    "name": "Tubo Acqua Lúminum® X-Treme",
+    "description": "",
+    "sku": "DUX80200020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-acqua-lminum-x-treme",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200020000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200025000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200032000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200040000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200050000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200063000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200075000",
+          "active": true
+        },
+        {
+          "size": "Caño Acqua Lúminum® X-Treme P+Q",
+          "sku": "DUX80200090000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/6c8ade0d1777d34957a74c58732ee2df4af14398.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/6c8ade0d1777d34957a74c58732ee2df4af14398.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.104453Z",
+    "updatedAt": "2026-02-06T02:56:56.104459Z"
+  },
+  {
+    "name": "Tubo Acqua System® Magnum PN25",
+    "description": "",
+    "sku": "DUX08125020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-acqua-system-magnum-pn25",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Caños A.S.Mag. PN 25 20mm",
+          "sku": "DUX08125020000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 25mm",
+          "sku": "DUX08125025000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 32mm",
+          "sku": "DUX08125032000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 40mm",
+          "sku": "DUX08125040000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 50mm",
+          "sku": "DUX08125050000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 63mm",
+          "sku": "DUX08125063000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 75mm",
+          "sku": "DUX08125075000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 25 90mm",
+          "sku": "DUX08125090000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/cf582f88580bc4a3a06a5e133f9879cfc4ad4ced.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/96a6abc4f2f84410879033df618fe59f0ad5c9ff.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/cf582f88580bc4a3a06a5e133f9879cfc4ad4ced.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/96a6abc4f2f84410879033df618fe59f0ad5c9ff.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.104897Z",
+    "updatedAt": "2026-02-06T02:56:56.104904Z"
+  },
+  {
+    "name": "Tubo Acqua System® Magnum PN20",
+    "description": "",
+    "sku": "DUX8120020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-acqua-system-magnum-pn20",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Caños A.S.Mag. PN 20 20mm",
+          "sku": "DUX8120020000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 25mm",
+          "sku": "DUX8120025000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 32mm",
+          "sku": "DUX8120032000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 40mm",
+          "sku": "DUX8120040000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 50mm",
+          "sku": "DUX8120050000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 63mm",
+          "sku": "DUX8120063000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 75mm",
+          "sku": "DUX8120075000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 20 90mm",
+          "sku": "DUX8120090000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S. Mag. PN 20 110mm",
+          "sku": "DUX8120110000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S. Mag. PN 20 125mm",
+          "sku": "DUX8120125000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/9370304b0463422743ab5e603cbaa60e82c8ca46.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/232aa35dcaf4da626143f3c0d42311f360b23f12.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/9370304b0463422743ab5e603cbaa60e82c8ca46.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/232aa35dcaf4da626143f3c0d42311f360b23f12.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.105323Z",
+    "updatedAt": "2026-02-06T02:56:56.105330Z"
+  },
+  {
+    "name": "Tubo Acqua System® Magnum PN12",
+    "description": "",
+    "sku": "DUX8112020000",
+    "category": "68cda5f5ff392fb2b5d73db4",
+    "slug": "tubo-acqua-system-magnum-pn12",
+    "brand": "ACQUA SYSTEM",
+    "brandSlug": "acqua-system",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": true,
+      "description": "",
+      "variants": [
+        {
+          "size": "Caños A.S.Mag. PN 12 20mm",
+          "sku": "DUX8112020000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 25mm",
+          "sku": "DUX8112025000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 32mm",
+          "sku": "DUX8112032000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 40mm",
+          "sku": "DUX8112040000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 50mm",
+          "sku": "DUX8112050000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 63mm",
+          "sku": "DUX8112063000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 75mm",
+          "sku": "DUX8112075000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 90mm",
+          "sku": "DUX8112090000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 110mm",
+          "sku": "DUX8112110000",
+          "active": true
+        },
+        {
+          "size": "Caños A.S.Mag. PN 12 125mm",
+          "sku": "DUX8112125000",
+          "active": true
+        }
+      ]
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.grupodema.com.ar/uploads/documents/20724b3b7bfa6f52d3e0708d9b6ffc201fd1608a.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/6f4a2ff5921afa85899b2d134fa2fd10ab2e605e.jpeg",
+    "images": [
+      "https://www.grupodema.com.ar/uploads/documents/20724b3b7bfa6f52d3e0708d9b6ffc201fd1608a.jpeg\nhttps://www.grupodema.com.ar/uploads/documents/6f4a2ff5921afa85899b2d134fa2fd10ab2e605e.jpeg"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-06T02:56:56.105907Z",
+    "updatedAt": "2026-02-06T02:56:56.105913Z"
+  }
+]

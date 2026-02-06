@@ -1,0 +1,2196 @@
+[
+  {
+    "name": "Tigre Tubo Cloacal 40Mm Junta Elástica",
+    "sku": "TJE11108504",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-40mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "1 M",
+          "sku": "TJE11108504",
+          "active": true
+        },
+        {
+          "size": "2 M",
+          "sku": "TJE11108512",
+          "active": true
+        },
+        {
+          "size": "3 M",
+          "sku": "TJE11108520",
+          "active": true
+        },
+        {
+          "size": "4 M",
+          "sku": "TJE11108539",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.824932Z",
+    "updatedAt": "2026-02-04T20:57:06.824950Z"
+  },
+  {
+    "name": "Tigre Tubo Cloacal 50Mm Junta Elástica",
+    "sku": "TJE11108547",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-50mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "1 M",
+          "sku": "TJE11108547",
+          "active": true
+        },
+        {
+          "size": "2 M",
+          "sku": "TJE11108555",
+          "active": true
+        },
+        {
+          "size": "3 M",
+          "sku": "TJE11108563",
+          "active": true
+        },
+        {
+          "size": "4 M",
+          "sku": "TJE11108571",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825014Z",
+    "updatedAt": "2026-02-04T20:57:06.825017Z"
+  },
+  {
+    "name": "Tigre Tubo Cloacal 63Mm Junta Elástica",
+    "sku": "TJE11106315",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-63mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "1 M",
+          "sku": "TJE11106315",
+          "active": true
+        },
+        {
+          "size": "2 M",
+          "sku": "TJE11106323",
+          "active": true
+        },
+        {
+          "size": "3 M",
+          "sku": "TJE11106331",
+          "active": true
+        },
+        {
+          "size": "4 M",
+          "sku": "TJE11106340",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825075Z",
+    "updatedAt": "2026-02-04T20:57:06.825077Z"
+  },
+  {
+    "name": "Tigre Tubo Cloacal 110Mm Junta Elástica",
+    "sku": "TJE11107010",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-110mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "1 M",
+          "sku": "TJE11107010",
+          "active": true
+        },
+        {
+          "size": "2 M",
+          "sku": "TJE11107028",
+          "active": true
+        },
+        {
+          "size": "3 M",
+          "sku": "TJE11107036",
+          "active": true
+        },
+        {
+          "size": "4 M",
+          "sku": "TJE11107044",
+          "active": true
+        },
+        {
+          "size": "6 M",
+          "sku": "TJE11107052",
+          "active": true
+        },
+        {
+          "size": "6 M ESP 2,5",
+          "sku": "TJE11107109",
+          "active": true
+        },
+        {
+          "size": "3 M ESP 2,5",
+          "sku": "TJE11107087",
+          "active": true
+        },
+        {
+          "size": "2M ESP 2,5",
+          "sku": "TJE11107079",
+          "active": true
+        },
+        {
+          "size": "1 M ESP 2,5",
+          "sku": "TJE11107060",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825133Z",
+    "updatedAt": "2026-02-04T20:57:06.825136Z"
+  },
+  {
+    "name": "Tigre Tubo Cloacal 160Mm Junta Elástica",
+    "sku": "TJE11108024",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-160mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "3 M",
+          "sku": "TJE11108024",
+          "active": true
+        },
+        {
+          "size": "4 M",
+          "sku": "TJE11108032",
+          "active": true
+        },
+        {
+          "size": "6 M",
+          "sku": "TJE11108040",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825186Z",
+    "updatedAt": "2026-02-04T20:57:06.825188Z"
+  },
+  {
+    "name": "Tigre Tubo Cloacal Iram 110Mm Junta Elástica",
+    "sku": "TJE11107095",
+    "category": "68cda5f5ff392fb2b5d73dbc",
+    "slug": "tigre-tubo-cloacal-iram-110mm-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "4 M ESP 2,5",
+          "sku": "TJE11107095",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825254Z",
+    "updatedAt": "2026-02-04T20:57:06.825256Z"
+  },
+  {
+    "name": "Tigre Codo Junta Elástica",
+    "sku": "TJE29801002",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "45 M",
+          "sku": "TJE29801002",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE29801029",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE29801037",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE29800464",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26030455",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825276Z",
+    "updatedAt": "2026-02-04T20:57:06.825279Z"
+  },
+  {
+    "name": "Tigre Codo 45 H-H Junta Elástica",
+    "sku": "TJE26050642",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-45-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE26050642",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE26030641",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26030650",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE26030714",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825346Z",
+    "updatedAt": "2026-02-04T20:57:06.825348Z"
+  },
+  {
+    "name": "Tigre Codo 87 Junta Elástica",
+    "sku": "TJE29800804",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "30 M",
+          "sku": "TJE29800804",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE29801320",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26031060",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26031109",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26031362",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825366Z",
+    "updatedAt": "2026-02-04T20:57:06.825367Z"
+  },
+  {
+    "name": "Tigre Codo 87 30 H-H Junta Elástica",
+    "sku": "TJE26031249",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-30-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE26031249",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE26031257",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26031265",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE26031311",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825424Z",
+    "updatedAt": "2026-02-04T20:57:06.825427Z"
+  },
+  {
+    "name": "Tigre Codo 87 30 Junta Elástica",
+    "sku": "TJE26031400",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-30-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM HH CORTO",
+          "sku": "TJE26031400",
+          "active": true
+        },
+        {
+          "size": "50 MM HH CORTO",
+          "sku": "TJE26031486",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825448Z",
+    "updatedAt": "2026-02-04T20:57:06.825451Z"
+  },
+  {
+    "name": "Tigre Codo 87 30 C/2 Acometidas M-H Junta Elástica",
+    "sku": "TJE26031567",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-30-c2-acometidas-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26031567",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//0/1/01019abc59ac690be89925ae9d5146bc.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//0/1/01019abc59ac690be89925ae9d5146bc.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825529Z",
+    "updatedAt": "2026-02-04T20:57:06.825532Z"
+  },
+  {
+    "name": "Tigre Codo 87 30 C/3 Acometidas M-H Junta Elástica",
+    "sku": "TJE26031575",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-30-c3-acometidas-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26031575",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//0/1/01019abc59ac690be89925ae9d5146bc.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//0/1/01019abc59ac690be89925ae9d5146bc.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825604Z",
+    "updatedAt": "2026-02-04T20:57:06.825607Z"
+  },
+  {
+    "name": "Tigre Codo 87 30 C/Base H-H Junta Elástica",
+    "sku": "TJE26031516",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-87-30-cbase-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 MM",
+          "sku": "TJE26031516",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/d/9d03e2e80b5f067aac2b41d2a2552015.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/d/9d03e2e80b5f067aac2b41d2a2552015.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825679Z",
+    "updatedAt": "2026-02-04T20:57:06.825682Z"
+  },
+  {
+    "name": "Tigre Codo Poliangular 0 A Junta Elástica",
+    "sku": "TJE26031745",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-poliangular-0-a-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "45 M",
+          "sku": "TJE26031745",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26031753",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26031761",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26031818",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825707Z",
+    "updatedAt": "2026-02-04T20:57:06.825710Z"
+  },
+  {
+    "name": "Tigre Curva 87 Junta Elástica",
+    "sku": "TJE26032016",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-curva-87-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "30 M",
+          "sku": "TJE26032016",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/e/6e6fde71c76043bc44c84d7747831110.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/e/6e6fde71c76043bc44c84d7747831110.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825730Z",
+    "updatedAt": "2026-02-04T20:57:06.825733Z"
+  },
+  {
+    "name": "Tigre Curva 87 30 C/Base M-H Junta Elástica",
+    "sku": "TJE26032067",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-curva-87-30-cbase-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 MM",
+          "sku": "TJE26032067",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/d/9d03e2e80b5f067aac2b41d2a2552015.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/d/9d03e2e80b5f067aac2b41d2a2552015.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825826Z",
+    "updatedAt": "2026-02-04T20:57:06.825829Z"
+  },
+  {
+    "name": "Tigre Puntera M-H Junta Elástica",
+    "sku": "TJE26032245",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-puntera-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE26032245",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE26032253",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26032261",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE26032318",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825884Z",
+    "updatedAt": "2026-02-04T20:57:06.825885Z"
+  },
+  {
+    "name": "Tigre Cupla H-H Junta Elástica",
+    "sku": "TJE29802912",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-cupla-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE29802912",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE29802920",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26032466",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE29802947",
+          "active": true
+        },
+        {
+          "size": "160 MM",
+          "sku": "TJE26032563",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.825944Z",
+    "updatedAt": "2026-02-04T20:57:06.825945Z"
+  },
+  {
+    "name": "Tigre Cupla Corrediza H-H Junta Elástica",
+    "sku": "TJE29802807",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-cupla-corrediza-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE29802807",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE29802823",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26032660",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE29802866",
+          "active": true
+        },
+        {
+          "size": "160 MM",
+          "sku": "TJE26032768",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/6/e6578b04bbae9fc67c81693dadc9752b.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/6/e6578b04bbae9fc67c81693dadc9752b.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826001Z",
+    "updatedAt": "2026-02-04T20:57:06.826002Z"
+  },
+  {
+    "name": "Tigre Ramal 87 Junta Elástica",
+    "sku": "TJE29803803",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "30 M",
+          "sku": "TJE29803803",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE29803927",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26033063",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE29804060",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26033160",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/a/9a5d27ae3b4a17efa6dca34a03579147.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/a/9a5d27ae3b4a17efa6dca34a03579147.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826015Z",
+    "updatedAt": "2026-02-04T20:57:06.826017Z"
+  },
+  {
+    "name": "Tigre Ramal 87 30 C/Reduccion M-H Junta Elástica",
+    "sku": "TJE26033543",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-30-creduccion-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 X 40 MM",
+          "sku": "TJE26033543",
+          "active": true
+        },
+        {
+          "size": "63 X 50 MM",
+          "sku": "TJE26033578",
+          "active": true
+        },
+        {
+          "size": "110 X 40 MM",
+          "sku": "TJE26033659",
+          "active": true
+        },
+        {
+          "size": "110 X 50 MM",
+          "sku": "TJE26033667",
+          "active": true
+        },
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26033675",
+          "active": true
+        },
+        {
+          "size": "160 X 110 MM",
+          "sku": "TJE26033748",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826071Z",
+    "updatedAt": "2026-02-04T20:57:06.826073Z"
+  },
+  {
+    "name": "Tigre Ramal 87 30 H-H Junta Elástica",
+    "sku": "TJE26033241",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-30-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 X 40 MM",
+          "sku": "TJE26033241",
+          "active": true
+        },
+        {
+          "size": "50 X 50 MM",
+          "sku": "TJE26033250",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826121Z",
+    "updatedAt": "2026-02-04T20:57:06.826123Z"
+  },
+  {
+    "name": "Tigre Ramal 87 30 C/Ventilacion M-H Junta Elástica",
+    "sku": "TJE26034230",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-30-cventilacion-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26034230",
+          "active": true
+        },
+        {
+          "size": "110 X 110 MM",
+          "sku": "TJE26033810",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826180Z",
+    "updatedAt": "2026-02-04T20:57:06.826182Z"
+  },
+  {
+    "name": "Tigre Ramal Doble 87 Junta Elástica",
+    "sku": "TJE26034515",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-doble-87-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "30 M",
+          "sku": "TJE26034515",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26034566",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26034671",
+          "active": true
+        },
+        {
+          "size": "30 M",
+          "sku": "TJE26034639",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826197Z",
+    "updatedAt": "2026-02-04T20:57:06.826198Z"
+  },
+  {
+    "name": "Tigre Ramal Invertido M-H Junta Elástica",
+    "sku": "TJE26034752",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-invertido-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 X 50 MM",
+          "sku": "TJE26034752",
+          "active": true
+        },
+        {
+          "size": "110 X 50 MM",
+          "sku": "TJE26034817",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826251Z",
+    "updatedAt": "2026-02-04T20:57:06.826253Z"
+  },
+  {
+    "name": "Tigre Ramal 87 Esq C/Ventder Mh Junta Elástica",
+    "sku": "TJE37642436",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-esq-cventder-mh-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110X110",
+          "sku": "TJE37642436",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826308Z",
+    "updatedAt": "2026-02-04T20:57:06.826310Z"
+  },
+  {
+    "name": "Tigre Ramal 87 Esq C/Ventizq Mh Junta Elástica",
+    "sku": "TJE37642444",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-87-esq-cventizq-mh-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110X110",
+          "sku": "TJE37642444",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826374Z",
+    "updatedAt": "2026-02-04T20:57:06.826376Z"
+  },
+  {
+    "name": "Tigre Ramal 135 Esq C/Ventder Mh Junta Elástica",
+    "sku": "TJE37642460",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-135-esq-cventder-mh-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110X110",
+          "sku": "TJE37642460",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826429Z",
+    "updatedAt": "2026-02-04T20:57:06.826432Z"
+  },
+  {
+    "name": "Tigre Ramal 135 Esq C/Ventizq Mh Junta Elástica",
+    "sku": "TJE37642452",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-135-esq-cventizq-mh-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110X110",
+          "sku": "TJE37642452",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//8/a/8ad48e527d3097f3756787779dcbc98f.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826497Z",
+    "updatedAt": "2026-02-04T20:57:06.826499Z"
+  },
+  {
+    "name": "Tigre Ramal Junta Elástica",
+    "sku": "TJE26035040",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "45 M",
+          "sku": "TJE26035040",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26035058",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26035066",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26035112",
+          "active": true
+        },
+        {
+          "size": "45 M",
+          "sku": "TJE26035163",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/a/9a5d27ae3b4a17efa6dca34a03579147.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/a/9a5d27ae3b4a17efa6dca34a03579147.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826512Z",
+    "updatedAt": "2026-02-04T20:57:06.826514Z"
+  },
+  {
+    "name": "Tigre Ramal 45 H-H Junta Elástica",
+    "sku": "TJE26035244",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-45-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 X 40 MM",
+          "sku": "TJE26035244",
+          "active": true
+        },
+        {
+          "size": "50 X 50 MM",
+          "sku": "TJE26035252",
+          "active": true
+        },
+        {
+          "size": "63 X 63 MM",
+          "sku": "TJE26035260",
+          "active": true
+        },
+        {
+          "size": "110 X 110 MM",
+          "sku": "TJE26035317",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826569Z",
+    "updatedAt": "2026-02-04T20:57:06.826571Z"
+  },
+  {
+    "name": "Tigre Ramal 45 C/Reduccion M-H Junta Elástica",
+    "sku": "TJE26035546",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-45-creduccion-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 X 40 MM",
+          "sku": "TJE26035546",
+          "active": true
+        },
+        {
+          "size": "63 X 50 MM",
+          "sku": "TJE26035589",
+          "active": true
+        },
+        {
+          "size": "110 X 40 MM",
+          "sku": "TJE26035660",
+          "active": true
+        },
+        {
+          "size": "110 X 50 MM",
+          "sku": "TJE26035678",
+          "active": true
+        },
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26035686",
+          "active": true
+        },
+        {
+          "size": "160 X 110 MM",
+          "sku": "TJE26035767",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826625Z",
+    "updatedAt": "2026-02-04T20:57:06.826627Z"
+  },
+  {
+    "name": "Tigre Ramal 45 C/Reduccion H-H Junta Elástica",
+    "sku": "TJE26035872",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-ramal-45-creduccion-h-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26035872",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/c/7c99677d62b2eb510d17cc30e244938a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/c/7c99677d62b2eb510d17cc30e244938a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826682Z",
+    "updatedAt": "2026-02-04T20:57:06.826684Z"
+  },
+  {
+    "name": "Tigre Reduccion Excentrica M-H Junta Elástica",
+    "sku": "TJE26036046",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-reduccion-excentrica-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 X 40 MM",
+          "sku": "TJE26036046",
+          "active": true
+        },
+        {
+          "size": "63 X 50 MM",
+          "sku": "TJE26036089",
+          "active": true
+        },
+        {
+          "size": "110 X 50 MM",
+          "sku": "TJE29803463",
+          "active": true
+        },
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26036186",
+          "active": true
+        },
+        {
+          "size": "160 X 110 MM",
+          "sku": "TJE26036240",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826748Z",
+    "updatedAt": "2026-02-04T20:57:06.826750Z"
+  },
+  {
+    "name": "Tigre Reduccion Tope M-H Junta Elástica",
+    "sku": "TJE26037514",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-reduccion-tope-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 X 40 MM",
+          "sku": "TJE26037514",
+          "active": true
+        },
+        {
+          "size": "63 X 40 MM",
+          "sku": "TJE26037522",
+          "active": true
+        },
+        {
+          "size": "63 X 50 MM",
+          "sku": "TJE26037530",
+          "active": true
+        },
+        {
+          "size": "110 X 40 MM",
+          "sku": "TJE26037590",
+          "active": true
+        },
+        {
+          "size": "110 X 50 MM",
+          "sku": "TJE26037670",
+          "active": true
+        },
+        {
+          "size": "110 X 63 MM",
+          "sku": "TJE26037689",
+          "active": true
+        },
+        {
+          "size": "160 X 110 MM",
+          "sku": "TJE26037646",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//6/2/62f63594e89a95bbf24e39c99d698acb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826767Z",
+    "updatedAt": "2026-02-04T20:57:06.826769Z"
+  },
+  {
+    "name": "Tigre Tapa H Junta Elástica",
+    "sku": "TJE26036542",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-tapa-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE26036542",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE26036550",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26036569",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE26036615",
+          "active": true
+        },
+        {
+          "size": "160 MM",
+          "sku": "TJE26036666",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826780Z",
+    "updatedAt": "2026-02-04T20:57:06.826782Z"
+  },
+  {
+    "name": "Tigre Tapon M Junta Elástica",
+    "sku": "TJE26036747",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-tapon-m-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM",
+          "sku": "TJE26036747",
+          "active": true
+        },
+        {
+          "size": "50 MM",
+          "sku": "TJE26036755",
+          "active": true
+        },
+        {
+          "size": "63 MM",
+          "sku": "TJE26036763",
+          "active": true
+        },
+        {
+          "size": "110 MM",
+          "sku": "TJE26036810",
+          "active": true
+        },
+        {
+          "size": "160 MM",
+          "sku": "TJE26036860",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/3/e3162aea645da4d4fe10aaa11c6b476e.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//e/3/e3162aea645da4d4fe10aaa11c6b476e.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826811Z",
+    "updatedAt": "2026-02-04T20:57:06.826815Z"
+  },
+  {
+    "name": "Tigre Cano Camara M-H Junta Elástica",
+    "sku": "TJE26037018",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-cano-camara-m-h-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "63 MM-TAPA GRANDE",
+          "sku": "TJE26037018",
+          "active": true
+        },
+        {
+          "size": "110 MM TAPA GRANDE",
+          "sku": "TJE26037115",
+          "active": true
+        },
+        {
+          "size": "160 MM",
+          "sku": "TJE26037166",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826850Z",
+    "updatedAt": "2026-02-04T20:57:06.826854Z"
+  },
+  {
+    "name": "Tigre Cano Camara Mh Junta Elástica",
+    "sku": "TJE26037107",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-cano-camara-mh-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 MM-TAPA NORMAL",
+          "sku": "TJE26037107",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826915Z",
+    "updatedAt": "2026-02-04T20:57:06.826919Z"
+  },
+  {
+    "name": "Tigre Tapa Cano Camara 110 / Junta Elástica",
+    "sku": "TJE26037310",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-tapa-cano-camara-110-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "160 MM",
+          "sku": "TJE26037310",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.826984Z",
+    "updatedAt": "2026-02-04T20:57:06.826987Z"
+  },
+  {
+    "name": "Tigre Tapa Cano Camara Dn110 Y Junta Elástica",
+    "sku": "TJE26037336",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-tapa-cano-camara-dn110-y-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "63",
+          "sku": "TJE26037336",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/e/ae32367f71fe44f74d2dee3b6fc950b0.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827055Z",
+    "updatedAt": "2026-02-04T20:57:06.827057Z"
+  },
+  {
+    "name": "Tigre Tapa Ciega Junta Elástica",
+    "sku": "TJE37653250",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-tapa-ciega-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "12 X 12 - INOX MARCO OCULTO",
+          "sku": "TJE37653250",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//7/8/780b8983a3f7a78dfafc771aafbf71a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827111Z",
+    "updatedAt": "2026-02-04T20:57:06.827113Z"
+  },
+  {
+    "name": "Tigre Boca De Acceso Horizontal Junta Elástica",
+    "sku": "TJE26037557",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-boca-de-acceso-horizontal-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 X (2X50)",
+          "sku": "TJE26037557",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/1/d1af3ac73705cba03f72b8a091438c72.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/1/d1af3ac73705cba03f72b8a091438c72.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827132Z",
+    "updatedAt": "2026-02-04T20:57:06.827134Z"
+  },
+  {
+    "name": "Tigre Boca De Acceso Vertical 110 X ( Junta Elástica",
+    "sku": "TJE26037573",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-boca-de-acceso-vertical-110-x-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "2X50) X (2X63)",
+          "sku": "TJE26037573",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827161Z",
+    "updatedAt": "2026-02-04T20:57:06.827163Z"
+  },
+  {
+    "name": "Tigre Pileta De Patio Junta Elástica",
+    "sku": "TJE26037867",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-pileta-de-patio-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 X (3X40)-BAJA PERF",
+          "sku": "TJE26037867",
+          "active": true
+        },
+        {
+          "size": "110 X 63 X (5X40)-PERF",
+          "sku": "TJE26037875",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827221Z",
+    "updatedAt": "2026-02-04T20:57:06.827223Z"
+  },
+  {
+    "name": "Tigre Pileta De Patio Pase Loza 110 X ( Junta Elástica",
+    "sku": "TJE26038111",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-pileta-de-patio-pase-loza-110-x-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "6X40)",
+          "sku": "TJE26038111",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//1/1/11108504_tubo_pvc_desague_junta_elastica_iso.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827287Z",
+    "updatedAt": "2026-02-04T20:57:06.827290Z"
+  },
+  {
+    "name": "Tigre Pileta De Balcon Junta Elástica",
+    "sku": "TJE26038260",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-pileta-de-balcon-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "63 MM",
+          "sku": "TJE26038260",
+          "active": true
+        },
+        {
+          "size": "40 MM EXTRACHATA",
+          "sku": "TJE26038235",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827351Z",
+    "updatedAt": "2026-02-04T20:57:06.827355Z"
+  },
+  {
+    "name": "Tigre Pileta De Patio Girafacil Junta Elástica",
+    "sku": "TJE26038120",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-pileta-de-patio-girafacil-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 (5X40)",
+          "sku": "TJE26038120",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827416Z",
+    "updatedAt": "2026-02-04T20:57:06.827419Z"
+  },
+  {
+    "name": "Tigre Cesto Limp Pileta Girafacil 110 Rep Junta Elástica",
+    "sku": "TJE100002862",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-cesto-limp-pileta-girafacil-110-rep-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE100002862",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827489Z",
+    "updatedAt": "2026-02-04T20:57:06.827492Z"
+  },
+  {
+    "name": "Tigre Pileta De Patio Lisa Junta Elástica",
+    "sku": "TJE26038162",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-pileta-de-patio-lisa-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110 X 63 (3X40)",
+          "sku": "TJE26038162",
+          "active": true
+        },
+        {
+          "size": "110 X 63 (5 X 40)",
+          "sku": "TJE26038189",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827554Z",
+    "updatedAt": "2026-02-04T20:57:06.827558Z"
+  },
+  {
+    "name": "Tigre Sifon Pileta Baja Junta Elástica",
+    "sku": "TJE26039320",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-sifon-pileta-baja-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "25 MM",
+          "sku": "TJE26039320",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827622Z",
+    "updatedAt": "2026-02-04T20:57:06.827625Z"
+  },
+  {
+    "name": "Tigre Sifon Pileta De Patio Junta Elástica",
+    "sku": "TJE26039355",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-sifon-pileta-de-patio-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "50 MM",
+          "sku": "TJE26039355",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//d/4/d4574d41239143bc539129c6bbe53b22.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827691Z",
+    "updatedAt": "2026-02-04T20:57:06.827695Z"
+  },
+  {
+    "name": "Tigre Sifon Pileta Pase Loza Junta Elástica",
+    "sku": "TJE26039371",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-sifon-pileta-pase-loza-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE26039371",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827760Z",
+    "updatedAt": "2026-02-04T20:57:06.827763Z"
+  },
+  {
+    "name": "Tigre Codo 90 Diam.110 Hh Reforzado Junta Elástica",
+    "sku": "TJE100019513",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-90-diam110-hh-reforzado-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE100019513",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/2/92aff2d2e33581457e0c11c8fec025a3.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//9/2/92aff2d2e33581457e0c11c8fec025a3.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827849Z",
+    "updatedAt": "2026-02-04T20:57:06.827854Z"
+  },
+  {
+    "name": "Tigre Codo 90 Diam.160 Mh Reforzado Junta Elástica",
+    "sku": "TJE100019512",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-90-diam160-mh-reforzado-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE100019512",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827925Z",
+    "updatedAt": "2026-02-04T20:57:06.827929Z"
+  },
+  {
+    "name": "Tigre Codo A 90 Mh 110 Reforzado Junta Elástica",
+    "sku": "TJE26042119",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-a-90-mh-110-reforzado-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE26042119",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.827995Z",
+    "updatedAt": "2026-02-04T20:57:06.827999Z"
+  },
+  {
+    "name": "Tigre Codo 45 Mh Diam.110 Reforzado Junta Elástica",
+    "sku": "TJE100019514",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-45-mh-diam110-reforzado-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE100019514",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/7/a7af8c4f8f55bf2820b3095799bad8bb.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/7/a7af8c4f8f55bf2820b3095799bad8bb.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828024Z",
+    "updatedAt": "2026-02-04T20:57:06.828027Z"
+  },
+  {
+    "name": "Tigre Codo 45 Diam.160 Mh Reforzado Junta Elástica",
+    "sku": "TJE100019515",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-codo-45-diam160-mh-reforzado-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "UNICA",
+          "sku": "TJE100019515",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//2/9/294fef31df67242baaf202ffe03f3e7a.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828086Z",
+    "updatedAt": "2026-02-04T20:57:06.828088Z"
+  },
+  {
+    "name": "Tigre Portareja Junta Elástica",
+    "sku": "TJE28133030",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-portareja-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110MM 12X12 CORTO (MO) REJA INOX",
+          "sku": "TJE28133030",
+          "active": true
+        },
+        {
+          "size": "110MM 12X12 CORTO (MO) TAPA INOX",
+          "sku": "TJE28133073",
+          "active": true
+        },
+        {
+          "size": "110MM 15X15 CORTO (MO) REJA INOX",
+          "sku": "TJE28133138",
+          "active": true
+        },
+        {
+          "size": "110MM 12X12 LARGO (MO) REJA INOX",
+          "sku": "TJE28133537",
+          "active": true
+        },
+        {
+          "size": "110MM 15X15 LARGO (MO) REJA INOX",
+          "sku": "TJE28133634",
+          "active": true
+        },
+        {
+          "size": "40X100 MM-REJA PLASTICA",
+          "sku": "TJE100034188",
+          "active": true
+        },
+        {
+          "size": "63X 100 MM-REJA PLASTICA",
+          "sku": "TJE100034211",
+          "active": true
+        },
+        {
+          "size": "110X100 MM-REJA PLASTICA",
+          "sku": "TJE100034209",
+          "active": true
+        },
+        {
+          "size": "110X150 MM-REJA PLASTICA",
+          "sku": "TJE100034213",
+          "active": true
+        },
+        {
+          "size": "40X100MM-REJA INOXIDABLE",
+          "sku": "TJE100034212",
+          "active": true
+        },
+        {
+          "size": "63X110 MM-REJA INOXIDABLE",
+          "sku": "TJE100034210",
+          "active": true
+        },
+        {
+          "size": "110X100 MM-REJA INOXIDABLE",
+          "sku": "TJE100034189",
+          "active": true
+        },
+        {
+          "size": "110X150 MM-REJA INOXIDABLE",
+          "sku": "TJE100034214",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828145Z",
+    "updatedAt": "2026-02-04T20:57:06.828149Z"
+  },
+  {
+    "name": "Tigre Porta 110 Junta Elástica",
+    "sku": "TJE28133570",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-porta-110-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "12X12 LG (MO) TAPA INX",
+          "sku": "TJE28133570",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828210Z",
+    "updatedAt": "2026-02-04T20:57:06.828213Z"
+  },
+  {
+    "name": "Tigre Adaptador Para Inodoro Junta Elástica",
+    "sku": "TJE26030110",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-adaptador-para-inodoro-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "110",
+          "sku": "TJE26030110",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/9/a91b942762187a529b7b2e806d2ad93b.jpg",
+    "images": [
+      "https://qfzo0q7soc.execute-api.us-east-1.amazonaws.com/master/new/media/catalog/product//a/9/a91b942762187a529b7b2e806d2ad93b.jpg"
+    ],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828228Z",
+    "updatedAt": "2026-02-04T20:57:06.828229Z"
+  },
+  {
+    "name": "Tigre Anillo Labio Bl Junta Elástica",
+    "sku": "TJE100031710",
+    "category": "68cda5f5ff392fb2b5d73dbd",
+    "slug": "tigre-anillo-labio-bl-junta-elstica",
+    "brand": "Tigre",
+    "brandSlug": "tigre",
+    "measurements": {
+      "enabled": true,
+      "description": "Medidas",
+      "variants": [
+        {
+          "size": "40 MM REP",
+          "sku": "TJE100031710",
+          "active": true
+        },
+        {
+          "size": "50 MM REP",
+          "sku": "TJE100031714",
+          "active": true
+        },
+        {
+          "size": "63 MM REP",
+          "sku": "TJE100031711",
+          "active": true
+        },
+        {
+          "size": "110 MM REP",
+          "sku": "TJE100031712",
+          "active": true
+        },
+        {
+          "size": "160 MM REP",
+          "sku": "TJE100031713",
+          "active": true
+        }
+      ]
+    },
+    "defaultImage": "",
+    "images": [],
+    "active": true,
+    "createdAt": "2026-02-04T20:57:06.828292Z",
+    "updatedAt": "2026-02-04T20:57:06.828295Z"
+  }
+]
