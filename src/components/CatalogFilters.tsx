@@ -106,35 +106,23 @@ export default function CatalogFilters({
     try {
       // Marcar como cargando
       setLoadingCategories(prev => new Set(prev).add(categoryId));
-      
-      console.time(`⚡ Carga ${categoryId}`);
-      
-      // Obtener todas las categorías y construir jerarquía
+
       const response = await fetch('/api/categories');
-      
+
       if (response.ok) {
         const data = await response.json();
-        console.timeEnd(`⚡ Carga ${categoryId}`);
-        
         if (data.success && data.data.categories) {
-          // Filtrar subcategorías de esta categoría y construir jerarquía
           const allCategories = data.data.categories;
           const subcategories = allCategories.filter((cat: Category) => cat.parent === categoryId);
           const hierarchical = buildHierarchy(subcategories, allCategories);
-          
-          // Guardar subcategorías para esta categoría
           setHierarchicalCategories(prev => ({
             ...prev,
             [categoryId]: hierarchical
           }));
-          
-          console.log('📊 Subcategorías cargadas:', hierarchical.length);
         }
-      } else {
-        console.error('❌ Error HTTP:', response.status, categoryId);
       }
-    } catch (error) {
-      console.error('❌ Error de red:', error);
+    } catch {
+      // Error de red al cargar subcategorías
     } finally {
       // Quitar del estado de carga
       setLoadingCategories(prev => {
@@ -361,10 +349,7 @@ export default function CatalogFilters({
                   type="radio"
                   name="brand"
                   checked={selectedBrand === ''}
-                  onChange={() => {
-                    console.log('🏷️ Limpiando filtro de marca')
-                    onBrandChange('')
-                  }}
+                  onChange={() => onBrandChange('')}
                   className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                 />
               </div>
@@ -382,10 +367,7 @@ export default function CatalogFilters({
                     type="radio"
                     name="brand"
                     checked={selectedBrand === brand.name}
-                    onChange={() => {
-                      console.log('🏷️ Cambiando marca a:', brand.name)
-                      onBrandChange(brand.name)
-                    }}
+                    onChange={() => onBrandChange(brand.name)}
                     className="w-3.5 h-3.5 text-gray-900 border-gray-300 focus:ring-gray-900 focus:ring-1 transition-all accent-gray-900"
                   />
                 </div>

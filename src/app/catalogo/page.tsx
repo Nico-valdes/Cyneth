@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
-import { Search, Filter, Grid, List, ChevronDown, X, Settings } from 'lucide-react'
+import { Search, Filter, Grid, List, ChevronDown, X, Settings, FilterX } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import ProductCard from '@/components/ProductCard'
@@ -77,6 +77,8 @@ function CatalogoContent() {
   const productsPerPage = 50
   const isUpdatingFromURL = useRef(false)
   const initialLoadComplete = useRef(false)
+  const filterDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const FILTER_DEBOUNCE_MS = 280
 
   // Metadata dinámica basada en filtros
   const categoryName = selectedCategory 
@@ -105,25 +107,15 @@ function CatalogoContent() {
   // Leer parámetros de URL y aplicar filtros automáticamente (solo al montar o cuando cambia la URL)
   useEffect(() => {
     const category = searchParams.get('category')
-    const level = searchParams.get('level')
     const brand = searchParams.get('brand')
     const color = searchParams.get('color')
     const search = searchParams.get('search')
     
-    console.log('🔗 Parámetros de URL:', { category, level, brand, color, search })
-    
-    // Marcar que estamos actualizando desde la URL
     isUpdatingFromURL.current = true
-    
-    // Aplicar filtros directamente sin comparar con estado actual
     setSelectedCategory(category || '')
     setSelectedBrand(brand || '')
     setSelectedColor(color || '')
     setSearchTerm(search || '')
-    
-    if (category) {
-      console.log('✅ Aplicando filtro de categoría desde URL:', category)
-    }
     
     // Si es la primera carga y hay filtros en la URL, cargar productos inmediatamente
     if (!initialLoadComplete.current && (category || brand || color || search)) {
@@ -148,19 +140,15 @@ function CatalogoContent() {
           const pagination = data.data?.pagination || {}
           
           setProducts(newProducts)
-          
-          if (pagination.total) {
-            setTotalProducts(pagination.total)
-            setTotalPages(pagination.pages || 1)
-          }
-          
-          console.log(`📦 Productos cargados desde URL (con filtros):`, newProducts.length)
+          setTotalProducts(typeof pagination.total === 'number' ? pagination.total : 0)
+          setTotalPages(Math.max(1, pagination.pages ?? 1))
           setLoading(false)
           initialLoadComplete.current = true
         })
-        .catch(error => {
-          console.error('Error cargando productos desde URL:', error)
+        .catch(() => {
           setLoading(false)
+          setTotalProducts(0)
+          setTotalPages(1)
           initialLoadComplete.current = true
         })
     }
@@ -252,16 +240,12 @@ function CatalogoContent() {
           setProducts(newProducts)
         }
         
-        // Actualizar información de paginación
-        if (pagination.total) {
-          setTotalProducts(pagination.total)
-          setTotalPages(pagination.pages || 1)
-        }
-        
-        console.log(`📦 Productos cargados (página ${page}):`, newProducts.length)
+        setTotalProducts(typeof pagination.total === 'number' ? pagination.total : 0)
+        setTotalPages(Math.max(1, pagination.pages ?? 1))
       }
-    } catch (error) {
-      console.error('Error cargando productos:', error)
+    } catch {
+      setTotalProducts(0)
+      setTotalPages(1)
     } finally {
       setLoading(false)
       setLoadingMore(false)
@@ -355,26 +339,18 @@ function CatalogoContent() {
               
               setProducts(newProducts)
               
-              if (pagination.total) {
-                setTotalProducts(pagination.total)
-                setTotalPages(pagination.pages || 1)
-              }
-              
-              console.log(`📦 Productos cargados inicialmente (sin filtros):`, newProducts.length)
+              setTotalProducts(typeof pagination.total === 'number' ? pagination.total : 0)
+              setTotalPages(Math.max(1, pagination.pages ?? 1))
             }
-          } catch (error) {
-            console.error('Error cargando productos iniciales:', error)
-          } finally {
+      } catch {
+        setTotalProducts(0)
+        setTotalPages(1)
+      } finally {
             setLoading(false)
             initialLoadComplete.current = true
           }
-        } else {
-          // Si hay filtros, NO marcar como completado aquí
-          // El efecto que lee la URL se encargará de cargar los productos y marcar como completado
-          console.log('⏳ Esperando carga de productos desde URL (hay filtros)')
         }
-      } catch (error) {
-        console.error('Error cargando datos del catálogo:', error)
+      } catch {
         setLoading(false)
       }
     }
@@ -382,17 +358,21 @@ function CatalogoContent() {
     fetchData()
   }, [])
 
-  // Recargar productos cuando cambian los filtros (solo después de la carga inicial)
+  // Recargar productos cuando cambian los filtros (debounced para mejor UX y menos requests)
   useEffect(() => {
-    // No recargar si la carga inicial aún no se completó
-    // o si el cambio viene de leer la URL en el primer render
-    if (!initialLoadComplete.current || isUpdatingFromURL.current) {
-      return
-    }
-    
-    if (!loading) {
-      setCurrentPage(1)
-      fetchProducts(1, false)
+    if (!initialLoadComplete.current || isUpdatingFromURL.current) return
+
+    if (filterDebounceRef.current) clearTimeout(filterDebounceRef.current)
+    filterDebounceRef.current = setTimeout(() => {
+      filterDebounceRef.current = null
+      if (!loading) {
+        setCurrentPage(1)
+        fetchProducts(1, false)
+      }
+    }, FILTER_DEBOUNCE_MS)
+
+    return () => {
+      if (filterDebounceRef.current) clearTimeout(filterDebounceRef.current)
     }
   }, [selectedCategory, selectedBrand, selectedColor, searchTerm, sortBy, sortOrder])
 
@@ -449,9 +429,9 @@ function CatalogoContent() {
           <div className="border-t border-white/10 pt-4 sm:pt-6 pb-4 sm:pb-6">
             {/* Barra de controles - Móvil y Desktop */}
             <div className="flex items-center justify-between gap-2 sm:gap-4 lg:gap-6">
-              {/* Contador de productos */}
-                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0">
-                  {loading ? '...' : `${totalProducts} producto${totalProducts !== 1 ? 's' : ''}`}
+              {/* Contador de productos (siempre visible, incluye 0) */}
+                <div className="text-xs sm:text-sm lg:text-base text-white font-light flex-shrink-0" role="status" aria-live="polite">
+                  {loading ? '…' : `${totalProducts} producto${totalProducts !== 1 ? 's' : ''}`}
                 </div>
               {/* Ordenar */}
               {loading ? (
@@ -671,7 +651,7 @@ function CatalogoContent() {
                       onClick={() => setShowFilters(false)}
                       className="flex-1 px-4 py-3 text-sm font-light text-white bg-gray-900 hover:bg-gray-800 transition-colors"
                     >
-                      Ver {totalProducts}
+                      {totalProducts === 0 ? 'Ver resultados (0)' : `Ver ${totalProducts} producto${totalProducts !== 1 ? 's' : ''}`}
                     </button>
                   </div>
                 </div>
@@ -718,25 +698,34 @@ function CatalogoContent() {
                 ))}
               </div>
             ) : products.length === 0 ? (
-              <div className="text-center py-12 sm:py-16 md:py-24">
-                <div className="text-gray-300 mb-6 sm:mb-8">
-                  <svg className="mx-auto h-12 w-12 sm:h-16 sm:w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2 2v-5m16 0h-2M4 13h2m13-8l-4 4m0 0l-4-4m4 4V3" />
-                  </svg>
-                </div>
-                <h3 className="text-lg sm:text-xl font-light text-gray-900 mb-3 sm:mb-4 tracking-wide px-4">No se encontraron productos</h3>
-                <p className="text-sm sm:text-base text-gray-500 mb-6 sm:mb-8 font-light tracking-wide px-4">
-                  No hay productos que coincidan con los criterios de búsqueda actuales.
-                </p>
-                {hasActiveFilters && (
-                  <button 
-                    onClick={clearFilters}
-                    className="bg-black text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base font-light tracking-wide uppercase hover:bg-gray-800 active:bg-gray-700 transition-colors duration-200 cursor-pointer touch-manipulation rounded"
-                  >
-                    Limpiar filtros
-                  </button>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="py-16 sm:py-24 text-center"
+              >
+                {hasActiveFilters ? (
+                  <>
+                    <FilterX className="w-10 h-10 text-gray-300 mx-auto mb-4" strokeWidth={1.25} />
+                    <p className="text-3xl font-light text-gray-400 mb-2">0</p>
+                    <p className="text-gray-600 text-sm font-light tracking-wide mb-6 max-w-xs mx-auto">
+                      No hay productos con esta combinación. Probá otros filtros.
+                    </p>
+                    <button
+                      onClick={clearFilters}
+                      className="text-sm font-light tracking-wide uppercase text-gray-900 border-b border-gray-400 hover:border-gray-900 transition-colors cursor-pointer pb-0.5"
+                    >
+                      Limpiar filtros
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-gray-400 text-sm font-light tracking-wide">
+                      No hay productos en el catálogo.
+                    </p>
+                  </>
                 )}
-              </div>
+              </motion.div>
             ) : (
               <>
                 <div className={viewMode === 'grid' 
