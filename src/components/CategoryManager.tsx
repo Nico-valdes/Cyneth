@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit, Trash2, Save, X, Package, FolderOpen, Check, ChevronDown, ChevronRight, Edit2, Folder, FileText, MoreHorizontal, ArrowRight, Home } from 'lucide-react';
+import { Plus, Edit, Trash2, Save, X, Package, FolderOpen, Check, ChevronDown, ChevronRight, Edit2, Folder, FileText, MoreHorizontal, ArrowRight, Home, Download } from 'lucide-react';
 import Notice from '@/components/ui/Notice';
 
 // Función para generar slug
@@ -610,13 +610,38 @@ const CategoryManager: React.FC<CategoryManagerProps> = () => {
               <p className="text-gray-500 mt-1">Gestiona la estructura jerárquica de categorías ({allCategories.length} categorías)</p>
             </div>
           
-            <button 
-              onClick={() => setShowCreateForm(prev => !prev)}
-              className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
-            >
-              <Plus size={18} />
-              Nueva Categoría
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                type="button"
+                onClick={async () => {
+                  try {
+                    const res = await fetch('/api/categories/export/csv');
+                    if (!res.ok) throw new Error('Error al exportar');
+                    const blob = await res.blob();
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `categorias_${new Date().toISOString().slice(0, 10)}.csv`;
+                    a.click();
+                    URL.revokeObjectURL(url);
+                  } catch (e) {
+                    console.error(e);
+                    alert('Error al descargar el CSV');
+                  }
+                }}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors font-medium cursor-pointer"
+              >
+                <Download size={18} />
+                Descargar CSV
+              </button>
+              <button 
+                onClick={() => setShowCreateForm(prev => !prev)}
+                className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
+              >
+                <Plus size={18} />
+                Nueva Categoría
+              </button>
+            </div>
           </div>
         </div>
       </div>

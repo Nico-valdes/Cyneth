@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef, useMemo, memo } from 'react'
 import { useRouter } from 'next/navigation'
-import { Trash2, Edit, Eye, Plus, Search, Filter, ChevronLeft, ChevronRight, X, RotateCcw, Star } from 'lucide-react'
+import { Trash2, Edit, Eye, Plus, Search, Filter, ChevronLeft, ChevronRight, X, RotateCcw, Star, Download } from 'lucide-react'
 import { getMainImage, getOptimizedImageUrl } from '@/utils/imageUtils'
 import { useSearchDebounce } from '@/hooks/useDebounce'
 import { useCategoryFilters } from '@/hooks/useCategoryFilters'
@@ -551,13 +551,23 @@ export default function ProductList({ onEdit, onView, onDelete }: ProductListPro
               <p className="text-gray-500 mt-1">{totalProducts} productos en total</p>
             </div>
             
-            <button 
-              onClick={() => router.push('/admin/productos/nuevo')}
-              className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
-            >
-              <Plus size={18} />
-              Nuevo Producto
-            </button>
+            <div className="flex items-center gap-3">
+              <a
+                href="/api/products/export/csv"
+                download
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 transition-colors font-medium cursor-pointer"
+              >
+                <Download size={18} />
+                Descargar CSV
+              </a>
+              <button 
+                onClick={() => router.push('/admin/productos/nuevo')}
+                className="bg-red-600 text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 font-medium cursor-pointer"
+              >
+                <Plus size={18} />
+                Nuevo Producto
+              </button>
+            </div>
           </div>
           {notice && (
             <Notice

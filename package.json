@@ -37,11 +37,18 @@
     "upload:products-acqua-v2": "node src/scripts/upload-products-duratop-json.js SubirProds/productos_acqua_system_limpio_v2.json",
     "upload:products-duratop-xr-v9": "node src/scripts/upload-products-duratop-json.js SubirProds/duratop_xr_final_consolidated_v9.json",
     "upload:products-aqualaf": "node src/scripts/upload-products-duratop-json.js SubirProds/aqualaf_final_limpio_especificaciones_vacias.json",
+    "upload:products-mipileta": "node src/scripts/upload-products-duratop-json.js SubirProds/mipileta_final_limpio_v2.json",
     "update:product-images": "node src/scripts/update-product-images-from-json.js",
     "update:product-images-tigre-v6": "node src/scripts/update-product-images-from-json.js SubirProds/tigre_junta_elastica_final_v6.json",
     "delete:products": "node src/scripts/delete-products.js",
-    "export:categories": "node src/scripts/export-categories-json.js",
-    "normalize:category-parents": "node src/scripts/normalize-category-parents.js"
+    "export:categories": "node src/scripts/export-categories-csv.js",
+    "export:categories:json": "node src/scripts/export-categories-json.js",
+    "normalize:category-parents": "node src/scripts/normalize-category-parents.js",
+    "backup:products": "node src/scripts/backup-products.js",
+    "apply:categories:csv": "node src/scripts/apply-categories-from-csv.js SubirProds/productos_categorizados_nivel_profundo.csv",
+    "upload:products:csv": "node src/scripts/upload-products-from-csv.js SubirProds/productos_categorizados_nivel_profundo.csv",
+    "upload:products:json": "node src/scripts/upload-products-from-json.js SubirProds/catalogo_2040_categorizado.json",
+    "restore:products": "node src/scripts/restore-products-from-backup.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^3.0.0",

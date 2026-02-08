@@ -1,0 +1,3318 @@
+[
+  {
+    "name": "Vesta simple 410",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n64.0 cm\n\nAncho Externo\n\n41.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP410",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-410",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/410Melia.png?v=1768413601&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/410Melia.png?v=1768413601&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.165895Z",
+    "updatedAt": "2026-02-08T03:34:43.165910Z"
+  },
+  {
+    "name": "Vesta Simple 302",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\nMaterial: ACERO AISI 0.7 mm. 304 18/8\nAcabado: Brillante\nLargo Externo\n41.0 cm\nAncho Externo\n38.0 cm\nLargo Interno\n37.0 cm\nAncho Interno\n34 cm\nProfundidad\n18.0 cm\nAcabado Brillante\nMaterial ACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP302",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-302",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\nAcabado: Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/302Melia.png?v=1765995580&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/302Melia.png?v=1765995580&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.166218Z",
+    "updatedAt": "2026-02-08T03:34:43.166225Z"
+  },
+  {
+    "name": "Barra escurridora 60",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\n\n\n\n\n\n\n\n\n\nLargo completo\n\n60 cm\n\n\n\nAncho completo\n\n18.5 cm\n\n\n\nAcabado\n\nSatinado",
+    "sku": "MIP60",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "barra-escurridora-60",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/BS60Melia_f68c5f96-2179-44fc-946b-fe04f3e7934e.png?v=1765565650&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/BS60Melia_f68c5f96-2179-44fc-946b-fe04f3e7934e.png?v=1765565650&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.166573Z",
+    "updatedAt": "2026-02-08T03:34:43.166580Z"
+  },
+  {
+    "name": "Desagüe de una sola pieza 9007",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\n\n\n\n\n\n\n\nDesagüe para piletas de una sola pieza.",
+    "sku": "MIP9007",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desage-de-una-sola-pieza-9007",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/9007-Meil-a.png?v=1765315455&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/9007-Meil-a.png?v=1765315455&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.167292Z",
+    "updatedAt": "2026-02-08T03:34:43.167298Z"
+  },
+  {
+    "name": "Desagüe línea económica 9001",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDesagüe línea económica con tapón opcional.",
+    "sku": "MIP9001",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desage-lnea-econmica-9001",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/9001-Meli-c-700x700.png?v=1765315378&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/9001-Meli-c-700x700.png?v=1765315378&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.167446Z",
+    "updatedAt": "2026-02-08T03:34:43.167449Z"
+  },
+  {
+    "name": "Cestillos 9000",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n \n\n\n\n\n\n\n\n\n\nCestillos de acero inoxidable para líneas 200, 300 y 400",
+    "sku": "MIP9000",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "cestillos-9000",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/accesorio_9000_mi_pileta.jpg?v=1765314963&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/accesorio_9000_mi_pileta.jpg?v=1765314963&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.167581Z",
+    "updatedAt": "2026-02-08T03:34:43.167584Z"
+  },
+  {
+    "name": "Desagüe de una sola pieza 9003",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\n\n\n\n\n\n\nDesagüe para piletas de una sola pieza para líneas 200 y 300",
+    "sku": "MIP9003",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desage-de-una-sola-pieza-9003",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/accesorio_9003_mi_pileta-1.jpg?v=1765314896&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/accesorio_9003_mi_pileta-1.jpg?v=1765314896&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.167736Z",
+    "updatedAt": "2026-02-08T03:34:43.167742Z"
+  },
+  {
+    "name": "Desagüe americano Black 9006",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\nDesagüe americano con o sin desborde para línea bajo mesada y línea encastrables 400 , 500 y 600.",
+    "sku": "MIP9006",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desage-americano-black-9006",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/9006-con-desborde-black-Meli-b.png?v=1765314784&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/9006-con-desborde-black-Meli-b.png?v=1765314784&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.167970Z",
+    "updatedAt": "2026-02-08T03:34:43.167975Z"
+  },
+  {
+    "name": "Desagüe americano 9006",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\nDesagüe americano con o sin desborde para línea bajo mesada y línea encastrables 400 , 500 y 600.",
+    "sku": "MIP9006",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desage-americano-9006",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/9006-con-desborde-Meli-a.png?v=1765314686&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/9006-con-desborde-Meli-a.png?v=1765314686&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.168173Z",
+    "updatedAt": "2026-02-08T03:34:43.168180Z"
+  },
+  {
+    "name": "Dosificador 1000",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\nFácil Instalación\nRápido Relleno\nAcabado Cromado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nOpcional para Piletas:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n450E, 450EF, 462E, 463E, 463EF, 503E, 504E, 602E, 700E, 701E, 703EF, 715E, 780E, 800E, 801E, 802E",
+    "sku": "MIP1000",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "dosificador-1000",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Opcional para Piletas:"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/1000Melia_5f7fa2f1-2604-4aa9-b6b5-16e737b12506.png?v=1765309742&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/1000Melia_5f7fa2f1-2604-4aa9-b6b5-16e737b12506.png?v=1765309742&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.168652Z",
+    "updatedAt": "2026-02-08T03:34:43.168659Z"
+  },
+  {
+    "name": "Dosificador 1004",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\nFácil Instalación\nRápido Relleno\nAcabado Cromado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nOpcional para Piletas:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n450E, 450EF, 462E, 463E, 463EF, 503E, 504E, 602E, 700E, 701E, 703EF, 715E, 780E, 800E, 801E, 802E",
+    "sku": "MIP1004",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "dosificador-1004",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Opcional para Piletas:"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/1004Melib.png?v=1765309406&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/1004Melib.png?v=1765309406&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.168993Z",
+    "updatedAt": "2026-02-08T03:34:43.168999Z"
+  },
+  {
+    "name": "Barra escurridora compacta 50",
+    "description": "Pasión por los detalles. Elaborados con materiales de primera calidad y un sofisticado diseño, la completa línea de accesorios de Mi Pileta se adaptan a todo tipo de exigencias y aportan un toque de distinción en cada rincón de tu cocina.\n\n\n\n\n\n\n\n\n\n\n\n\n\nLargo completo\n\n50 cm\n\n\n\nAncho completo\n\n18.5 cm\n\n\n\nAcabado\n\nSatinado",
+    "sku": "MIP50",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "barra-escurridora-compacta-50",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/BS-50-Meli-a.png?v=1765304543&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/BS-50-Meli-a.png?v=1765304543&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.169781Z",
+    "updatedAt": "2026-02-08T03:34:43.169789Z"
+  },
+  {
+    "name": "Lavadero simple 420LE",
+    "description": "Piletas de acero inoxidable de alta calidad, fabricadas con los más altos estándares de la industria. Diseñadas para ofrecer durabilidad, funcionalidad y un acabado impecable que realza cualquier espacio.\n\nColocación: Sobre mesada\n\nMaterial: ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n71.0 cm\n\nAncho Externo\n\n43.5 cm\n\nLargo Interno\n\n67 cm\n\nAncho Interno\n\n39.5 cm\n\nProfundidad\n\n24.0 cm\n\nColocación\n\nSobre mesada\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8mm - 304 18/8",
+    "sku": "MIP420LE",
+    "category": "68cda5f6ff392fb2b5d73dd8",
+    "slug": "lavadero-simple-420le",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Sobre mesada\n\n ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/420LEMelia.png?v=1764426488&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/420LEMelia.png?v=1764426488&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.170506Z",
+    "updatedAt": "2026-02-08T03:34:43.170512Z"
+  },
+  {
+    "name": "Lavadero simple 421LE",
+    "description": "Piletas de acero inoxidable de alta calidad, fabricadas con los más altos estándares de la industria. Diseñadas para ofrecer durabilidad, funcionalidad y un acabado impecable que realza cualquier espacio.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n53.0 cm\n\nAncho Externo\n\n44.0 cm\n\nLargo Interno\n\n48 cm\n\nAncho Interno\n\n39 cm\n\nProfundidad\n\n24.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP421LE",
+    "category": "68cda5f6ff392fb2b5d73dd8",
+    "slug": "lavadero-simple-421le",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/421LEMelia.png?v=1764426518&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/421LEMelia.png?v=1764426518&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.170708Z",
+    "updatedAt": "2026-02-08T03:34:43.170714Z"
+  },
+  {
+    "name": "Lavadero simple 420L",
+    "description": "Piletas de acero inoxidable de alta calidad, fabricadas con los más altos estándares de la industria. Diseñadas para ofrecer durabilidad, funcionalidad y un acabado impecable que realza cualquier espacio.\n\nColocación: Bajo mesada\n\nMaterial: ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n65.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n24.0 cm\n\nColocación\n\nBajo mesada\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8mm - 304 18/8",
+    "sku": "MIP420L",
+    "category": "68cda5f6ff392fb2b5d73dd8",
+    "slug": "lavadero-simple-420l",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Bajo mesada\n\n ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/420LEMelia_34c70517-d37e-44e6-bd4c-25674130f91f.png?v=1764565684&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/420LEMelia_34c70517-d37e-44e6-bd4c-25674130f91f.png?v=1764565684&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.170898Z",
+    "updatedAt": "2026-02-08T03:34:43.170904Z"
+  },
+  {
+    "name": "Lavadero simple 421L",
+    "description": "Piletas de acero inoxidable de alta calidad, fabricadas con los más altos estándares de la industria. Diseñadas para ofrecer durabilidad, funcionalidad y un acabado impecable que realza cualquier espacio.\nMaterial: ACERO AISI 0.7 mm - 304 18/8\nAcabado: Satinado opcional brillante\nLargo Externo\n51.0 cm\nAncho Externo\n42.0 cm\nLargo Interno\n46 cm\nAncho Interno\n37 cm\nProfundidad\n24.0 cm\nAcabado\nSatinado opcional brillante\nMaterial\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP421L",
+    "category": "68cda5f6ff392fb2b5d73dd8",
+    "slug": "lavadero-simple-421l",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/421LMelia.png?v=1764426652&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/421LMelia.png?v=1764426652&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.171142Z",
+    "updatedAt": "2026-02-08T03:34:43.171153Z"
+  },
+  {
+    "name": "Nova simple 340E",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n44.0 cm\n\nAncho Externo\n\n33.0 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP340E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-340e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/340EMelia.png?v=1764116483&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/340EMelia.png?v=1764116483&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.171400Z",
+    "updatedAt": "2026-02-08T03:34:43.171408Z"
+  },
+  {
+    "name": "Nova simple 434E",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante opcional satinado\n\nLargo Externo\n\n38.5 cm\n\nAncho Externo\n\n34.0 cm\n\nProfundidad\n\n14.0 cm\n\nAcabado\n\nBrillante opcional satinado\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP434E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-434e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante opcional satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante opcional satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/434EMelia.png?v=1764116525&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/434EMelia.png?v=1764116525&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.171774Z",
+    "updatedAt": "2026-02-08T03:34:43.171796Z"
+  },
+  {
+    "name": "Nova simple 451",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n40.0 cm\n\nAncho Externo\n\n29.0 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP451",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-451",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/451Melib_8f5137b6-b3f9-490b-bb7c-5998becfd724.png?v=1764562325&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/451Melib_8f5137b6-b3f9-490b-bb7c-5998becfd724.png?v=1764562325&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.172144Z",
+    "updatedAt": "2026-02-08T03:34:43.172152Z"
+  },
+  {
+    "name": "Nova simple 452E",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n30.0 cm\n\nAncho Externo\n\n30.0 cm\n\nLargo Interno\n\n26 cm\n\nAncho Interno\n\n26 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP452E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-452e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/452EMELIa.png?v=1764116891&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/452EMELIa.png?v=1764116891&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.172411Z",
+    "updatedAt": "2026-02-08T03:34:43.172417Z"
+  },
+  {
+    "name": "Nova simple 453E",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n34.0 cm\n\nAncho Externo\n\n34.0 cm\n\nLargo Interno\n\n30 cm\n\nAncho Interno\n\n30 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP453E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-453e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/453MELIa.png?v=1764160516&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/453MELIa.png?v=1764160516&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.172684Z",
+    "updatedAt": "2026-02-08T03:34:43.172690Z"
+  },
+  {
+    "name": "Nova simple 454",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n33.0 cm\n\nAncho Externo\n\n24.0 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP454",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-454",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/454MELIb.png?v=1764562593&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/454MELIb.png?v=1764562593&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.172952Z",
+    "updatedAt": "2026-02-08T03:34:43.172958Z"
+  },
+  {
+    "name": "Nova simple 455",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n38.0 cm\n\nAncho Externo\n\n28.0 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP455",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-455",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/455Melia.png?v=1764161339&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/455Melia.png?v=1764161339&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.173261Z",
+    "updatedAt": "2026-02-08T03:34:43.173267Z"
+  },
+  {
+    "name": "Nova simple 456",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n44.0 cm\n\nAncho Externo\n\n32.0 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP456",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-456",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/456Melia.png?v=1764161428&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/456Melia.png?v=1764161428&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.173563Z",
+    "updatedAt": "2026-02-08T03:34:43.173574Z"
+  },
+  {
+    "name": "Nova simple 457",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n33.0 cm\n\nAncho Externo\n\n24.0 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP457",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-457",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/457Melia.png?v=1764161529&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/457Melia.png?v=1764161529&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.173779Z",
+    "updatedAt": "2026-02-08T03:34:43.173784Z"
+  },
+  {
+    "name": "Nova simple 458",
+    "description": "Nova combina la funcionalidad de siempre con la calidad que nos caracteriza. Sus formas clásicas y versátiles se adaptan perfectamente a cualquier ambiente, ofreciendo soluciones probadas y confiables. Elaborada en acero inoxidable de primera calidad, es la elección ideal para quienes buscan durabilidad y diseño atemporal en su cocina.\n\nMaterial: ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n37.6 cm\n\nAncho Externo\n\n26.0 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 07 mm. 304 18/8",
+    "sku": "MIP458",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "nova-simple-458",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 07 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/458MELIb.png?v=1764562754&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/458MELIb.png?v=1764562754&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.174046Z",
+    "updatedAt": "2026-02-08T03:34:43.174051Z"
+  },
+  {
+    "name": "Zíngara simple 938B",
+    "description": "Zíngara representa el equilibrio perfecto entre diseño contemporáneo y calidez. Esta línea de piletas de apoyo ofrece soluciones innovadoras y versátiles para diferentes espacios, destacándose por su fácil instalación y sus diseños originales que aportan personalidad a tu baño.\n\nColocación: apoyo\n\nMaterial: ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n40.0 cm\n\nAncho Externo\n\n40.0 cm\n\nLargo Interno\n\n37.5 cm\n\nAncho Interno\n\n37.5 cm\n\nProfundidad\n\n11.0 cm\n\nColocación\n\napoyo\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm. 304 18/8",
+    "sku": "MIP938B",
+    "category": "68cda5f6ff392fb2b5d73dd7",
+    "slug": "zngara-simple-938b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: apoyo\n\n ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/938BMelia.png?v=1764443207&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/938BMelia.png?v=1764443207&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.174263Z",
+    "updatedAt": "2026-02-08T03:34:43.174268Z"
+  },
+  {
+    "name": "Zíngara simple 938G",
+    "description": "Zíngara representa el equilibrio perfecto entre diseño contemporáneo y calidez. Esta línea de piletas de apoyo ofrece soluciones innovadoras y versátiles para diferentes espacios, destacándose por su fácil instalación y sus diseños originales que aportan personalidad a tu baño.\n\nMaterial: ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n40.0 cm\n\nAncho Externo\n\n40.0 cm\n\nLargo Interno\n\n37.5 cm\n\nAncho Interno\n\n37.5 cm\n\nProfundidad\n\n11.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm. 304 18/8",
+    "sku": "MIP938G",
+    "category": "68cda5f6ff392fb2b5d73dd7",
+    "slug": "zngara-simple-938g",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/938GMelib.png?v=1764443246&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/938GMelib.png?v=1764443246&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.174425Z",
+    "updatedAt": "2026-02-08T03:34:43.174429Z"
+  },
+  {
+    "name": "Zíngara simple 940B",
+    "description": "Zíngara representa el equilibrio perfecto entre diseño contemporáneo y calidez. Esta línea de piletas de apoyo ofrece soluciones innovadoras y versátiles para diferentes espacios, destacándose por su fácil instalación y sus diseños originales que aportan personalidad a tu baño.\n\nMaterial: ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado\n\nLargo Interno\n\n40 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm. 304 18/8",
+    "sku": "MIP940B",
+    "category": "68cda5f6ff392fb2b5d73dd7",
+    "slug": "zngara-simple-940b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/940BMelic.png?v=1764262955&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/940BMelic.png?v=1764262955&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.174592Z",
+    "updatedAt": "2026-02-08T03:34:43.174596Z"
+  },
+  {
+    "name": "Zíngara simple 940G",
+    "description": "Zíngara representa el equilibrio perfecto entre diseño contemporáneo y calidez. Esta línea de piletas de apoyo ofrece soluciones innovadoras y versátiles para diferentes espacios, destacándose por su fácil instalación y sus diseños originales que aportan personalidad a tu baño.\nMaterial: ACERO AISI 1.2 mm. 304 18/8\nAcabado: Satinado\nLargo Interno\n40 cm\nAncho Interno\n40 cm\nProfundidad\n13.0 cm\nAcabado\nSatinado\nMaterial\nACERO AISI 1.2 mm. 304 18/8",
+    "sku": "MIP940G",
+    "category": "68cda5f6ff392fb2b5d73dd7",
+    "slug": "zngara-simple-940g",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm. 304 18/8\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/940GMelia.png?v=1764443359&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/940GMelia.png?v=1764443359&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.174839Z",
+    "updatedAt": "2026-02-08T03:34:43.174845Z"
+  },
+  {
+    "name": "Zíngara simple 946B",
+    "description": "Zíngara representa el equilibrio perfecto entre diseño contemporáneo y calidez. Esta línea de piletas de apoyo ofrece soluciones innovadoras y versátiles para diferentes espacios, destacándose por su fácil instalación y sus diseños originales que aportan personalidad a tu baño.\n\nMaterial: ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n47.5 cm\n\nAncho Externo\n\n36.5 cm\n\nLargo Interno\n\n46 cm\n\nAncho Interno\n\n35 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm. 304 18/8",
+    "sku": "MIP946B",
+    "category": "68cda5f6ff392fb2b5d73dd7",
+    "slug": "zngara-simple-946b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm. 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/946BMelia.png?v=1764443376&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/946BMelia.png?v=1764443376&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.175070Z",
+    "updatedAt": "2026-02-08T03:34:43.175076Z"
+  },
+  {
+    "name": "Económica simple 101EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: Brillo opaco\n\nLargo Externo\n\n41.0 cm\n\nAncho Externo\n\n31.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n27 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP101EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-simple-101ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: Brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/101ECMELIa.png?v=1764425830&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/101ECMELIa.png?v=1764425830&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.175331Z",
+    "updatedAt": "2026-02-08T03:34:43.175337Z"
+  },
+  {
+    "name": "Económica simple 102EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: Brillo opaco\n\nLargo Externo\n\n41.0 cm\n\nAncho Externo\n\n38.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP102EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-simple-102ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: Brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/102ECMELIa.png?v=1764425878&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/102ECMELIa.png?v=1764425878&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.175592Z",
+    "updatedAt": "2026-02-08T03:34:43.175598Z"
+  },
+  {
+    "name": "Económica simple 103EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.5 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n56.0 cm\n\nAncho Externo\n\n36.0 cm\n\nLargo Interno\n\n52 cm\n\nAncho Interno\n\n32 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.5 mm - 430",
+    "sku": "MIP103EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-simple-103ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.5 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/103ECMELIa.png?v=1764425985&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/103ECMELIa.png?v=1764425985&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.175803Z",
+    "updatedAt": "2026-02-08T03:34:43.175808Z"
+  },
+  {
+    "name": "Económica simple 103P",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n56.0 cm\n\nAncho Externo\n\n36.0 cm\n\nLargo Interno\n\n52 cm\n\nAncho Interno\n\n32 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP103P",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-simple-103p",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/103PMELIa.png?v=1764426133&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/103PMELIa.png?v=1764426133&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.176041Z",
+    "updatedAt": "2026-02-08T03:34:43.176047Z"
+  },
+  {
+    "name": "Económica simple 103T",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.5 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n56.0 cm\n\nAncho Externo\n\n36.0 cm\n\nLargo Interno\n\n52 cm\n\nAncho Interno\n\n32 cm\n\nProfundidad\n\n13.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.5 mm - 430",
+    "sku": "MIP103T",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-simple-103t",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.5 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/103TMelia.png?v=1764595166&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/103TMelia.png?v=1764595166&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.176356Z",
+    "updatedAt": "2026-02-08T03:34:43.176362Z"
+  },
+  {
+    "name": "Económica doble 104EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n62.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n57 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP104EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-doble-104ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/104ECMelia.png?v=1764426207&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/104ECMelia.png?v=1764426207&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.176597Z",
+    "updatedAt": "2026-02-08T03:34:43.176604Z"
+  },
+  {
+    "name": "Económica doble 104P",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n62.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n57 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP104P",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-doble-104p",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/104PMelia.png?v=1764426341&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/104PMelia.png?v=1764426341&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.176820Z",
+    "updatedAt": "2026-02-08T03:34:43.176827Z"
+  },
+  {
+    "name": "Económica doble 105EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco\n\nLargo Externo\n\n69.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n64 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 430",
+    "sku": "MIP105EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-doble-105ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 430\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/105ECMelia.png?v=1764426379&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/105ECMelia.png?v=1764426379&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.177072Z",
+    "updatedAt": "2026-02-08T03:34:43.177087Z"
+  },
+  {
+    "name": "Económica doble 106EC",
+    "description": "Los trazos claros de esta línea se adaptan a todas las necesidades. Los estándares de calidad y el cuidado de las terminaciones, que son nuestra marca de identidad, convierten a esta línea en una opción de referencia para tu cocina.\n\nMaterial: ACERO AISI 0.6 mm - 201\n\nAcabado: brillo opaco\n\nLargo Externo\n\n76.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n71 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nbrillo opaco\n\nMaterial\n\nACERO AISI 0.6 mm - 201",
+    "sku": "MIP106EC",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "econmica-doble-106ec",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm - 201\n\nAcabado: brillo opaco"
+      },
+      {
+        "name": "Acabado",
+        "value": "brillo opaco"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/106ECMelia.png?v=1764426437&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/106ECMelia.png?v=1764426437&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.177349Z",
+    "updatedAt": "2026-02-08T03:34:43.177355Z"
+  },
+  {
+    "name": "Vesta simple 800E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nColocación: Sobre mesada\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n80.0 cm\n\nAncho Externo\n\n50.0 cm\n\nLargo Interno\n\n77 cm\n\nAncho Interno\n\n47 cm\n\nProfundidad\n\n20.0 cm\n\nColocación\n\nSobre mesada\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP800E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-800e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Sobre mesada\n\n ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/800EMelia.png?v=1764264726&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/800EMelia.png?v=1764264726&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.177563Z",
+    "updatedAt": "2026-02-08T03:34:43.177571Z"
+  },
+  {
+    "name": "Vesta simple 801E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n57.0 cm\n\nAncho Externo\n\n40.0 cm\n\nLargo Interno\n\n54 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP801E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-801e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/801EMelia.png?v=1764443269&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/801EMelia.png?v=1764443269&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.177797Z",
+    "updatedAt": "2026-02-08T03:34:43.177803Z"
+  },
+  {
+    "name": "Vesta simple 802E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n73.0 cm\n\nAncho Externo\n\n47.0 cm\n\nLargo Interno\n\n70 cm\n\nAncho Interno\n\n44 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP802E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-802e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/802EMelia.png?v=1764443282&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/802EMelia.png?v=1764443282&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.178033Z",
+    "updatedAt": "2026-02-08T03:34:43.178039Z"
+  },
+  {
+    "name": "Vesta simple 300E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n34.0 cm\n\nAncho Externo\n\n34.0 cm\n\nLargo Interno\n\n30 cm\n\nAncho Interno\n\n30 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP300E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-300e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/300EMelia.png?v=1764443303&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/300EMelia.png?v=1764443303&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.178246Z",
+    "updatedAt": "2026-02-08T03:34:43.178251Z"
+  },
+  {
+    "name": "Vesta simple 460E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n40.0 cm\n\nAncho Externo\n\n40.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP460E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-460e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/460EMelia.png?v=1764265026&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/460EMelia.png?v=1764265026&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.178454Z",
+    "updatedAt": "2026-02-08T03:34:43.178460Z"
+  },
+  {
+    "name": "Vesta simple 500E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n42.0 cm\n\nAncho Externo\n\n43.0 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8mm - 304 18/8",
+    "sku": "MIP500E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-500e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/500EMelia.png?v=1764443329&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/500EMelia.png?v=1764443329&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.178696Z",
+    "updatedAt": "2026-02-08T03:34:43.178702Z"
+  },
+  {
+    "name": "Vesta simple 443E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n53.0 cm\n\nAncho Externo\n\n44.0 cm\n\nLargo Interno\n\n48 cm\n\nAncho Interno\n\n39 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP443E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-443e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/443EMelia.png?v=1764443341&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/443EMelia.png?v=1764443341&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.178905Z",
+    "updatedAt": "2026-02-08T03:34:43.178911Z"
+  },
+  {
+    "name": "Vesta simple 403E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n58.5 cm\n\nAncho Externo\n\n38.5 cm\n\nLargo Interno\n\n54 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP403E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-403e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/403EMelia.png?v=1764265660&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/403EMelia.png?v=1764265660&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179066Z",
+    "updatedAt": "2026-02-08T03:34:43.179070Z"
+  },
+  {
+    "name": "Vesta doble 305E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n71.0 cm\n\nAncho Externo\n\n43.5 cm\n\nLargo Interno\n\n66 cm\n\nAncho Interno\n\n39 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP305E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-305e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/305EMelia.png?v=1764265778&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/305EMelia.png?v=1764265778&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179252Z",
+    "updatedAt": "2026-02-08T03:34:43.179257Z"
+  },
+  {
+    "name": "Vesta doble 306E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n78.5 cm\n\nAncho Externo\n\n43.5 cm\n\nLargo Interno\n\n74 cm\n\nAncho Interno\n\n39 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP306E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-306e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/306EMelia.png?v=1764265903&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/306EMelia.png?v=1764265903&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179406Z",
+    "updatedAt": "2026-02-08T03:34:43.179409Z"
+  },
+  {
+    "name": "Vesta doble 345E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado\n\nLargo Externo\n\n78.5 cm\n\nAncho Externo\n\n45.5 cm\n\nLargo Interno\n\n73 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante opcional satinado\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP345E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-345e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante opcional satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/345EMelia.png?v=1764426712&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/345EMelia.png?v=1764426712&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179547Z",
+    "updatedAt": "2026-02-08T03:34:43.179551Z"
+  },
+  {
+    "name": "Vesta doble 405E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n75.5 cm\n\nAncho Externo\n\n48.5 cm\n\nLargo Interno\n\n70 cm\n\nAncho Interno\n\n43 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP405E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-405e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/405EMelic.png?v=1764266191&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/405EMelic.png?v=1764266191&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179734Z",
+    "updatedAt": "2026-02-08T03:34:43.179740Z"
+  },
+  {
+    "name": "Vesta doble 406E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n83.5 cm\n\nAncho Externo\n\n48.5 cm\n\nLargo Interno\n\n78 cm\n\nAncho Interno\n\n43 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP406E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-406e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/406EMelia.png?v=1764266236&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/406EMelia.png?v=1764266236&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.179896Z",
+    "updatedAt": "2026-02-08T03:34:43.179900Z"
+  },
+  {
+    "name": "Vesta doble 450E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n92.0 cm\n\nAncho Externo\n\n75.0 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP450E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-450e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/450EMelia.png?v=1764266426&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/450EMelia.png?v=1764266426&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.180036Z",
+    "updatedAt": "2026-02-08T03:34:43.180039Z"
+  },
+  {
+    "name": "Vesta triple 463E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante\n\nLargo Externo\n\n103.5 cm\n\nAncho Externo\n\n48.5 cm\n\nLargo Interno\n\n98 cm\n\nAncho Interno\n\n43 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado opcional brillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP463E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-triple-463e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado opcional brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/463EMelic.png?v=1764266546&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/463EMelic.png?v=1764266546&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.180209Z",
+    "updatedAt": "2026-02-08T03:34:43.180215Z"
+  },
+  {
+    "name": "Vesta simple 400",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nColocación: Bajo Mesada\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n34.0 cm\n\nAncho Externo\n\n30.0 cm\n\nLargo Interno\n\n30 cm\n\nAncho Interno\n\n16 cm\n\nProfundidad\n\n13.0 cm\n\nColocación\n\nBajo Mesada\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP400",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-400",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Bajo Mesada\n\n ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/400Melia.png?v=1764266842&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/400Melia.png?v=1764266842&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.180372Z",
+    "updatedAt": "2026-02-08T03:34:43.180375Z"
+  },
+  {
+    "name": "Vesta simple 201",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n42.0 cm\n\nAncho Externo\n\n32.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n27 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP201",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-201",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/201Melia.png?v=1764266898&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/201Melia.png?v=1764266898&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.180518Z",
+    "updatedAt": "2026-02-08T03:34:43.180521Z"
+  },
+  {
+    "name": "Vesta simple 301",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado\n\nLargo Externo\n\n42.0 cm\n\nAncho Externo\n\n32.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n27 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante opcional satinado\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP301",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-301",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante opcional satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/301Melib_99f591e3-956e-448e-a0cf-55e659a2c829.png?v=1764267097&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/301Melib_99f591e3-956e-448e-a0cf-55e659a2c829.png?v=1764267097&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.180795Z",
+    "updatedAt": "2026-02-08T03:34:43.180801Z"
+  },
+  {
+    "name": "Vesta simple 341",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n38.0 cm\n\nAncho Externo\n\n31.0 cm\n\nLargo Interno\n\n34 cm\n\nAncho Interno\n\n27 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP341",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-341",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_7.png?v=1765561304&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_7.png?v=1765561304&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181044Z",
+    "updatedAt": "2026-02-08T03:34:43.181049Z"
+  },
+  {
+    "name": "Vesta simple 202",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n41.0 cm\n\nAncho Externo\n\n38.0 cm\n\nLargo Interno\n\n37 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP202",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-202",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/202MELIa.png?v=1764267154&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/202MELIa.png?v=1764267154&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181320Z",
+    "updatedAt": "2026-02-08T03:34:43.181326Z"
+  },
+  {
+    "name": "Vesta simple 243",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n48.0 cm\n\nAncho Externo\n\n38.0 cm\n\nLargo Interno\n\n44 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP243",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-243",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/243Melic.png?v=1764267291&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/243Melic.png?v=1764267291&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181499Z",
+    "updatedAt": "2026-02-08T03:34:43.181503Z"
+  },
+  {
+    "name": "Vesta simple 343",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n48.0 cm\n\nAncho Externo\n\n38.0 cm\n\nLargo Interno\n\n44 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP343",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-343",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/243Melia_c465ce28-9da7-4393-b7b5-0b6d428d3990.png?v=1764267330&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/243Melia_c465ce28-9da7-4393-b7b5-0b6d428d3990.png?v=1764267330&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181644Z",
+    "updatedAt": "2026-02-08T03:34:43.181648Z"
+  },
+  {
+    "name": "Vesta simple 203",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n56.0 cm\n\nAncho Externo\n\n36.0 cm\n\nLargo Interno\n\n52 cm\n\nAncho Interno\n\n32 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP203",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-203",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/203Melia.png?v=1764267476&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/203Melia.png?v=1764267476&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181779Z",
+    "updatedAt": "2026-02-08T03:34:43.181782Z"
+  },
+  {
+    "name": "Vesta simple 303",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n56.0 cm\n\nAncho Externo\n\n36.0 cm\n\nLargo Interno\n\n52 cm\n\nAncho Interno\n\n32 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP303",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-303",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/303Melia.png?v=1764423135&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/303Melia.png?v=1764423135&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.181911Z",
+    "updatedAt": "2026-02-08T03:34:43.181914Z"
+  },
+  {
+    "name": "Vesta simple 210",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n64.0 cm\n\nAncho Externo\n\n41.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n15.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP210",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-210",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/210Melia.png?v=1764423215&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/210Melia.png?v=1764423215&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.182082Z",
+    "updatedAt": "2026-02-08T03:34:43.182088Z"
+  },
+  {
+    "name": "Vesta simple 410E",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\nMaterial: ACERO AISI 0.8 mm - 304 18/8\nAcabado: Satinado Opcional Brillante\nLargo Externo\n71.0 cm\nAncho Externo\n43.5 cm\nLargo Interno\n67 cm\nAncho Interno\n39.5 cm\nProfundidad\n18.0 cm\nAcabado\nSatinado\nMaterial\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP410E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-410e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\nAcabado: Satinado Opcional Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado opcional brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/410EMelia_61cfe0e5-bdf4-411f-b543-8340f8013e1d.png?v=1768413553&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/410EMelia_61cfe0e5-bdf4-411f-b543-8340f8013e1d.png?v=1768413553&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.182322Z",
+    "updatedAt": "2026-02-08T03:34:43.182328Z"
+  },
+  {
+    "name": "Vesta simple 410P",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n64.0 cm\n\nAncho Externo\n\n41.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n24.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP410P",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-simple-410p",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/410PMelia_0be8a6ea-b25a-41f3-a2df-1961bed6424a.png?v=1764423498&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/410PMelia_0be8a6ea-b25a-41f3-a2df-1961bed6424a.png?v=1764423498&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.182509Z",
+    "updatedAt": "2026-02-08T03:34:43.182514Z"
+  },
+  {
+    "name": "Vesta doble 204",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n62.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n57 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n16.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP204",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-204",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/204Melic.png?v=1764423410&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/204Melic.png?v=1764423410&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.182673Z",
+    "updatedAt": "2026-02-08T03:34:43.182678Z"
+  },
+  {
+    "name": "Vesta doble 304",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n62.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n57 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP304",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-304",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/304Melia.png?v=1764423448&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/304Melia.png?v=1764423448&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.182996Z",
+    "updatedAt": "2026-02-08T03:34:43.183003Z"
+  },
+  {
+    "name": "Vesta doble 344",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n62.0 cm\n\nAncho Externo\n\n39.0 cm\n\nLargo Interno\n\n57 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP344",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-344",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/344Melia.png?v=1764565022&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/344Melia.png?v=1764565022&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.183297Z",
+    "updatedAt": "2026-02-08T03:34:43.183304Z"
+  },
+  {
+    "name": "Vesta doble 205",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n69.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n64 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n16.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.6 mm. 304 18/8",
+    "sku": "MIP205",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-205",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.6 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/205MELIa_f4e425b9-12ef-4e23-a267-42bb75bc0cbf.png?v=1764423676&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/205MELIa_f4e425b9-12ef-4e23-a267-42bb75bc0cbf.png?v=1764423676&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.183585Z",
+    "updatedAt": "2026-02-08T03:34:43.183592Z"
+  },
+  {
+    "name": "Vesta doble 305",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n69.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n64 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP305",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-305",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/305Melia_0c054b99-05e2-4f59-b112-ee946599cda3.png?v=1764423747&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/305Melia_0c054b99-05e2-4f59-b112-ee946599cda3.png?v=1764423747&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.183859Z",
+    "updatedAt": "2026-02-08T03:34:43.183865Z"
+  },
+  {
+    "name": "Vesta doble 345",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n72.0 cm\n\nAncho Externo\n\n39.0 cm\n\nLargo Interno\n\n67 cm\n\nAncho Interno\n\n34 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP345",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-345",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/345Melia_5ace5fd7-7988-4f48-8145-887127814f6a.png?v=1764423802&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/345Melia_5ace5fd7-7988-4f48-8145-887127814f6a.png?v=1764423802&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.184103Z",
+    "updatedAt": "2026-02-08T03:34:43.184110Z"
+  },
+  {
+    "name": "Vesta doble 306",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n76.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n71 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP306",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-306",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/306Melia.png?v=1764423848&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/306Melia.png?v=1764423848&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.184439Z",
+    "updatedAt": "2026-02-08T03:34:43.184445Z"
+  },
+  {
+    "name": "Vesta doble 501",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n84.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n79 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP501",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-501",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/501Melia.png?v=1764423899&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/501Melia.png?v=1764423899&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.184698Z",
+    "updatedAt": "2026-02-08T03:34:43.184708Z"
+  },
+  {
+    "name": "Vesta doble 408",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n102.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n97 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP408",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-408",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/408Melia_c31cdd4a-d3cd-4c97-a271-736fae4ec55a.png?v=1764423978&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/408Melia_c31cdd4a-d3cd-4c97-a271-736fae4ec55a.png?v=1764423978&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.184912Z",
+    "updatedAt": "2026-02-08T03:34:43.184918Z"
+  },
+  {
+    "name": "Vesta doble 409P",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante\n\nLargo Externo\n\n128.0 cm\n\nAncho Externo\n\n42.0 cm\n\nLargo Interno\n\n123 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n24.0 cm\n\nAcabado\n\nBrillante\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP409P",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-doble-409p",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Brillante"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/409Melia.png?v=1764424013&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/409Melia.png?v=1764424013&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.185169Z",
+    "updatedAt": "2026-02-08T03:34:43.185176Z"
+  },
+  {
+    "name": "Vesta esquinera 350",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado\n\nLargo Externo\n\n83.0 cm\n\nAncho Externo\n\n62.0 cm\n\nLargo Interno\n\n27 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante opcional satinado\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP350",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-esquinera-350",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante opcional satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/350Melia.png?v=1764424052&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/350Melia.png?v=1764424052&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.185447Z",
+    "updatedAt": "2026-02-08T03:34:43.185454Z"
+  },
+  {
+    "name": "Vesta esquinera 650",
+    "description": "Elegancia y distinción. Sus diseños armónicos y sofisticados aportan un toque de distinción en tu cocina. La línea de sobre mesada de Mi Pileta está elaborada con acero inoxidable de alta pureza con el objetivo de garantizar una mayor resistencia y durabilidad en cada una de las opciones.\n\nMaterial: ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado\n\nLargo Externo\n\n92.8 cm\n\nAncho Externo\n\n70.0 cm\n\nLargo Interno\n\n34 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nBrillante opcional satinado\n\nMaterial\n\nACERO AISI 0.7 mm. 304 18/8",
+    "sku": "MIP650",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "vesta-esquinera-650",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm. 304 18/8\n\nAcabado: Brillante opcional satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Brillante opcional satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/650Melid_d500c91e-983f-4e9e-8d74-b610b2842ffc.png?v=1764425420&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/650Melid_d500c91e-983f-4e9e-8d74-b610b2842ffc.png?v=1764425420&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.185730Z",
+    "updatedAt": "2026-02-08T03:34:43.185736Z"
+  },
+  {
+    "name": "Desginia simple 782E",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nColocación: Sobre mesada\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n41.0 cm\n\nAncho Externo\n\n38.0 cm\n\nLargo Interno\n\n34 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n17.0 cm\n\nColocación\n\nSobre mesada\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP782E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "desginia-simple-782e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Sobre mesada\n\n ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/782EMelia.png?v=1764264247&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/782EMelia.png?v=1764264247&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.185963Z",
+    "updatedAt": "2026-02-08T03:34:43.185970Z"
+  },
+  {
+    "name": "Designia simple 780E",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n75.0 cm\n\nAncho Externo\n\n54.0 cm\n\nLargo Interno\n\n70 cm\n\nAncho Interno\n\n49 cm\n\nProfundidad\n\n17.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP780E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-simple-780e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/780EMelia.png?v=1764264370&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/780EMelia.png?v=1764264370&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.186179Z",
+    "updatedAt": "2026-02-08T03:34:43.186186Z"
+  },
+  {
+    "name": "Designia simple 783E",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n65.0 cm\n\nAncho Externo\n\n47.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n42 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP783E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-simple-783e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/783EMelia.png?v=1764264298&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/783EMelia.png?v=1764264298&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.186350Z",
+    "updatedAt": "2026-02-08T03:34:43.186353Z"
+  },
+  {
+    "name": "Designia doble 786E",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n78.5 cm\n\nAncho Externo\n\n43.5 cm\n\nLargo Interno\n\n74 cm\n\nAncho Interno\n\n39 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP786E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-doble-786e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/786EMelia.png?v=1764264441&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/786EMelia.png?v=1764264441&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.186521Z",
+    "updatedAt": "2026-02-08T03:34:43.186530Z"
+  },
+  {
+    "name": "Designia doble 786",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nMaterial: ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n75.0 cm\n\nAncho Externo\n\n41.0 cm\n\nLargo Interno\n\n71 cm\n\nAncho Interno\n\n37 cm\n\nProfundidad\n\n18.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.7 mm - 304 18/8",
+    "sku": "MIP786",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-doble-786",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.7 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/786Melia.png?v=1764264670&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/786Melia.png?v=1764264670&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.186825Z",
+    "updatedAt": "2026-02-08T03:34:43.186832Z"
+  },
+  {
+    "name": "Designia simple 787",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nColocación: Bajo mesada\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n63.0 cm\n\nAncho Externo\n\n40.0 cm\n\nLargo Interno\n\n58 cm\n\nAncho Interno\n\n35 cm\n\nProfundidad\n\n16.0 cm\n\nColocación\n\nBajo mesada\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP787",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-simple-787",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Bajo mesada\n\n ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/787MELIa.png?v=1764264503&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/787MELIa.png?v=1764264503&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.187039Z",
+    "updatedAt": "2026-02-08T03:34:43.187044Z"
+  },
+  {
+    "name": "Designia simple 788",
+    "description": "Designia es la síntesis perfecta entre estilo contemporáneo y funcionalidad práctica. Cada pieza está pensada para brindar comodidad en el uso diario sin resignar la estética moderna que define los espacios actuales. Una línea que combina belleza y practicidad en cada detalle.\n\nMaterial: ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n73.0 cm\n\nAncho Externo\n\n46.0 cm\n\nLargo Interno\n\n68 cm\n\nAncho Interno\n\n41 cm\n\nProfundidad\n\n17.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm - 304 18/8",
+    "sku": "MIP788",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "designia-simple-788",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/788Melib.png?v=1764426809&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/788Melib.png?v=1764426809&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.187258Z",
+    "updatedAt": "2026-02-08T03:34:43.187264Z"
+  },
+  {
+    "name": "Essentia simple 640",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nColocación: Sobre mesada bajo mesada y enrasada \n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n45.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n40 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nColocación\n\nSobre mesada bajo mesada y enrasada \n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP640",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-640",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Sobre mesada bajo mesada y enrasada \n\n ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/640Melia.png?v=1764775931&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/640Melia.png?v=1764775931&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.187512Z",
+    "updatedAt": "2026-02-08T03:34:43.187518Z"
+  },
+  {
+    "name": "Essentia simple 640B",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito\n\nLargo Externo\n\n45.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n40 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado grafito\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP640B",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-640b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado grafito"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/640BMelia.png?v=1764775891&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/640BMelia.png?v=1764775891&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.187704Z",
+    "updatedAt": "2026-02-08T03:34:43.187711Z"
+  },
+  {
+    "name": "Essentia simple 660",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n65.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP660",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-660",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/660Melia.png?v=1764775802&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/660Melia.png?v=1764775802&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.187895Z",
+    "updatedAt": "2026-02-08T03:34:43.187901Z"
+  },
+  {
+    "name": "Essentia simple 660B",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito\n\nLargo Externo\n\n65.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n60 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado grafito\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP660B",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-660b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado grafito"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/660BMelia.png?v=1764774702&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/660BMelia.png?v=1764774702&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.188104Z",
+    "updatedAt": "2026-02-08T03:34:43.188111Z"
+  },
+  {
+    "name": "Essentia simple 670",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n75.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n70 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP670",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-670",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/670Melia.png?v=1764774506&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/670Melia.png?v=1764774506&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.188433Z",
+    "updatedAt": "2026-02-08T03:34:43.188440Z"
+  },
+  {
+    "name": "Essentia simple 670B",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: satinado grafito\n\nLargo Externo\n\n75.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n70 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nsatinado grafito\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP670B",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-simple-670b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: satinado grafito"
+      },
+      {
+        "name": "Acabado",
+        "value": "satinado grafito"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/671BMelia.png?v=1764774137&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/671BMelia.png?v=1764774137&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.188672Z",
+    "updatedAt": "2026-02-08T03:34:43.188677Z"
+  },
+  {
+    "name": "Essentia doble 671",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n76.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n71 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP671",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-doble-671",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/671Melia.png?v=1764774229&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/671Melia.png?v=1764774229&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.188864Z",
+    "updatedAt": "2026-02-08T03:34:43.188870Z"
+  },
+  {
+    "name": "Essentia doble 671B",
+    "description": "Essentia destaca por su modernidad y formato neto y angulado, ideal para lugares donde el diseño marca el clima del espacio. Fabricada con materiales de primerísima calidad, es una de las alternativas para quienes buscan calidad de vanguardia para su cocina.\n\nMaterial: ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito\n\nLargo Externo\n\n76.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n71 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nAcabado\n\nSatinado grafito\n\nMaterial\n\nACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP671B",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "essentia-doble-671b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 0.8 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado grafito"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado grafito"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/671b.png?v=1764774067&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/671b.png?v=1764774067&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.189036Z",
+    "updatedAt": "2026-02-08T03:34:43.189042Z"
+  },
+  {
+    "name": "Etna simple 710E",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\n\nColocación: Sobre mesada\n\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n44.0 cm\n\nAncho Externo\n\n44.0 cm\n\nLargo Interno\n\n40 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n20.0 cm\n\nColocación\n\nSobre mesada\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP710E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-simple-710e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "Colocación: Sobre mesada\n\n ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/Fotos_Etna.png?v=1764962291&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/Fotos_Etna.png?v=1764962291&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.189240Z",
+    "updatedAt": "2026-02-08T03:34:43.189245Z"
+  },
+  {
+    "name": "Etna simple 715E",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\n\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n61.0 cm\n\nAncho Externo\n\n46.0 cm\n\nLargo Interno\n\n56 cm\n\nAncho Interno\n\n36 cm\n\nProfundidad\n\n22.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP715E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-simple-715e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_2.png?v=1764962677&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_2.png?v=1764962677&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.189419Z",
+    "updatedAt": "2026-02-08T03:34:43.189425Z"
+  },
+  {
+    "name": "Etna simple 720E",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\n\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n54.0 cm\n\nAncho Externo\n\n44.0 cm\n\nLargo Interno\n\n50 cm\n\nAncho Interno\n\n40 cm\n\nProfundidad\n\n22.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP720E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-simple-720e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/Fotos_Etna_1.png?v=1764962508&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/Fotos_Etna_1.png?v=1764962508&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.189617Z",
+    "updatedAt": "2026-02-08T03:34:43.189624Z"
+  },
+  {
+    "name": "Etna simple 718E",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\n\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n70.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n65 cm\n\nAncho Interno\n\n35 cm\n\nProfundidad\n\n22.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP718E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-simple-718e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_3_84c5f3d1-7d5f-4124-9e2b-32669b0822fc.png?v=1764962842&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_3_84c5f3d1-7d5f-4124-9e2b-32669b0822fc.png?v=1764962842&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.189825Z",
+    "updatedAt": "2026-02-08T03:34:43.189832Z"
+  },
+  {
+    "name": "Etna simple 718B",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\n\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado\n\nLargo Externo\n\n70.0 cm\n\nAncho Externo\n\n45.0 cm\n\nLargo Interno\n\n65 cm\n\nAncho Interno\n\n35 cm\n\nProfundidad\n\n22.0 cm\n\nAcabado\n\nSatinado\n\nMaterial\n\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP718B",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-simple-718b",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\n\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_4_8a32b464-7002-4277-ab2e-5588d6c32c11.png?v=1764962864&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_4_8a32b464-7002-4277-ab2e-5588d6c32c11.png?v=1764962864&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.190052Z",
+    "updatedAt": "2026-02-08T03:34:43.190058Z"
+  },
+  {
+    "name": "Etna doble 746E",
+    "description": "ETNA es nuestra línea de piletas premium, ideal para crear espacios con una estética moderna y distinguida. Su geometría limpia y líneas rectas aportan un aspecto elegante, perfecto para proyectos de diseño contemporáneo. Fabricada íntegramente en acero de 1.2 mm de espesor, su innovador diseño recto y el pulido mate de su acabado, la convierte en la opción elegida por los más exigentes.\nMaterial: ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\nAcabado: Satinado\nLargo Externo\n74.0 cm\nAncho Externo\n50.0 cm\nLargo Interno\n70 cm\nAncho Interno\n40 cm\nProfundidad\n21.0 cm\nAcabado\nSatinado\nMaterial\nACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8",
+    "sku": "MIP746E",
+    "category": "68cda5f7ff392fb2b5d73dd9",
+    "slug": "etna-doble-746e",
+    "brand": "Mi Pileta",
+    "brandSlug": "mi-pileta",
+    "attributes": [
+      {
+        "name": "Material",
+        "value": "ACERO AISI 1.2 mm y en el ala 3 mm - 304 18/8\nAcabado: Satinado"
+      },
+      {
+        "name": "Acabado",
+        "value": "Satinado"
+      }
+    ],
+    "specifications": {},
+    "measurements": {
+      "enabled": false,
+      "description": "No aplica",
+      "variants": []
+    },
+    "colorVariants": [],
+    "defaultImage": "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_5.png?v=1764962986&width=3840",
+    "images": [
+      "https://www.mipileta.com.ar/cdn/shop/files/FotosEtna_5.png?v=1764962986&width=3840"
+    ],
+    "featured": false,
+    "active": true,
+    "createdAt": "2026-02-08T03:34:43.190293Z",
+    "updatedAt": "2026-02-08T03:34:43.190299Z"
+  }
+]
