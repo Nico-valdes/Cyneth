@@ -222,9 +222,7 @@ export default function NosotrosPage() {
 
         {/* Locations Grid */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
-            {/* Divider vertical - solo desktop */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 transform -translate-x-1/2"></div>
+          <div className="grid grid-cols-1 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
             
             {/* Sucursal Wilde */}
             <motion.div
@@ -255,37 +253,6 @@ export default function NosotrosPage() {
               </a>
             </motion.div>
 
-            {/* Sucursal Hudson */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-center px-4 sm:px-6 md:px-8 lg:px-12 h-full flex flex-col items-center"
-            >
-              <h4 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6">
-                Sucursal Hudson
-              </h4>
-              <div className="flex-1 flex flex-col items-center">
-                <div className="space-y-2 sm:space-y-3 mb-6 sm:mb-7 md:mb-8">
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
-                    Calle 47 N° 6750, Local 26
-                  </p>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
-                    Polo Design
-                  </p>
-                </div>
-              </div>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Calle+47+N°+6750,+Local+26,+Polo+Design,+Hudson,+Buenos+Aires"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-xs sm:text-sm md:text-base text-gray-700 hover:text-gray-900 transition-colors duration-300 group font-light"
-              >
-                <span>Ver en Google Maps</span>
-                <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </motion.div>
           </div>
         </div>
       </motion.div>

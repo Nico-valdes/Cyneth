@@ -24,7 +24,7 @@ import { getOptimizedImageUrl, getMainImage } from '@/utils/imageUtils';
 import sanitario from "../../public/inodoro_milano.png"
 import sanitario2 from "../../public/inodoro_milano2.png"
 import sanitario3 from "../../public/inodoro_milano3.png"
-import catgrif from "../../public/griferia_cocina.png"
+import catgrif from "../../public/griferia_cocina1.jpg"
 import catduch from "../../public/cat-ducha.jpg"
 import catsan from "../../public/cat-sanitario.jpg"
 import catacc from "../../public/cat-accesorios.jpg"
@@ -348,52 +348,53 @@ export default function CleanHomepage() {
   const popularProducts = [
     {
       id: 1,
-      name: "Grifería Premium Milano",
-      description: "Diseño minimalista con tecnología de última generación. Ahorro de agua y máxima durabilidad.",
-      image: "https://griferiapeirano.com/wp-content/uploads/2025/05/62-175GR_Pulse-lavatorio-de-pared-Grafito-500x500.jpg",
+      name: "Línea Adra Black – Monocomando de cocina",
+      description: "La grifería Adra Black de Peirano es sinónimo de estilo y sofisticación para tu cocina. Su terminación en negro mate, sumamente resistente y elegante, realza cualquier ambiente moderno. Cuenta con cuerpo metálico robusto, cierre cerámico de alta durabilidad y cartucho de 35 mm para un control preciso del caudal de agua. Además, ofrece una garantía de 5 años y la posibilidad de adaptar un filtro purificador mediante un adaptador rosca M22x1 macho. Viví la experiencia Peirano con diseño y funcionalidad en cada uso.",
+      image: "/prods_main/griferia_peirano.webp",
       category: "Griferías",
-      link: "/productos/1"
+      link: "/productos/692dbe60c57265b9ea81b5d8"
     },
     {
       id: 2,
-      name: "Inodoro Moderno Berlín",
-      description: "Líneas elegantes y funcionalidad superior. Fácil limpieza y diseño contemporáneo.",
-      image: "https://ferrum.com/pub/media/catalog/product/cache/723de03bc8ecfa836485d5b2e3f2ed4a/d/a/dadwqdwd.jpg",
-      category: "Sanitarios",
-      link: "/productos/2"
+      name: "Línea Adra Plus – Ducha de embutir Monocomando",
+      description: `Cierre cerámico. Terminación resistente a 200 horas de niebla salina Ducha anticalcárea 6″`,
+      image: "/prods_main/ducha_peirano.webp",
+      category: "Griferías",
+      link: "/productos/692dbe5bc57265b9ea81b5a0"
     },
     {
       id: 3,
-      name: "Bomba Presión Pro 500",
-      description: "Alto rendimiento y eficiencia energética. Ideal para sistemas de presión constante.",
-      image: "https://ferrum.com/pub/media/catalog/product/cache/723de03bc8ecfa836485d5b2e3f2ed4a/l/a/lavatorio-mesada-trento-ferrum-bacha-blanco-tre-ms-301-bl-b_1.jpg",
-      category: "Bombas",
-      link: "/productos/3"
+      name: "Inodoro Largo Bari – Espacio",
+      description: "Descubrí la línea Bari de Ferrum, especialmente diseñada para brindar mayor seguridad y comodidad en tu baño. Su estructura funcional se adapta perfectamente a distintos espacios, ofreciendo una experiencia práctica y accesible para toda la familia. Este inodoro de porcelana sanitaria combina eficiencia y versatilidad, pensado para mejorar tu bienestar cada día. Por su proceso de fabricación, las medidas pueden variar en +/- 6,5%.",
+      image: "/prods_main/inodoro_ferrum.jpg",
+      category: "Inodoros",
+      link: "/productos/692de81e6f43760db9ce1b3c",
     },
     {
       id: 4,
-      name: "Ducha Rain Experience",
-      description: "Experiencia de lluvia relajante. Múltiples funciones de agua para máximo confort.",
-      image: "https://griferiapeirano.com/wp-content/uploads/2023/11/IMG_8117-768x654.jpg",
-      category: "Accesorios",
-      link: "/productos/4"
+      name: "Termotanque Señorial Family Gas 30L",
+      description: "La Familia Señorial te acompaña con calidad y confianza: este termotanque a gas de 30 litros es ideal para disfrutar de agua caliente de manera segura y eficiente. Cuenta con bajo consumo, piloto analizador, triple barrera anti-fuga y un avanzado sistema de seguridad con válvula por sobrepresión, unidad magnética y termocupla. Incluye detector de monóxido de carbono y es multigas: viene con kit para instalación tanto en gas natural como envasado. Producto certificado por LENOR, pensado para cuidar a tu familia.",
+      image: "/prods_main/termotanque_seniorial.png",
+      category: "Termotanques",
+      link: "/productos/6982a06109c182c41168eb7d"
     },
     {
       id: 5,
-      name: "Vanitory Elegance 80cm",
-      description: "Elegancia y espacio optimizado. Perfecto para baños modernos y funcionales.",
-      image: "https://fvsa.com/wp-content/uploads/2021/07/0103_H6-ARRAYAN.jpg",
-      category: "Muebles",
-      link: "/productos/5"
+      name: "Tubo Duratop XR 40",
+      description: "El Tubo Duratop XR 40 destaca por su durabilidad superior y su diseño pensado para brindarte tranquilidad en cada instalación. Fabricado con materiales de alta calidad, es resistente a la presión y a los cambios de temperatura, lo que garantiza un rendimiento confiable y seguro a lo largo del tiempo. Ideal para quienes buscan eficiencia y confianza en sistemas sanitarios modernos.",
+      image: "/prods_main/tubo-duratop-xr.jpg",
+      category: "Tubos",
+      link: "/productos/69856d1597995d6debfe434c"
     },
     {
       id: 6,
-      name: "Grifo Monocomando Cocina",
-      description: "Control intuitivo y diseño ergonómico. Resistente y fácil de mantener.",
-      image: "https://griferiapeirano.com/wp-content/uploads/2025/05/62-175GR_Pulse-lavatorio-de-pared-Grafito-500x500.jpg",
-      category: "Griferías",
-      link: "/productos/6"
+      name: "Bidet Trento (3 agujeros)",
+      description: "La línea Trento de Ferrum representa la elegancia clásica llevada al baño, ofreciendo un bidet de 3 agujeros que suma calidez y distinción a cualquier espacio. Con un diseño de rectas suaves y proporciones armoniosas, Trento está pensada para ambientes amplios que buscan una estética clara, cómoda y atemporal. Su porcelana sanitaria brinda una presencia refinada y confortable, ideal para quienes valoran calidad y sutileza en cada detalle. Tené en cuenta que, debido al proceso de fabricación, las dimensiones pueden variar levemente (+/- 6,5%).\n\nSKU: TREBI301BL",
+      image: "/prods_main/bidet_trento.jpg",
+      category: "Sanitarios",
+      link: "/productos/692de8216f43760db9ce1b65"
     }
+ 
   ];
 
   return (

@@ -149,12 +149,6 @@ export default function ContactoPage() {
       title: 'Sucursal Wilde',
       address: 'Av. Ramon Franco 6181',
       href: 'https://www.google.com/maps/search/?api=1&query=Av.+Ramon+Franco+6181,+Wilde,+Buenos+Aires'
-    },
-    {
-      title: 'Sucursal Hudson',
-      address: 'Calle 47 N° 6750, Local 26',
-      address2: 'Polo Design',
-      href: 'https://www.google.com/maps/search/?api=1&query=Calle+47+N°+6750,+Local+26,+Polo+Design,+Hudson,+Buenos+Aires'
     }
   ];
 
@@ -408,9 +402,7 @@ export default function ContactoPage() {
 
             {/* Locations Grid */}
             <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
-                {/* Divider vertical - solo desktop */}
-                <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200 transform -translate-x-1/2"></div>
+              <div className="grid grid-cols-1 gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 relative">
                 
                 {locations.map((location, index) => (
                   <motion.div
@@ -429,11 +421,6 @@ export default function ContactoPage() {
                         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
                           {location.address}
                         </p>
-                        {location.address2 && (
-                          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-light">
-                            {location.address2}
-                          </p>
-                        )}
                       </div>
                     </div>
                     <a

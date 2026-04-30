@@ -48,7 +48,10 @@
     "apply:categories:csv": "node src/scripts/apply-categories-from-csv.js SubirProds/productos_categorizados_nivel_profundo.csv",
     "upload:products:csv": "node src/scripts/upload-products-from-csv.js SubirProds/productos_categorizados_nivel_profundo.csv",
     "upload:products:json": "node src/scripts/upload-products-from-json.js SubirProds/catalogo_2040_categorizado.json",
-    "restore:products": "node src/scripts/restore-products-from-backup.js"
+    "restore:products": "node src/scripts/restore-products-from-backup.js",
+    "fix:peirano-colors": "node src/scripts/fix-peirano-color-variants.js",
+    "fix:peirano-colors:dry": "node src/scripts/fix-peirano-color-variants.js --dry-run",
+    "restore:peirano-fix": "node src/scripts/restore-peirano-fix-backup.js"
   },
   "dependencies": {
     "@types/bcryptjs": "^3.0.0",

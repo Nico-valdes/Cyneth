@@ -289,25 +289,25 @@ export default function ProductDetailPage() {
     )
   }
 
-  // Obtener imagen basada en la variante seleccionada
-  // Vista detalle: imagen grande (800x800)
-  const getDisplayImage = () => {
+  // Obtener imagen original basada en la variante seleccionada
+  const getRawDisplayImage = () => {
     if (!product) return null
-    
-    const imageSize = 800
+
     if (product.colorVariants && product.colorVariants.length > 0) {
       // Si hay variantes de color, mostrar la imagen de la variante seleccionada
       const selectedVariantData = product.colorVariants[selectedVariant]
       if (selectedVariantData?.image) {
-        return getOptimizedImageUrl(selectedVariantData.image, imageSize, imageSize)
+        return selectedVariantData.image
       }
     }
+
     // Si no hay variantes o la variante no tiene imagen, mostrar imagen por defecto
-    const mainImage = getMainImage(product)
-    return mainImage ? getOptimizedImageUrl(mainImage, imageSize, imageSize) : null
+    return getMainImage(product)
   }
 
-  const currentImage = getDisplayImage()
+  // Vista detalle: usar una versión optimizada para render, pero conservar la URL original para abrir en pestaña nueva
+  const rawCurrentImage = getRawDisplayImage()
+  const currentImage = rawCurrentImage ? getOptimizedImageUrl(rawCurrentImage, 800, 800) : null
 
   const handleAddToCart = () => {
     if (!product) return
@@ -430,7 +430,7 @@ export default function ProductDetailPage() {
                   )}
 
                   {/* Minimal Overlay */}
-                  <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                   {/* Badge Minimalista */}
                   {product?.featured && (
